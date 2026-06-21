@@ -1,0 +1,133 @@
+#!/usr/bin/env python3
+"""
+Alpaca v2 API wrapper. All trading API calls go through here.
+Usage: python tools/alpaca.py <subcommand> [args...]
+"""
+import json
+import os
+import sys
+from pathlib import Path
+
+# Load .env if present
+env_file = Path(__file__).parent.parent / ".env"
+if env_file.exists():
+    for line in env_file.read_text().splitlines():
+        line = line.strip()
+        if line and not line.startswith("#") and "=" in line:
+            key, _, val = line.partition("=")
+            os.environ.setdefault(key.strip(), val.strip())
+
+try:
+    import requests
+except ImportError:
+    print("ERROR: 'requests' not installed. Run: pip install requests", file=sys.stderr)
+    sys.exit(1)
+
+API_KEY = os.environ.get("ALPACA_API_KEY", "")
+SECRET_KEY = os.environ.get("ALPACA_SECRET_KEY", "")
+
+if not API_KEY:
+    print("ERROR: ALPACA_API_KEY not set in environment", file=sys.stderr)
+    sys.exit(1)
+if not SECRET_KEY:
+    print("ERROR: ALPACA_SECRET_KEY not set in environment", file=sys.stderr)
+    sys.exit(1)
+
+API = os.environ.get("ALPACA_ENDPOINT", "https://paper-api.alpaca.markets/v2")
+DATA = os.environ.get("ALPACA_DATA_ENDPOINT", "https://data.alpaca.markets/v2")
+
+HEADERS = {
+    "APCA-API-KEY-ID": API_KEY,
+    "APCA-API-SECRET-KEY": SECRET_KEY,
+    "Content-Type": "application/json",
+}
+
+
+def _get(url, params=None):
+    r = requests.get(url, headers=HEADERS, params=params, timeout=15)
+    r.raise_for_status()
+    return r.json()
+
+
+def _post(url, body):
+    r = requests.post(url, headers=HEADERS, json=body, timeout=15)
+    r.raise_for_status()
+    return r.json()
+
+
+def _delete(url):
+    r = requests.delete(url, headers=HEADERS, timeout=15)
+    if r.status_code == 204:
+        return {}
+    r.raise_for_status()
+    try:
+        return r.json()
+    except Exception:
+        return {}
+
+
+def main():
+    args = sys.argv[1:]
+    if not args:
+        print("Usage: python tools/alpaca.py <account|positions|position|quote|orders|order|cancel|cancel-all|close|close-all> [args]", file=sys.stderr)
+        sys.exit(1)
+
+    cmd = args[0]
+
+    if cmd == "account":
+        print(json.dumps(_get(f"{API}/account"), indent=2))
+
+    elif cmd == "positions":
+        print(json.dumps(_get(f"{API}/positions"), indent=2))
+
+    elif cmd == "position":
+        if len(args) < 2:
+            print("Usage: python tools/alpaca.py position SYM", file=sys.stderr)
+            sys.exit(1)
+        print(json.dumps(_get(f"{API}/positions/{args[1].upper()}"), indent=2))
+
+    elif cmd == "quote":
+        if len(args) < 2:
+            print("Usage: python tools/alpaca.py quote SYM", file=sys.stderr)
+            sys.exit(1)
+        sym = args[1].upper()
+        result = _get(f"{DATA}/stocks/{sym}/quotes/latest")
+        print(json.dumps(result, indent=2))
+
+    elif cmd == "orders":
+        status = args[1] if len(args) > 1 else "open"
+        print(json.dumps(_get(f"{API}/orders", params={"status": status}), indent=2))
+
+    elif cmd == "order":
+        if len(args) < 2:
+            print("Usage: python tools/alpaca.py order '<json>'", file=sys.stderr)
+            sys.exit(1)
+        body = json.loads(args[1])
+        print(json.dumps(_post(f"{API}/orders", body), indent=2))
+
+    elif cmd == "cancel":
+        if len(args) < 2:
+            print("Usage: python tools/alpaca.py cancel ORDER_ID", file=sys.stderr)
+            sys.exit(1)
+        print(json.dumps(_delete(f"{API}/orders/{args[1]}"), indent=2))
+
+    elif cmd == "cancel-all":
+        print(json.dumps(_delete(f"{API}/orders"), indent=2))
+
+    elif cmd == "close":
+        if len(args) < 2:
+            print("Usage: python tools/alpaca.py close SYM", file=sys.stderr)
+            sys.exit(1)
+        print(json.dumps(_delete(f"{API}/positions/{args[1].upper()}"), indent=2))
+
+    elif cmd == "close-all":
+        print(json.dumps(_delete(f"{API}/positions"), indent=2))
+
+    else:
+        print(f"Unknown subcommand: {cmd}", file=sys.stderr)
+        print("Usage: python tools/alpaca.py <account|positions|position|quote|orders|order|cancel|cancel-all|close|close-all> [args]", file=sys.stderr)
+        sys.exit(1)
+
+
+if __name__ == "__main__":
+    main()
