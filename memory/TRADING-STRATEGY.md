@@ -4,7 +4,7 @@
 Beat the S&P 500 over the challenge window. Stocks only — no options, ever.
 
 ## Capital & Constraints
-- Starting capital: ~$10,000
+- Starting capital: $100,000 (Alpaca paper default)
 - Platform: Alpaca (paper trading)
 - Instruments: Stocks ONLY — no options, no warrants, no leveraged ETFs
 - PDT limit: 3 day trades per 5 rolling business days (account < $25k)
