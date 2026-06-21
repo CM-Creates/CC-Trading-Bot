@@ -103,7 +103,7 @@ Use these Python tools — never call APIs with curl directly:
 ```
 python tools/alpaca.py <subcommand>     # trading: account, positions, orders, etc.
 python tools/perplexity.py "<query>"    # market research (exits 3 if key unset → fall back to WebSearch)
-python tools/slack.py "<message>"       # notifications (falls back to DAILY-SUMMARY.md if webhook unset)
+python tools/slack.py "<message>"       # notifications via Gmail (falls back to DAILY-SUMMARY.md if GMAIL_APP_PASSWORD unset)
 ```
 
 ### Daily Workflows

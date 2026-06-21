@@ -7,11 +7,11 @@ Resolve today's date via: DATE=$(date +%Y-%m-%d)
 IMPORTANT — ENVIRONMENT VARIABLES:
 - Every API key is ALREADY exported as a process env var:
   ALPACA_API_KEY, ALPACA_SECRET_KEY, ALPACA_ENDPOINT, ALPACA_DATA_ENDPOINT,
-  SLACK_WEBHOOK_URL
+  GMAIL_APP_PASSWORD
 - There is NO .env file in this repo and you MUST NOT create, write, or source one.
 - If a tool prints "not set in environment" -> STOP, send one Slack alert, then exit.
 - Verify env vars:
-    for v in ALPACA_API_KEY ALPACA_SECRET_KEY SLACK_WEBHOOK_URL; do
+    for v in ALPACA_API_KEY ALPACA_SECRET_KEY GMAIL_APP_PASSWORD; do
       [[ -n "${!v:-}" ]] && echo "$v: set" || echo "$v: MISSING"
     done
 
