@@ -74,3 +74,23 @@ TRADE or HOLD (default HOLD if no clear edge)
 **HOLD — no trades Saturday.** Market closed. Re-evaluate Monday pre-market with fresh quotes and updated futures. MU is the highest-conviction idea for next week if entry is confirmed at open. Will re-run pre-market routine Monday 6:00 AM before any orders.
 
 **Watchlist for Monday open:** MU, XOM, CVX
+
+## 2026-06-23 — Pre-market Research (ran inline at market-open; no prior entry)
+
+### Account
+- Equity: $100,000 | Cash: $100,000 | Buying power: $400,000 | Daytrade count: 0 | Positions: 0
+
+### Market Context
+- WTI: $73.77 (-2.74%) | Brent: $77.80 (-3.44%) — oil selling off on Strait of Hormuz headlines
+- S&P 500 futures: 7,549.50 (-0.28%); Dow +0.27%, Nasdaq ~flat
+- Gold: $4,188 (+0.76%) — safe-haven bid
+- Catalysts: Alphabet -5% (DeepMind exec departure), tech/software weak; PCE inflation + Fed speak Wed
+- MU earnings Wed June 24 (binary event)
+
+### Watchlist Re-validation (live quotes 13:34 UTC, ~market open)
+- MU: ask $1068.80 / bid $1060 — price ~9x weekend research ($115-120). Quote unreliable/bad feed AND earnings tomorrow = overnight gap risk. SKIP.
+- XOM: ask $146.54 / bid $131.57 = ~10.7% spread (wide/illiquid). Oil -2.74% → energy momentum negative today. SKIP.
+- CVX: ask $185.53 / bid $170.10 = ~8.7% spread (wide/illiquid). Energy negative today. SKIP.
+
+### Decision
+**HOLD — zero trades.** All three watchlist names fail the buy-side gate: MU on bad/binary-risk data, XOM/CVX on wide spreads + negative energy momentum (oil down sharply). Patience > activity. Re-evaluate post-MU-earnings (Thu June 25) and watch for spreads to normalize after the open.
