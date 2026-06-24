@@ -21,3 +21,14 @@
 | —      | —      | —     | —     | —       | —              | —    |
 
 **Notes:** Still 100% cash — no positions opened since launch. Account flat at $100,000, no trades today, no open orders. Watchlist (MU, XOM, CVX) remains un-entered. Capital deployment is at 0% vs. the 75-85% strategy target, so the portfolio is sitting idle and not yet working toward beating the S&P. Plan for tomorrow: pre-market research should validate the watchlist theses and the market-open run should begin deploying capital into 1-2 starter positions with 10% trailing stops, subject to strategy rules. Patience is fine, but two sessions of zero deployment warrants action.
+
+---
+
+### Jun 24 — EOD Snapshot (Day 3, Wednesday)
+**Portfolio:** $100,000.00 | **Cash:** $100,000.00 (100%) | **Day P&L:** $0.00 (0.00%) | **Phase P&L:** $0.00 (0.00%)
+
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|--------|--------|-------|-------|---------|----------------|------|
+| —      | —      | —     | —     | —       | —              | —    |
+
+**Notes:** Third consecutive flat session — account still 100% cash at $100,000, zero positions, zero open orders. Capital deployment remains at 0% vs. the 75-85% strategy target. No trades placed today; weekly count 0/3. Watchlist (MU, XOM, CVX) is still un-entered. This is now an operational concern: the market-open and pre-market runs are not translating research into executed positions, so the portfolio has done nothing toward beating the S&P for three sessions. Plan for tomorrow: pre-market run must finalize at least one thesis and the market-open run must actually place a starter position with a 10% trailing stop. If automated runs keep failing to deploy, the entry workflow/tooling needs inspection.
