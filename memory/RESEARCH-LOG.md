@@ -94,3 +94,34 @@ TRADE or HOLD (default HOLD if no clear edge)
 
 ### Decision
 **HOLD — zero trades.** All three watchlist names fail the buy-side gate: MU on bad/binary-risk data, XOM/CVX on wide spreads + negative energy momentum (oil down sharply). Patience > activity. Re-evaluate post-MU-earnings (Thu June 25) and watch for spreads to normalize after the open.
+
+## 2026-06-24 — Pre-market Research
+
+### Account
+- Equity: $100,000 | Cash: $100,000 (100%) | Buying power: $400,000 | Daytrade count: 0 | Positions: 0
+
+### Market Context
+- WTI / Brent: WTI ~$71.76 (-1.98%) | Brent ~$75.43 (-1.91%) — falling on US–Iran peace-talk progress easing supply fears; Brent -21% on the month
+- S&P 500 futures: ~7,440.75 (-1.33%) premarket — risk-off, driven by tech-valuation worries / tech selloff (S&P -1.44% prior session)
+- VIX: ~19–21 (sources split 19.19 to 20.95), trending up intraday — moderate but rising
+- Today's catalysts: NVDA annual shareholder meeting; ongoing AI capex narrative; US–Iran developments pressuring oil; risk-off tape
+- Earnings before open: None firmly confirmed BMO (all "Time TBD"); MU (Micron) reports today — est. $1.19 EPS — binary AI/HBM memory readthrough; PAYX, FUL, JEF, TCOM also on tap
+- Economic calendar: No major data (no CPI/PPI/FOMC/jobs). Last Fed: June 17, held 3.50–3.75% (Warsh's first). June CPI due July 14
+- Sector momentum YTD: Energy +23.3%, Materials +17.4%, Consumer Staples +15.6%, Industrials +14.1% leading; Tech -3.3%, Cons. Disc. -3.8%, Financials -6.9% lagging. Rotation into hard-assets/defensives intact
+
+### Held Positions News
+- None — account 100% cash, no positions.
+
+### Trade Ideas
+1. WATCH (do not chase into a -1.33% tape): Consumer Staples / Industrials ETF-style leaders aligned with YTD momentum (defensive rotation) — entry only once futures stabilize and on a green/flat open, stop 8–10% below, target 2:1.
+2. MU — earnings TODAY = binary gap risk. No pre-earnings entry per strategy. Re-evaluate post-print (Jun 25) if AI/HBM guide is strong and spread is clean.
+3. Energy (XOM/CVX) — sector leads YTD but oil -2% today on Iran de-escalation; prior session showed wide/illiquid spreads. SKIP until oil stabilizes and spreads tighten.
+
+### Risk Factors
+- Risk-off open: S&P futures -1.33%, VIX rising — poor session to initiate longs into weakness
+- MU earnings binary today could swing the whole semi/AI complex
+- Oil falling undercuts the otherwise-leading Energy sector as an entry today
+- 4th consecutive session at 0% deployment vs 75–85% target — capital idle; but forcing a buy into a down tape violates patience > activity. Prefer to wait for a stable/green open.
+
+### Decision
+**HOLD — no trades premarket.** Risk-off tape + MU binary today + energy weakness make this a poor entry window. Defer to the market-open run: only deploy into momentum-aligned names (Staples/Industrials) if the open stabilizes; no pre-earnings MU. Patience > activity.
