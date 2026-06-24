@@ -4,7 +4,8 @@
 **Objective:** Snapshot portfolio state, compute day P&L, send daily Slack recap  
 **Tools:** `python tools/alpaca.py`, `python tools/slack.py`  
 **Writes:** `memory/TRADE-LOG.md`  
-**Commits:** Always (mandatory — tomorrow's P&L math depends on this)
+**Commits:** Always (mandatory — tomorrow's P&L math depends on this)  
+**Generates:** `docs/index.html` (web dashboard — committed alongside TRADE-LOG.md)
 
 ---
 
@@ -56,13 +57,20 @@
    Tomorrow: <one-line plan or 'no plan yet'>"
    ```
 
-6. **Commit and push** — always mandatory
+6. **Generate dashboard**
    ```bash
-   git add memory/TRADE-LOG.md
+   python tools/dashboard.py
+   ```
+   This writes `docs/index.html` with the updated portfolio snapshot. Run before committing.
+
+7. **Commit and push** — always mandatory
+   ```bash
+   git add memory/TRADE-LOG.md docs/index.html
    git commit -m "EOD snapshot YYYY-MM-DD"
    git push origin main
    ```
-   On push conflict: `git pull --rebase origin main` then retry. This commit must succeed.
+   On push conflict: `git pull --rebase origin main` then retry. This commit must succeed.  
+   Netlify auto-deploys the updated dashboard on every successful push.
 
 ---
 

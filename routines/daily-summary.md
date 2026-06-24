@@ -17,7 +17,7 @@ IMPORTANT — ENVIRONMENT VARIABLES:
 
 IMPORTANT — PERSISTENCE:
 - Fresh clone. File changes VANISH unless committed and pushed.
-  The commit in STEP 6 is MANDATORY — tomorrow's Day P&L calculation depends on it.
+  The commit in STEP 7 is MANDATORY — tomorrow's Day P&L calculation depends on it.
 
 STEP 1 — Read memory for continuity:
 - tail of memory/TRADE-LOG.md
@@ -60,8 +60,11 @@ Open positions:
   SYM ±X.X% (stop $X.XX)
 Tomorrow: <one-line plan>"
 
-STEP 6 — COMMIT AND PUSH (mandatory — do not skip):
-  git add memory/TRADE-LOG.md
+STEP 6 — GENERATE DASHBOARD (run before committing):
+  python tools/dashboard.py
+
+STEP 7 — COMMIT AND PUSH (mandatory — do not skip):
+  git add memory/TRADE-LOG.md docs/index.html
   git commit -m "EOD snapshot $DATE"
   git push origin main
 On push failure: git pull --rebase origin main, then push again. Never force-push.

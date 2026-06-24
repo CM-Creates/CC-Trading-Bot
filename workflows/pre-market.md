@@ -4,7 +4,8 @@
 **Objective:** Research today's catalysts and write actionable trade ideas to RESEARCH-LOG.md  
 **Tools:** `python tools/alpaca.py`, `python tools/perplexity.py`, `python tools/slack.py`  
 **Writes:** `memory/RESEARCH-LOG.md`  
-**Commits:** Yes (mandatory)
+**Commits:** Yes (mandatory)  
+**Generates:** `docs/index.html` (web dashboard — committed alongside RESEARCH-LOG.md)
 
 ---
 
@@ -41,13 +42,20 @@
 5. **Notification**
    Silent unless urgent: a held position is already -7% in pre-market, thesis broke overnight, or major macro event. If urgent: `python tools/slack.py "<one-line alert>"`
 
-6. **Commit and push**
+6. **Generate dashboard**
    ```bash
-   git add memory/RESEARCH-LOG.md
+   python tools/dashboard.py
+   ```
+   This writes `docs/index.html` with today's research entry. Run before committing.
+
+7. **Commit and push**
+   ```bash
+   git add memory/RESEARCH-LOG.md docs/index.html
    git commit -m "pre-market research YYYY-MM-DD"
    git push origin main
    ```
-   On push conflict: `git pull --rebase origin main` then retry. Never force-push.
+   On push conflict: `git pull --rebase origin main` then retry. Never force-push.  
+   Netlify auto-deploys the updated dashboard on every successful push.
 
 ---
 

@@ -19,7 +19,7 @@ IMPORTANT — ENVIRONMENT VARIABLES:
 
 IMPORTANT — PERSISTENCE:
 - This workspace is a fresh clone. File changes VANISH unless you commit and push to main.
-  You MUST commit and push at STEP 6.
+  You MUST commit and push at STEP 7.
 
 STEP 1 — Read memory for context:
 - memory/TRADING-STRATEGY.md
@@ -72,8 +72,11 @@ Urgent = a held position is already down -7% in pre-market, a thesis broke overn
 or a major macro event changes the picture entirely.
   python tools/slack.py "<one-line alert>"
 
-STEP 6 — COMMIT AND PUSH (mandatory):
-  git add memory/RESEARCH-LOG.md
+STEP 6 — GENERATE DASHBOARD (run before committing):
+  python tools/dashboard.py
+
+STEP 7 — COMMIT AND PUSH (mandatory):
+  git add memory/RESEARCH-LOG.md docs/index.html
   git commit -m "pre-market research $DATE"
   git push origin main
 On push failure from divergence:
