@@ -62,3 +62,14 @@ Research planned a starter deployment, but no candidate passes the buy-side gate
 - Shares: 99 | Entry: $150.72 | Stop: $135.65 (-10% trailing) | Target: $180.86 (2:1 R:R)
 - Thesis: Defensive rotation + VIX +7% to ~20 favors Consumer Staples; first deployment, momentum-aligned individual stock with clean tight spread (0.16%).
 - Stop order ID: de4b6d20-2a3e-48ce-bff7-4c822dbef216
+
+---
+
+### Jun 26 — EOD Snapshot (Day 5, Friday)
+**Portfolio:** $99,823.78 | **Cash:** $85,078.72 (85.2%) | **Day P&L:** -$176.22 (-0.18%) | **Phase P&L:** -$176.22 (-0.18%)
+
+| Ticker | Shares | Entry   | Close   | Day Chg | Unrealized P&L   | Stop     |
+|--------|--------|---------|---------|---------|------------------|----------|
+| PG     | 99     | $150.72 | $148.94 | +0.30%  | -$176.22 (-1.18%)| $135.79  |
+
+**Notes:** First capital deployment after four flat sessions — bought 99 shares of PG (Consumer Staples) at $150.72, a defensive-rotation play aligned with VIX climbing to ~20. A 10% GTC trailing stop is live (stop $135.79, HWM $150.88). Position is marginally underwater (-1.18%) on entry slippage — PG closed at $148.94, though it was actually +0.30% on the day vs prior close, meaning we bought near the intraday high. Portfolio ends at $99,823.78, down $176.22 on the day and for the phase, with 85.2% cash still on the sidelines and ~15% deployed (below the 75-85% target — room to add 3-4 more positions). One trade today; weekly count 1/3. The structural blocker from earlier in the week (no tradeable individual stock with clean feed + catalyst) is resolved: PG had a clean tight spread and a documented thesis. Plan for next week: monitor PG against its trailing stop, and pre-market research should source 1-2 additional individual large-cap names in momentum sectors (Industrials/Staples) to move deployment toward the 75-85% target. Weekly review also due today.
