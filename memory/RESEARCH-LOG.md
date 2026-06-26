@@ -156,3 +156,38 @@ TRADE or HOLD (default HOLD if no clear edge)
 
 ### Decision
 **HOLD pre-market — defer execution to market-open run.** No orders before the open. Conditions have improved materially vs the past 3 sessions: green futures, VIX <18, MU binary resolved positive. Market-open run should deploy a 1-2 starter position(s) into momentum-aligned names (Industrials/Staples) once the open is stable and post-8:30 GDP, with a 10% trailing stop, subject to the buy-side gate. Verify MU's quote integrity before considering any semi entry. Patience held 3 days; today warrants converting research into a starter position if the tape confirms.
+
+## 2026-06-26 — Pre-market Research
+
+### Account
+- Equity: $100,000 | Cash: $100,000 (100%) | Buying power: $400,000 | Daytrade count: 0 | Positions: 0 | Weekly trades: 0/3
+
+### Market Context
+- WTI / Brent: WTI ~$70.44 (range $70.02–$71.82) | Brent not cleanly quoted, ~$73–74 implied (WTI premium). Oil still soft on US–Iran de-escalation; Brent down ~21% on the month. Energy leads YTD but no upside catalyst today.
+- S&P 500 futures: ~7,440–7,448 (roughly flat to +0.27%); ES Sep +0.78% on upbeat earnings. Mixed/neutral tape.
+- VIX: ~20.26, UP +7.25% on the day (prev close 18.89). Rising fear — favors defensives over chasing risk.
+- Today's catalysts: AI-capex supercycle (NVDA #1 buy on AI demand; MSFT historic June rout on spend concerns); EM earnings strength (TSMC/Samsung/SK Hynix). NKE reported 6/25 — post-catalyst readthrough.
+- Earnings before open: DRI (Darden), SNX (TD Synnex), AYI (Acuity), CMC (Commercial Metals), WGO (Winnebago), NNOX. None held; none in watchlist. No mega-cap movers.
+- Economic calendar: NO major data today (no CPI/PPI/FOMC/jobs). Last CPI 6/10 (4.2% YoY, hot). FOMC 6/17 held 3.50–3.75%. Next CPI Jul 14. Market now leaning toward a possible hike by year-end — hawkish drift.
+- Sector momentum YTD: Energy +22–26% (leader), Financials, Consumer Discretionary strong; Consumer Staples +10% and Industrials +10–12% steady defensives. Tech in lagging/consolidating quadrant despite strong 12-mo. Defensive/cyclical leadership intact.
+
+### Held Positions News
+- None — account 100% cash, no positions.
+
+### Quote-Feed Check (pre-market, market closed → wide closed spreads expected)
+- Usable feeds (plausible bids): XOM bid $128.91, CVX $161.97, KO $76.00, PG $142.89, WMT $111.29, CAT $1015. Wide asks are closed-market illiquidity, not broken data — spreads should tighten at the open.
+- Bad feeds: COP ap=0, NVDA ap=0 (no after-hours ask) → re-check at open. MU prior 10x inflation = genuinely broken, still avoid.
+
+### Trade Ideas
+1. PG / KO (Consumer Staples) — catalyst: defensive rotation + VIX rising +7% favors staples; sector +10% YTD and steady. Entry only on stable open with tight spread; stop ~9% below; target 2:1. Best risk/reward fit for today's nervous tape.
+2. XOM / CVX (Energy) — YTD sector leader but oil soft (~$70) with NO upside catalyst today → defer; energy entries better once oil stabilizes.
+3. AI/semis (NVDA) — strongest theme but Tech is in the lagging quadrant, MSFT routing, feed showed ap=0 pre-market. No chase; re-check feed at open only.
+
+### Risk Factors
+- VIX rising +7% to ~20 = elevated nervousness; poor backdrop to force a new long.
+- Hawkish drift (year-end hike odds rising) + hot 4.2% CPI = valuation pressure on growth.
+- Oil weakness undercuts the otherwise-leading Energy sector as an entry today.
+- 5th consecutive session at 0% deployment vs 75–85% target — capital idle. Structural blocker persists: research keeps surfacing sector ETFs while "Stocks ONLY" forbids them; individual large-cap feeds are usable but pre-market spreads are wide. Owner decision still pending on whether non-leveraged sector ETFs are permissible.
+
+### Decision
+**HOLD pre-market — no orders before the open (per strategy; pre-market always defers execution to the market-open run).** Tape is neutral-to-nervous (VIX +7%), no macro data, no held positions. If the market-open run wants to finally deploy, the cleanest fit today is a single staples starter (PG or KO) on a stable open with a tight spread and a 10% trailing stop — defensives align with rising VIX and satisfy "follow sector momentum" without ETF conflict. Otherwise patience remains acceptable. Verify spreads tighten before any order.
