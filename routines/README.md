@@ -5,7 +5,7 @@ Paste each file's contents verbatim into its Claude Code cloud routine. Do not p
 | File | Cron (America/Chicago) | Time |
 |------|------------------------|------|
 | pre-market.md | `0 6 * * 1-5` | 6:00 AM weekdays |
-| market-open.md | `30 8 * * 1-5` | 8:30 AM weekdays |
+| market-open.md | `0 10 * * 1-5` | 10:00 AM weekdays |
 | midday.md | `0 12 * * 1-5` | Noon weekdays |
 | daily-summary.md | `0 15 * * 1-5` | 3:00 PM weekdays |
 | weekly-review.md | `0 16 * * 5` | 4:00 PM Fridays |

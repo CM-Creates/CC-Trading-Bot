@@ -1,6 +1,6 @@
 # Market-Open Execution Workflow
 
-**When:** Weekdays at 8:30 AM CT, shortly after market opens  
+**When:** Weekdays at 10:00 AM CT (90 min after open — spreads normalized)  
 **Objective:** Execute planned trades from today's research, set stops on every new position  
 **Tools:** `python tools/alpaca.py`, `python tools/perplexity.py`, `python tools/slack.py`  
 **Writes:** `memory/TRADE-LOG.md`  
@@ -23,7 +23,12 @@
    python tools/alpaca.py positions
    python tools/alpaca.py quote SYM    # for each planned ticker
    ```
-   Check `ap` (ask) and `bp` (bid) in quote response. If spread is wide or zero, skip that ticker — may be halted or illiquid.
+   Check `spread_pct` in quote response. Skip the ticker if `spread_pct > 1.0` or if `tradeable: false` — indicates stale/after-hours data or genuinely illiquid market. Normal large-cap spread is under 0.1%; anything above 1% is a bad quote window.
+   If the ask price looks wildly different from the research price target, run:
+   ```
+   python tools/alpaca.py bars SYM 1Day 5
+   ```
+   to pull 5 days of OHLC bars and sanity-check the current price against recent history. If quote price is outside 2× the recent high, treat the quote as bad data and skip.
 
 3. **Run buy-side gate on each planned trade**
    Every single check must pass or the trade is skipped:

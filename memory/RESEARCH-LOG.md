@@ -75,6 +75,73 @@ TRADE or HOLD (default HOLD if no clear edge)
 
 **Watchlist for Monday open:** MU, XOM, CVX
 
+## 2026-06-26 — Pre-market Research
+
+### Account
+- Equity: $100,000 | Cash: $100,000 (100%) | Buying power: $400,000 | Daytrade count: 0 | Positions: 0
+- Note: 0% deployed vs. 75-85% target — capital has been idle since launch. Action warranted.
+
+### Market Context
+- WTI: ~$71/barrel (Aug contract, trending down) | Brent: ~$90 (June 12 ref, stale) — oil at 3.5-month lows, Iran deal speculation = bearish energy
+- S&P 500 futures: 7,448.50 (+0.27%) — slight positive premarket, prior close 7,423.25
+- VIX: 19.66 (+4.1% from yesterday's 18.63) — moderate elevated, below 20 threshold, not fearful
+- AI supercycle dominant theme: tech stocks +16% in past month; TSMC, Micron, hyperscalers ramping capex
+- MU earnings (June 24) came in strong — reignited AI/semiconductor trade, stock surged (now ~$1,000+ range confirmed via bars)
+- Dell surged +32.8% after AI-driven earnings beat
+- Iran deal speculation driving oil lower — headwind for energy sector despite YTD leadership
+- Fed: rates at 3.50-3.75% (held June 17); market prices ~1-in-3 chance of hike by year-end
+- Inflation: May CPI +4.2% YoY, sticky but no immediate catalyst today
+
+### Earnings Before Open (June 26)
+- SNX (TD SYNNEX): EPS $4.85 vs $4.18 est (+16% beat); Revenue $19.6B vs $17.0B est (+15% beat) — MASSIVE beat
+- DRI (Darden Restaurants): EPS $3.66 vs $3.67 est (in-line); Revenue $3.7B vs $3.8B est (slight miss)
+- AYI (Acuity Brands): EPS $5.31 vs $5.24 est (slight beat)
+- CMC (Commercial Metals): EPS $1.73 vs $1.77 est (slight miss)
+- WGO (Winnebago): EPS $0.66 vs $0.77 est (miss)
+
+### Economic Calendar
+- No major data today (CPI June 10, PPI June 11, FOMC June 17 — all behind us)
+- Next major: June CPI on July 14
+- Clean tape — no macro landmines today
+
+### Sector Momentum (YTD 2026)
+- Energy: +23.3% (but oil falling on Iran deal — near-term headwind)
+- Materials: +17.4% (gold/metals leading — GLD at $369, spread 0.1%, tradeable)
+- Consumer Staples: +15.6%
+- Industrials: +14.1% (AI infrastructure + defense)
+- Tech/IT: -3.4% (lagging YTD, but AI names recovering sharply in June)
+- Financials: -6.9% (weakest sector)
+
+### Pre-Market Quote Check (all show wide spreads — market not yet open)
+- SNX: ask $304.86 / bid $261.85 — spread 14.1% (pre-market gap from earnings beat; last bar close $283.81 on 6/17) → validate at 10 AM CT
+- DELL: ask $431.03 / bid $385.20 — spread 10.6% (ran hard already; last bar $419.32 on 6/17) → validate at 10 AM CT
+- NVDA: ask $211.65 / bid $193.70 — spread 8.5% (last 5 bars: $204-212 range) → validate at 10 AM CT
+- GLD: ask $369.39 / bid $369.01 — spread 0.1% (TRADEABLE now, but ETF not stock)
+
+### Trade Ideas
+1. **SNX (TD SYNNEX)** — Post-earnings momentum; massive EPS +16% beat and Rev +15% beat on AI infrastructure spending. Entry: validate at 10 AM CT after gap settles, target ~$295-$315 range (conservatively). Stop: -10% below fill. Target: +20% (2:1 R:R minimum). Size: ~$18,000-$20,000 (60-65 shares at ~$300). Catalyst: earnings beat + AI capex supercycle. Sector: Tech/Infrastructure (recovering). Risk: gap-up may make entry chase-y; use limit or wait 10 min after open for price to stabilize.
+
+2. **NVDA (Nvidia)** — Core AI supercycle name. Liquid, large-cap. Recent consolidation $204-212 range provides clean entry. Post-MU-earnings AI sentiment positive. Entry: ~$205-210. Stop: -10% (~$185-190). Target: +20% (~$246-252, 2:1 R:R). Size: ~$19,000-$20,000 (~90-95 shares at ~$208). Catalyst: AI build-out, strong sector momentum, Forbes top pick for June 2026.
+
+### Risk Factors
+- SNX may gap too far above fair value at open — discipline to skip if spread_pct > 1% at 10 AM CT
+- VIX at 19.66 trending up from 18.63 — slight anxiety building; watch for spike above 20
+- Oil declining = headwind for Energy (avoid XOM/CVX for now)
+- Tech sector still -3.4% YTD despite June recovery — position sizing discipline essential
+- Iran deal finalization or failure could cause sharp moves in energy and defense names
+
+### Decision
+**TRADE** — initiate 1-2 positions at 10:00 AM CT market-open run.
+- Primary: SNX — validate spread_pct < 1% at 10 AM CT; if tradeable, buy ~65 shares, set 10% trailing stop GTC
+- Secondary: NVDA — if SNX fails gate or only partially fills, add NVDA as second position
+- Max deployment this session: ~$38,000-$40,000 (2 positions at ~$19-20k each), leaving ~$60k cash
+- Gate reminder: spread_pct > 1% = skip, use `bars` to confirm price is within 2× recent high
+
+### Postmortem (written 2026-06-27)
+**Execution pivoted from plan — SNX/NVDA → PG.** SNX (14.1% spread) and NVDA (8.5% spread) both failed the spread gate at the open. The market-open cloud routine (still on the old 8:30 AM CT cron at time of execution) pivoted to PG as an in-sector substitute: Consumer Staples +15.6% YTD, VIX rising to ~20, and PG showed a tight 0.16% spread at open. The trade and thesis were correctly logged in TRADE-LOG.md by the cloud routine. The pre-market research entry (this document) was not updated to reflect the pivot — that's the only gap.
+- **Status confirmed:** PG position live, 10% trailing stop at $135.79, HWM $150.88. Closed Jun 26 at $148.94 (-1.18% unrealized).
+- **Cron fix applied:** market-open now scheduled at 10:00 AM CT (`0 10 * * 1-5`) — verify in cloud dashboard.
+
 ## 2026-06-23 — Pre-market Research (ran inline at market-open; no prior entry)
 
 ### Account

@@ -30,8 +30,12 @@ STEP 2 — Re-validate each planned trade with fresh live data:
   python tools/alpaca.py account
   python tools/alpaca.py positions
   python tools/alpaca.py quote <each planned ticker>
-Check bid/ask spread in quote response (ap = ask, bp = bid).
-If spread is wide or zero, skip that ticker — it may be halted or illiquid.
+Check `spread_pct` in quote response (now computed automatically).
+Skip the ticker if spread_pct > 1.0 or tradeable == false.
+Normal large-cap spread is under 0.1%. Above 1% means stale/after-hours data or real illiquidity — skip and move on.
+If the ask price looks wildly different from the research entry price, run:
+  python tools/alpaca.py bars SYM 1Day 5
+to check 5 days of OHLC and confirm the price is plausible. If quote is outside 2× the recent high, treat it as bad data and skip.
 
 STEP 3 — Hard-check ALL of these rules BEFORE every order.
 Skip any trade that fails and log the reason in TRADE-LOG:

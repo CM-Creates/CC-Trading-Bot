@@ -69,7 +69,7 @@ def _delete(url):
 def main():
     args = sys.argv[1:]
     if not args:
-        print("Usage: python tools/alpaca.py <account|positions|position|quote|orders|order|cancel|cancel-all|close|close-all> [args]", file=sys.stderr)
+        print("Usage: python tools/alpaca.py <account|positions|position|quote|bars|orders|order|cancel|cancel-all|close|close-all> [args]", file=sys.stderr)
         sys.exit(1)
 
     cmd = args[0]
@@ -92,7 +92,31 @@ def main():
             sys.exit(1)
         sym = args[1].upper()
         result = _get(f"{DATA}/stocks/{sym}/quotes/latest")
+        q = result.get("quote", {})
+        ap, bp = q.get("ap", 0), q.get("bp", 0)
+        if ap and bp:
+            q["spread_pct"] = round((ap - bp) / ap * 100, 3)
+            q["tradeable"] = q["spread_pct"] <= 1.0
         print(json.dumps(result, indent=2))
+
+    elif cmd == "bars":
+        if len(args) < 2:
+            print("Usage: python tools/alpaca.py bars SYM [timeframe] [limit]", file=sys.stderr)
+            print("  timeframe: 1Day (default), 1Hour, 5Min", file=sys.stderr)
+            sys.exit(1)
+        import datetime
+        sym = args[1].upper()
+        timeframe = args[2] if len(args) > 2 else "1Day"
+        limit = int(args[3]) if len(args) > 3 else 10
+        # Start far enough back to guarantee `limit` bars (2x for weekends/holidays)
+        start = (datetime.date.today() - datetime.timedelta(days=limit * 2 + 5)).isoformat()
+        result = _get(f"{DATA}/stocks/{sym}/bars", params={"timeframe": timeframe, "start": start, "limit": limit})
+        bars = result.get("bars") or []
+        if not bars:
+            print(f"No bars returned for {sym}")
+        else:
+            for b in bars:
+                print(f"  {b.get('t','')[:10]}  o={b.get('o')}  h={b.get('h')}  l={b.get('l')}  c={b.get('c')}  v={b.get('v')}")
 
     elif cmd == "orders":
         status = args[1] if len(args) > 1 else "open"
@@ -125,7 +149,7 @@ def main():
 
     else:
         print(f"Unknown subcommand: {cmd}", file=sys.stderr)
-        print("Usage: python tools/alpaca.py <account|positions|position|quote|orders|order|cancel|cancel-all|close|close-all> [args]", file=sys.stderr)
+        print("Usage: python tools/alpaca.py <account|positions|position|quote|bars|orders|order|cancel|cancel-all|close|close-all> [args]", file=sys.stderr)
         sys.exit(1)
 
 

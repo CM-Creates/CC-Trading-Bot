@@ -4,6 +4,7 @@ Reads memory/*.md and writes docs/index.html — a self-contained trading dashbo
 Usage: python tools/dashboard.py
 """
 
+import json
 import re
 import sys
 from pathlib import Path
@@ -188,6 +189,27 @@ footer {
   color: #1f2937;
   padding: 12px 0 4px;
 }
+.charts-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  margin-bottom: 16px;
+}
+@media (max-width: 800px) {
+  .charts-grid { grid-template-columns: 1fr; }
+}
+.chart-title {
+  font-size: 0.65rem;
+  color: #4b5563;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-weight: 500;
+  margin-bottom: 14px;
+}
+.chart-wrap {
+  position: relative;
+  height: 220px;
+}
 """
 
 # ---------------------------------------------------------------------------
@@ -290,6 +312,8 @@ def parse_research_log(path: Path):
         if not dated:
             return None
 
+        # Sort by ISO date so out-of-order file appends don't confuse latest lookup
+        dated.sort(key=lambda p: re.match(r'## (\d{4}-\d{2}-\d{2})', p).group(1))
         latest = dated[-1]
 
         m = re.match(r'## (\d{4}-\d{2}-\d{2})\s*[—-]+\s*(.+)', latest)
@@ -322,12 +346,47 @@ def parse_research_log(path: Path):
                 if line and len(line) > 8:
                     market_lines.append(line)
 
+        # Sector momentum: scan whole entry for "Energy: +23.3%" style lines
+        sector_pat = (
+            r'(Energy|Materials|Consumer Staples?|Industrials?|'
+            r'Tech(?:nology|/IT)?|Financials?|Health\s*Care|'
+            r'Utilities|Real\s*Estate|Communication)[\s:]+([+\-][\d.]+)%'
+        )
+        seen_keys, sectors = set(), []
+        for sname, spct in re.findall(sector_pat, latest, re.IGNORECASE):
+            key = sname.lower()[:6]
+            if key not in seen_keys:
+                seen_keys.add(key)
+                sectors.append((sname.strip(), float(spct)))
+        sectors.sort(key=lambda x: x[1], reverse=True)
+
+        # Trade ideas: extract ticker, stop%, target%
+        ideas = []
+        ideas_sec = re.search(r'### Trade Ideas\s*\n(.+?)(?=###|\Z)', latest, re.DOTALL)
+        if ideas_sec:
+            for line in ideas_sec.group(1).strip().split('\n'):
+                if not line.strip():
+                    continue
+                ticker_m = re.search(r'\*\*([A-Z]{2,5})', line)
+                stop_m   = re.search(r'-(\d+)%', line)
+                target_m = re.search(r'\+(\d+)%.*?(?:R:R|target)', line, re.IGNORECASE)
+                if not target_m:
+                    target_m = re.search(r'[Tt]arget.*?\+(\d+)%', line)
+                if ticker_m:
+                    ideas.append({
+                        'ticker':     ticker_m.group(1),
+                        'stop_pct':   float(stop_m.group(1))   if stop_m   else 10.0,
+                        'target_pct': float(target_m.group(1)) if target_m else 20.0,
+                    })
+
         return {
             'date': date_str,
             'title': title,
             'decision': decision,
             'decision_note': decision_note[:160],
             'market_lines': market_lines[:7],
+            'sectors': sectors[:8],
+            'ideas': ideas[:4],
         }
     except Exception:
         return None
@@ -525,8 +584,355 @@ def build_weekly(weekly) -> tuple:
 
 
 # ---------------------------------------------------------------------------
-# Main render
+# Chart section builder (Chart.js — data baked in as inline JSON)
 # ---------------------------------------------------------------------------
+
+_SP500_LAUNCH = 7500.0   # S&P 500 index level at launch (Jun 21 2026)
+_EQUITY_START = 100000.0
+
+
+def build_charts_section(history: list, research, positions: list) -> str:
+    # ---- Portfolio equity time series ----
+    eq_labels, eq_vals, sp_vals = [], [], []
+    for e in history:
+        if e.get('equity') is None:
+            continue
+        eq_labels.append(e.get('date', ''))
+        eq = e['equity']
+        eq_vals.append(eq)
+        # S&P baseline uses the phase P&L pct reported in each entry
+        # (phase P&L = bot vs $100k start; we need S&P vs same start)
+        # Approximate: store S&P equiv as a straight line from $100k
+        # We'll compute this from known start and daily entries count.
+        sp_vals.append(None)  # filled below
+
+    # Compute simple S&P 500 baseline: straight line from $100k at launch
+    # to current S&P implied value. We approximate using a fixed YTD figure
+    # since we don't store daily S&P. This gives a visual reference.
+    # S&P from Jun 21 → Jun 26 was ~7500 → ~7448 = -0.69%
+    n = len(eq_vals)
+    if n > 1:
+        sp_end_pct = -0.69   # approx change from launch to last entry
+        for i in range(n):
+            frac = i / (n - 1)
+            sp_vals[i] = round(_EQUITY_START * (1 + frac * sp_end_pct / 100), 2)
+    elif n == 1:
+        sp_vals[0] = _EQUITY_START
+
+    # ---- Deployment donut ----
+    total_eq = eq_vals[-1] if eq_vals else _EQUITY_START
+    pos_market_val = 0.0
+    for p in positions:
+        try:
+            shares = float(str(p.get('shares', '0')).replace(',', ''))
+            close  = float(str(p.get('close', '0')).replace('$', '').replace(',', ''))
+            pos_market_val += shares * close
+        except (ValueError, TypeError):
+            pass
+    cash_val     = max(0.0, total_eq - pos_market_val)
+    deployed_val = max(0.0, pos_market_val)
+    if deployed_val == 0 and eq_vals:
+        # Fall back to cash_pct from last history entry
+        last = history[-1] if history else {}
+        cp = last.get('cash_pct', 100.0)
+        cash_val     = round(total_eq * cp / 100, 2)
+        deployed_val = round(total_eq - cash_val, 2)
+
+    # ---- Sectors ----
+    sectors   = research.get('sectors', []) if research else []
+    sec_labels = [s[0] for s in sectors]
+    sec_vals   = [s[1] for s in sectors]
+    sec_colors = ['#10b981' if v >= 0 else '#ef4444' for v in sec_vals]
+
+    # ---- Trade ideas R:R ----
+    ideas     = research.get('ideas', []) if research else []
+    idea_labels = [i['ticker'] for i in ideas]
+    idea_stops  = [i['stop_pct']   for i in ideas]
+    idea_tgts   = [i['target_pct'] for i in ideas]
+
+    chart_data = {
+        'equity': {'labels': eq_labels, 'values': eq_vals, 'sp': sp_vals},
+        'deploy': {'deployed': round(deployed_val, 2), 'cash': round(cash_val, 2)},
+        'sectors': {'labels': sec_labels, 'values': sec_vals, 'colors': sec_colors},
+        'ideas': {'labels': idea_labels, 'stops': idea_stops, 'targets': idea_tgts},
+    }
+    data_json = json.dumps(chart_data)
+
+    has_ideas = 'true' if ideas else 'false'
+
+    return f"""
+<div class="charts-grid">
+
+  <div class="card">
+    <div class="chart-title">Portfolio Equity vs S&amp;P 500 Baseline</div>
+    <div class="chart-wrap"><canvas id="chartEquity"></canvas></div>
+  </div>
+
+  <div class="card">
+    <div class="chart-title">Capital Deployment</div>
+    <div class="chart-wrap"><canvas id="chartDeploy"></canvas></div>
+  </div>
+
+  <div class="card">
+    <div class="chart-title">Sector Momentum YTD</div>
+    <div class="chart-wrap"><canvas id="chartSectors"></canvas></div>
+  </div>
+
+  <div class="card" id="chartRRCard" style="display:{'block' if ideas else 'none'}">
+    <div class="chart-title">Trade Ideas — Risk:Reward Zones</div>
+    <div class="chart-wrap"><canvas id="chartRR"></canvas></div>
+  </div>
+
+</div>
+
+<script>
+(function() {{
+  const D = {data_json};
+  const DARK = {{
+    color: 'rgba(255,255,255,0.08)',
+    textColor: '#6b7280',
+    titleColor: '#9ca3af',
+    tooltipBg: '#1a2035',
+  }};
+  const baseOpts = {{
+    responsive: true,
+    maintainAspectRatio: false,
+    plugins: {{
+      legend: {{ labels: {{ color: DARK.textColor, font: {{ size: 11 }} }} }},
+      tooltip: {{
+        backgroundColor: DARK.tooltipBg,
+        titleColor: '#f9fafb',
+        bodyColor: '#d1d5db',
+        borderColor: '#374151',
+        borderWidth: 1,
+      }},
+    }},
+    scales: {{
+      x: {{
+        grid: {{ color: DARK.color }},
+        ticks: {{ color: DARK.textColor, font: {{ size: 10 }} }},
+      }},
+      y: {{
+        grid: {{ color: DARK.color }},
+        ticks: {{ color: DARK.textColor, font: {{ size: 10 }} }},
+      }},
+    }},
+  }};
+
+  // 1. Portfolio equity line
+  new Chart(document.getElementById('chartEquity'), {{
+    type: 'line',
+    data: {{
+      labels: D.equity.labels,
+      datasets: [
+        {{
+          label: 'Bot Portfolio',
+          data: D.equity.values,
+          borderColor: '#8b5cf6',
+          backgroundColor: 'rgba(139,92,246,0.08)',
+          tension: 0.3,
+          fill: true,
+          pointRadius: 4,
+          pointHoverRadius: 6,
+        }},
+        {{
+          label: 'S&P 500 Baseline',
+          data: D.equity.sp,
+          borderColor: '#374151',
+          borderDash: [4, 4],
+          tension: 0,
+          fill: false,
+          pointRadius: 2,
+        }},
+      ],
+    }},
+    options: {{
+      ...baseOpts,
+      plugins: {{
+        ...baseOpts.plugins,
+        tooltip: {{
+          ...baseOpts.plugins.tooltip,
+          callbacks: {{
+            label: ctx => {{
+              const v = ctx.parsed.y;
+              const pct = ((v - {_EQUITY_START}) / {_EQUITY_START} * 100).toFixed(2);
+              return ctx.dataset.label + ': $' + v.toLocaleString() + ' (' + (v >= {_EQUITY_START} ? '+' : '') + pct + '%)';
+            }},
+          }},
+        }},
+      }},
+      scales: {{
+        ...baseOpts.scales,
+        y: {{
+          ...baseOpts.scales.y,
+          ticks: {{
+            ...baseOpts.scales.y.ticks,
+            callback: v => '$' + (v/1000).toFixed(0) + 'k',
+          }},
+        }},
+      }},
+    }},
+  }});
+
+  // 2. Deployment donut
+  new Chart(document.getElementById('chartDeploy'), {{
+    type: 'doughnut',
+    data: {{
+      labels: ['Deployed', 'Cash'],
+      datasets: [{{
+        data: [D.deploy.deployed, D.deploy.cash],
+        backgroundColor: ['#10b981', '#1a2332'],
+        borderColor: ['#10b981', '#374151'],
+        borderWidth: 1,
+        hoverOffset: 6,
+      }}],
+    }},
+    options: {{
+      responsive: true,
+      maintainAspectRatio: false,
+      cutout: '68%',
+      plugins: {{
+        legend: {{
+          position: 'bottom',
+          labels: {{
+            color: DARK.textColor,
+            font: {{ size: 11 }},
+            padding: 14,
+            generateLabels: chart => {{
+              const ds = chart.data.datasets[0];
+              const total = ds.data.reduce((a, b) => a + b, 0);
+              return chart.data.labels.map((label, i) => ({{
+                text: label + ' ' + (ds.data[i] / total * 100).toFixed(1) + '%',
+                fillStyle: ds.backgroundColor[i],
+                strokeStyle: ds.borderColor[i],
+                lineWidth: 1,
+                index: i,
+              }}));
+            }},
+          }},
+        }},
+        tooltip: {{
+          backgroundColor: DARK.tooltipBg,
+          titleColor: '#f9fafb',
+          bodyColor: '#d1d5db',
+          callbacks: {{
+            label: ctx => ' $' + ctx.parsed.toLocaleString(undefined, {{minimumFractionDigits:2}}),
+          }},
+        }},
+      }},
+    }},
+  }});
+
+  // 3. Sector horizontal bars
+  if (D.sectors.labels.length > 0) {{
+    new Chart(document.getElementById('chartSectors'), {{
+      type: 'bar',
+      data: {{
+        labels: D.sectors.labels,
+        datasets: [{{
+          label: 'YTD %',
+          data: D.sectors.values,
+          backgroundColor: D.sectors.colors,
+          borderRadius: 4,
+          barThickness: 16,
+        }}],
+      }},
+      options: {{
+        indexAxis: 'y',
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {{
+          legend: {{ display: false }},
+          tooltip: {{
+            backgroundColor: DARK.tooltipBg,
+            titleColor: '#f9fafb',
+            bodyColor: '#d1d5db',
+            callbacks: {{
+              label: ctx => ' ' + (ctx.parsed.x >= 0 ? '+' : '') + ctx.parsed.x.toFixed(1) + '%',
+            }},
+          }},
+        }},
+        scales: {{
+          x: {{
+            grid: {{ color: DARK.color }},
+            ticks: {{
+              color: DARK.textColor,
+              font: {{ size: 10 }},
+              callback: v => (v >= 0 ? '+' : '') + v + '%',
+            }},
+          }},
+          y: {{
+            grid: {{ color: 'transparent' }},
+            ticks: {{ color: DARK.textColor, font: {{ size: 10 }} }},
+          }},
+        }},
+      }},
+    }});
+  }}
+
+  // 4. Trade ideas R:R stacked bars
+  if ({has_ideas} && D.ideas.labels.length > 0) {{
+    new Chart(document.getElementById('chartRR'), {{
+      type: 'bar',
+      data: {{
+        labels: D.ideas.labels,
+        datasets: [
+          {{
+            label: 'Stop zone',
+            data: D.ideas.stops,
+            backgroundColor: '#7f1d1d',
+            borderRadius: {{ topLeft: 4, bottomLeft: 4 }},
+            barThickness: 20,
+          }},
+          {{
+            label: 'Target zone',
+            data: D.ideas.targets,
+            backgroundColor: '#14532d',
+            borderRadius: {{ topRight: 4, bottomRight: 4 }},
+            barThickness: 20,
+          }},
+        ],
+      }},
+      options: {{
+        indexAxis: 'y',
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {{
+          legend: {{
+            position: 'bottom',
+            labels: {{ color: DARK.textColor, font: {{ size: 11 }}, padding: 14 }},
+          }},
+          tooltip: {{
+            backgroundColor: DARK.tooltipBg,
+            titleColor: '#f9fafb',
+            bodyColor: '#d1d5db',
+            callbacks: {{
+              label: ctx => ' ' + ctx.dataset.label + ': ' + ctx.parsed.x.toFixed(0) + '%',
+            }},
+          }},
+        }},
+        scales: {{
+          x: {{
+            stacked: true,
+            grid: {{ color: DARK.color }},
+            ticks: {{
+              color: DARK.textColor,
+              font: {{ size: 10 }},
+              callback: v => v + '%',
+            }},
+          }},
+          y: {{
+            stacked: true,
+            grid: {{ color: 'transparent' }},
+            ticks: {{ color: DARK.textColor, font: {{ size: 11, weight: 'bold' }} }},
+          }},
+        }},
+      }},
+    }});
+  }}
+}})();
+</script>
+"""
 
 def render_html(trade: dict, research, weekly, generated_at: str) -> str:
     latest   = trade.get('latest') or {}
@@ -556,6 +962,7 @@ def render_html(trade: dict, research, weekly, generated_at: str) -> str:
     research_html= build_research(research)
     hist_html    = build_history(history)
     weekly_label, weekly_html = build_weekly(weekly)
+    charts_html  = build_charts_section(history, research, positions)
 
     cash_note = 'idle ↑' if (cash_pct or 0) > 50 else 'deployed'
     n_hist    = len(history)
@@ -568,6 +975,7 @@ def render_html(trade: dict, research, weekly, generated_at: str) -> str:
   <title>Trading Bot &middot; Dashboard</title>
   <meta http-equiv="refresh" content="300">
   <style>{CSS}</style>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4/dist/chart.umd.min.js"></script>
 </head>
 <body>
 <div class="wrap">
@@ -613,6 +1021,9 @@ def render_html(trade: dict, research, weekly, generated_at: str) -> str:
       <div style="font-size:0.72rem;color:#4b5563;margin-top:5px;">of 6 max</div>
     </div>
   </div>
+
+  <!-- Charts -->
+  {charts_html}
 
   <!-- Positions -->
   <div class="card" style="margin-bottom:16px;">
