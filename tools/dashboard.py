@@ -22,72 +22,134 @@ ROOT = Path(__file__).parent.parent
 # ---------------------------------------------------------------------------
 
 CSS = """
+:root {
+  --ink: #f3efe5;
+  --muted: #8f9a9f;
+  --dim: #56636a;
+  --panel: rgba(18, 24, 27, 0.84);
+  --panel-strong: rgba(24, 33, 37, 0.92);
+  --line: rgba(180, 196, 193, 0.14);
+  --line-bright: rgba(207, 220, 216, 0.24);
+  --green: #56c78f;
+  --red: #e05d5d;
+  --amber: #d9a64f;
+  --blue: #7ea8a1;
+  --violet: #b59ad9;
+}
 * { box-sizing: border-box; margin: 0; padding: 0; }
 body {
-  background: #0a0e17;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-  color: #f9fafb;
+  background:
+    radial-gradient(circle at 16% -12%, rgba(126, 168, 161, 0.22), transparent 34rem),
+    radial-gradient(circle at 88% 6%, rgba(217, 166, 79, 0.12), transparent 28rem),
+    linear-gradient(135deg, #11171a 0%, #0d1113 42%, #161814 100%);
+  color: var(--ink);
+  font-family: "Aptos", "Segoe UI", "Helvetica Neue", sans-serif;
   min-height: 100vh;
 }
-.wrap { max-width: 1340px; margin: 0 auto; padding: 24px 20px; }
-.card {
-  background: #111827;
-  border: 1px solid #1f2937;
-  border-radius: 12px;
-  padding: 20px;
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background-image:
+    linear-gradient(rgba(255,255,255,0.025) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.025) 1px, transparent 1px);
+  background-size: 52px 52px;
+  mask-image: linear-gradient(to bottom, rgba(0,0,0,0.75), transparent 72%);
 }
-.accent-blue   { border-top: 2px solid #3b82f6; }
-.accent-green  { border-top: 2px solid #10b981; }
-.accent-red    { border-top: 2px solid #ef4444; }
-.accent-purple { border-top: 2px solid #8b5cf6; }
-.accent-amber  { border-top: 2px solid #f59e0b; }
-.accent-gray   { border-top: 2px solid #374151; }
-.badge-trade {
-  background: rgba(16,185,129,0.12);
-  color: #10b981;
-  border: 1px solid rgba(16,185,129,0.3);
+.wrap {
+  max-width: 1380px;
+  margin: 0 auto;
+  padding: 28px 22px 24px;
+  position: relative;
+}
+.card {
+  background: linear-gradient(180deg, var(--panel-strong), var(--panel));
+  border: 1px solid var(--line);
   border-radius: 8px;
-  padding: 8px 20px;
-  font-size: 1rem;
-  letter-spacing: 0.15em;
+  padding: 20px;
+  box-shadow: 0 18px 52px rgba(0, 0, 0, 0.22);
+  overflow: hidden;
+}
+.metric-card {
+  min-height: 138px;
+  position: relative;
+}
+.metric-card::after {
+  content: "";
+  position: absolute;
+  inset: auto 18px 16px 18px;
+  height: 3px;
+  border-radius: 999px;
+  background: var(--accent, var(--line-bright));
+  opacity: 0.78;
+}
+.accent-blue   { --accent: var(--blue); }
+.accent-green  { --accent: var(--green); }
+.accent-red    { --accent: var(--red); }
+.accent-purple { --accent: var(--violet); }
+.accent-amber  { --accent: var(--amber); }
+.accent-gray   { --accent: var(--line-bright); }
+.badge-trade {
+  background: rgba(86,199,143,0.12);
+  color: var(--green);
+  border: 1px solid rgba(86,199,143,0.35);
+  border-radius: 999px;
+  padding: 9px 22px;
+  font-size: 0.92rem;
+  letter-spacing: 0.18em;
   text-transform: uppercase;
   display: inline-block;
   font-weight: 700;
 }
 .badge-hold {
-  background: rgba(245,158,11,0.12);
-  color: #f59e0b;
-  border: 1px solid rgba(245,158,11,0.3);
-  border-radius: 8px;
-  padding: 8px 20px;
-  font-size: 1rem;
-  letter-spacing: 0.15em;
+  background: rgba(217,166,79,0.13);
+  color: var(--amber);
+  border: 1px solid rgba(217,166,79,0.34);
+  border-radius: 999px;
+  padding: 9px 22px;
+  font-size: 0.92rem;
+  letter-spacing: 0.18em;
   text-transform: uppercase;
   display: inline-block;
   font-weight: 700;
 }
-.num { font-family: 'Courier New', monospace; }
-.pos { color: #10b981; }
-.neg { color: #ef4444; }
-.neu { color: #6b7280; }
-.amb { color: #f59e0b; }
+.num { font-family: "SFMono-Regular", "Cascadia Code", "Courier New", monospace; font-variant-numeric: tabular-nums; }
+.pos { color: var(--green); }
+.neg { color: var(--red); }
+.neu { color: var(--muted); }
+.amb { color: var(--amber); }
+.ticker-cell { font-weight: 800; color: var(--ink); }
+.muted-cell { color: #a7b1ad; }
+.quiet-cell { color: var(--dim); font-size: 0.75rem; }
 .label {
-  font-size: 0.65rem;
-  color: #4b5563;
+  font-size: 0.68rem;
+  color: var(--muted);
   text-transform: uppercase;
-  letter-spacing: 0.12em;
-  font-weight: 500;
+  letter-spacing: 0.16em;
+  font-weight: 700;
   margin-bottom: 12px;
+}
+.metric-value {
+  font-size: clamp(1.55rem, 2.4vw, 2.15rem);
+  font-weight: 760;
+  letter-spacing: 0;
+}
+.metric-sub {
+  color: var(--dim);
+  font-size: 0.76rem;
+  margin-top: 8px;
 }
 .live-dot {
   display: inline-block;
-  width: 7px;
-  height: 7px;
+  width: 8px;
+  height: 8px;
   border-radius: 50%;
-  background: #10b981;
+  background: var(--green);
   margin-right: 6px;
   animation: pulse 2.5s infinite;
   vertical-align: middle;
+  box-shadow: 0 0 14px rgba(86,199,143,0.8);
 }
 @keyframes pulse {
   0%, 100% { opacity: 1; }
@@ -95,60 +157,74 @@ body {
 }
 .cards-grid {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 14px;
-  margin-bottom: 20px;
+  grid-template-columns: 1.25fr repeat(4, 1fr);
+  gap: 12px;
+  margin-bottom: 16px;
 }
 @media (max-width: 900px) {
   .cards-grid { grid-template-columns: repeat(2, 1fr); }
 }
+@media (max-width: 560px) {
+  .cards-grid { grid-template-columns: 1fr; }
+}
 table { border-collapse: collapse; width: 100%; }
 th {
-  border-bottom: 1px solid #1f2937;
-  padding: 10px 14px;
+  border-bottom: 1px solid var(--line-bright);
+  padding: 12px 14px;
   text-align: left;
   font-size: 0.65rem;
-  letter-spacing: 0.12em;
+  letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: #4b5563;
-  font-weight: 500;
+  color: var(--muted);
+  font-weight: 700;
 }
 td {
-  border-bottom: 1px solid #111827;
-  padding: 10px 14px;
+  border-bottom: 1px solid var(--line);
+  padding: 13px 14px;
   font-size: 0.875rem;
-  color: #d1d5db;
+  color: #d9dedb;
 }
-tr:hover td { background: rgba(255,255,255,0.025); }
+tr:hover td { background: rgba(255,255,255,0.035); }
 .stop-pill {
-  background: rgba(99,102,241,0.12);
-  color: #818cf8;
-  border: 1px solid rgba(99,102,241,0.25);
-  border-radius: 6px;
-  padding: 2px 8px;
+  background: rgba(126,168,161,0.12);
+  color: #a8c5bf;
+  border: 1px solid rgba(126,168,161,0.28);
+  border-radius: 999px;
+  padding: 3px 9px;
   font-size: 0.72rem;
-  font-family: 'Courier New', monospace;
 }
 .research-grid {
   display: grid;
-  grid-template-columns: 1fr 220px;
+  grid-template-columns: minmax(0, 1fr) 260px;
   gap: 20px;
 }
 @media (max-width: 700px) {
   .research-grid { grid-template-columns: 1fr; }
 }
 .mkt-line {
-  padding: 7px 0;
-  border-bottom: 1px solid #1a2332;
-  font-size: 0.8rem;
-  color: #9ca3af;
-  line-height: 1.5;
+  padding: 10px 0 10px 18px;
+  border-bottom: 1px solid var(--line);
+  font-size: 0.84rem;
+  color: #c7cfcb;
+  line-height: 1.55;
+  position: relative;
+}
+.mkt-line::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 17px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--blue);
 }
 .mkt-line:last-child { border-bottom: none; }
 .decision-box {
-  background: #0a0e17;
-  border-radius: 10px;
-  padding: 20px;
+  background: rgba(8, 12, 13, 0.5);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 22px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -157,36 +233,81 @@ tr:hover td { background: rgba(255,255,255,0.025); }
   gap: 12px;
 }
 .chip {
-  background: #1a2332;
-  color: #9ca3af;
-  border-radius: 20px;
-  padding: 6px 14px;
+  background: rgba(255,255,255,0.045);
+  color: var(--muted);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 8px 14px;
   font-size: 0.78rem;
   white-space: nowrap;
   display: inline-block;
 }
-.chip-val { color: #f9fafb; font-family: 'Courier New', monospace; }
+.chip-val { color: var(--ink); font-family: "SFMono-Regular", "Cascadia Code", "Courier New", monospace; }
 .chips-row { display: flex; flex-wrap: wrap; gap: 10px; padding: 4px 0; }
 .header-bar {
   display: flex;
   justify-content: space-between;
+  align-items: flex-end;
+  gap: 18px;
+  margin-bottom: 18px;
+  padding: 22px 0 18px;
+  border-bottom: 1px solid var(--line-bright);
+}
+.brand-kicker {
+  color: var(--muted);
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+.brand-title {
+  font-size: clamp(1.75rem, 4vw, 3.45rem);
+  line-height: 0.95;
+  font-weight: 820;
+  letter-spacing: 0;
+  margin-top: 8px;
+}
+.mode-pill {
+  background: rgba(217,166,79,0.12);
+  color: #e7c17c;
+  border: 1px solid rgba(217,166,79,0.3);
+  border-radius: 999px;
+  padding: 5px 10px;
+  font-size: 0.68rem;
+  letter-spacing: 0.13em;
+  font-weight: 800;
+}
+.status-line {
+  color: var(--muted);
+  display: flex;
   align-items: center;
-  margin-bottom: 24px;
-  padding-bottom: 16px;
-  border-bottom: 1px solid #1f2937;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  gap: 8px;
+  font-size: 0.76rem;
 }
 .no-data {
   text-align: center;
-  padding: 28px 0;
-  color: #374151;
+  padding: 34px 0;
+  color: var(--dim);
   font-size: 0.85rem;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.table-scroll { overflow-x: auto; margin: 0 -4px; }
+.section-stack { display: grid; gap: 16px; }
+@media (max-width: 760px) {
+  .wrap { padding: 18px 14px; }
+  .header-bar { align-items: flex-start; flex-direction: column; }
+  .status-line { justify-content: flex-start; }
+  .card { padding: 16px; }
+  th, td { padding: 11px 10px; }
 }
 footer {
   text-align: center;
   font-size: 0.68rem;
-  color: #1f2937;
-  padding: 12px 0 4px;
+  color: var(--dim);
+  padding: 14px 0 4px;
 }
 """
 
@@ -375,7 +496,11 @@ def parse_weekly_review(path: Path):
 
 def pnl_class(v) -> str:
     try:
-        f = float(str(v).replace('%', '').replace('+', '').replace('$', '').replace(',', ''))
+        text = str(v).replace(',', '')
+        m = re.search(r'([+\-]?)\$?\d+(?:\.\d+)?', text)
+        if not m:
+            return 'neu'
+        f = float(m.group(0).replace('$', ''))
         if f > 0:  return 'pos'
         if f < 0:  return 'neg'
     except (ValueError, TypeError):
@@ -415,7 +540,7 @@ def build_positions(positions: list) -> str:
         uc = pnl_class(p.get('unreal_pnl', '0'))
         rows += (
             f'<tr>'
-            f'<td style="font-weight:700;color:#f9fafb;">{p["ticker"]}</td>'
+            f'<td class="ticker-cell">{p["ticker"]}</td>'
             f'<td class="num">{p["shares"]}</td>'
             f'<td class="num">{p["entry"]}</td>'
             f'<td class="num">{p["close"]}</td>'
@@ -425,13 +550,13 @@ def build_positions(positions: list) -> str:
             f'</tr>'
         )
     return (
-        '<table>'
+        '<div class="table-scroll"><table>'
         '<thead><tr>'
         '<th>Ticker</th><th>Shares</th><th>Entry</th><th>Close/Current</th>'
         '<th>Day Chg</th><th>Unrealized P&L</th><th>Stop</th>'
         '</tr></thead>'
         f'<tbody>{rows}</tbody>'
-        '</table>'
+        '</table></div>'
     )
 
 
@@ -478,23 +603,23 @@ def build_history(history: list) -> str:
         np_ = len(e.get('positions', []))
         rows += (
             f'<tr>'
-            f'<td style="color:#9ca3af;">{e.get("date","—")}</td>'
-            f'<td style="color:#4b5563;font-size:0.75rem;">{e.get("day_label","—")}</td>'
+            f'<td class="muted-cell">{e.get("date","—")}</td>'
+            f'<td class="quiet-cell">{e.get("day_label","—")}</td>'
             f'<td class="num">{eq}</td>'
             f'<td class="num {dc}">{dp}</td>'
             f'<td class="num {pc}">{pp}</td>'
-            f'<td class="num" style="color:#4b5563;">{cp} cash</td>'
-            f'<td style="color:#4b5563;font-size:0.75rem;">{np_} pos</td>'
+            f'<td class="num quiet-cell">{cp} cash</td>'
+            f'<td class="quiet-cell">{np_} pos</td>'
             f'</tr>'
         )
     return (
-        '<table>'
+        '<div class="table-scroll"><table>'
         '<thead><tr>'
         '<th>Date</th><th>Session</th><th>Equity</th><th>Day P&L</th>'
         '<th>Phase P&L</th><th>Cash</th><th>Positions</th>'
         '</tr></thead>'
         f'<tbody>{rows}</tbody>'
-        '</table>'
+        '</table></div>'
     )
 
 
@@ -574,68 +699,73 @@ def render_html(trade: dict, research, weekly, generated_at: str) -> str:
 
   <!-- Header -->
   <div class="header-bar">
-    <div style="display:flex;align-items:center;gap:14px;">
-      <span style="font-size:1.05rem;font-weight:700;letter-spacing:0.06em;">AUTONOMOUS TRADER</span>
-      <span style="background:#1a2332;color:#4b5563;border-radius:4px;padding:3px 9px;font-size:0.65rem;letter-spacing:0.1em;font-weight:600;">PAPER</span>
+    <div>
+      <div style="display:flex;align-items:center;gap:10px;">
+        <span class="brand-kicker">Trading Operations</span>
+        <span class="mode-pill">PAPER</span>
+      </div>
+      <div class="brand-title">Autonomous Trader</div>
     </div>
-    <div style="font-size:0.75rem;color:#4b5563;display:flex;align-items:center;gap:6px;">
+    <div class="status-line">
       <span class="live-dot"></span>
       <span>Updated {generated_at}</span>
-      <span style="color:#1f2937;">&middot;</span>
-      <span style="color:#374151;">auto-refreshes every 5 min</span>
+      <span style="color:var(--dim);">&middot;</span>
+      <span>auto-refreshes every 5 min</span>
     </div>
   </div>
 
   <!-- Metric cards -->
   <div class="cards-grid">
-    <div class="card accent-blue">
+    <div class="card metric-card accent-blue">
       <div class="label">Portfolio Equity</div>
-      <div class="num" style="font-size:1.55rem;font-weight:700;">{equity_fmt}</div>
+      <div class="num metric-value">{equity_fmt}</div>
     </div>
-    <div class="card accent-{day_acc}">
+    <div class="card metric-card accent-{day_acc}">
       <div class="label">Day P&amp;L</div>
-      <div class="num {day_cls}" style="font-size:1.4rem;font-weight:700;">{day_str}</div>
-      <div class="num {day_cls}" style="font-size:0.82rem;margin-top:5px;">{day_pct_fmt}</div>
+      <div class="num {day_cls} metric-value">{day_str}</div>
+      <div class="num {day_cls} metric-sub">{day_pct_fmt}</div>
     </div>
-    <div class="card accent-purple">
+    <div class="card metric-card accent-purple">
       <div class="label">Phase P&amp;L</div>
-      <div class="num {phase_cls}" style="font-size:1.4rem;font-weight:700;">{phase_str}</div>
-      <div class="num {phase_cls}" style="font-size:0.82rem;margin-top:5px;">{phase_pct_fmt}</div>
+      <div class="num {phase_cls} metric-value">{phase_str}</div>
+      <div class="num {phase_cls} metric-sub">{phase_pct_fmt}</div>
     </div>
-    <div class="card accent-{cash_acc}">
+    <div class="card metric-card accent-{cash_acc}">
       <div class="label">Cash</div>
-      <div class="num {cash_cls}" style="font-size:1.55rem;font-weight:700;">{cash_pct_fmt}</div>
-      <div style="font-size:0.72rem;color:#4b5563;margin-top:5px;">{cash_note}</div>
+      <div class="num {cash_cls} metric-value">{cash_pct_fmt}</div>
+      <div class="metric-sub">{cash_note}</div>
     </div>
-    <div class="card accent-gray">
+    <div class="card metric-card accent-gray">
       <div class="label">Open Positions</div>
-      <div class="num" style="font-size:1.55rem;font-weight:700;color:#f9fafb;">{pos_count}</div>
-      <div style="font-size:0.72rem;color:#4b5563;margin-top:5px;">of 6 max</div>
+      <div class="num metric-value">{pos_count}</div>
+      <div class="metric-sub">of 6 max</div>
     </div>
   </div>
 
+  <div class="section-stack">
   <!-- Positions -->
-  <div class="card" style="margin-bottom:16px;">
+  <div class="card">
     <div class="label">Open Positions</div>
     {pos_html}
   </div>
 
   <!-- Research -->
-  <div class="card" style="margin-bottom:16px;">
+  <div class="card">
     <div class="label">Pre-market Research</div>
     {research_html}
   </div>
 
   <!-- Trade Log -->
-  <div class="card" style="margin-bottom:16px;">
+  <div class="card">
     <div class="label">Recent Trade Log &middot; last {n_hist} sessions</div>
     {hist_html}
   </div>
 
   <!-- Weekly stats -->
-  <div class="card" style="margin-bottom:8px;">
+  <div class="card">
     <div class="label">{weekly_label}</div>
     {weekly_html}
+  </div>
   </div>
 
   <footer>Generated {generated_at} by tools/dashboard.py &middot; auto-deploys via Netlify on every git push</footer>
