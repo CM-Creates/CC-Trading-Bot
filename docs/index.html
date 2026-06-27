@@ -6,72 +6,134 @@
   <title>Trading Bot &middot; Dashboard</title>
   <meta http-equiv="refresh" content="300">
   <style>
+:root {
+  --ink: #f3efe5;
+  --muted: #8f9a9f;
+  --dim: #56636a;
+  --panel: rgba(18, 24, 27, 0.84);
+  --panel-strong: rgba(24, 33, 37, 0.92);
+  --line: rgba(180, 196, 193, 0.14);
+  --line-bright: rgba(207, 220, 216, 0.24);
+  --green: #56c78f;
+  --red: #e05d5d;
+  --amber: #d9a64f;
+  --blue: #7ea8a1;
+  --violet: #b59ad9;
+}
 * { box-sizing: border-box; margin: 0; padding: 0; }
 body {
-  background: #0a0e17;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-  color: #f9fafb;
+  background:
+    radial-gradient(circle at 16% -12%, rgba(126, 168, 161, 0.22), transparent 34rem),
+    radial-gradient(circle at 88% 6%, rgba(217, 166, 79, 0.12), transparent 28rem),
+    linear-gradient(135deg, #11171a 0%, #0d1113 42%, #161814 100%);
+  color: var(--ink);
+  font-family: "Aptos", "Segoe UI", "Helvetica Neue", sans-serif;
   min-height: 100vh;
 }
-.wrap { max-width: 1340px; margin: 0 auto; padding: 24px 20px; }
-.card {
-  background: #111827;
-  border: 1px solid #1f2937;
-  border-radius: 12px;
-  padding: 20px;
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background-image:
+    linear-gradient(rgba(255,255,255,0.025) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.025) 1px, transparent 1px);
+  background-size: 52px 52px;
+  mask-image: linear-gradient(to bottom, rgba(0,0,0,0.75), transparent 72%);
 }
-.accent-blue   { border-top: 2px solid #3b82f6; }
-.accent-green  { border-top: 2px solid #10b981; }
-.accent-red    { border-top: 2px solid #ef4444; }
-.accent-purple { border-top: 2px solid #8b5cf6; }
-.accent-amber  { border-top: 2px solid #f59e0b; }
-.accent-gray   { border-top: 2px solid #374151; }
-.badge-trade {
-  background: rgba(16,185,129,0.12);
-  color: #10b981;
-  border: 1px solid rgba(16,185,129,0.3);
+.wrap {
+  max-width: 1380px;
+  margin: 0 auto;
+  padding: 28px 22px 24px;
+  position: relative;
+}
+.card {
+  background: linear-gradient(180deg, var(--panel-strong), var(--panel));
+  border: 1px solid var(--line);
   border-radius: 8px;
-  padding: 8px 20px;
-  font-size: 1rem;
-  letter-spacing: 0.15em;
+  padding: 20px;
+  box-shadow: 0 18px 52px rgba(0, 0, 0, 0.22);
+  overflow: hidden;
+}
+.metric-card {
+  min-height: 138px;
+  position: relative;
+}
+.metric-card::after {
+  content: "";
+  position: absolute;
+  inset: auto 18px 16px 18px;
+  height: 3px;
+  border-radius: 999px;
+  background: var(--accent, var(--line-bright));
+  opacity: 0.78;
+}
+.accent-blue   { --accent: var(--blue); }
+.accent-green  { --accent: var(--green); }
+.accent-red    { --accent: var(--red); }
+.accent-purple { --accent: var(--violet); }
+.accent-amber  { --accent: var(--amber); }
+.accent-gray   { --accent: var(--line-bright); }
+.badge-trade {
+  background: rgba(86,199,143,0.12);
+  color: var(--green);
+  border: 1px solid rgba(86,199,143,0.35);
+  border-radius: 999px;
+  padding: 9px 22px;
+  font-size: 0.92rem;
+  letter-spacing: 0.18em;
   text-transform: uppercase;
   display: inline-block;
   font-weight: 700;
 }
 .badge-hold {
-  background: rgba(245,158,11,0.12);
-  color: #f59e0b;
-  border: 1px solid rgba(245,158,11,0.3);
-  border-radius: 8px;
-  padding: 8px 20px;
-  font-size: 1rem;
-  letter-spacing: 0.15em;
+  background: rgba(217,166,79,0.13);
+  color: var(--amber);
+  border: 1px solid rgba(217,166,79,0.34);
+  border-radius: 999px;
+  padding: 9px 22px;
+  font-size: 0.92rem;
+  letter-spacing: 0.18em;
   text-transform: uppercase;
   display: inline-block;
   font-weight: 700;
 }
-.num { font-family: 'Courier New', monospace; }
-.pos { color: #10b981; }
-.neg { color: #ef4444; }
-.neu { color: #6b7280; }
-.amb { color: #f59e0b; }
+.num { font-family: "SFMono-Regular", "Cascadia Code", "Courier New", monospace; font-variant-numeric: tabular-nums; }
+.pos { color: var(--green); }
+.neg { color: var(--red); }
+.neu { color: var(--muted); }
+.amb { color: var(--amber); }
+.ticker-cell { font-weight: 800; color: var(--ink); }
+.muted-cell { color: #a7b1ad; }
+.quiet-cell { color: var(--dim); font-size: 0.75rem; }
 .label {
-  font-size: 0.65rem;
-  color: #4b5563;
+  font-size: 0.68rem;
+  color: var(--muted);
   text-transform: uppercase;
-  letter-spacing: 0.12em;
-  font-weight: 500;
+  letter-spacing: 0.16em;
+  font-weight: 700;
   margin-bottom: 12px;
+}
+.metric-value {
+  font-size: clamp(1.55rem, 2.4vw, 2.15rem);
+  font-weight: 760;
+  letter-spacing: 0;
+}
+.metric-sub {
+  color: var(--dim);
+  font-size: 0.76rem;
+  margin-top: 8px;
 }
 .live-dot {
   display: inline-block;
-  width: 7px;
-  height: 7px;
+  width: 8px;
+  height: 8px;
   border-radius: 50%;
-  background: #10b981;
+  background: var(--green);
   margin-right: 6px;
   animation: pulse 2.5s infinite;
   vertical-align: middle;
+  box-shadow: 0 0 14px rgba(86,199,143,0.8);
 }
 @keyframes pulse {
   0%, 100% { opacity: 1; }
@@ -79,60 +141,74 @@ body {
 }
 .cards-grid {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 14px;
-  margin-bottom: 20px;
+  grid-template-columns: 1.25fr repeat(4, 1fr);
+  gap: 12px;
+  margin-bottom: 16px;
 }
 @media (max-width: 900px) {
   .cards-grid { grid-template-columns: repeat(2, 1fr); }
 }
+@media (max-width: 560px) {
+  .cards-grid { grid-template-columns: 1fr; }
+}
 table { border-collapse: collapse; width: 100%; }
 th {
-  border-bottom: 1px solid #1f2937;
-  padding: 10px 14px;
+  border-bottom: 1px solid var(--line-bright);
+  padding: 12px 14px;
   text-align: left;
   font-size: 0.65rem;
-  letter-spacing: 0.12em;
+  letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: #4b5563;
-  font-weight: 500;
+  color: var(--muted);
+  font-weight: 700;
 }
 td {
-  border-bottom: 1px solid #111827;
-  padding: 10px 14px;
+  border-bottom: 1px solid var(--line);
+  padding: 13px 14px;
   font-size: 0.875rem;
-  color: #d1d5db;
+  color: #d9dedb;
 }
-tr:hover td { background: rgba(255,255,255,0.025); }
+tr:hover td { background: rgba(255,255,255,0.035); }
 .stop-pill {
-  background: rgba(99,102,241,0.12);
-  color: #818cf8;
-  border: 1px solid rgba(99,102,241,0.25);
-  border-radius: 6px;
-  padding: 2px 8px;
+  background: rgba(126,168,161,0.12);
+  color: #a8c5bf;
+  border: 1px solid rgba(126,168,161,0.28);
+  border-radius: 999px;
+  padding: 3px 9px;
   font-size: 0.72rem;
-  font-family: 'Courier New', monospace;
 }
 .research-grid {
   display: grid;
-  grid-template-columns: 1fr 220px;
+  grid-template-columns: minmax(0, 1fr) 260px;
   gap: 20px;
 }
 @media (max-width: 700px) {
   .research-grid { grid-template-columns: 1fr; }
 }
 .mkt-line {
-  padding: 7px 0;
-  border-bottom: 1px solid #1a2332;
-  font-size: 0.8rem;
-  color: #9ca3af;
-  line-height: 1.5;
+  padding: 10px 0 10px 18px;
+  border-bottom: 1px solid var(--line);
+  font-size: 0.84rem;
+  color: #c7cfcb;
+  line-height: 1.55;
+  position: relative;
+}
+.mkt-line::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 17px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--blue);
 }
 .mkt-line:last-child { border-bottom: none; }
 .decision-box {
-  background: #0a0e17;
-  border-radius: 10px;
-  padding: 20px;
+  background: rgba(8, 12, 13, 0.5);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 22px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -141,36 +217,81 @@ tr:hover td { background: rgba(255,255,255,0.025); }
   gap: 12px;
 }
 .chip {
-  background: #1a2332;
-  color: #9ca3af;
-  border-radius: 20px;
-  padding: 6px 14px;
+  background: rgba(255,255,255,0.045);
+  color: var(--muted);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 8px 14px;
   font-size: 0.78rem;
   white-space: nowrap;
   display: inline-block;
 }
-.chip-val { color: #f9fafb; font-family: 'Courier New', monospace; }
+.chip-val { color: var(--ink); font-family: "SFMono-Regular", "Cascadia Code", "Courier New", monospace; }
 .chips-row { display: flex; flex-wrap: wrap; gap: 10px; padding: 4px 0; }
 .header-bar {
   display: flex;
   justify-content: space-between;
+  align-items: flex-end;
+  gap: 18px;
+  margin-bottom: 18px;
+  padding: 22px 0 18px;
+  border-bottom: 1px solid var(--line-bright);
+}
+.brand-kicker {
+  color: var(--muted);
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+.brand-title {
+  font-size: clamp(1.75rem, 4vw, 3.45rem);
+  line-height: 0.95;
+  font-weight: 820;
+  letter-spacing: 0;
+  margin-top: 8px;
+}
+.mode-pill {
+  background: rgba(217,166,79,0.12);
+  color: #e7c17c;
+  border: 1px solid rgba(217,166,79,0.3);
+  border-radius: 999px;
+  padding: 5px 10px;
+  font-size: 0.68rem;
+  letter-spacing: 0.13em;
+  font-weight: 800;
+}
+.status-line {
+  color: var(--muted);
+  display: flex;
   align-items: center;
-  margin-bottom: 24px;
-  padding-bottom: 16px;
-  border-bottom: 1px solid #1f2937;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  gap: 8px;
+  font-size: 0.76rem;
 }
 .no-data {
   text-align: center;
-  padding: 28px 0;
-  color: #374151;
+  padding: 34px 0;
+  color: var(--dim);
   font-size: 0.85rem;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.table-scroll { overflow-x: auto; margin: 0 -4px; }
+.section-stack { display: grid; gap: 16px; }
+@media (max-width: 760px) {
+  .wrap { padding: 18px 14px; }
+  .header-bar { align-items: flex-start; flex-direction: column; }
+  .status-line { justify-content: flex-start; }
+  .card { padding: 16px; }
+  th, td { padding: 11px 10px; }
 }
 footer {
   text-align: center;
   font-size: 0.68rem;
-  color: #1f2937;
-  padding: 12px 0 4px;
+  color: var(--dim);
+  padding: 14px 0 4px;
 }
 </style>
 </head>
@@ -179,71 +300,76 @@ footer {
 
   <!-- Header -->
   <div class="header-bar">
-    <div style="display:flex;align-items:center;gap:14px;">
-      <span style="font-size:1.05rem;font-weight:700;letter-spacing:0.06em;">AUTONOMOUS TRADER</span>
-      <span style="background:#1a2332;color:#4b5563;border-radius:4px;padding:3px 9px;font-size:0.65rem;letter-spacing:0.1em;font-weight:600;">PAPER</span>
+    <div>
+      <div style="display:flex;align-items:center;gap:10px;">
+        <span class="brand-kicker">Trading Operations</span>
+        <span class="mode-pill">PAPER</span>
+      </div>
+      <div class="brand-title">Autonomous Trader</div>
     </div>
-    <div style="font-size:0.75rem;color:#4b5563;display:flex;align-items:center;gap:6px;">
+    <div class="status-line">
       <span class="live-dot"></span>
-      <span>Updated 2026-06-24 00:13 CT</span>
-      <span style="color:#1f2937;">&middot;</span>
-      <span style="color:#374151;">auto-refreshes every 5 min</span>
+      <span>Updated 2026-06-27 13:48 CT</span>
+      <span style="color:var(--dim);">&middot;</span>
+      <span>auto-refreshes every 5 min</span>
     </div>
   </div>
 
   <!-- Metric cards -->
   <div class="cards-grid">
-    <div class="card accent-blue">
+    <div class="card metric-card accent-blue">
       <div class="label">Portfolio Equity</div>
-      <div class="num" style="font-size:1.55rem;font-weight:700;">$100,000.00</div>
+      <div class="num metric-value">$99,823.78</div>
     </div>
-    <div class="card accent-gray">
+    <div class="card metric-card accent-red">
       <div class="label">Day P&amp;L</div>
-      <div class="num neu" style="font-size:1.4rem;font-weight:700;">$0.00</div>
-      <div class="num neu" style="font-size:0.82rem;margin-top:5px;">0.00%</div>
+      <div class="num neg metric-value">-$176.22</div>
+      <div class="num neg metric-sub">-0.18%</div>
     </div>
-    <div class="card accent-purple">
+    <div class="card metric-card accent-purple">
       <div class="label">Phase P&amp;L</div>
-      <div class="num neu" style="font-size:1.4rem;font-weight:700;">$0.00</div>
-      <div class="num neu" style="font-size:0.82rem;margin-top:5px;">0.00%</div>
+      <div class="num neg metric-value">-$176.22</div>
+      <div class="num neg metric-sub">-0.18%</div>
     </div>
-    <div class="card accent-amber">
+    <div class="card metric-card accent-amber">
       <div class="label">Cash</div>
-      <div class="num amb" style="font-size:1.55rem;font-weight:700;">100.0%</div>
-      <div style="font-size:0.72rem;color:#4b5563;margin-top:5px;">idle ↑</div>
+      <div class="num amb metric-value">85.2%</div>
+      <div class="metric-sub">idle ↑</div>
     </div>
-    <div class="card accent-gray">
+    <div class="card metric-card accent-gray">
       <div class="label">Open Positions</div>
-      <div class="num" style="font-size:1.55rem;font-weight:700;color:#f9fafb;">0</div>
-      <div style="font-size:0.72rem;color:#4b5563;margin-top:5px;">of 6 max</div>
+      <div class="num metric-value">1</div>
+      <div class="metric-sub">of 6 max</div>
     </div>
   </div>
 
+  <div class="section-stack">
   <!-- Positions -->
-  <div class="card" style="margin-bottom:16px;">
+  <div class="card">
     <div class="label">Open Positions</div>
-    <div class="no-data">NO OPEN POSITIONS</div>
+    <div class="table-scroll"><table><thead><tr><th>Ticker</th><th>Shares</th><th>Entry</th><th>Close/Current</th><th>Day Chg</th><th>Unrealized P&L</th><th>Stop</th></tr></thead><tbody><tr><td class="ticker-cell">PG</td><td class="num">99</td><td class="num">$150.72</td><td class="num">$148.94</td><td class="num pos">+0.30%</td><td class="num neg">-$176.22 (-1.18%)</td><td><span class="stop-pill">$135.79</span></td></tr></tbody></table></div>
   </div>
 
   <!-- Research -->
-  <div class="card" style="margin-bottom:16px;">
+  <div class="card">
     <div class="label">Pre-market Research</div>
-    <div class="research-grid"><div><div class="label">Market Context &middot; 2026-06-23</div><div class="mkt-line">WTI: $73.77 (-2.74%) | Brent: $77.80 (-3.44%) — oil selling off on Strait of Hormuz headlines</div><div class="mkt-line">S&P 500 futures: 7,549.50 (-0.28%); Dow +0.27%, Nasdaq ~flat</div><div class="mkt-line">Gold: $4,188 (+0.76%) — safe-haven bid</div><div class="mkt-line">Catalysts: Alphabet -5% (DeepMind exec departure), tech/software weak; PCE inflation + Fed speak Wed</div><div class="mkt-line">MU earnings Wed June 24 (binary event)</div></div><div class="decision-box"><div class="label">Today's Decision</div><span class="badge-hold">HOLD</span><div style="font-size:0.72rem;color:#6b7280;line-height:1.55;">HOLD — zero trades.</div></div></div>
+    <div class="research-grid"><div><div class="label">Market Context &middot; 2026-06-26</div><div class="mkt-line">WTI / Brent: WTI ~$70.44 (range $70.02–$71.82) | Brent not cleanly quoted, ~$73–74 implied (WTI premium). Oil still soft on US–Iran de-escalation; Brent down ~21% on the month. Energy leads YTD but no upside catalyst today.</div><div class="mkt-line">S&P 500 futures: ~7,440–7,448 (roughly flat to +0.27%); ES Sep +0.78% on upbeat earnings. Mixed/neutral tape.</div><div class="mkt-line">VIX: ~20.26, UP +7.25% on the day (prev close 18.89). Rising fear — favors defensives over chasing risk.</div><div class="mkt-line">Today's catalysts: AI-capex supercycle (NVDA #1 buy on AI demand; MSFT historic June rout on spend concerns); EM earnings strength (TSMC/Samsung/SK Hynix). NKE reported 6/25 — post-catalyst readthrough.</div><div class="mkt-line">Earnings before open: DRI (Darden), SNX (TD Synnex), AYI (Acuity), CMC (Commercial Metals), WGO (Winnebago), NNOX. None held; none in watchlist. No mega-cap movers.</div><div class="mkt-line">Economic calendar: NO major data today (no CPI/PPI/FOMC/jobs). Last CPI 6/10 (4.2% YoY, hot). FOMC 6/17 held 3.50–3.75%. Next CPI Jul 14. Market now leaning toward a possible hike by year-end — hawkish drift.</div><div class="mkt-line">Sector momentum YTD: Energy +22–26% (leader), Financials, Consumer Discretionary strong; Consumer Staples +10% and Industrials +10–12% steady defensives. Tech in lagging/consolidating quadrant despite strong 12-mo. Defensive/cyclical leadership intact.</div></div><div class="decision-box"><div class="label">Today's Decision</div><span class="badge-hold">HOLD</span><div style="font-size:0.72rem;color:#6b7280;line-height:1.55;">HOLD pre-market — no orders before the open (per strategy; pre-market always defers execution to the market-open run).</div></div></div>
   </div>
 
   <!-- Trade Log -->
-  <div class="card" style="margin-bottom:16px;">
-    <div class="label">Recent Trade Log &middot; last 2 sessions</div>
-    <table><thead><tr><th>Date</th><th>Session</th><th>Equity</th><th>Day P&L</th><th>Phase P&L</th><th>Cash</th><th>Positions</th></tr></thead><tbody><tr><td style="color:#9ca3af;">Jun 23</td><td style="color:#4b5563;font-size:0.75rem;">Day 2, Tuesday</td><td class="num">$100,000.00</td><td class="num neu">0.00%</td><td class="num neu">0.00%</td><td class="num" style="color:#4b5563;">100% cash</td><td style="color:#4b5563;font-size:0.75rem;">0 pos</td></tr><tr><td style="color:#9ca3af;">Day 0</td><td style="color:#4b5563;font-size:0.75rem;">pre-launch baseline</td><td class="num">$100,000.00</td><td class="num neu">0.00%</td><td class="num neu">0.00%</td><td class="num" style="color:#4b5563;">100% cash</td><td style="color:#4b5563;font-size:0.75rem;">0 pos</td></tr></tbody></table>
+  <div class="card">
+    <div class="label">Recent Trade Log &middot; last 5 sessions</div>
+    <div class="table-scroll"><table><thead><tr><th>Date</th><th>Session</th><th>Equity</th><th>Day P&L</th><th>Phase P&L</th><th>Cash</th><th>Positions</th></tr></thead><tbody><tr><td class="muted-cell">Jun 26</td><td class="quiet-cell">Day 5, Friday</td><td class="num">$99,823.78</td><td class="num neg">-0.18%</td><td class="num neg">-0.18%</td><td class="num quiet-cell">85% cash</td><td class="quiet-cell">1 pos</td></tr><tr><td class="muted-cell">Jun 25</td><td class="quiet-cell">Day 4, Thursday</td><td class="num">$100,000.00</td><td class="num neu">0.00%</td><td class="num neu">0.00%</td><td class="num quiet-cell">100% cash</td><td class="quiet-cell">0 pos</td></tr><tr><td class="muted-cell">Jun 24</td><td class="quiet-cell">Day 3, Wednesday</td><td class="num">$100,000.00</td><td class="num neu">0.00%</td><td class="num neu">0.00%</td><td class="num quiet-cell">100% cash</td><td class="quiet-cell">0 pos</td></tr><tr><td class="muted-cell">Jun 23</td><td class="quiet-cell">Day 2, Tuesday</td><td class="num">$100,000.00</td><td class="num neu">0.00%</td><td class="num neu">0.00%</td><td class="num quiet-cell">100% cash</td><td class="quiet-cell">0 pos</td></tr><tr><td class="muted-cell">Day 0</td><td class="quiet-cell">pre-launch baseline</td><td class="num">$100,000.00</td><td class="num neu">0.00%</td><td class="num neu">0.00%</td><td class="num quiet-cell">100% cash</td><td class="quiet-cell">0 pos</td></tr></tbody></table></div>
   </div>
 
   <!-- Weekly stats -->
-  <div class="card" style="margin-bottom:8px;">
-    <div class="label">Weekly Stats</div>
-    <div class="no-data" style="text-align:left;">No weekly review yet — first review runs Friday at 4 PM CT.</div>
+  <div class="card">
+    <div class="label">Week ending 2026-06-26</div>
+    <div class="chips-row"><span class="chip">Week Return: <span class="chip-val">-$145.53 (-0.15%)</span></span><span class="chip">vs S&P: <span class="chip-val">—</span></span><span class="chip">Win Rate: <span class="chip-val">N/A (no closed trades)</span></span><span class="chip">Profit Factor: <span class="chip-val">0.00 (no closed trades)</span></span><span class="chip">Grade: <span style="color:#f59e0b;font-weight:700;">C</span></span></div>
+  </div>
   </div>
 
-  <footer>Generated 2026-06-24 00:13 CT by tools/dashboard.py &middot; auto-deploys via Netlify on every git push</footer>
+  <footer>Generated 2026-06-27 13:48 CT by tools/dashboard.py &middot; auto-deploys via Netlify on every git push</footer>
 
 </div>
 </body>
