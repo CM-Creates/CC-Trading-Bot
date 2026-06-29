@@ -73,3 +73,11 @@ Research planned a starter deployment, but no candidate passes the buy-side gate
 | PG     | 99     | $150.72 | $148.94 | +0.30%  | -$176.22 (-1.18%)| $135.79  |
 
 **Notes:** First capital deployment after four flat sessions — bought 99 shares of PG (Consumer Staples) at $150.72, a defensive-rotation play aligned with VIX climbing to ~20. A 10% GTC trailing stop is live (stop $135.79, HWM $150.88). Position is marginally underwater (-1.18%) on entry slippage — PG closed at $148.94, though it was actually +0.30% on the day vs prior close, meaning we bought near the intraday high. Portfolio ends at $99,823.78, down $176.22 on the day and for the phase, with 85.2% cash still on the sidelines and ~15% deployed (below the 75-85% target — room to add 3-4 more positions). One trade today; weekly count 1/3. The structural blocker from earlier in the week (no tradeable individual stock with clean feed + catalyst) is resolved: PG had a clean tight spread and a documented thesis. Plan for next week: monitor PG against its trailing stop, and pre-market research should source 1-2 additional individual large-cap names in momentum sectors (Industrials/Staples) to move deployment toward the 75-85% target. Weekly review also due today.
+
+---
+
+## 2026-06-29 — Trade: BUY KO
+- Shares: 35 (partial fill; ordered 175, sandbox liquidity filled only 35, remainder canceled) | Entry: $83.10 | Stop: $74.66 (-10% trailing) | Target: $99.98 (2:1 R:R)
+- Thesis: Consumer Staples leadership (+15.6% YTD, Leading sector) + defensive rotation on calm risk-on tape; only momentum-aligned name with a clean tradeable feed (0.06% spread) — Industrials/Materials candidates all showed broken 7-11% sandbox spreads (tradeable:false).
+- Stop order ID: 7983efa6-7794-4ea2-b314-306dca37a790
+- Note: Market-day buy only partially filled (35/175 @ $83.10) over ~1.5 min due to poor paper-sandbox liquidity at the open; canceled unfilled 140 to cap position and protect with stop. Position is small (~$2.9k); deployment still ~17%. Consider re-attempting a KO/Industrials add at a more liquid window (mid-morning) later this week.
