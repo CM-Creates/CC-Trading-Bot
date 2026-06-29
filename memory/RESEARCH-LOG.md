@@ -258,3 +258,35 @@ TRADE or HOLD (default HOLD if no clear edge)
 
 ### Decision
 **HOLD pre-market — no orders before the open (per strategy; pre-market always defers execution to the market-open run).** Tape is neutral-to-nervous (VIX +7%), no macro data, no held positions. If the market-open run wants to finally deploy, the cleanest fit today is a single staples starter (PG or KO) on a stable open with a tight spread and a 10% trailing stop — defensives align with rising VIX and satisfy "follow sector momentum" without ETF conflict. Otherwise patience remains acceptable. Verify spreads tighten before any order.
+
+## 2026-06-29 — Pre-market Research
+
+### Account
+- Equity: $99,809.91 | Cash: $85,078.71 (85.2%) | Buying power: $381,562.20 | Daytrade count: 0
+- Positions: 1 (PG) | Weekly trades: 0/3 (new week, count reset)
+
+### Market Context
+- WTI / Brent: WTI ~$69.85 (+0.90%) | Brent ~$72.83 (+0.73%). Oil firming off lows but Brent still -23% on the month. No supply-disruption premium after US–Iran de-escalation.
+- S&P 500 futures: ~7,451 (+0.5% to +0.67%) — risk-on, reversing last week's ~2% drop.
+- VIX: ~18.41 (prev close 18.60, ~flat/slightly lower). Sub-20 = calm, stable tape.
+- Today's catalysts: US–Iran peace agreement halts tit-for-tat attacks → broad risk-on lift across S&P/Nasdaq/Dow. "Blue Sky" equity optimism, tempered by sticky 4.2% CPI and a live Fed (possible hike by Sep/Jul).
+- Earnings before open: DRI, SNX, AYI, CMC, WGO, NNOX — none held, none in watchlist. Week ahead: NKE, AVAV, STZ.
+- Economic calendar: Light Monday (jobless claims only). Tue: JOLTS + CB Consumer Confidence (2pm) + Case-Shiller. Fri Jul 3: June Jobs Report (8:30am) — holiday-shortened week. CPI Jul 14, PPI Jul 15, FOMC Jul 28–29.
+- Sector momentum YTD: Energy +23.3%, Materials +17.4%, Consumer Staples +15.6%, Industrials +14.1% (all Leading). Tech -3.3% and Financials -6.9% lag. Rotation into hard-asset/defensive sectors intact; 8 of 11 sectors green.
+
+### Held Positions News
+- PG: Trading steady ~$148.6–149.0, no adverse news. +5.4% past week, +4.6% YTD on strong consumer demand, brand expansion (Native Sensitive Series), ~$3.03B quarterly FCF. Bullish consensus, median PT $164 (~+8.7%), 14 Buy / 11 Hold / 0 Sell. Thesis (defensive-rotation + staples leadership) fully intact. Unrealized -1.27%; 10% trailing stop live at $135.79 (HWM $150.88).
+
+### Trade Ideas
+1. PG (Consumer Staples) — HOLD. Thesis intact, staples +15.6% YTD leader, analyst PT $164. No action; let trailing stop work.
+2. Add a 2nd momentum-aligned individual large-cap in a Leading sector to move deployment toward 75–85% (currently ~15%). Best fits: Industrials (+14.1%) or Materials (+17.4%) single name with clean tight spread + documented catalyst. Energy leads YTD but oil has no upside catalyst today → defer. Verify quote integrity at open before any order.
+3. No semis/Tech chase — sector lagging (-3.3%), no catalyst today.
+
+### Risk Factors
+- Sticky inflation (4.2% CPI) + live Fed (Warsh removed forward guidance) = July hike risk if mid-July CPI/PPI surprise hot. Valuation pressure on growth.
+- Holiday-shortened week; Fri Jul 3 jobs report can whipsaw — size any new entry conservatively.
+- Capital ~85% idle vs 75–85% deployed target. Single position (PG) under-diversified. Pre-market sources the idea; market-open run should execute if a clean candidate confirms.
+- Oil firming but no upside catalyst — Energy entries still premature.
+
+### Decision
+**HOLD pre-market — no orders before the open (pre-market always defers execution to the market-open run).** PG thesis intact, no held-position stress, calm risk-on tape (VIX <19, futures +0.5%). Market-open run should: (1) keep PG with its live 10% trailing stop; (2) evaluate adding ONE momentum-aligned individual large-cap in Industrials/Materials/Staples on a stable open with a tight spread, 10% trailing stop, ≤20% sizing, subject to the buy-side gate — to begin closing the deployment gap. Patience on Energy until oil shows an upside catalyst.
