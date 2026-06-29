@@ -81,3 +81,15 @@ Research planned a starter deployment, but no candidate passes the buy-side gate
 - Thesis: Consumer Staples leadership (+15.6% YTD, Leading sector) + defensive rotation on calm risk-on tape; only momentum-aligned name with a clean tradeable feed (0.06% spread) — Industrials/Materials candidates all showed broken 7-11% sandbox spreads (tradeable:false).
 - Stop order ID: 7983efa6-7794-4ea2-b314-306dca37a790
 - Note: Market-day buy only partially filled (35/175 @ $83.10) over ~1.5 min due to poor paper-sandbox liquidity at the open; canceled unfilled 140 to cap position and protect with stop. Position is small (~$2.9k); deployment still ~17%. Consider re-attempting a KO/Industrials add at a more liquid window (mid-morning) later this week.
+
+---
+
+### Jun 29 — EOD Snapshot (Day 6, Monday)
+**Portfolio:** $99,753.57 | **Cash:** $82,170.21 (82.4%) | **Day P&L:** -$70.21 (-0.07%) | **Phase P&L:** -$246.43 (-0.25%)
+
+| Ticker | Shares | Entry   | Close   | Day Chg | Unrealized P&L    | Stop     |
+|--------|--------|---------|---------|---------|-------------------|----------|
+| PG     | 99     | $150.72 | $148.39 | -0.42%  | -$230.67 (-1.55%) | $135.79  |
+| KO     | 35     | $83.10  | $82.65  | +0.02%  | -$15.75 (-0.54%)  | $75.26   |
+
+**Notes:** Quiet, flat-to-slightly-down session. Added a small starter in KO this morning (35 of 175 ordered — poor paper-sandbox liquidity at the open filled only 35 @ $83.10, remainder canceled; 10% GTC trailing stop live at $75.26, HWM $83.62). Both positions essentially unchanged on the day: PG -0.42%, KO +0.02%. Portfolio ends at $99,753.57, down $70.21 on the day and -$246.43 (-0.25%) for the phase. Deployment is now ~17.6% ($17.6k of equity) across PG and KO — still well below the 75-85% target, with 82.4% cash idle. Both staples names are modestly underwater on entry (PG -1.55%, KO -0.54%) but well clear of their trailing stops. One trade today (KO); weekly count 1/3. Plan for tomorrow: consider re-attempting a KO add (or an Industrials name) at a more liquid mid-morning window to push deployment toward target, and continue sourcing 1-2 additional individual large-cap momentum names. Patience is fine but capital is under-deployed.
