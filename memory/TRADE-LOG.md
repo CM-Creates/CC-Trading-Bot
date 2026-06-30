@@ -93,3 +93,13 @@ Research planned a starter deployment, but no candidate passes the buy-side gate
 | KO     | 35     | $83.10  | $82.65  | +0.02%  | -$15.75 (-0.54%)  | $75.26   |
 
 **Notes:** Quiet, flat-to-slightly-down session. Added a small starter in KO this morning (35 of 175 ordered — poor paper-sandbox liquidity at the open filled only 35 @ $83.10, remainder canceled; 10% GTC trailing stop live at $75.26, HWM $83.62). Both positions essentially unchanged on the day: PG -0.42%, KO +0.02%. Portfolio ends at $99,753.57, down $70.21 on the day and -$246.43 (-0.25%) for the phase. Deployment is now ~17.6% ($17.6k of equity) across PG and KO — still well below the 75-85% target, with 82.4% cash idle. Both staples names are modestly underwater on entry (PG -1.55%, KO -0.54%) but well clear of their trailing stops. One trade today (KO); weekly count 1/3. Plan for tomorrow: consider re-attempting a KO add (or an Industrials name) at a more liquid mid-morning window to push deployment toward target, and continue sourcing 1-2 additional individual large-cap momentum names. Patience is fine but capital is under-deployed.
+
+## 2026-06-30 — Market-Open: NO TRADES (gate failure)
+**Portfolio:** $99,499.47 | **Cash:** $82,170.20 (82.6%) | Positions: 2 (PG, KO) | Daytrade count: 0 | Weekly trades: 1/3
+
+- **PG** -3.08% / **KO** -1.47% — both held, well clear of live 10% trailing stops (PG $135.79, KO $75.26). No sell triggers.
+- Research planned ONE diversifying add in Industrials/Materials, but no candidate clears the buy-side gate at the open:
+  - **CAT** — only tradeable name (spread 0.55%, tradeable:true), BUT no stock-specific catalyst documented in today's RESEARCH-LOG → catalyst gate fails. SKIP.
+  - **LIN** (spread 6.3%) / **ETN** (spread 7.7%) — wide sandbox spreads, tradeable:false → SKIP.
+  - **PG** (6.6%) / **KO** (2.6%) own quotes also wide at open → cannot add cleanly either.
+- **Decision: HOLD — deployment stays ~17.4% vs 75–85% target.** Recurring pattern: pre-market sources a sector-level idea (Industrials/Materials momentum) but no specific named stock with a documented catalyst, and the open sandbox spreads are wide on most large-caps. To advance deployment, pre-market must name a specific tradeable individual stock + catalyst, and/or the market-open run should re-quote at a more liquid mid-morning window. Patience held per the gate; no rule violated.
