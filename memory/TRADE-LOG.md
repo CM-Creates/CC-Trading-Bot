@@ -103,3 +103,15 @@ Research planned a starter deployment, but no candidate passes the buy-side gate
   - **LIN** (spread 6.3%) / **ETN** (spread 7.7%) — wide sandbox spreads, tradeable:false → SKIP.
   - **PG** (6.6%) / **KO** (2.6%) own quotes also wide at open → cannot add cleanly either.
 - **Decision: HOLD — deployment stays ~17.4% vs 75–85% target.** Recurring pattern: pre-market sources a sector-level idea (Industrials/Materials momentum) but no specific named stock with a documented catalyst, and the open sandbox spreads are wide on most large-caps. To advance deployment, pre-market must name a specific tradeable individual stock + catalyst, and/or the market-open run should re-quote at a more liquid mid-morning window. Patience held per the gate; no rule violated.
+
+---
+
+### Jun 30 — EOD Snapshot (Day 7, Tuesday)
+**Portfolio:** $99,513.78 | **Cash:** $82,170.20 (82.6%) | **Day P&L:** -$239.79 (-0.24%) | **Phase P&L:** -$486.22 (-0.49%)
+
+| Ticker | Shares | Entry   | Close   | Day Chg | Unrealized P&L    | Stop     |
+|--------|--------|---------|---------|---------|-------------------|----------|
+| PG     | 99     | $150.72 | $146.47 | -1.33%  | -$420.75 (-2.82%) | $135.79  |
+| KO     | 35     | $83.10  | $81.23  | -1.72%  | -$65.45 (-2.25%)  | $75.26   |
+
+**Notes:** Down day across both staples names — PG -1.33% to $146.47 and KO -1.72% to $81.23 — dragging the portfolio to $99,513.78, off $239.79 (-0.24%) on the day and -$486.22 (-0.49%) for the phase. Both positions remain well clear of their live 10% GTC trailing stops (PG $135.79 / HWM $150.88; KO $75.26 / HWM $83.62): PG now -2.82% and KO -2.25% from entry, both inside the -7% manual-cut threshold so no action triggered. Market-open run today placed NO TRADES (gate failure): pre-market sourced an Industrials/Materials diversifier idea but no specific named stock with a documented catalyst cleared the buy-side gate (CAT was the only tradeable name but lacked a catalyst; LIN/ETN had wide 6-8% sandbox spreads). Deployment stays ~17.4% vs the 75-85% target with 82.6% cash idle. Weekly count 1/3. Plan for tomorrow: monitor the two staples positions vs stops; the recurring blocker is the pipeline producing sector-level ideas rather than a specific tradeable individual stock + catalyst — pre-market needs to name one, and the open run should consider a more liquid mid-morning re-quote to push deployment toward target.
