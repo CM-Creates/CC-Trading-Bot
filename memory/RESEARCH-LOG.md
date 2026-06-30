@@ -290,3 +290,37 @@ TRADE or HOLD (default HOLD if no clear edge)
 
 ### Decision
 **HOLD pre-market — no orders before the open (pre-market always defers execution to the market-open run).** PG thesis intact, no held-position stress, calm risk-on tape (VIX <19, futures +0.5%). Market-open run should: (1) keep PG with its live 10% trailing stop; (2) evaluate adding ONE momentum-aligned individual large-cap in Industrials/Materials/Staples on a stable open with a tight spread, 10% trailing stop, ≤20% sizing, subject to the buy-side gate — to begin closing the deployment gap. Patience on Energy until oil shows an upside catalyst.
+
+## 2026-06-30 — Pre-market Research
+
+### Account
+- Equity: $99,741.80 | Cash: $82,170.20 (82.4%) | Buying power: $377,881.28 | Daytrade count: 0
+- Positions: 2 (PG, KO) | Deployment ~17.6% | Weekly trades: 1/3 (KO on Jun 29)
+
+### Market Context
+- WTI / Brent: WTI ~$70.61 (~flat, -0.2%) | Brent ~$73.86. Oil firming off June lows, no supply-disruption premium post US–Iran de-escalation. Still no fresh upside catalyst.
+- S&P 500 futures: E-mini ~7,497 (-0.04%, flat). Holding the 7,500 level; calm.
+- VIX: ~17.66 (prev close 18.41, -4%). Sub-18 = calm, stable, risk-on tape.
+- Today's catalysts: AI investment momentum (semis/memory, ServiceNow/Salesforce strength) remains dominant driver; US–Iran resolution "Blue Sky" scenario (JPM raised 2026 SPX target to 7,800). Data: Case-Shiller home prices 9:00am, Chicago PMI 9:45am, FHFA 10:00am — all second-tier.
+- Earnings before open: None noteworthy US pre-market. NKE, STZ, PRGS all report AMC today (none held). 
+- Economic calendar: Light. CPI/PPI/FOMC all past (CPI 4.2% Jun 10, Fed held 3.50–3.75% Jun 17). Next headline = June Jobs Report Fri Jul 3 (holiday-shortened week, thin volume → whipsaw risk). June CPI Jul 14, FOMC Jul 28–29.
+- Sector momentum YTD: Energy +23.3%, Materials +17.4%, Consumer Staples +15.6%, Industrials +14.1% — all Leading. Tech -3.3%, Cons. Disc. -3.8%, Financials -6.9% lag. Hard-asset/defensive rotation intact; 8 of 11 sectors green.
+
+### Held Positions News
+- PG: ~$148.25, steady (-0.14% intraday). Q3 FY26 beat (EPS $1.59, rev $21.2B); organic sales target up to 4%; analyst avg PT $163.52 (~+10%), 14 Buy. Watch: weak China beauty demand + tariff-driven price hikes on 25% of products. Thesis (defensive staples leadership) intact. Unrealized -1.64%; 10% trailing stop live $135.79 (HWM $150.88). Well clear of stop.
+- KO: ~$82.71, flat (+0.07% intraday). Barclays raised PT $73→$74, Buy. Q2 results Jul 28. Notable: EU antitrust raids on European operations/bottlers; heavy bearish put volume (~2x expected); NA president stepping down Aug 1. None thesis-breaking but monitor EU headline risk. +4.3% past week. Thesis (staples leadership) intact. Unrealized -0.47%; 10% trailing stop live $75.26 (HWM $83.62). Well clear of stop.
+
+### Trade Ideas
+1. PG / KO — HOLD. Both staples theses intact, sector +15.6% YTD leader, both clear of stops. Let trailing stops work.
+2. Add a 3rd momentum-aligned individual large-cap to push deployment toward 75–85% (currently ~17.6%, ~82% idle). Best fits: Industrials (+14.1%) or Materials (+17.4%) single name with clean tight spread + documented catalyst. Energy leads YTD but oil flat with no upside catalyst → still defer. Verify quote integrity at open before any order.
+3. No Tech/semis chase despite AI being today's headline driver — sector lagging (-3.3%), no position-level catalyst, against our defensive posture.
+
+### Risk Factors
+- Holiday-shortened week; Fri Jul 3 June Jobs Report (8:30am) on thin volume → whipsaw risk. Size any new entry conservatively; avoid adding right before the print.
+- Sticky 4.2% CPI + live Fed (next CPI Jul 14, FOMC Jul 28–29) = latent valuation pressure if mid-July data surprises hot.
+- KO EU antitrust raids + elevated put volume = headline risk on a held name; not thesis-breaking yet but watch.
+- Capital ~82% idle vs 75–85% target — under-deployed and under-diversified (2 names, both Staples). Concentration in a single defensive sector; diversifying into a 2nd Leading sector (Industrials/Materials) would improve the book.
+- Oil flat, no upside catalyst — Energy entries premature.
+
+### Decision
+**HOLD pre-market — no orders before the open (pre-market always defers execution to the market-open run).** Both PG and KO theses intact, neither in stress, both clear of live 10% trailing stops; calm risk-on tape (VIX <18, futures flat). Market-open run should: (1) keep PG and KO with their live stops; (2) evaluate adding ONE momentum-aligned individual large-cap in Industrials or Materials on a stable open with a tight spread, 10% trailing stop, ≤20% sizing, subject to the buy-side gate — to diversify beyond Staples and close the deployment gap (weekly count 1/3, room for 2 more). Be conservative ahead of Friday's jobs report; do not chase Energy or Tech.
