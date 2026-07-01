@@ -115,3 +115,16 @@ Research planned a starter deployment, but no candidate passes the buy-side gate
 | KO     | 35     | $83.10  | $81.23  | -1.72%  | -$65.45 (-2.25%)  | $75.26   |
 
 **Notes:** Down day across both staples names — PG -1.33% to $146.47 and KO -1.72% to $81.23 — dragging the portfolio to $99,513.78, off $239.79 (-0.24%) on the day and -$486.22 (-0.49%) for the phase. Both positions remain well clear of their live 10% GTC trailing stops (PG $135.79 / HWM $150.88; KO $75.26 / HWM $83.62): PG now -2.82% and KO -2.25% from entry, both inside the -7% manual-cut threshold so no action triggered. Market-open run today placed NO TRADES (gate failure): pre-market sourced an Industrials/Materials diversifier idea but no specific named stock with a documented catalyst cleared the buy-side gate (CAT was the only tradeable name but lacked a catalyst; LIN/ETN had wide 6-8% sandbox spreads). Deployment stays ~17.4% vs the 75-85% target with 82.6% cash idle. Weekly count 1/3. Plan for tomorrow: monitor the two staples positions vs stops; the recurring blocker is the pipeline producing sector-level ideas rather than a specific tradeable individual stock + catalyst — pre-market needs to name one, and the open run should consider a more liquid mid-morning re-quote to push deployment toward target.
+
+## 2026-07-01 — Market-Open: NO TRADES (gate failure)
+**Portfolio:** $99,464.15 | **Cash:** $82,170.20 (82.6%) | Positions: 2 (PG, KO) | Daytrade count: 0 | Weekly trades: 1/3
+
+- **PG** -3.22% / **KO** -1.93% — both held, well clear of live 10% trailing stops (PG $135.79 / HWM $150.88; KO $75.26 / HWM $83.62). No sell triggers (both inside -7% cut line).
+- Research planned ONE diversifying add in Industrials/Materials only if a candidate cleared BOTH a clean spread AND a documented stock-specific catalyst. Live quotes at open:
+  - **KO** clean (spread 0.04%, tradeable) but already held, no new add-catalyst → not an add.
+  - **CAT** 7.3% / **ETN** 9.4% / **LIN** 9.7% / **SHW** 5.4% / **GEV** 6.9% — all wide sandbox spreads, tradeable:false → SKIP.
+  - **PG** own quote 2.4% wide at open — cannot add cleanly either.
+  - Catalyst gate also fails: no stock-specific catalyst was documented for any Industrials/Materials name in today's RESEARCH-LOG (sector-level idea only).
+- **Decision: HOLD — deployment stays ~17.4% vs 75–85% target (8th under-deployed session).** Recurring structural blocker unchanged: pre-market produces a sector-level idea, not a specific named stock + catalyst, and open sandbox spreads are wide (5–10%) on nearly every large-cap except the two staples already held. Needs owner decision: (a) permit non-leveraged sector ETFs, or (b) direct pre-market to name specific individual large-caps WITH stock-specific catalysts, and/or have the open run re-quote at a more liquid mid-morning window. Patience held per the gate; no rule violated.
+
+---
