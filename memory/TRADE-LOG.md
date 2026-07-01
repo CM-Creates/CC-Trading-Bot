@@ -128,3 +128,15 @@ Research planned a starter deployment, but no candidate passes the buy-side gate
 - **Decision: HOLD — deployment stays ~17.4% vs 75–85% target (8th under-deployed session).** Recurring structural blocker unchanged: pre-market produces a sector-level idea, not a specific named stock + catalyst, and open sandbox spreads are wide (5–10%) on nearly every large-cap except the two staples already held. Needs owner decision: (a) permit non-leveraged sector ETFs, or (b) direct pre-market to name specific individual large-caps WITH stock-specific catalysts, and/or have the open run re-quote at a more liquid mid-morning window. Patience held per the gate; no rule violated.
 
 ---
+
+### Jul 01 — EOD Snapshot (Day 8, Wednesday)
+**Portfolio:** $99,611.91 | **Cash:** $82,170.20 (82.5%) | **Day P&L:** +$98.13 (+0.10%) | **Phase P&L:** -$388.09 (-0.39%)
+
+| Ticker | Shares | Entry   | Close   | Day Chg | Unrealized P&L    | Stop     |
+|--------|--------|---------|---------|---------|-------------------|----------|
+| PG     | 99     | $150.72 | $147.44 | +0.55%  | -$324.72 (-2.18%) | $135.79  |
+| KO     | 35     | $83.10  | $81.29  | +0.03%  | -$63.35 (-2.18%)  | $75.26   |
+
+**Notes:** First green day of the phase, if a modest one — portfolio ticked up to $99,611.91, +$98.13 (+0.10%) on the day, trimming the phase drawdown to -$388.09 (-0.39%). PG led the recovery, +0.55% to $147.44 (+$79 intraday), while KO was essentially flat, +0.03% to $81.29. Both staples names remain -2.18% from entry, comfortably inside the -7% manual-cut line and well clear of their live 10% GTC trailing stops (PG $135.79 / HWM $150.88; KO $75.26 / HWM $83.62). No trades today: the market-open run hit its recurring gate failure again — pre-market produced only a sector-level Industrials/Materials idea with no specific named stock + documented catalyst, and open sandbox spreads were wide (5-10%) on nearly every large-cap except the two staples already held. Deployment stays ~17.5% vs the 75-85% target — the 8th consecutive under-deployed session. Weekly count 1/3. Plan for tomorrow: hold both positions vs stops; the structural blocker needs an owner decision — either permit non-leveraged sector ETFs, or direct pre-market to name specific individual large-caps WITH stock-specific catalysts, and/or have the open run re-quote at a more liquid mid-morning window to get capital deployed.
+
+---
