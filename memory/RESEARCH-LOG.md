@@ -324,3 +324,36 @@ TRADE or HOLD (default HOLD if no clear edge)
 
 ### Decision
 **HOLD pre-market — no orders before the open (pre-market always defers execution to the market-open run).** Both PG and KO theses intact, neither in stress, both clear of live 10% trailing stops; calm risk-on tape (VIX <18, futures flat). Market-open run should: (1) keep PG and KO with their live stops; (2) evaluate adding ONE momentum-aligned individual large-cap in Industrials or Materials on a stable open with a tight spread, 10% trailing stop, ≤20% sizing, subject to the buy-side gate — to diversify beyond Staples and close the deployment gap (weekly count 1/3, room for 2 more). Be conservative ahead of Friday's jobs report; do not chase Energy or Tech.
+
+## 2026-07-01 — Pre-market Research
+
+### Account
+- Equity: $99,550.30 | Cash: $82,170.20 (82.5%) | Buying power: $377,345.08 | Daytrade count: 0
+- Positions: 2 (PG, KO) | Deployment ~17.5% | Weekly trades: 1/3 (KO on Jun 29)
+
+### Market Context
+- WTI / Brent: WTI ~$70.3 (+~1-2%) | Brent ~$72.6. Oil firming off June lows but still no fresh upside catalyst — Energy entries remain premature.
+- S&P 500 futures: E-mini ~7,545 (-0.04%, flat). Calm, holding gains; broad market rosier than expected, potential rally into year-end.
+- VIX: ~16.45 (prev close 17.65, -7%). Low/calm risk-on tape. (Note: VIX Jul futures ~23 → market prices some vol pickup later in July.)
+- Today's catalysts: AI/semis remain dominant (AVGO record AI-chip growth despite selloff; PANW strong cyber). Macro: PCE confirmed inflation at 3-yr high but consumer spending robust; Fed funds futures now price a possible Sept hike (Warsh inflation focus). JPM 2026 SPX target 7,800 ("Blue Sky").
+- Earnings before open: GIS, FDS, MSM, UNF, FIZZ — none held, none thesis-relevant.
+- Economic calendar: Nothing today (only regional employment 10:00am). TOMORROW Jul 2: ISM Manufacturing (7:45am) + ADP (8:15am). June CPI Jul 14. FOMC Jul 29-30. June Jobs Aug 1. (Note: prior logs cited Jul 3 jobs — corrected: national NFP now Aug 1.)
+- Sector momentum YTD: Energy +23.3%, Materials +17.4%, Consumer Staples +15.6%, Industrials +14.1% — all Leading (8/11 sectors green). Tech -3.3%, Cons. Disc. -3.8%, Financials -6.9% lag. Hard-asset/defensive rotation intact.
+
+### Held Positions News
+- PG: ~$146.8, steady, no stock-specific news today. Q3 FY26 beat on revenue; 70th straight year of dividend growth; median PT ~$169 (+14%), 0 Sell ratings. Next earnings Jul 29 (Q4 FY26). Thesis (defensive staples leadership) intact. Unrealized -2.60%; 10% trailing stop live $135.79 (HWM $150.88). Well clear of stop.
+- KO: ~$81.3, reported strong on raised FY26 outlook (comparable EPS growth 8-9%, ~$12.2B FCF); $0.53 dividend pays today Jul 1; trading near 52wk high; Barclays Overweight, 0 Sell. Next earnings Jul 28. Thesis (staples leadership) intact. Unrealized -2.12%; 10% trailing stop live $75.26 (HWM $83.62). Well clear of stop.
+
+### Trade Ideas
+1. PG / KO — HOLD. Both staples theses intact, both clear of stops. Let trailing stops work.
+2. Diversifying add toward 75-85% target (currently ~17.5%, ~82% idle): best fits remain a single name in Industrials (+14.1%, AI-infra/electrification/defense capex) or Materials (+17.4%, inflation hedge). Candidates for the open run to quote-check for a clean tight spread AND a documented stock-specific catalyst: CAT, ETN, GE Vernova, LIN, SHW. Only proceed if BOTH the spread is clean and a stock-specific catalyst is present (recurring gate blocker: sector-level idea without a named catalyst).
+3. No Tech/semis chase despite AI headlines — sector lagging (-3.3%), against defensive posture. No Energy chase — oil firming but no upside catalyst.
+
+### Risk Factors
+- Tomorrow (Jul 2) ISM + ADP prints on a holiday-shortened, thin-volume week → whipsaw risk. Size any new entry conservatively; avoid adding immediately ahead of the print.
+- Sticky inflation (PCE 3-yr high, CPI 4.2%) + live Fed pricing a possible Sept hike = latent valuation pressure on growth if July CPI (Jul 14) surprises hot. Favors our defensive tilt.
+- Under-deployed (~82% idle vs 75-85% target) and under-diversified: 2 names, both Consumer Staples. Concentration in a single defensive sector; a 2nd Leading sector (Industrials/Materials) would improve the book.
+- Recurring execution blocker: pipeline produces sector-level ideas, not a specific tradeable stock + catalyst, and open sandbox spreads are wide on many large-caps. Market-open run should re-quote at a liquid mid-morning window if open spreads are wide.
+
+### Decision
+**HOLD pre-market — no orders before the open (pre-market always defers execution to the market-open run).** Both PG and KO theses intact, neither in stress, both well clear of live 10% trailing stops; calm risk-on tape (VIX ~16.5, futures flat). Market-open run should: (1) keep PG and KO with their live stops; (2) evaluate ONE momentum-aligned individual large-cap in Industrials or Materials only if it clears BOTH a clean tight spread and a documented stock-specific catalyst, with 10% trailing stop and ≤20% sizing, subject to the full buy-side gate (weekly count 1/3, room for 2). Be conservative ahead of tomorrow's ISM/ADP; do not chase Tech or Energy.
