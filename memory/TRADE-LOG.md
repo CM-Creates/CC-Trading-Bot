@@ -150,3 +150,13 @@ Research planned a starter deployment, but no candidate passes the buy-side gate
 - **Decision: HOLD — deployment stays ~17.7% vs 75–85% target (9th consecutive under-deployed session).** Recurring structural blocker unchanged and unresolved: pre-market produces a sector-level Industrials/Materials idea, not a specific named stock + catalyst, and open sandbox spreads are wide (5–10%) on nearly every large-cap except the two held staples. Standing owner decision needed: (a) permit non-leveraged sector ETFs, or (b) direct pre-market to name specific individual large-caps WITH stock-specific catalysts. Patience held per the gate; no rule violated.
 
 ---
+
+### Jul 02 — EOD Snapshot (Day 9, Thursday)
+**Portfolio:** $100,102.71 | **Cash:** $82,170.20 (82.1%) | **Day P&L:** +$490.80 (+0.49%) | **Phase P&L:** +$102.71 (+0.10%)
+
+| Ticker | Shares | Entry   | Close   | Day Chg | Unrealized P&L    | Stop     |
+|--------|--------|---------|---------|---------|-------------------|----------|
+| PG     | 99     | $150.72 | $151.39 | +2.69%  | +$66.33 (+0.44%)  | $136.50  |
+| KO     | 35     | $83.10  | $84.14  | +3.51%  | +$36.40 (+1.25%)  | $75.62   |
+
+**Notes:** Best day of the phase — a broad staples rally lifted both names into positive territory and pushed the portfolio to $100,102.71, +$490.80 (+0.49%) on the day and, for the first time, above starting capital: Phase P&L now +$102.71 (+0.10%). PG jumped +2.69% to $151.39 (+$392 intraday) and KO +3.51% to $84.14 (+$100 intraday); both entries are now green (PG +0.44%, KO +1.25%). The 10% GTC trailing stops ratcheted up with the new highs — PG stop to $136.50 (HWM $151.67), KO stop to $75.62 (HWM $84.02) — no manual action needed, both well inside thresholds. No trades today (weekly count holds 1/3): the market-open run hit the same gate failure — pre-market produced only a sector-level Industrials/Materials idea with no specific named stock + documented catalyst, and open sandbox spreads were wide (5-10%) on nearly every large-cap. Deployment stays ~17.9% vs the 75-85% target — the 9th consecutive under-deployed session. Plan for tomorrow (Friday): weekly review due; hold both staples vs their rising stops. The structural blocker remains the priority owner decision — either permit non-leveraged sector ETFs or direct pre-market to name specific individual large-caps WITH stock-specific catalysts, so idle 82% cash can be put to work.
