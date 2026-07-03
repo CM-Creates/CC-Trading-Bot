@@ -160,3 +160,15 @@ Research planned a starter deployment, but no candidate passes the buy-side gate
 | KO     | 35     | $83.10  | $84.14  | +3.51%  | +$36.40 (+1.25%)  | $75.62   |
 
 **Notes:** Best day of the phase — a broad staples rally lifted both names into positive territory and pushed the portfolio to $100,102.71, +$490.80 (+0.49%) on the day and, for the first time, above starting capital: Phase P&L now +$102.71 (+0.10%). PG jumped +2.69% to $151.39 (+$392 intraday) and KO +3.51% to $84.14 (+$100 intraday); both entries are now green (PG +0.44%, KO +1.25%). The 10% GTC trailing stops ratcheted up with the new highs — PG stop to $136.50 (HWM $151.67), KO stop to $75.62 (HWM $84.02) — no manual action needed, both well inside thresholds. No trades today (weekly count holds 1/3): the market-open run hit the same gate failure — pre-market produced only a sector-level Industrials/Materials idea with no specific named stock + documented catalyst, and open sandbox spreads were wide (5-10%) on nearly every large-cap. Deployment stays ~17.9% vs the 75-85% target — the 9th consecutive under-deployed session. Plan for tomorrow (Friday): weekly review due; hold both staples vs their rising stops. The structural blocker remains the priority owner decision — either permit non-leveraged sector ETFs or direct pre-market to name specific individual large-caps WITH stock-specific catalysts, so idle 82% cash can be put to work.
+
+---
+
+### Jul 03 — EOD Snapshot (Day 10, Friday)
+**Portfolio:** $100,104.69 | **Cash:** $82,170.20 (82.1%) | **Day P&L:** +$1.98 (+0.00%) | **Phase P&L:** +$104.69 (+0.10%)
+
+| Ticker | Shares | Entry   | Close   | Day Chg | Unrealized P&L    | Stop     |
+|--------|--------|---------|---------|---------|-------------------|----------|
+| PG     | 99     | $150.72 | $151.41 | +0.00%  | +$68.31 (+0.46%)  | $136.50  |
+| KO     | 35     | $83.10  | $84.14  | +0.00%  | +$36.40 (+1.25%)  | $75.62   |
+
+**Notes:** Market holiday (Independence Day observed — July 4 falls on Saturday, so U.S. equity markets were closed Friday July 3). No trading, no price movement: both positions show change_today 0 with prices frozen at Thursday's close (PG $151.41, KO $84.14), and equity held essentially flat at $100,104.69 — up a nominal $1.98 on the day, keeping Phase P&L green at +$104.69 (+0.10%). Both staples remain modestly in the black on entry (PG +0.46%, KO +1.25%) and well clear of their live 10% GTC trailing stops (PG $136.50 / HWM $151.67; KO $75.62 / HWM $84.02). No trades (weekly count holds 1/3). Deployment stays ~17.9% vs the 75-85% target — the structural blocker persists: 82% cash idle because pre-market keeps producing sector-level Industrials/Materials ideas rather than a specific named large-cap with a documented catalyst, and open sandbox spreads are wide on nearly every large-cap outside the two held staples. Plan for Monday: hold both staples vs their rising stops; the priority owner decision remains — either permit non-leveraged sector ETFs or direct pre-market to name specific individual large-caps WITH stock-specific catalysts so idle cash can be deployed.
