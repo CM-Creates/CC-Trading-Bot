@@ -391,3 +391,38 @@ TRADE or HOLD (default HOLD if no clear edge)
 
 ### Decision
 **HOLD pre-market — no orders before the open (pre-market defers execution to the market-open run).** Both PG and KO theses intact, neither in stress, both well clear of live 10% trailing stops; calm risk-on tape (VIX <17). Market-open run should: (1) keep PG and KO with live stops; (2) DEFER any new add until AFTER the 8:30am June jobs report and only at a liquid window with a specific named large-cap in Industrials/Materials clearing both a tight spread and a documented catalyst (weekly count 1/3, room for 2). Do not add into the print; do not chase Tech or Energy. Patience > activity.
+
+## 2026-07-03 — Pre-market Research
+
+### Account
+- Equity: $100,104.69 | Cash: $82,170.20 (82.1%) | Buying power: $378,897.37 | Daytrade count: 0
+- Positions: 2 (PG, KO) | Deployment ~17.9% | Weekly trades: 1/3 (KO Jun 29)
+
+> **MARKET CLOSED TODAY — NYSE/Nasdaq shut Fri Jul 3, 2026 (Independence Day observed; Jul 4 falls on Saturday). No pre-market, regular, or after-hours session. No trading possible. Reopens Mon Jul 6, 9:30am ET.** Prices below are Jul 2 closes (positions show change_today 0, current=lastday).
+
+### Market Context
+- WTI / Brent: WTI ~$68.59 (flat) | Brent ~$72.26 (+0.98%). Oil near 4-month lows on US–Iran de-escalation; no upside catalyst — Energy entries stay premature.
+- S&P 500 futures: E-mini ~7,549 (+0.28%) — but cash market closed today; futures thinly traded around the holiday.
+- VIX: ~16.1–16.6. Sub-17, calm risk-on tape.
+- Today's catalysts: N/A — holiday, no session. Backdrop: soft June jobs (57k vs ~114k est, released Jul 2) shifts Fed focus; AVGO -14% on AI-outlook disappointment despite record rev; META +9% on cloud-business plans; US–Iran "Blue Sky" (JPM SPX target 7,800). None thesis-relevant to held names.
+- Earnings before open: N/A (holiday). Next held-name earnings: KO Jul 28, PG Jul 29.
+- Economic calendar: N/A today. June CPI Jul 14, June PPI Jul 15, FOMC late-July (~33% hike odds). Core PCE ~3.3% sticky.
+- Sector momentum YTD: Energy +23.3%, Materials +17.4%, Consumer Staples +15.6%, Industrials +14.1% — all Leading (8/11 green). Tech -3.3%, Cons Disc -3.8%, Financials -6.9% lag. S&P index ~+1.2% YTD. Hard-asset/defensive rotation intact.
+
+### Held Positions News
+- PG: ~$151.41 (+2.62% Jul 2 to close $151.30). Unrealized +0.46%. 70th straight year of dividend growth; some analysts flag ~21% undervalued, others (Piper Sandler, TD Cowen $150 PT) at Hold — fully valued near-term. Watch: ~25% of products face tariff-linked price hikes; China beauty softness. Earnings Jul 29. Thesis (defensive staples leadership) intact. 10% GTC trailing stop live $136.50 (HWM $151.67). Well clear.
+- KO: ~$84.14 (+3.51% Jul 2, closed at 52wk high). Unrealized +1.25%. NEW CATALYST: Marriott partnership replaces Pepsi as beverage supplier across ~10,000 hotels (rollout began Jul 1). Barclays Buy, PT raised $73→$74. Q1 +12% rev growth, 35% op margin. Watch: EU antitrust raids on European bottlers (headline risk, not thesis-breaking). Earnings Jul 28. Thesis intact. 10% GTC trailing stop live $75.62 (HWM $84.02). Well clear.
+
+### Trade Ideas
+1. PG / KO — HOLD (no choice — market closed). Both staples theses intact and strengthening (KO Marriott win), both green, both well clear of live 10% trailing stops and inside the -7% cut line. Let trailing stops work.
+2. Deployment gap (~82% idle vs 75–85% target) — NO ACTION possible today. Carry forward to Mon Jul 6: evaluate ONE momentum-aligned individual large-cap in Industrials/Materials only if it clears BOTH a tight spread AND a documented stock-specific catalyst, 10% trailing stop, ≤20% sizing, full buy-side gate (weekly count resets Mon; will be 0/3).
+3. No Tech/semis chase (sector -3.3%, AVGO blowup underscores risk). No Energy chase (oil at 4-month lows).
+
+### Risk Factors
+- Market closed today → this is a research-only session; execution deferred to Mon Jul 6 open.
+- Soft June jobs (57k) + sticky Core PCE 3.3% = mixed Fed picture; June CPI Jul 14 is the next macro pivot. Favors defensive tilt.
+- Under-deployed (~82% idle) and under-diversified (2 names, both Consumer Staples). Structural blocker persists: pipeline sources sector-level ideas, not specific named stock + catalyst, and open sandbox spreads run wide (5–10%) on most large-caps. Owner decision still pending: (a) permit non-leveraged sector ETFs, or (b) direct pre-market to name specific individual large-caps WITH stock-specific catalysts.
+- KO EU antitrust raids — monitor for escalation; not thesis-breaking yet.
+
+### Decision
+**HOLD — market closed for Independence Day (observed). No orders today; none possible.** Both PG and KO green, theses intact (KO strengthened by Marriott win), both well clear of live 10% trailing stops. Nothing actionable until Mon Jul 6. At Monday's open the market-open run should: (1) keep PG and KO with live stops; (2) with the weekly trade count reset to 0/3, evaluate ONE diversifying Industrials/Materials large-cap only if it clears both a tight spread and a documented stock-specific catalyst. Patience > activity.
