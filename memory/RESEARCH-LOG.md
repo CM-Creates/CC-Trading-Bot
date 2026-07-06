@@ -426,3 +426,25 @@ TRADE or HOLD (default HOLD if no clear edge)
 
 ### Decision
 **HOLD — market closed for Independence Day (observed). No orders today; none possible.** Both PG and KO green, theses intact (KO strengthened by Marriott win), both well clear of live 10% trailing stops. Nothing actionable until Mon Jul 6. At Monday's open the market-open run should: (1) keep PG and KO with live stops; (2) with the weekly trade count reset to 0/3, evaluate ONE diversifying Industrials/Materials large-cap only if it clears both a tight spread and a documented stock-specific catalyst. Patience > activity.
+
+## 2026-07-06 — Pre-market Research (inline, run at market-open)
+
+### Account
+- Equity: $99,972.30 | Cash: $82,170.20 (82.2%) | Buying power: $378,526.67 | Daytrade count: 0
+- Positions: 2 (PG, KO) | Deployment ~17.8% | Weekly trades: 0/3 (count reset Monday)
+
+### Held Positions News
+- PG: $150.01 (-0.93% today). Unrealized -0.47% from entry ($150.72). 10% GTC trailing stop live $136.50 (HWM $151.67). Well clear of stop, inside -7% cut line. Thesis (defensive staples leadership) intact. Next earnings Jul 29.
+- KO: $84.19 (+0.06% today, near 52wk high). Unrealized +1.31% from entry ($83.10). 10% GTC trailing stop live $76.10 (HWM $84.56). Well clear. Thesis intact (Marriott win carried forward). Next earnings Jul 28.
+
+### Trade Ideas
+1. PG / KO — HOLD. Both staples theses intact, both green/near-flat, both well clear of live 10% trailing stops. Let stops work.
+2. Diversifying Industrials/Materials add — NO CANDIDATE CLEARS THE GATE. Perplexity (2x) confirms: no S&P 500 Industrials/Materials large-cap has a stock-specific catalyst today or this week — Q2 earnings season starts Jul 13; only PEP & DAL report Jul 6-10 (neither in sector); no upgrades/contract news today for CAT/ETN/GEV/DE/HON/LIN/SHW/FCX/NUE/EMR/PH. CAT quote also wide (4.05% spread). Catalyst gate fails regardless of spread → SKIP.
+
+### Risk Factors
+- Under-deployed (~82% idle vs 75-85% target) — 10th consecutive under-deployed session. Structural blocker unchanged: pipeline sources sector-level ideas, not a specific named stock + documented catalyst, and open sandbox spreads run wide (4-10%) on nearly every large-cap outside the two held staples.
+- Macro pivots ahead: June CPI Jul 14, June PPI Jul 15, FOMC late-July. Sticky Core PCE ~3.3%. Favors defensive tilt.
+- Standing owner decision still needed to break the blocker: (a) permit non-leveraged sector ETFs, or (b) direct pre-market to name specific individual large-caps WITH stock-specific catalysts.
+
+### Decision
+**HOLD — NO TRADES.** No diversifying candidate clears the buy-side gate (no documented stock-specific catalyst exists this week for any Industrials/Materials large-cap; CAT spread 4% wide). Keep PG and KO with their live 10% trailing stops. Patience > activity; no rule violated. Deployment stays ~17.8%.
