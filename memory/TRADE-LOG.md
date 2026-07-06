@@ -181,3 +181,15 @@ Research planned a starter deployment, but no candidate passes the buy-side gate
   - **Catalyst gate fails:** Perplexity (2 queries) confirms NO S&P 500 Industrials/Materials large-cap has a stock-specific catalyst today or this week. Q2 earnings season starts Jul 13; only PEP & DAL report Jul 6-10 (neither in sector); no upgrades/contract/M&A news today for CAT/ETN/GEV/DE/HON/LIN/SHW/FCX/NUE/EMR/PH.
   - **CAT** quote also wide (4.05% spread) → tradeable but no catalyst → SKIP.
 - **Decision: HOLD — deployment stays ~17.8% vs 75-85% target (10th consecutive under-deployed session).** Recurring structural blocker unchanged: pipeline produces sector-level ideas, not a specific named stock + documented catalyst, and open sandbox spreads run wide on nearly every large-cap outside the two held staples. Standing owner decision needed: (a) permit non-leveraged sector ETFs, or (b) direct pre-market to name specific individual large-caps WITH stock-specific catalysts. Patience held per the gate; no rule violated.
+
+---
+
+### Jul 06 — EOD Snapshot (Day 11, Monday)
+**Portfolio:** $99,853.56 | **Cash:** $82,170.20 (82.3%) | **Day P&L:** -$251.13 (-0.25%) | **Phase P&L:** -$146.44 (-0.15%)
+
+| Ticker | Shares | Entry   | Close   | Day Chg | Unrealized P&L    | Stop     |
+|--------|--------|---------|---------|---------|-------------------|----------|
+| PG     | 99     | $150.72 | $149.31 | -1.39%  | -$139.59 (-0.94%) | $136.50  |
+| KO     | 35     | $83.10  | $82.90  | -1.47%  | -$6.83 (-0.24%)   | $76.10   |
+
+**Notes:** Soft first session of the week — both staples gave back Thursday's gains as the group pulled back. PG -1.39% to $149.31 (-$208 intraday) and KO -1.47% to $82.90 (-$43 intraday) dragged the portfolio to $99,853.56, off $251.13 (-0.25%) on the day and back below starting capital to Phase P&L -$146.44 (-0.15%). Both names slipped fractionally red on entry (PG -0.94%, KO -0.24%) but remain comfortably inside the -7% manual-cut line and far above their live 10% GTC trailing stops (PG $136.50 / HWM $151.67; KO $76.10 / HWM $84.56) — no action triggered. No trades today: the weekly count reset to 0/3 (Monday) and the market-open run again hit its recurring gate failure — Perplexity confirmed NO S&P 500 Industrials/Materials large-cap has a stock-specific catalyst today or this week (Q2 earnings season doesn't begin until Jul 13), and CAT's quote was wide (4.05% spread) besides. Deployment holds ~17.7% vs the 75-85% target — the 10th consecutive under-deployed session. Plan for tomorrow: hold both staples vs their rising stops. The structural blocker is now the standing priority owner decision — either permit non-leveraged sector ETFs, or direct pre-market to name specific individual large-caps WITH documented stock-specific catalysts — so the idle 82% cash can finally be put to work. Q2 earnings season kicking off Jul 13 should improve catalyst supply.
