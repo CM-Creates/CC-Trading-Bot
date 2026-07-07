@@ -448,3 +448,35 @@ TRADE or HOLD (default HOLD if no clear edge)
 
 ### Decision
 **HOLD — NO TRADES.** No diversifying candidate clears the buy-side gate (no documented stock-specific catalyst exists this week for any Industrials/Materials large-cap; CAT spread 4% wide). Keep PG and KO with their live 10% trailing stops. Patience > activity; no rule violated. Deployment stays ~17.8%.
+
+## 2026-07-07 — Pre-market Research
+
+### Account
+- Equity: $99,952.42 | Cash: $82,170.20 (82.2%) | Buying power: $378,471.02 | Daytrade count: 0
+- Positions: 2 (PG, KO) | Deployment ~17.8% | Weekly trades: 0/3 (reset Monday; 0 used so far)
+
+### Market Context
+- WTI / Brent: WTI ~$69.13 (+0.85%) | Brent ~$72.62 (+0.88%). Oil firmer intraday but capped — OPEC+ agreed 5th straight monthly production hike, narrative shifting supply-crisis → oversupply. No Energy entry edge.
+- S&P 500 futures: E-mini ~7,580 (-0.15%). Modest risk-off; contained.
+- VIX: ~15.6–16.3 (prev close 15.81). Sub-17, calm tape.
+- Today's catalysts: Samsung Q2 (chip/AI read-through), US May Trade Balance 8:30am ET, Fed minutes (Warsh's first meeting) parsed for rate path. Continued rotation OUT of AI/Tech (Nasdaq below 50-day) INTO broad/defensive. None thesis-relevant to PG/KO.
+- Earnings before open: None noteworthy. Non-noteworthy pre-open: HELE, SMPL, WDFC. Held-name earnings: KO Jul 28, PG Jul 29. PEP reports Thu Jul 10.
+- Economic calendar: Nothing major today (only May Trade Balance). Next pivots: June CPI Jul 14, June PPI Jul 15, FOMC late-July. Core CPI running hot (~30bp rise since May, tariff-driven). Favors defensive tilt.
+- Sector momentum YTD: Energy +23.3%, Materials +17.4%, Consumer Staples +15.6%, Industrials +14.1% — all Leading (8/11 sectors green). Tech -3.3%, Cons Disc -3.8%, Financials -6.9% lag. S&P ~+1.2% YTD. Hard-asset/defensive rotation intact — favorable for both held staples.
+
+### Held Positions News
+- PG: $150.13 (+0.55% today). Unrealized -0.39% from entry ($150.72). 10% GTC trailing stop live $136.50 (HWM $151.67) — well clear, inside -7% cut line. News: analysts bullish, median PT $164 (~8.3% upside), 14 Buy / 11 Hold / 0 Sell. FY26 guide flat-to-+4% organic/EPS; H2 seen stronger. Watch: tariffs (+60bp cost), flat organic Q2. Thesis (defensive staples leadership) intact. Earnings Jul 29.
+- KO: $83.41 (+0.54% today). Unrealized +0.37% from entry ($83.10). 10% GTC trailing stop live $76.10 (HWM $84.56) — well clear. News: raised FY26 comparable-EPS growth to 8-9%, ~$12.2B FCF guide, 3-day uptrend, near 52wk high. 7 Strong Buy / 12 Buy / 5 Hold / 0 Sell, median PT ~$89.5. Marriott supply win carried forward. Watch: broke upper Bollinger Jul 2 (possible short pause). Thesis intact. Earnings Jul 28.
+
+### Trade Ideas
+1. PG / KO — HOLD. Both staples theses intact and reinforced by favorable defensive rotation; both green/near-flat, both well clear of live 10% trailing stops. Let stops work.
+2. Diversifying Industrials/Materials add — NO CANDIDATE CLEARS THE GATE again. No S&P 500 Industrials/Materials large-cap has a documented stock-specific catalyst today; Q2 earnings season doesn't start until Jul 13, no upgrades/contracts/M&A named today. Catalyst gate fails → SKIP.
+
+### Risk Factors
+- Under-deployed (~17.8% vs 75-85% target) — 11th consecutive under-deployed session. Structural blocker unchanged: pipeline sources sector-level ideas, not a specific named stock + documented catalyst; open sandbox spreads run wide (4-10%) on nearly every large-cap outside the two held staples.
+- Macro: hot core CPI (tariff-driven), June CPI Jul 14 next pivot, FOMC late-July, Fed minutes today. Sticky inflation favors defensive tilt but caps multiple expansion.
+- Tech/AI rotation continuing (Nasdaq below 50-day) — no reason to chase; both held names sit in the winning defensive camp.
+- Standing owner decision still needed to break the deployment blocker: (a) permit non-leveraged sector ETFs, or (b) direct pre-market to name specific individual large-caps WITH stock-specific catalysts. Q2 earnings (starts Jul 13) should improve catalyst supply next week.
+
+### Decision
+**HOLD — NO TRADES.** No diversifying candidate clears the buy-side gate (no stock-specific catalyst exists today for any Industrials/Materials large-cap; earnings season starts Jul 13). Keep PG and KO with their live 10% trailing stops — both green today, theses intact, aligned with the leading defensive rotation. Patience > activity; no rule violated. Deployment stays ~17.8%.
