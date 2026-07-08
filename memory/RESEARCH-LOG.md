@@ -480,3 +480,36 @@ TRADE or HOLD (default HOLD if no clear edge)
 
 ### Decision
 **HOLD — NO TRADES.** No diversifying candidate clears the buy-side gate (no stock-specific catalyst exists today for any Industrials/Materials large-cap; earnings season starts Jul 13). Keep PG and KO with their live 10% trailing stops — both green today, theses intact, aligned with the leading defensive rotation. Patience > activity; no rule violated. Deployment stays ~17.8%.
+
+## 2026-07-08 — Pre-market Research
+
+### Account
+- Equity: $100,287.02 | Cash: $82,170.20 | Buying power: $379,407.90 | Daytrade count: 0
+- Positions: 2 (PG, KO) | Deployment ~18.1% ($18,116.82) | Weekly trades: 0/3 (reset Monday)
+
+### Market Context
+- WTI / Brent: WTI ~$70.41 (+2.71%) | Brent ~$74.06 (+2.88%). Oil rallying hard — Treasury canceled an Iranian-oil sale license + Iran war tension. Energy YTD leader (+23.3%); no direct edge for staples.
+- S&P 500 futures: E-mini ~7,580 (-0.15%). Modest risk-off, contained. Sep contract firmer (+0.48%).
+- VIX: ~15.9 spot, intraday high 16.64 (prev close 15.57), +~2–9% intraday. Spike driven by Trump warning of a 25% tariff on Apple → AAPL -4% pre-market. Still sub-17, calm-ish tape.
+- Today's catalysts: (1) Trump 25% Apple-tariff threat hits AAPL/Tech; (2) AI-semi profit-taking selloff — MU/AMD/INTC down 4–5.5%; (3) oil spike on Iran. Dow at record 52,900 (+1.1%), Nasdaq weak — defensive/value rotation continuing. None thesis-relevant to PG/KO.
+- Earnings before open: HELE, SMPL, WDFC (none noteworthy/held). Held-name earnings: KO Jul 28, PG Jul 29. PEP reports Thu Jul 10.
+- Economic calendar: Nothing major today (Wholesale Inventories 10am only). Next pivots: June CPI Jul 14, June PPI Jul 15, FOMC late-July. Core CPI running hot (tariff-driven).
+- Sector momentum YTD: Energy +23.3%, Materials +17.4%, Consumer Staples +15.6%, Industrials +14.1% — all Leading (8/11 green). Tech -3.3%, Cons Disc -3.8%, Financials -6.9% lag. S&P ~+1.2% YTD. Hard-asset/defensive rotation intact — favorable for both held staples.
+
+### Held Positions News
+- PG: $153.08 (+0.22% today). Unrealized +1.57% from entry ($150.72). 10% GTC trailing stop live $138.13 (HWM $153.48) — well clear, inside -7% cut line. News: reaffirmed FY26 organic sales & core-EPS growth 0–4%, ~$15B capital return ($10B div + $5B buyback), 85–90% FCF productivity. Some analysts flag ~26% above fair value + tariff audits on ~25% of products. Thesis (defensive staples leadership) intact. Earnings Jul 29.
+- KO: $84.63 (+0.69% today, near 52wk high $85.68). Unrealized +1.84% from entry ($83.10). 10% GTC trailing stop live $77.11 (HWM $85.68) — well clear. News: Barclays raised PT $73→$74 (maintains Buy). FY26 revenue growth guide 2–6%; 64 straight years of dividend hikes. Watch: EU antitrust raids on European bottlers (monitor, not thesis-breaking); restaurant traffic soft (~-5% y/y). Thesis intact. Earnings Jul 28.
+
+### Trade Ideas
+1. PG / KO — HOLD. Both staples theses intact and reinforced by the ongoing defensive/hard-asset rotation (Apple-tariff + AI-semi selloff pushing money into value/defensives). Both green, both well clear of live 10% trailing stops. Let stops work.
+2. Diversifying Industrials/Materials add — NO CANDIDATE CLEARS THE GATE again. No S&P 500 Industrials/Materials large-cap has a documented stock-specific catalyst today; Q2 earnings season doesn't start until Jul 13. Catalyst gate fails → SKIP.
+
+### Risk Factors
+- Under-deployed (~18.1% vs 75-85% target) — 12th consecutive under-deployed session. Structural blocker unchanged: pipeline sources sector-level ideas, not a specific named stock + documented catalyst; open sandbox spreads run wide (4-10%) on nearly every large-cap outside the two held staples.
+- Tariff headline risk elevated: Trump's 25% Apple-tariff threat spiked VIX and hit Tech/AI; broad tariff uncertainty could spill into staples cost bases (PG already flags tariff audits on ~25% of products). Watch for escalation.
+- Macro: hot core CPI (tariff-driven), June CPI Jul 14 next pivot, FOMC late-July. Sticky inflation favors defensive tilt but caps multiple expansion.
+- Oil spiking on Iran war/license cancellation — inflationary if sustained; watch for input-cost read-through to staples.
+- Standing owner decision still needed to break the deployment blocker: (a) permit non-leveraged sector ETFs, or (b) direct pre-market to name specific individual large-caps WITH stock-specific catalysts. Q2 earnings (starts Jul 13) should improve catalyst supply next week.
+
+### Decision
+**HOLD — NO TRADES.** No diversifying candidate clears the buy-side gate (no stock-specific catalyst exists today for any Industrials/Materials large-cap; earnings season starts Jul 13). Keep PG and KO with their live 10% trailing stops — both green, theses intact, and squarely in the winning defensive camp as tariff/AI headlines drive rotation away from Tech. No sell triggers (both far inside the -7% cut line). Patience > activity; no rule violated. Deployment stays ~18.1%.
