@@ -546,3 +546,35 @@ TRADE or HOLD (default HOLD if no clear edge)
 
 ### Decision
 **HOLD — NO TRADES.** No diversifying candidate clears the buy-side gate (no stock-specific catalyst exists today for any Industrials/Materials large-cap; earnings season starts Jul 13). Keep PG and KO with their live 10% trailing stops — both essentially flat, theses intact, squarely in the leading defensive camp. No sell triggers (both far inside the -7% cut line). Watch PEP's pre-open print for staples demand read-through and be mindful of options-expiration volatility. Patience > activity; no rule violated. Deployment stays ~17.6%.
+
+## 2026-07-10 — Pre-market Research
+
+### Account
+- Equity: $99,650.49 | Cash: $82,170.20 | Buying power: $377,625.61 | Daytrade count: 0
+- Positions: 2 (PG, KO) | Deployment ~17.5% ($17,480.29) | Weekly trades: 0/3
+
+### Market Context
+- WTI / Brent: WTI ~$71.85 (-0.32%) | Brent ~$76.30 (-2.2%). Oil easing as US-Iran conflict resolves — headline-inflation relief, bearish for the Energy leader. No direct edge for staples.
+- S&P 500 futures: E-mini ~7,539 (+0.13%); Sep contract ~7,570-7,590. Calm, mildly positive tape after Wall St closed higher Jul 9 on a semiconductor surge.
+- VIX: ~15.85 (-6.2% 24h). Sub-16, calm — volatility bleeding off as Iran risk fades.
+- Today's catalysts: (1) AI-capex / semiconductor momentum (MU, TSM leading) driving broad risk-on; (2) US-Iran resolution ("Blue Sky") lifting sentiment — JPM hiked '26 S&P target to 7,800; (3) ISM/S&P services PMI (June) today. Risk: Fed's Warsh signaling inflation focus → market pricing possible Sept hike. None thesis-relevant to PG/KO.
+- Earnings before open: DAL (Q2 est $1.47 EPS, -30% y/y / ~$18.9B rev) — only noteworthy pre-open name; not held, not a peer. Held-name earnings: KO Jul 28, PG Jul 29.
+- Economic calendar: No major release today (services PMI/ISM only). Next pivots: June CPI Jul 14 (Tue), June PPI mid-July, FOMC late-July. May CPI ran 4.2% headline; tariff pass-through (Vietnam 20%, EU 15%) the watch item.
+- Sector momentum YTD: Energy +23.3%, Materials +17.4%, Consumer Staples +15.6%, Industrials +14.1% — all Leading. Financials -6.9% laggard; Tech recovering on AI. Defensive/hard-asset rotation intact but softening at the margin as risk-on returns (Iran resolved, VIX falling) — modestly less tailwind for staples than prior weeks.
+
+### Held Positions News
+- PG: $147.31 (+0.31% today). Unrealized -2.26% from entry ($150.72). 10% GTC trailing stop live $138.13 (HWM $153.48) — well clear, far inside -7% cut line. News: down ~1.1% Jul 9 on valuation/rotation concerns (P/E ~21.7, yield 2.87%); defensive profile + dividend-growth streak + product pipeline (Braun NEVO, Cascade Clean) support long-term. Thesis intact but is the weakest held name since entry. Earnings Jul 29.
+- KO: $82.76 (+0.16% today). Unrealized -0.41% from entry ($83.10). 10% GTC trailing stop live $77.11 (HWM $85.68) — well clear. News: **new — became Marriott's primary beverage provider (rooms, restaurants, events), replacing Pepsi, phased rollout from Jul 1; analysts call it potentially "game-changing" for long-term growth.** Offsets soft-traffic worry; valuation (P/E ~26) the only pushback. Thesis intact and reinforced. Earnings Jul 28.
+
+### Trade Ideas
+1. PG / KO — HOLD. Both theses intact; KO reinforced by the Marriott win. Both fractionally green intraday, both well clear of live 10% trailing stops. Let stops work.
+2. Diversifying add — NO CANDIDATE CLEARS THE GATE. No S&P 500 large-cap outside the held staples has a documented stock-specific catalyst today with a tradeable (tight-spread) sandbox quote; Q2 earnings season starts Jul 13 (Mon). Catalyst gate fails → SKIP.
+
+### Risk Factors
+- Under-deployed (~17.5% vs 75-85% target) — 14th consecutive under-deployed session. Structural blocker unchanged: pipeline sources sector-level ideas, not a specific named stock + documented catalyst + tight spread. Standing owner decision still needed: (a) permit non-leveraged sector ETFs, or (b) direct pre-market to name specific individual large-caps WITH stock-specific catalysts.
+- Rotation risk: as Iran resolves and VIX falls, risk-on/AI leadership could pull flows OUT of defensives — the exact camp both holdings sit in. Watch for staples losing relative momentum; PG already the softest name.
+- Macro: June CPI Jul 14 next pivot; tariff pass-through + Warsh's hawkish inflation tilt (possible Sept hike) could cap defensive multiples.
+- Oil falling is disinflationary (mild positive for staples input costs) but signals the hard-asset trade cooling.
+
+### Decision
+**HOLD — NO TRADES.** No diversifying candidate clears the buy-side gate (no stock-specific catalyst + tradeable quote today; earnings season starts Jul 13). Keep PG and KO with their live 10% trailing stops — both essentially flat on entry, theses intact, KO reinforced by the Marriott partnership. No sell triggers (both far inside the -7% cut line; PG -2.26%, KO -0.41%). Monitor staples' relative momentum as risk-on returns. Patience > activity; no rule violated. Deployment stays ~17.5%.
