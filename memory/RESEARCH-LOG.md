@@ -578,3 +578,36 @@ TRADE or HOLD (default HOLD if no clear edge)
 
 ### Decision
 **HOLD — NO TRADES.** No diversifying candidate clears the buy-side gate (no stock-specific catalyst + tradeable quote today; earnings season starts Jul 13). Keep PG and KO with their live 10% trailing stops — both essentially flat on entry, theses intact, KO reinforced by the Marriott partnership. No sell triggers (both far inside the -7% cut line; PG -2.26%, KO -0.41%). Monitor staples' relative momentum as risk-on returns. Patience > activity; no rule violated. Deployment stays ~17.5%.
+
+## 2026-07-13 — Pre-market Research
+
+### Account
+- Equity: $99,674.37 | Cash: $82,170.20 | Buying power: $377,692.48 | Daytrade count: 0
+- Positions: 2 (PG, KO) | Deployment ~17.6% ($17,504.17) | Weekly trades: 0/3 (reset Monday)
+
+### Market Context
+- WTI / Brent: WTI ~$73.77 (+3.3%) | Brent ~$78.42 (+3.2%). Both spiking on renewed US-Iran tension / Strait of Hormuz shipping-disruption fears (ceasefire lapse). Inflationary at the margin — input-cost watch for staples.
+- S&P 500 futures: ~7,626 (+0.08%), essentially flat; Sep E-mini softening -0.11% pre-open. Calm tape into a data-heavy week.
+- VIX: ~15.0–16.1 (prev close 15.03). Sub-16, calm — no stress despite oil move.
+- Today's catalysts: Q2 earnings season kicks off (banks Tue: JPM/GS/C/WFC/BAC; ASML/TSM Wed — chip-trade exhaustion watch). June CPI TOMORROW (Jul 14, 8:30am) is the dominant pivot. Iran/oil geopolitics live. Warsh congressional testimony this week. None thesis-relevant to PG/KO.
+- Earnings before open: NONE noteworthy today (PGR/FAST minor). Major reports start Tue Jul 14 (banks). Held-name earnings: KO Jul 28, PG Jul 29.
+- Economic calendar: June CPI Tue Jul 14 (fcst 3.8% headline vs 4.2% prior; core mo +0.22%); June PPI Wed Jul 15 (fcst 6.3% vs 6.5%); jobless claims Thu Jul 17. FOMC Jul 29 (not this week). CPI is the week's key print.
+- Sector momentum: "Violent rotation" underway in July — H1 tech/AI-hype leaders selling off; flows into Financials (bank-earnings anticipation) and AI infrastructure ("picks & shovels"). Tech still leads full-YTD (index ~+9.6-10.7%); Industrials/Energy modest daily gains; Health Care weak. Staples no longer explicitly the momentum leader vs prior weeks — defensive tailwind softening as rotation favors Financials.
+
+### Held Positions News
+- PG: $147.18 (+0.10% today). Unrealized -2.35% from entry ($150.72). 10% GTC trailing stop live $138.13 (HWM $153.48) — well clear, far inside -7% cut line. News: no fresh catalyst today; near 52-wk low ($137.62-$167.25 range), fwd P/E ~19.7 (cheapest since Jan-2024). FQ4 earnings Jul 29 est EPS $1.42 (-4% y/y) — "trough quarter" on oil-cost/tariff drag; announced 7,000 job cuts to offset tariffs. Analysts 15 buy / 10 hold / 0 sell, mean PT ~$163 (~11% upside). Weakest held name on entry; thesis (defensive quality) intact but pressured. Oil spike today is an incremental input-cost headwind.
+- KO: $83.81 (+0.38% today). Unrealized +0.85% from entry ($83.10). 10% GTC trailing stop live $77.11 (HWM $85.68) — well clear. News: Barclays raised PT $73->$74 (Buy) this morning; +16% YTD, hit all-time high Jul 7. Q2 earnings Jul 28 est EPS $0.92 (+5.75% y/y), rev ~$13.05B. Reinforcers intact: Marriott primary-beverage global deal, 64th consecutive dividend hike (Dividend King). Watch: EU antitrust raids on European bottlers; fwd P/E ~25.6 (premium). Thesis intact.
+
+### Trade Ideas
+1. PG / KO — HOLD. Both theses intact; KO the stronger name (fresh green, PT bump, Marriott). Both well clear of live 10% trailing stops; PG the softer name (-2.35%, oil-cost + earnings overhang) but far inside -7% cut. Let stops work.
+2. Diversifying add — NO CANDIDATE CLEARS THE GATE. No S&P 500 large-cap outside the held staples has a documented stock-specific catalyst today with a tradeable (tight-spread) sandbox quote; earnings season starts Tue Jul 14 (banks) — do not front-run a print. Catalyst gate fails → SKIP. Also prudent to hold new deployment until after tomorrow's CPI removes a binary macro risk.
+
+### Risk Factors
+- Under-deployed (~17.6% vs 75-85% target) — 15th consecutive under-deployed session, third week opening with zero new trades. Structural blocker unchanged: pipeline sources sector-level ideas, not a specific named stock + documented catalyst + tight spread. Standing owner decision still needed: (a) permit non-leveraged sector ETFs, or (b) direct pre-market to name specific individual large-caps WITH stock-specific catalysts.
+- Binary macro TOMORROW: June CPI (Jul 14). A hot print (>3.8%) revives Sept-hike odds → pressures multiples, incl. defensive staples; a soft print supports risk broadly. Prudent to avoid new entries into the print.
+- Rotation risk: July "violent rotation" is favoring Financials over defensives — the exact camp both holdings sit in. Watch staples losing relative momentum; PG already softest.
+- Oil spiking (+3.3%) on Iran/Hormuz — inflationary and a direct input-cost headwind for consumer staples if it persists/re-accelerates.
+- EU antitrust action on KO's European bottlers — monitor for escalation.
+
+### Decision
+**HOLD — NO TRADES.** No diversifying candidate clears the buy-side gate (no stock-specific catalyst + tradeable quote today; bank earnings start Tue). Additionally, do not open new positions into tomorrow's June CPI (binary macro). Keep PG and KO with their live 10% trailing stops — KO fresh green (+0.85%, PT bump), PG softer (-2.35%) but far inside the -7% cut line; both theses intact. No sell triggers. Watch: CPI (Tue), the July rotation pulling flows out of defensives, and the oil/Iran input-cost read-through. Patience > activity; no rule violated. Deployment stays ~17.6%.
