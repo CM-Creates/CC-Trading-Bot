@@ -611,3 +611,38 @@ TRADE or HOLD (default HOLD if no clear edge)
 
 ### Decision
 **HOLD — NO TRADES.** No diversifying candidate clears the buy-side gate (no stock-specific catalyst + tradeable quote today; bank earnings start Tue). Additionally, do not open new positions into tomorrow's June CPI (binary macro). Keep PG and KO with their live 10% trailing stops — KO fresh green (+0.85%, PT bump), PG softer (-2.35%) but far inside the -7% cut line; both theses intact. No sell triggers. Watch: CPI (Tue), the July rotation pulling flows out of defensives, and the oil/Iran input-cost read-through. Patience > activity; no rule violated. Deployment stays ~17.6%.
+
+## 2026-07-14 — Pre-market Research
+
+### Account
+- Equity: ~$99,759 (derived) | Cash: $82,170.20 | Buying power: n/a | Daytrade count: 0
+- NOTE: `alpaca.py account` timed out (intermittent proxy/network read-timeout, 3 retries); positions + orders returned fine. Equity derived = cash $82,170.20 + KO $2,937.20 + PG $14,652.00 = $99,759.40. No trades since last close, so cash unchanged.
+- Positions: 2 (PG, KO) | Deployment ~17.6% ($17,589.20) | Weekly trades: 0/3
+- Stops confirmed LIVE: KO trailing_stop $77.112 (HWM $85.68); PG trailing_stop $138.132 (HWM $153.48) — both GTC, status new.
+
+### Market Context
+- WTI / Brent: WTI ~$73.58 | Brent ~$78.75 (feeds vary $69-74 WTI on intraday timing). Elevated on renewed US-Iran tension / Strait of Hormuz disruption fears — inflationary at the margin; input-cost watch for staples.
+- S&P 500 futures: Mixed/roughly flat pre-open — reads span ~7,576 (-0.57%) to ~7,626 (+0.49%) depending on feed/timestamp. Cautious tape into CPI.
+- VIX: ~16.3–16.4, up ~9% on the day — ticking up off sub-16 calm as Iran risk returns, but still contained.
+- Today's catalysts: (1) **June CPI at 8:30am ET — the dominant binary**; (2) Q2 bank earnings kickoff (JPM, GS, WFC before open; also C/BAC); (3) US-Iran/Hormuz oil geopolitics; (4) Fed's Warsh (hawkish, new chair) testimony at ECB Summit — market pricing ~77% year-end hike. None thesis-relevant to PG/KO.
+- Earnings before open: **JPM** (est EPS ~$5.59–5.67 vs $4.96 y/y; rev ~$49–50B), **GS**, **WFC** — Financials, not held, not peers. Held-name earnings: KO Jul 28, PG Jul 29.
+- Economic calendar: **June CPI TODAY (Jul 14, 8:30am ET)** — fcst ~3.8–3.9% headline vs 4.2% prior; core ~2.9%; mo/mo ~-0.1% (soft/negative headline possible on falling energy). Result pending at research time. June PPI Wed Jul 15. FOMC Jul 28–29. CPI is the day's pivot.
+- Sector momentum YTD: Energy leader (~+20-23%), Industrials (~+19%), Tech (~+16%, AI-driven, stretched), Materials, then Consumer Staples (~+10.5%), Utilities, Health Care; Financials weak YTD (~+3%) but rotation favoring them into bank earnings. Momentum maps still class Staples as "Leading" but the defensive tailwind keeps softening as risk-on/Financials rotation runs.
+
+### Held Positions News
+- PG: $148.00 (-0.25% intraday). Unrealized -1.81% (-$269) from entry ($150.72). Stop $138.132 live — well clear, far inside -7% cut. News: near 52-wk low ($137.62–$167.25), fwd valuation cheapest in ~2yr; cutting thousands of jobs + up to $1.6B restructuring charges to offset tariffs; new Febreze "Can't Wash This"/MLS campaign (minor). FQ4 earnings Jul 29 est EPS ~$1.43 (-3% y/y). Weakest held name; defensive-quality thesis intact but pressured by tariff/oil input costs. Analyst PTs mixed (mean ~$163 bull vs some $135-144 bear).
+- KO: $83.92 (-0.39% intraday, off yesterday's $84.25). Unrealized +0.99% (+$29) from entry ($83.10). Stop $77.112 live — well clear. News: near all-time high (52-wk high $85.68, hit Jul 7); +19% YTD, beating S&P/Nasdaq. Reinforcers intact: Marriott primary global beverage deal, raised FY comp-EPS growth to 8-9%, Dividend King. Watch: N.A. President Jennifer Mann stepping down end-July (CFO Murphy interim), $20B IRS transfer-pricing appeal, premium P/E ~25. Q2 earnings Jul 28 est EPS $0.92. Thesis intact and the stronger name.
+
+### Trade Ideas
+1. PG / KO — HOLD. Both theses intact; KO the stronger name (green, near ATH, Marriott + raised outlook), PG the softer (-1.81%, tariff/oil overhang) but far inside -7% cut. Both well clear of live 10% trailing stops. Let stops work.
+2. Diversifying add — NO CANDIDATE CLEARS THE GATE. No S&P 500 large-cap outside the held staples has a documented stock-specific catalyst today with a tradeable (tight-spread) sandbox quote; today's named catalysts are bank earnings (don't front-run a print) + CPI. Catalyst gate fails → SKIP. Also prudent to hold new deployment across today's CPI (binary macro).
+
+### Risk Factors
+- Under-deployed (~17.6% vs 75-85% target) — 16th consecutive under-deployed session, third week with zero new trades. Structural blocker unchanged: pipeline sources sector-level ideas, not a specific named stock + documented catalyst + tight spread. Standing owner decision still needed: (a) permit non-leveraged sector ETFs, or (b) direct pre-market to name specific individual large-caps WITH stock-specific catalysts.
+- **Binary macro TODAY: June CPI 8:30am ET.** Hot print (>3.9%) revives hike odds → pressures multiples incl. defensive staples; soft/negative print supports risk broadly. Avoid new entries into/around the print.
+- Rotation risk: July rotation favoring Financials (into bank earnings) over defensives — the exact camp both holdings sit in. Watch staples losing relative momentum; PG already softest.
+- Oil elevated (~$73-79) on Iran/Hormuz — inflationary and a direct input-cost headwind for consumer staples if it persists; VIX ticking up alongside.
+- KO idiosyncratic: N.A. leadership transition + $20B IRS appeal (monitor, not thesis-breaking).
+
+### Decision
+**HOLD — NO TRADES.** No diversifying candidate clears the buy-side gate (no stock-specific catalyst + tradeable quote; today is bank earnings + CPI — do not front-run/trade into binary macro). Keep PG and KO with their confirmed-live 10% GTC trailing stops — KO green (+0.99%, near ATH, thesis reinforced), PG softer (-1.81%) but far inside the -7% cut line; both theses intact. No sell triggers. Watch: 8:30am CPI, the Financials-over-defensives rotation, and oil/Iran input-cost read-through. Patience > activity; no rule violated. Deployment stays ~17.6%.
