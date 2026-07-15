@@ -646,3 +646,38 @@ TRADE or HOLD (default HOLD if no clear edge)
 
 ### Decision
 **HOLD — NO TRADES.** No diversifying candidate clears the buy-side gate (no stock-specific catalyst + tradeable quote; today is bank earnings + CPI — do not front-run/trade into binary macro). Keep PG and KO with their confirmed-live 10% GTC trailing stops — KO green (+0.99%, near ATH, thesis reinforced), PG softer (-1.81%) but far inside the -7% cut line; both theses intact. No sell triggers. Watch: 8:30am CPI, the Financials-over-defensives rotation, and oil/Iran input-cost read-through. Patience > activity; no rule violated. Deployment stays ~17.6%.
+
+## 2026-07-15 — Pre-market Research
+
+### Account
+- Equity: ~$99,547.50 (derived) | Cash: $82,170.20 | Buying power: n/a | Daytrade count: 0
+- NOTE: `alpaca.py account` timed out again (intermittent proxy read-timeout, 3rd session running); positions + orders returned fine. Equity derived = cash $82,170.20 + KO $2,913.40 + PG $14,463.90 = $99,547.50. No trades since last close, cash unchanged.
+- Positions: 2 (PG, KO) | Deployment ~17.5% ($17,377.30) | Weekly trades: 0/3
+- Stops confirmed LIVE: KO trailing_stop $77.112 (HWM $85.68); PG trailing_stop $138.132 (HWM $153.48) — both GTC, status new.
+
+### Market Context
+- WTI / Brent: WTI ~$79.70 | Brent ~$85.30–$86 — up sharply (+~$6 vs yesterday's ~$73.58/$78.75) on US-Iran escalation (US strikes on Iranian targets + reinstated naval blockade of Iranian ports). Meaningful input-cost headwind for staples; PG explicitly flagged a ~$150M Middle-East conflict profit hit.
+- S&P 500 futures: ~7,606 (+0.19%), modestly firm pre-open. Range 7,603–7,614; earlier premarket dipped to ~7,559.
+- VIX: ~16.86 (-1.7%), off the ~17.2 open; contained despite oil/geopolitics.
+- Today's catalysts: (1) **June CPI came in SOFT** (released Jul 14) — the binary resolved dovishly, risk-supportive; (2) Q2 bank/large-cap earnings continue (Citi beat, +11% rev; today JNJ/ASML/BLK/MS/ELV/CTAS pre-open); (3) US-Iran/Hormuz oil surge — the key overnight development; (4) Fed's Warsh congressional testimony later today. None thesis-relevant to PG/KO.
+- Earnings before open: JNJ (est EPS $2.86), ASML ($7.92), BLK ($12.68), MS ($2.93), ELV ($6.21), CTAS ($1.24) — none held or peers. Held-name earnings: KO Jul 28, PG Jul 29.
+- Economic calendar: **June CPI (Jul 14) landed cool** — headline -0.4% MoM (largest 1-mo drop since Apr-2020, energy -5.7%), 3.5% YoY (down from 4.2%); core +0.2% MoM / 2.6% YoY (below 2.9% prior & ~3.0% est). Market now prices ~90% odds of a 25bp cut at **FOMC Jul 29**. June PPI pending (~mid-July). Jobless claims Thu Jul 17.
+- Sector momentum: Sources conflict, but **Energy the unambiguous YTD leader (~+23–26%)**, boosted further by today's oil surge. Momentum maps class Consumer Staples / Materials / Industrials as "Leading" as July's "violent" momentum unwind hits Tech/semis (S&P Momentum Index -6.6% first two July sessions). Financials weak YTD but rotation favors them into bank earnings. Defensive staples still "Leading" — supportive backdrop for held names, though oil is an offsetting cost pressure.
+
+### Held Positions News
+- PG: Alpaca sandbox $146.10 (flat, +0.01% intraday); unrealized **-3.07% (-$457)** from entry ($150.72) — weakest since entry but far above the -7% cut (~$140.17) and clear of live stop $138.132. (Reference feeds show PG higher ~$151 pre-open on earnings positioning — sandbox lags, tracking the sandbox for risk.) News: **70th consecutive dividend increase** (Dividend King reinforcer); FQ4 earnings Jul 29 est EPS $1.43 (-3.4% y/y), rev ~$21.4B — "trough quarter"; flagged ~$150M Middle-East conflict hit + up to $1.5B tariff drag. Analyst "Moderate Buy," mean PT ~$170 (~15% upside). Defensive-quality thesis intact but pressured by oil/tariff input costs — the oil surge is an incremental headwind. Softest held name.
+- KO: Alpaca sandbox $83.24 (+0.19% intraday); unrealized **+0.17% (+$4.90)** from entry ($83.10). Stop $77.112 live — well clear. News: fresh analyst PT bumps post-earnings — **Citi $91→$97 (Buy), Morgan Stanley $87→$89 (Overweight)**; raised FY comp-EPS growth to 8–9%; Marriott global beverage deal; Dividend King. Q2 earnings Jul 28 est EPS ~$0.92. Watch: N.A. President Mann steps down Aug 1 (CFO Murphy interim), premium P/E ~26. Thesis intact and the stronger name.
+
+### Trade Ideas
+1. PG / KO — HOLD. Both theses intact; KO the stronger name (green, PT bumps to $97/$89, raised outlook), PG the softer (-3.07%, oil/tariff overhang) but far inside the -7% cut and clear of its stop. Both well clear of live 10% trailing stops. Let stops work.
+2. Diversifying add — NO CANDIDATE CLEARS THE GATE. No S&P 500 large-cap outside the held staples has a documented stock-specific catalyst today with a tradeable (tight-spread) sandbox quote; today's named catalysts are large-cap earnings (don't front-run a print) + the oil/geopolitics move. Catalyst gate fails → SKIP.
+
+### Risk Factors
+- Under-deployed (~17.5% vs 75-85% target) — 17th consecutive under-deployed session, third week with zero new trades. Structural blocker unchanged: pipeline sources sector-level ideas, not a specific named stock + documented catalyst + tight sandbox spread. Standing owner decision still needed: (a) permit non-leveraged sector ETFs, or (b) direct pre-market to name specific individual large-caps WITH stock-specific catalysts.
+- **Oil surge (+~$6 to WTI ~$79.70 / Brent ~$85–86) on US-Iran escalation** — the key overnight development: inflationary and a direct input-cost headwind for both staples (PG already flagged a $150M hit). Monitor for escalation/persistence; watch VIX.
+- Rotation: July's "violent" momentum unwind is hitting Tech/semis and favoring value/defensives + Financials — mixed for staples (defensives "Leading," but Financials rotation competes). PG the softest defensive name.
+- Macro turned supportive: soft June CPI → ~90% odds of a Jul 29 rate cut. Removes the near-term binary hawkish risk but the oil-driven input-cost read-through partially offsets for staples.
+- KO idiosyncratic: N.A. leadership transition Aug 1, premium P/E ~26 (monitor, not thesis-breaking).
+
+### Decision
+**HOLD — NO TRADES.** June CPI resolved the macro binary dovishly (risk-supportive, ~90% July-cut odds), but no diversifying candidate clears the buy-side gate — no stock-specific catalyst + tradeable sandbox quote today; today is large-cap earnings, don't front-run a print. Keep PG and KO with their confirmed-live 10% GTC trailing stops — KO green (+0.17%, PT bumps to $97/$89, thesis reinforced), PG softest at -3.07% but far inside the -7% cut (~$140.17) and clear of its stop; both theses intact. No sell triggers. Watch: the oil/Iran input-cost read-through on staples (PG flagged $150M hit), the July momentum rotation, and Warsh testimony. Patience > activity; no rule violated. Deployment stays ~17.5%.
