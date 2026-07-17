@@ -206,3 +206,56 @@ Friday reviews are appended here. One entry per week.
 
 ### Overall Grade: D
 - Capital preserved and risk discipline immaculate, but the bot lost to the benchmark a 3rd straight week and traded zero times for a 2nd straight week from a structural blocker that has now gone unresolved across three full review cycles. Preserving capital while never deploying it is not the mission — the mission is to beat the S&P, and idle cash guarantees losing to it in any up market. Graded down from C to D because the same failure repeating for a third week is a system problem, not an unlucky week.
+
+## Week ending 2026-07-17
+
+### Stats
+| Metric | Value |
+|--------|-------|
+| Starting portfolio | $99,807.58 |
+| Ending portfolio | $99,887.91 |
+| Week return | +$80.33 (+0.08%) |
+| S&P 500 week | -1.6% |
+| Bot vs S&P | +1.68% |
+| Trades | 0 (W:0 / L:0 / open:2) |
+| Win rate | N/A (no closed trades) |
+| Best trade | N/A (no closed trades) |
+| Worst trade | N/A (no closed trades) |
+| Profit factor | 0.00 (no closed trades) |
+
+### Closed Trades
+| Ticker | Entry | Exit | P&L | Notes |
+|--------|-------|------|-----|-------|
+| —      | —     | —    | —   | None closed this week |
+
+### Open Positions at Week End
+| Ticker | Entry | Close | Unrealized | Stop |
+|--------|-------|-------|------------|------|
+| PG | $150.72 | $150.09 | -$62.37 (-0.42%) | $138.89 (10% trailing GTC, HWM $154.32) |
+| KO | $83.10 | $81.68 | -$49.70 (-1.71%) | $77.11 (10% trailing GTC, HWM $85.68) |
+
+### What Worked
+- **First positive alpha in four weeks (+1.68%).** The S&P fell -1.6% (its first losing week in three) while the defensive-staples book held roughly flat (+0.08%), so the bot beat the benchmark by 1.68% — reversing the -0.81% / -0.23% / -0.44% skids of the prior three weeks.
+- Risk discipline flawless again: both PG and KO stayed far inside the -7% cut line all week, stops never moved down, no rule broken. PG made a new high-water mark Friday, ratcheting its trailing stop UP to $138.89 (from $138.13). Mechanical protection working as designed.
+- Correctly assessed the KO Fairlife ransomware / US-production halt (disclosed after close Jul 16) as a contained operational headwind — not a core-thesis break for a diversified Dividend King — and held through the -3.9% Friday dip rather than panic-selling. KO closed -1.81% on entry, well clear of both the -7% cut and the live stop.
+- Both theses reconfirmed on fundamentals: PG the rotation beneficiary (defensive-flight-to-safety, Staples "Leading," FQ3 beat reaffirmed); KO near ATH mid-week on Marriott primary-beverage win + UBS/Citi PT raises.
+
+### What Didn't Work
+- **Chronic under-deployment, now WEEK FOUR.** Deployment held ~17.9% vs the 75-85% target for the entire week — the 19th consecutive under-deployed session and a full FOURTH straight week with zero new trades (0/3). ~82% cash sat idle.
+- **The +1.68% beat was won by luck of positioning, not skill.** The bot beat the S&P because the market fell and it happened to be 82% cash + defensive — a passive outcome of the unresolved deployment blocker, not an earned result. In any *up* week this same posture guarantees a loss (as it did the prior three weeks). Being right in a down week does not validate a structure that is wrong in up weeks.
+- **The structural blocker is unresolved for a fourth review cycle.** Every market-open run Mon-Fri hit the identical gate failure: pre-market sources sector-level ideas, never a specific named large-cap with a documented stock-specific catalyst AND a tradeable tight-spread sandbox quote. Q2 earnings season (now week two, full swing) has NOT broken the logjam as hoped.
+- Still under-diversified: both positions in a single defensive sector (Consumer Staples).
+
+### Key Lessons
+- A benchmark beat driven entirely by holding cash in a down market is not evidence the pipeline works — it is the same broken pipeline producing a favorable outcome by accident. The moment the tape turns up, the 82% idle cash resumes bleeding alpha. The structural fix is exactly as urgent as it was at -0.44%; the green alpha number must not be read as "problem solved."
+- Four straight weeks confirm the blocker is a system failure, not a market condition. Q2 earnings season — the catalyst supply that was supposed to break it — arrived and did not. The gate is too tight for the sandbox's liquidity/catalyst reality, OR the owner decision must relax the instrument constraint. Either way the fix is a decision that has now been pending a full month.
+- Holding through the KO Fairlife scare was correct process: material-but-contained news on a diversified quality name is a monitor item, not an automatic exit. Sizing the news to the business (small subsidiary) before reacting prevented a needless loss.
+
+### Adjustments for Next Week
+- **ESCALATION (4th week, blocking — now a full month unresolved): the standing owner decision cannot wait longer.** Choose one — (a) permit non-leveraged sector ETFs (XLE/XLP/XLI etc.) so momentum-sector deployment is possible, or (b) relax the buy gate to allow a specific individual large-cap in a Leading sector on a *sector/rotation* catalyst (not only a stock-specific one) when its sandbox quote is tight. Under the current gate the bot will keep sitting ~18% cash indefinitely, winning only in down weeks and losing every up week.
+- Weekly trade count resets to 0/3 Monday — room for up to 3 adds. Target: move deployment from ~18% toward at least 40-50% via 2-3 diversifying names once the gate is loosened; ideally a 2nd Leading sector (Energy/Industrials/Materials) to break single-sector concentration.
+- Hold PG and KO with their rising trailing stops; continue monitoring KO Fairlife restoration timeline and its read-through to Q2 earnings (Jul 28); PG earnings Jul 29. Watch Iran/oil and VIX for rotation risk that cuts both ways.
+- No strategy hard-rule change this week — the rulebook is sound and the risk layer is excellent; the failure is at the research/execution layer and hinges on the owner decision above. A single favorable (defensive) week is not grounds to codify under-deployment as a strategy; changing hard rules on my own would overstep.
+
+### Overall Grade: B-
+- Beat the benchmark for the first time in four weeks (+1.68% alpha) with immaculate risk discipline and a correct, calm hold through the KO Fairlife scare — a genuinely good defensive week. Graded up from D to B- because the mission is to beat the S&P and this week it did. But held back from higher: the beat was won passively by 82% idle cash in a down market, not by skillful deployment, and the four-week structural blocker (zero trades, ~18% deployed) is entirely unresolved. Right this week, but for reasons that guarantee being wrong the next up week.
