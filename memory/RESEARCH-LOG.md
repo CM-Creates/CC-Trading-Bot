@@ -716,3 +716,37 @@ TRADE or HOLD (default HOLD if no clear edge)
 
 ### Decision
 **HOLD — NO TRADES.** No US macro release today; US-Iran de-escalation eased the oil overhang (net-supportive for staples). No diversifying candidate clears the buy-side gate — no stock-specific catalyst + tradeable sandbox quote today; today is large-cap/bank earnings, don't front-run a print. Keep PG and KO with their confirmed-live 10% GTC trailing stops — KO the stronger name (-0.30%, near ATH, PT $97, thesis reinforced by dividend + outlook), PG softest at -1.63% but far inside the -7% cut (~$140.17) and clear of its stop; both theses intact. No sell triggers. Watch: TSM/AI-trade guidance for broad-market tone, the Iran diplomacy track, and staples' relative momentum. Patience > activity; no rule violated. Deployment stays ~17.6%.
+
+## 2026-07-17 — Pre-market Research
+
+### Account
+- Equity: $100,229.90 | Cash: $82,170.20 | Buying power: $379,247.96 | Daytrade count: 0
+- Positions: 2 (PG, KO) | Deployment ~18.0% ($18,059.70) | Weekly trades: 0/3
+- Stops confirmed LIVE: KO trailing_stop $77.112 (HWM $85.68); PG trailing_stop $138.132 (HWM $153.48) — both GTC, status new.
+- Both positions green on entry: KO +2.53% (+$73.50, px $85.20); PG +1.05% (+$156.42, px $152.30).
+
+### Market Context
+- WTI / Brent: WTI ~$79.51 (+0.71%) | Brent ~$84.84 (+0.72%) — firming again on US-Iran escalation. Input-cost headwind for staples returns.
+- S&P 500 futures: RISK-OFF — ~7,509 (-0.90%), reversing the week's gains.
+- VIX: ~18.0 (+7.3% from 16.73 prior close) — elevated, off recent lows.
+- Today's catalysts: (1) US-Iran conflict re-escalation (renewed US-strike threats, Iran retaliation vow) → flight from risk, oil up, Fed-hike-odds back up; (2) sharp AI/semiconductor pullback dragging Nasdaq; (3) defensive rotation — Staples/Health Care/Financials outperforming as semis roll over. None thesis-breaking for PG/KO; net-supportive for staples as flight-to-safety.
+- Earnings before open: DRI, SNX (big beat), AYI, CMC, WGO, NNOX — none held or peers. Held-name earnings: KO Jul 28, PG Jul 29.
+- Economic calendar: 8:30 ET — Initial Jobless Claims, Housing Starts (1.177M vs 1.31M prev), Building Permits (1.41M), Import/Export prices; 10:00 UMich sentiment (prelim). No CPI/PPI/FOMC today (CPI Jul 14 cool, PPI Jul 15 weak). Next FOMC Jul 29.
+- Sector momentum: Consumer Staples "Leading" — 3rd-best sector YTD (~+11-16%), hitting new highs as flight-to-safety while Tech (~+29% YTD) momentum "Lagging." Energy top YTD (~+16-25%). Backdrop favors held staples.
+
+### Held Positions News
+- PG: sandbox $152.30 (+0.53% intraday), unrealized +1.05% (+$156.42) from entry ($150.72) — far inside -7% cut (~$140.17), clear of live stop $138.132. News: outperformed last week (+5.16% vs Staples +3.53%, S&P -1.43%) on defensive positioning; dividend + FQ3 beat (core EPS $1.59, sales +7.4%) reaffirmed. FY26 EPS guide $6.83-7.09 (expects lower end, ~$0.25 tariff/commodity/logistics drag). FQ4 earnings Jul 29. Consensus Moderate Buy, mean PT ~$161-170 (9-15% upside). Thesis intact; benefiting from rotation.
+- KO: sandbox $85.20 (+0.33% intraday, near ATH), unrealized +2.53% (+$73.50) from entry ($83.10). Stop $77.112 live — well clear. **NEW: Fairlife dairy subsidiary hit by ransomware attack — US production shut down "for the foreseeable future."** Shares dipped after-hours Jul 16 on disclosure, then recovered to ~$84.6-84.9; sandbox opens green. Fairlife is a small premium-dairy slice of KO's total — not thesis-breaking, but MONITOR for duration/financial impact. Other: N.A. President Mann steps down end-July (CFO Murphy interim); UBS PT $92→$98, Citi $97; +~20% YTD, ATH Jul 7. Q2 earnings Jul 28. Thesis intact; watch Fairlife.
+
+### Trade Ideas
+1. PG / KO — HOLD. Both theses intact and both green; the risk-off/defensive-rotation backdrop actively favors staples (flight-to-safety, Staples "Leading," new highs). PG the rotation beneficiary, KO near ATH with a new monitor item (Fairlife ransomware, contained). Both well clear of live 10% trailing stops. Let stops work.
+2. Diversifying add — NO CANDIDATE CLEARS THE GATE. On a risk-off morning (futures -0.90%, VIX +7%, oil/geopolitics), no S&P 500 large-cap outside held staples has a documented stock-specific catalyst with a tradeable tight-spread sandbox quote; today's named catalysts are macro (Iran/oil) + non-held earnings. Front-running a risk-off tape with no edge is a negative-EV trade. Catalyst gate fails → SKIP.
+
+### Risk Factors
+- **US-Iran re-escalation is the overnight driver** — oil firming (WTI ~$79.5/Brent ~$85), inflationary + input-cost headwind for both staples (PG flagged ~$0.25 EPS tariff/commodity drag). Asymmetric risk if it escalates further; watch VIX (now ~18).
+- KO idiosyncratic: **Fairlife ransomware / US production halt** — new, contained (small business unit, stock recovered), but monitor for duration and any Q2-print read-through (earnings Jul 28). Plus N.A. leadership transition end-July, premium P/E ~26.
+- Under-deployed (~18.0% vs 75-85% target) — 19th consecutive under-deployed session, fourth week with zero new trades. Structural blocker unchanged: pipeline sources sector-level ideas, not a specific named stock + documented catalyst + tight sandbox spread. Standing owner decision still needed: (a) permit non-leveraged sector ETFs, or (b) direct pre-market to name specific individual large-caps WITH stock-specific catalysts.
+- Rotation risk cuts both ways: defensives leading is supportive now, but if Iran de-escalates fast, money could rotate back to semis/Tech and leave staples flat.
+
+### Decision
+**HOLD — NO TRADES.** Risk-off morning (futures -0.90%, VIX ~18, US-Iran re-escalation, oil up, semis selling off), but the defensive rotation actively favors held staples — Consumer Staples "Leading" and hitting new highs as flight-to-safety. No diversifying candidate clears the buy-side gate: no stock-specific catalyst + tradeable sandbox quote, and front-running a risk-off tape with no edge is negative-EV. Keep PG and KO with confirmed-live 10% GTC trailing stops — both green (KO +2.53% near ATH, PG +1.05% and the rotation beneficiary), both far inside the -7% cut and clear of stops; no sell triggers. NEW watch item: KO Fairlife ransomware/production halt — contained, not thesis-breaking, monitor through Q2 print (Jul 28). Also watch: Iran/oil track and VIX. Patience > activity; no rule violated. Deployment stays ~18.0%.
