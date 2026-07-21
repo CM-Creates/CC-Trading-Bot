@@ -788,3 +788,38 @@ TRADE or HOLD (default HOLD if no clear edge)
 
 ### Decision
 **HOLD — NO TRADES.** Risk-off open (oil spiking on US-Iran escalation, futures mixed-to-lower, VIX ~18.5) but the defensive/anti-AI-capex rotation actively favors held staples. No diversifying candidate clears the buy-side gate — no stock-specific catalyst + tradeable sandbox quote, and front-running a geopolitics tape or an earnings print with no edge is negative-EV. Keep PG and KO with confirmed-live 10% GTC trailing stops — both near flat on entry, far inside the -7% cut and clear of stops; no sell triggers. Watch: KO Fairlife restoration timeline (Q2 print Jul 28), PG dividend record date Jul 24 (earnings Jul 29), Iran/oil track, and VIX. Patience > activity; no rule violated. Deployment stays ~17.7%.
+
+## 2026-07-21 — Pre-market Research
+
+### Account
+- Equity: $99,743.62 | Cash: $82,170.20 | Buying power: $377,886.38 | Daytrade count: 0
+- Positions: 2 (PG, KO) | Deployment ~17.6% ($17,573.42) | Weekly trades: 0/3
+- Stops confirmed LIVE (GTC, status new): PG trailing_stop $138.888 (HWM $154.32); KO trailing_stop $77.112 (HWM $85.68).
+- PG -1.45% on entry ($148.53); KO -1.36% on entry ($81.97). Both far inside -7% cut, clear of stops.
+
+### Market Context
+- WTI / Brent: WTI ~$82.5 (steady) | Brent ~$88.9 (-0.4%) — cooling off yesterday's Iran spike on US-Iran mediation/ceasefire hopes. Input-cost pressure on staples easing vs. yesterday.
+- S&P 500 futures: RISK-ON, ~7,526 (+0.56%). Nasdaq-100 +1.4%, Dow +0.4%. Driver: Iran ceasefire hopes + AI-capex earnings optimism.
+- VIX: ~17.6 (-5.7%, down from 18.65) — de-escalation calming vol.
+- Today's catalysts: (1) Semis/AI surge — NVDA +6.2%, AVGO +7.8% premarket on confirmed $8.2B AWS capex; TSLA +3.2% (Panasonic battery deal); SHOP +3.7% (AI restructuring). (2) Iran ceasefire mediation → oil down, risk-on. (3) Heavy Q2 earnings day. Net: rotation back TOWARD tech/AI, a mild headwind to the defensive-staples tailwind that has supported PG/KO.
+- Earnings before open: GM, MMM, NOC, GPC, WFC, EFX, OTIS, WAB — none held or direct staples peers. TXN after close. Held-name earnings: KO Jul 28, PG Jul 29.
+- Economic calendar: Quiet. No US CPI/PPI/FOMC/NFP today — only State Employment & Usual Weekly Earnings 10:00 ET. June CPI came in 3.5% (Jul 14), PPI -0.3% (Jul 15). Next CPI Aug 12. FOMC minutes Wed. Fed on hold 3.50-3.75%; ~63% odds of a Sept hike.
+- Sector momentum: Energy leads YTD (+23-30%, slowing on softer oil), Tech #2 (cooling, valuations stretched, semis -11% early July then bouncing today). Materials/Industrials gaining. Consumer Staples #5 (+11-16%, defensive leader at ATHs). 8/11 sectors green. Today's tape favors Tech over defensives.
+
+### Held Positions News
+- PG: sandbox $148.53, unrealized -1.45% (-$217) from entry ($150.72) — far inside -7% cut (~$140.17), clear of live stop $138.888. Quiet: no PG-specific news. Anchors intact — Jul 14 dividend hike ($1.0885/sh, +3%, 70th consecutive yr; record Jul 24, pay Aug 17); FQ3 earnings Jul 29 (est EPS $1.42, rev $21.41B). Analyst spread: UBS Buy $172, Bernstein $156, BofA cut PT on weaker sales. Thesis intact; risk-on tape is a mild relative headwind (rotation to tech).
+- KO: sandbox $81.97, unrealized -1.36% (-$40) from entry ($83.10) — far inside -7% cut (~$77.28), clear of live stop $77.112. Fairlife ransomware still the only overhang: US dairy production halted (~$4B annual retail sales), Canada unaffected, product safety confirmed. Stock recovered from -4% dip, near flat. Q2 print Jul 28 (est EPS ~$0.92) is the read-through catalyst. Consensus Strong Buy, mean PT ~$87. Contained — small premium-dairy slice, not thesis-breaking for a Dividend King. MONITOR restoration timeline + Q2.
+
+### Trade Ideas
+1. PG / KO — HOLD. Both theses intact, both trading tight to entry (~-1.4%), both far inside the -7% cut and clear of live 10% trailing stops. Today's risk-on/tech-rotation tape is a mild relative headwind to the defensive-staples tailwind, but not thesis-breaking for two Dividend Kings held for stability. Let the stops work.
+2. Diversifying add — NO CANDIDATE CLEARS THE GATE. Today's movers (NVDA +6.2%, AVGO +7.8%, TSLA, SHOP) are already up big premarket on AI-capex momentum — chasing an extended intraday gap with no stock-specific edge is negative-EV. Named earnings (GM, MMM, NOC, WFC) are prints — don't front-run. No S&P 500 large-cap outside held staples pairs a documented, tradeable stock-specific catalyst with a tight-spread sandbox quote. Catalyst gate fails → SKIP.
+
+### Risk Factors
+- **Rotation risk is now the live concern** — risk-on de-escalation (Iran ceasefire hopes, VIX -5.7% to ~17.6) is rotating money back to tech/semis and away from the defensives that have led. If the tech bid persists, held staples could drift flat-to-down on a green tape. Not a sell trigger (stops far below), but caps upside near-term.
+- KO idiosyncratic: **Fairlife ransomware / US production halt** — contained but unresolved; monitor restoration duration + Q2 read-through (Jul 28). Plus premium P/E ~26.
+- PG: Jul 29 FQ3 print the next binary; BofA flagged weaker sales outlook. Dividend record date Jul 24.
+- Under-deployed (~17.6% vs 75-85% target) — 21st consecutive under-deployed session, still zero new trades this week. Structural blocker unchanged: pipeline sources sector-level ideas, not a named stock + documented catalyst + tight sandbox spread. Standing owner decision still needed: (a) permit non-leveraged sector ETFs, or (b) direct pre-market to name specific individual large-caps WITH stock-specific catalysts.
+- Oil could re-spike if Iran mediation fails — reverses today's calm and re-loads staples input-cost pressure.
+
+### Decision
+**HOLD — NO TRADES.** Risk-on open (futures +0.56%, Nasdaq +1.4%, VIX ~17.6, semis surging on AWS capex, oil cooling on Iran ceasefire hopes). The tape has flipped from yesterday's defensive tilt toward a tech/AI rotation — a mild relative headwind to held staples but not thesis-breaking. No diversifying candidate clears the buy-side gate: today's movers are already extended premarket, named names are earnings prints, and no large-cap pairs a documented stock-specific catalyst with a tradeable tight-spread quote — chasing here is negative-EV. Keep PG and KO with confirmed-live 10% GTC trailing stops — both ~-1.4% on entry, far inside the -7% cut and clear of stops; no sell triggers. Watch: KO Fairlife restoration + Q2 (Jul 28), PG dividend record Jul 24 / FQ3 Jul 29, Iran mediation/oil, and whether the tech rotation persists. Patience > activity; no rule violated. Deployment stays ~17.6%.
