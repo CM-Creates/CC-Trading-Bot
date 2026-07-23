@@ -858,3 +858,38 @@ TRADE or HOLD (default HOLD if no clear edge)
 
 ### Decision
 **HOLD — NO TRADES.** Quiet, wait-and-see open (futures -0.34%, VIX ~17.05 and falling, oil re-firming modestly) with the market holding its breath ahead of tonight's mega-cap tech earnings (Alphabet, Tesla after close). Rotation map keeps Consumer Staples in the leading quadrant — a supportive backdrop for held PG/KO, both green intraday and tighter to entry than they've been in a week. No diversifying candidate clears the buy-side gate: before-open names are earnings prints, the day's catalysts are after-close binaries, and no large-cap pairs a documented stock-specific catalyst with a tradeable tight-spread quote — chasing is negative-EV. Keep PG and KO with confirmed-live 10% GTC trailing stops — both far inside the -7% cut and clear of stops; no sell triggers. Watch: GOOGL/TSLA prints tonight (tape-setter), KO Fairlife restoration + Q2 (Jul 28), PG dividend record Jul 24 / FQ4 Jul 29, oil track. Patience > activity; no rule violated. Deployment stays ~17.65%.
+
+## 2026-07-23 — Pre-market Research
+
+### Account
+- Equity: $99,691.28 | Cash: $82,170.20 | Buying power: $82,170.20 | Daytrade count: 0
+- Positions: 2 (PG, KO) | Deployment ~17.6% ($17,521.08) | Weekly trades: 0/3
+- Stops confirmed LIVE (GTC, status new): PG trailing_stop $138.888 (HWM $154.32); KO trailing_stop $77.112 (HWM $85.68).
+- PG -1.86% on entry ($147.92); KO -1.08% on entry ($82.20). Both far inside -7% cut, clear of stops.
+
+### Market Context
+- WTI / Brent: WTI ~$88-90 | Brent ~$95-98 — RALLYING HARD vs yesterday (~$84.9/$91.5). Driver: Red Sea tanker attacks / Middle East supply-risk. Reloads a modest input-cost headwind for staples and revives inflation worries (higher yields).
+- S&P 500 futures: ~7,510 (-0.40%). Risk-off-lite; "big tech capex test revives AI spending worries" after Alphabet's record capex guidance + INTC/AMZN on deck.
+- VIX: ~17.44 (+4.81%) — ticking up off the multi-week low (~16.6 close) as oil/tech worries return, but still calm.
+- Today's catalysts: (1) Alphabet's record AI-capex guidance reset the AI trade — semis/tech sensitive, spending-worry overhang; (2) oil rally on Red Sea supply risk lifting energy/materials + yields; (3) heavy earnings day; (4) US initial jobless claims 8:30am ET.
+- Earnings before open: BX, TMO, TMUS, CMCSA, UNP, HON, RTX, LMT, DOW, CLF (INTC after close). Defense (LMT/RTX) + industrials heavy. None held/direct-comp. Held-name earnings ahead: KO Jul 28, PG FQ4 Jul 29.
+- Economic calendar: Light. Initial Jobless Claims + Chicago Fed NAI 8:30am ET. No CPI/PPI/NFP today (next CPI Aug 12). FOMC Jul 28-29 (decision Jul 29 2pm ET) — Fed on hold 3.50-3.75%.
+- Sector momentum: Tech leads YTD (+34.86%), Energy #2 (+33.76%) and firming on oil, Capital Goods +29.73%. Consumer Non-Cyclical/Staples mid-pack (+13.36% YTD) — defensive, not a momentum leader but stable.
+
+### Held Positions News
+- PG: sandbox $147.92, unrealized -1.86% (-$277) from entry ($150.72) — far inside -7% cut (~$140.17), clear of live stop $138.888. Dividend anchor: $1.0885/sh declared, RECORD DATE TOMORROW (Jul 24), pay Aug 17. FQ3 beat (net sales $21.2B, +7% YoY) still the backdrop; guidance caution on restructuring/tariff drag. FQ4 print Jul 29 next binary. Thesis intact; oil rally a mild input-cost headwind, not thesis-breaking for a Dividend King.
+- KO: sandbox $82.20, unrealized -1.08% (-$32) from entry ($83.10) — far inside -7% cut (~$77.28), clear of live stop $77.112. Fairlife ransomware / US production pause (reported Jul 17, drove a ~4% dip that's since recovered) remains the only overhang — contained: small premium-dairy slice, safety unaffected, execution/supply issue not brand shutdown. Q2 print Jul 28 the read-through catalyst. Dividend King thesis intact. MONITOR restoration timeline + Q2.
+
+### Trade Ideas
+1. PG / KO — HOLD. Both theses intact, both trading tight to entry (PG -1.9%, KO -1.1%), both far inside the -7% cut and clear of live 10% trailing stops. Today's oil-driven risk-off-lite + returning inflation worry is a mild relative headwind (input costs) but not thesis-breaking for two Dividend Kings held for stability. Let the stops work.
+2. Diversifying add — NO CANDIDATE CLEARS THE GATE. Before-open names (BX, TMO, TMUS, HON, RTX, LMT, DOW, CLF) are earnings prints — don't front-run binaries. Energy is momentum-strong on the oil rally but chasing an extended commodity spike with no stock-specific edge is negative-EV, and no S&P 500 large-cap outside held staples pairs a documented, tradeable stock-specific catalyst with a tight-spread sandbox quote. Catalyst gate fails → SKIP.
+
+### Risk Factors
+- **Oil rally on Red Sea tanker attacks (WTI ~$88-90, +~5% vs yesterday)** — the live new variable. Reloads input-cost pressure for both staples (PG guided ~$0.25 EPS tariff/commodity drag) and lifts yields, mildly pressuring rate-sensitive defensives. Watch for escalation; benign-to-modest for now, not a sell trigger (stops far below).
+- **Big-tech AI-capex worry (Alphabet record capex → INTC/AMZN after close)** — sets the risk tone; a further tech wobble could rotate money INTO defensives (supportive for PG/KO) OR broaden a risk-off leg. Not a sell trigger either way.
+- KO idiosyncratic: **Fairlife ransomware / US production pause** — contained but unresolved; monitor restoration duration + Q2 read-through (Jul 28). Premium P/E ~26.
+- PG: FQ4 print Jul 29 next binary; dividend record date TOMORROW (Jul 24).
+- Under-deployed (~17.6% vs 75-85% target) — 23rd consecutive under-deployed session, closing the fourth week with zero new trades. Structural blocker unchanged: pipeline sources sector-level ideas, not a named stock + documented catalyst + tight sandbox spread. Standing owner decision still needed: (a) permit non-leveraged sector ETFs, or (b) direct pre-market to name specific individual large-caps WITH stock-specific catalysts — to put idle 82% cash to work.
+
+### Decision
+**HOLD — NO TRADES.** Oil-driven risk-off-lite open (futures -0.40%, WTI ~$88-90 rallying on Red Sea tanker attacks, VIX ~17.4 ticking up, big-tech AI-capex worries after Alphabet's record guidance). The new variable is the oil spike — a modest input-cost/yield headwind for held staples but not thesis-breaking for two Dividend Kings held for stability; both are far inside the -7% cut and clear of live 10% GTC trailing stops (PG -1.9%, KO -1.1%), so no sell triggers. No diversifying candidate clears the buy-side gate: before-open names are earnings prints, energy is an extended commodity chase with no stock-specific edge, and no large-cap pairs a documented catalyst with a tradeable tight-spread quote — chasing is negative-EV. Watch: oil/Red Sea escalation, INTC after close (AI-capex tone), KO Fairlife restoration + Q2 (Jul 28), PG dividend record Jul 24 / FQ4 Jul 29, FOMC Jul 28-29. Patience > activity; no rule violated. Deployment stays ~17.6%.
