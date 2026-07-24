@@ -893,3 +893,39 @@ TRADE or HOLD (default HOLD if no clear edge)
 
 ### Decision
 **HOLD — NO TRADES.** Oil-driven risk-off-lite open (futures -0.40%, WTI ~$88-90 rallying on Red Sea tanker attacks, VIX ~17.4 ticking up, big-tech AI-capex worries after Alphabet's record guidance). The new variable is the oil spike — a modest input-cost/yield headwind for held staples but not thesis-breaking for two Dividend Kings held for stability; both are far inside the -7% cut and clear of live 10% GTC trailing stops (PG -1.9%, KO -1.1%), so no sell triggers. No diversifying candidate clears the buy-side gate: before-open names are earnings prints, energy is an extended commodity chase with no stock-specific edge, and no large-cap pairs a documented catalyst with a tradeable tight-spread quote — chasing is negative-EV. Watch: oil/Red Sea escalation, INTC after close (AI-capex tone), KO Fairlife restoration + Q2 (Jul 28), PG dividend record Jul 24 / FQ4 Jul 29, FOMC Jul 28-29. Patience > activity; no rule violated. Deployment stays ~17.6%.
+
+## 2026-07-24 — Pre-market Research
+
+### Account
+- Equity: $99,532.31 | Cash: $82,170.20 | Buying power: $377,294.71 | Daytrade count: 0
+- Positions: 2 (PG, KO) | Deployment ~17.4% ($17,362.11) | Weekly trades: 0/3 (Friday)
+- Stops confirmed LIVE (GTC, status new): PG trailing_stop $138.888 (HWM $154.32); KO trailing_stop $77.112 (HWM $85.68).
+- PG -2.73% on entry ($146.60); KO -2.06% on entry ($81.39). Both far inside -7% cut, clear of stops.
+
+### Market Context
+- WTI / Brent: WTI ~$71.10 (-2.88%) | Brent ~$74.76 (-3.01%) — SHARP REVERSAL. Oil collapsed ~$17-20 from yesterday's Red Sea spike (~$88-90/$95-98). Middle East supply premium unwinding fast. NET POSITIVE for held staples: removes the input-cost/inflation headwind that pressured PG/KO into yesterday's red close.
+- S&P 500 futures: ~7,503-7,523 (+0.04% to +0.35%). Flat-to-slightly-firm despite AI nerves; oil relief offsetting tech wobble.
+- VIX: ~20.95 (+12.4%) — jumped above the multi-week ~17 range. Elevated (not panic) on the "AI unwind meets earnings gauntlet" theme; supportive of a defensive tilt.
+- Today's catalysts: (1) AI-capex scrutiny — market shifting from rewarding AI spend to demanding earnings proof (Alphabet capex read-through, AI-unwind rotation); (2) packed earnings gauntlet; (3) oil sharply LOWER, easing inflation/rate pressure; (4) Red Sea/Iran geopolitics still a live oil swing factor.
+- Earnings before open: AXP, HCA, VZ, SLB, CNI, BAH, E, FCNCA. None held or direct-comp. Held-name earnings ahead: KO Jul 28, PG FQ4 Jul 29.
+- Economic calendar: LIGHT. No CPI/PPI/NFP/FOMC today. Next CPI Aug 12; FOMC Jul 28-29 (decision Jul 29). Latest prints: unemployment 4.2%, payrolls +57k.
+- Sector momentum YTD: Energy leads (+22-27%), Materials (+13-18%), Consumer Staples (+11-16%), Industrials (+10-14%) — the value/defensive leadership block. Tech/Financials/Discretionary among weaker names (AI-unwind). Staples backdrop remains supportive for PG/KO.
+
+### Held Positions News
+- PG: sandbox $146.60, unrealized -2.73% (-$408) from entry ($150.72) — far inside -7% cut (~$140.17), clear of live stop $138.888. POSITIVE analyst flow: Bernstein initiated $156 target; BMO raised to $170 (Outperform); Jefferies Buy, target lifted to $179. FQ3/Q2 mixed (sales +1% to $22.2B, adj EPS $1.88 vs $1.86) with FY guidance reaffirmed. Dividend record date TODAY (Jul 24). FQ4 print Jul 29 next binary. Oil drop is a tailwind. Thesis intact.
+- KO: sandbox $81.39, unrealized -2.06% (-$60) from entry ($83.10) — far inside -7% cut (~$77.28), clear of live stop $77.112. Barclays reiterated Buy (PT nudged to $74 per one feed — looks stale/low vs ~$87-88 consensus; treat as data lag). NEW minor overhang: EU antitrust regulators raided Coca-Cola bottlers — headline risk, not thesis-breaking (bottler-level probe, small near-term impact). Q2 print Jul 28 the read-through catalyst; $0.53 quarterly dividend. Fairlife restoration still monitoring. Dividend King thesis intact.
+
+### Trade Ideas
+1. PG / KO — HOLD. Both theses intact and improving at the margin: oil's sharp reversal lifts the input-cost overhang that drove yesterday's red close, staples sit in the leading value/defensive block, and PG just drew three bullish analyst target hikes. Both trade tight to entry (PG -2.7%, KO -2.1%), far inside the -7% cut and clear of live 10% trailing stops. Let the stops work into next week's held-name prints (KO Jul 28, PG Jul 29).
+2. Diversifying add — NO CANDIDATE CLEARS THE GATE. Today's before-open names (AXP, VZ, SLB, HCA) are earnings prints — don't front-run binaries. Energy leads momentum but oil just reversed hard — chasing a collapsing commodity with no stock-specific edge is negative-EV. No S&P 500 large-cap outside held staples pairs a documented, tradeable stock-specific catalyst with a tight-spread sandbox quote. Catalyst gate fails → SKIP.
+
+### Risk Factors
+- **Oil's sharp reversal (WTI ~$71, -2.9%; Brent ~$75, -3.0%)** — the live new variable, this time a TAILWIND for staples (eases input costs + inflation/rate pressure). But it's a volatile two-way swing on Red Sea/Iran headlines; a fresh escalation could snap it back up. Net supportive today; not a trade trigger.
+- **VIX jump to ~20.95 (+12.4%)** — nerves rising on the AI-unwind/earnings-gauntlet theme. A defensive-favoring backdrop for PG/KO, but a broad risk-off leg could still drag everything; stops sit far below.
+- **AI-capex scrutiny / rotation** — market punishing unproven AI spend; keeps money rotating toward value/defensives (supportive for held staples), but adds index-level volatility.
+- KO idiosyncratic: **EU antitrust raid on bottlers** (new) + Fairlife restoration (unresolved) — both contained; monitor into Q2 print (Jul 28). Premium P/E ~26.
+- PG: FQ4 print Jul 29 next binary; dividend record date TODAY.
+- Under-deployed (~17.4% vs 75-85% target) — 24th consecutive under-deployed session, zero new trades in four+ weeks. Structural blocker unchanged: pipeline sources sector-level ideas, not a named stock + documented catalyst + tight sandbox spread. Standing owner decision still needed: (a) permit non-leveraged sector ETFs, or (b) direct pre-market to name specific individual large-caps WITH stock-specific catalysts — to put idle 82% cash to work.
+
+### Decision
+**HOLD — NO TRADES.** Constructive open for the book: oil reversed hard ($17-20 lower than yesterday's spike), lifting the input-cost/inflation overhang that pressured PG/KO all week, while the AI-unwind keeps rotating money into the value/defensive block where both staples sit. Futures flat-to-firm; VIX up to ~21 on earnings-gauntlet nerves but that tilt favors defensives. PG drew three bullish analyst target hikes (Bernstein/BMO/Jefferies); KO carries a minor new EU-bottler-raid headline, contained. Both far inside the -7% cut and clear of live 10% GTC trailing stops (PG -2.7%, KO -2.1%) — no sell triggers. No diversifying candidate clears the buy-side gate: before-open names are earnings prints, energy is a reversing-commodity chase, and no large-cap pairs a documented catalyst with a tradeable tight-spread quote — chasing is negative-EV. Watch: oil two-way swings on Red Sea/Iran, KO Q2 (Jul 28), PG FQ4 (Jul 29) + dividend record today, FOMC Jul 28-29. Weekly review due today (Friday). Patience > activity; no rule violated. Deployment stays ~17.4%.
