@@ -259,3 +259,55 @@ Friday reviews are appended here. One entry per week.
 
 ### Overall Grade: B-
 - Beat the benchmark for the first time in four weeks (+1.68% alpha) with immaculate risk discipline and a correct, calm hold through the KO Fairlife scare — a genuinely good defensive week. Graded up from D to B- because the mission is to beat the S&P and this week it did. But held back from higher: the beat was won passively by 82% idle cash in a down market, not by skillful deployment, and the four-week structural blocker (zero trades, ~18% deployed) is entirely unresolved. Right this week, but for reasons that guarantee being wrong the next up week.
+
+## Week ending 2026-07-24
+
+### Stats
+| Metric | Value |
+|--------|-------|
+| Starting portfolio | $99,809.90 |
+| Ending portfolio | $99,648.12 |
+| Week return | -$161.78 (-0.16%) |
+| S&P 500 week | -1.94% |
+| Bot vs S&P | +1.78% |
+| Trades | 0 (W:0 / L:0 / open:2) |
+| Win rate | N/A (no closed trades) |
+| Best trade | N/A (no closed trades) |
+| Worst trade | N/A (no closed trades) |
+| Profit factor | 0.00 (no closed trades) |
+
+### Closed Trades
+| Ticker | Entry | Exit | P&L | Notes |
+|--------|-------|------|-----|-------|
+| —      | —     | —    | —   | None closed this week |
+
+### Open Positions at Week End
+| Ticker | Entry | Close | Unrealized | Stop |
+|--------|-------|-------|------------|------|
+| PG | $150.72 | $147.41 | -$327.69 (-2.20%) | $138.89 (10% trailing GTC, HWM $154.32) |
+| KO | $83.10 | $82.25 | -$29.75 (-1.02%) | $77.11 (10% trailing GTC, HWM $85.68) |
+
+### What Worked
+- **Positive alpha for a 2nd straight week (+1.78%).** The S&P fell -1.94% (its second consecutive losing week, dragged by soft Alphabet/Tesla earnings and an oil spike on US-Iran tension) while the defensive-staples book held near-flat (-0.16%), so the bot beat the benchmark by 1.78% — extending last week's +1.68% reversal.
+- Risk discipline immaculate again: both PG and KO stayed far inside the -7% cut line all week (PG's worst close -2.57% Thu, KO -2.32% Thu), stops never moved down, no rule broken. Both live 10% GTC trailing stops held (PG $138.89 / HWM $154.32; KO $77.11 / HWM $85.68); neither made a new HWM so neither ratcheted.
+- Capital preserved through a choppy, mostly-red tape: five sessions Mon-Fri netted just -$161.78 with zero drawdown scares, both names recovering into Friday's fractionally-green close.
+
+### What Didn't Work
+- **Chronic under-deployment, now the 5th straight review cycle.** Deployment held ~17.5% vs the 75-85% target for the entire week — the 24th consecutive under-deployed session. ~82% cash ($82,170) sat idle all week.
+- **No new trade for a 3rd consecutive week (0/3).** Last position opened was KO in the week ending Jul 3; every market-open run Mon-Fri hit the identical gate failure — pre-market sources sector-level ideas, never a specific named large-cap with BOTH a documented stock-specific catalyst AND a tradeable tight-spread sandbox quote.
+- **The +1.78% beat is again passive, not earned.** As last week, the bot beat the S&P only because the market fell and it happened to be 82% cash + defensive. In any up week this same posture loses (as it did the first three weeks of the phase). Two down-week beats in a row do not validate a structure that is wrong every up week.
+- Still under-diversified: both positions in a single defensive sector (Consumer Staples). PG remains the weaker name, drifting to -2.20% on entry at week end.
+
+### Key Lessons
+- Two consecutive benchmark beats, both won entirely by holding cash in a falling market, are not evidence the pipeline works — they are the same broken pipeline producing a favorable outcome by accident. The 82% idle cash resumes bleeding alpha the moment the tape turns up. The structural fix is exactly as urgent at +1.78% as it was at -0.44%.
+- Q2 earnings season — the catalyst supply that was supposed to break the logjam a month ago — is now well past its peak and has NOT surfaced a single tradeable named candidate through the current gate. This confirms the gate is mis-calibrated for the sandbox's liquidity/catalyst reality, not that catalysts are absent.
+- Five review cycles of the same unresolved structural blocker means the pending owner decision is the single highest-leverage action available; risk discipline is already maxed out and cannot improve the mission outcome further on its own.
+
+### Adjustments for Next Week
+- **ESCALATION (5th cycle, blocking — now a full ~5 weeks unresolved): the standing owner decision cannot wait longer.** Choose one — (a) permit non-leveraged sector ETFs (XLE/XLP/XLI etc.) so momentum-sector deployment is possible, or (b) relax the buy gate to allow a specific individual large-cap in a Leading sector on a *sector/rotation* catalyst (not only a stock-specific one) when its sandbox quote is tight. Under the current gate the bot sits ~18% cash indefinitely — winning only in down weeks, losing every up week.
+- Weekly trade count resets to 0/3 Monday — room for up to 3 adds. Target once the gate loosens: move deployment from ~17.5% toward at least 40-50% via 2-3 diversifying names, ideally a 2nd Leading sector to break single-sector concentration.
+- Hold PG and KO with their trailing stops; PG earnings Jul 29 and KO earnings ~Jul 28 both land next week — monitor for thesis confirmation/break and be ready to act on a material surprise.
+- No strategy hard-rule change this week — the rulebook and risk layer are sound; the failure is at the research/execution layer and hinges on the owner decision above. Codifying under-deployment as strategy off two lucky defensive weeks would be exactly the wrong lesson.
+
+### Overall Grade: B-
+- Beat the benchmark for a 2nd straight week (+1.78% alpha) with immaculate risk discipline through a choppy, mostly-red tape — a solid defensive result, and the mission is to beat the S&P. Held at B- (not higher): the beat was again won passively by 82% idle cash in a down market, and the structural blocker (zero new trades for 3 weeks, ~18% deployed) is now entrenched across five full review cycles with the owner decision still pending. Right again this week, but for the same reason that guarantees being wrong the next up week.
