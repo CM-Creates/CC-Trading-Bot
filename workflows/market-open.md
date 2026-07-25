@@ -13,9 +13,15 @@
 1. **Read memory for today's plan**
    - `memory/TRADING-STRATEGY.md` — hard rules (especially buy-side gate)
    - Today's entry in `memory/RESEARCH-LOG.md` — the trade ideas and catalyst list
-   - Last 50 lines of `memory/TRADE-LOG.md` — count trades placed this week (toward 3/week cap)
+   - Last 50 lines of `memory/TRADE-LOG.md` — open positions, entries, recent context
    
    If today's RESEARCH-LOG entry is missing, run pre-market STEPS 1-3 inline first. Never trade without documented research.
+
+   Then get the authoritative weekly-trade count (do NOT tally it by eye from the log):
+   ```
+   python tools/alpaca.py week-trades
+   ```
+   Use `new_trades_this_week` / `room_left` / `gate_open` from this output for the 3/week cap in STEP 3.
 
 2. **Re-validate with fresh live data**
    ```
@@ -33,7 +39,7 @@
 3. **Run buy-side gate on each planned trade**
    Every single check must pass or the trade is skipped:
    - Total positions after fill <= 6
-   - Trades this week (including this one) <= 3
+   - `new_trades_this_week` (from `alpaca.py week-trades`) + trades about to place this run <= 3
    - Position cost (shares × ask) <= 20% of account equity
    - Position cost <= available cash
    - Specific catalyst documented in today's RESEARCH-LOG

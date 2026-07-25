@@ -69,7 +69,7 @@ def _delete(url):
 def main():
     args = sys.argv[1:]
     if not args:
-        print("Usage: python tools/alpaca.py <account|positions|position|quote|bars|orders|order|cancel|cancel-all|close|close-all> [args]", file=sys.stderr)
+        print("Usage: python tools/alpaca.py <account|positions|position|quote|bars|orders|order|cancel|cancel-all|close|close-all|week-trades> [args]", file=sys.stderr)
         sys.exit(1)
 
     cmd = args[0]
@@ -173,9 +173,41 @@ def main():
     elif cmd == "close-all":
         print(json.dumps(_delete(f"{API}/positions"), indent=2))
 
+    elif cmd == "week-trades":
+        # Deterministic "max 3 new trades per week" counter. Source of truth is
+        # Alpaca's filled-order history, NOT the markdown log (which is tallied by
+        # eye and drifts). Counts filled BUY orders since Monday 00:00 America/Chicago.
+        import datetime
+        try:
+            from zoneinfo import ZoneInfo
+            tz = ZoneInfo("America/Chicago")
+        except Exception:
+            tz = datetime.timezone.utc
+        now = datetime.datetime.now(tz)
+        monday = (now - datetime.timedelta(days=now.weekday())).replace(
+            hour=0, minute=0, second=0, microsecond=0)
+        after_utc = monday.astimezone(datetime.timezone.utc).isoformat()
+        orders = _get(f"{API}/orders", params={
+            "status": "closed", "after": after_utc, "limit": 500, "direction": "asc"})
+        buys = [o for o in orders
+                if o.get("side") == "buy" and o.get("filled_at")
+                and float(o.get("filled_qty") or 0) > 0]
+        limit = 3
+        count = len(buys)
+        out = {
+            "week_start_ct": monday.date().isoformat(),
+            "new_trades_this_week": count,
+            "weekly_limit": limit,
+            "room_left": max(0, limit - count),
+            "gate_open": count < limit,
+            "buys": [{"symbol": o.get("symbol"), "filled_qty": o.get("filled_qty"),
+                      "filled_at": o.get("filled_at")} for o in buys],
+        }
+        print(json.dumps(out, indent=2))
+
     else:
         print(f"Unknown subcommand: {cmd}", file=sys.stderr)
-        print("Usage: python tools/alpaca.py <account|positions|position|quote|bars|orders|order|cancel|cancel-all|close|close-all> [args]", file=sys.stderr)
+        print("Usage: python tools/alpaca.py <account|positions|position|quote|bars|orders|order|cancel|cancel-all|close|close-all|week-trades> [args]", file=sys.stderr)
         sys.exit(1)
 
 

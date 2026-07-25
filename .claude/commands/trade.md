@@ -14,7 +14,7 @@ Args: SYMBOL SHARES SIDE (buy or sell). If any are missing, ask before proceedin
 
 2. For BUY — validate ALL of the following. If any fail, STOP and print which checks failed:
    - Total positions after this fill will be no more than 6
-   - Total trades placed this week + 1 <= 3 (check memory/TRADE-LOG.md for this week's count)
+   - Weekly cap: run `python tools/alpaca.py week-trades`; require `new_trades_this_week` + 1 <= 3 (use the tool, not a hand count of the log)
    - SHARES × P <= 20% of account equity
    - SHARES × P <= available cash
    - A specific catalyst exists (ask the user for the thesis if today's RESEARCH-LOG has no entry)

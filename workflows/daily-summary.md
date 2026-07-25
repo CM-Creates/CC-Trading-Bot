@@ -15,7 +15,7 @@
    - Tail of `memory/TRADE-LOG.md`:
      - Find the most recent "EOD Snapshot" section header — extract the Portfolio equity value as `yesterday_equity`
      - Count all trade entries (BUY/SELL) dated today → "Trades today"
-     - Count all trade entries from Monday through today → weekly trade count
+     - For the weekly trade count, use `python tools/alpaca.py week-trades` (field `new_trades_this_week`) — the authoritative count, not a hand tally
    - Note: If no prior EOD snapshot exists (Day 1), use starting capital of $100,000.00
 
 2. **Pull final state of the day**

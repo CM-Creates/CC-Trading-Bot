@@ -27,7 +27,7 @@ Beat the S&P 500 over the challenge window. Stocks only — no options, ever.
 ## Buy-Side Gate (all must pass before placing any order)
 
 - [ ] Total positions after this fill will be no more than 6
-- [ ] Total trades placed this week (including this one) is no more than 3
+- [ ] Weekly trade cap: `python tools/alpaca.py week-trades` reports `gate_open: true` and `new_trades_this_week` + trades placed this run is no more than 3 (use the tool — never tally from the log by eye)
 - [ ] Position cost (shares × ask) is no more than 20% of account equity
 - [ ] Position cost is no more than available cash
 - [ ] A specific catalyst is documented in today's RESEARCH-LOG entry
@@ -58,5 +58,6 @@ Before placing any buy, document all four in the RESEARCH-LOG:
 - Quote endpoint: `data.alpaca.markets` (different from trading endpoint)
 - `quote.ap` = ask price, `quote.bp` = bid price
 - Wide spread or zero values = halted/illiquid → skip the ticker
+- `week-trades` subcommand returns the authoritative "new trades this week" count (filled BUY orders since Monday, America/Chicago) for the 3/week cap — use it instead of counting the log
 - Trailing stops only work during market hours; overnight gaps can blow through them
 - Stop-order fallback if a stop is ever rejected: trailing_stop → fixed stop → queue for tomorrow AM
