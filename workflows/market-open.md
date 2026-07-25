@@ -36,7 +36,6 @@
    - Trades this week (including this one) <= 3
    - Position cost (shares × ask) <= 20% of account equity
    - Position cost <= available cash
-   - `daytrade_count` < 3 (PDT protection on sub-$25k accounts)
    - Specific catalyst documented in today's RESEARCH-LOG
    - Instrument is a stock (not option, warrant, or ETF derivative)
    
@@ -53,8 +52,8 @@
    python tools/alpaca.py order '{"symbol":"SYM","qty":"N","side":"sell","type":"trailing_stop","trail_percent":"10","time_in_force":"gtc"}'
    ```
    - `trail_percent` and `qty` must be strings ("10", not 10)
-   - If Alpaca rejects due to PDT rules, fall back to fixed stop ~10% below fill price
-   - If fixed stop is also blocked, log "PDT-blocked stop, set tomorrow AM" in TRADE-LOG
+   - If Alpaca rejects the trailing stop, fall back to fixed stop ~10% below fill price
+   - If fixed stop is also blocked, log "stop rejected, set tomorrow AM" in TRADE-LOG
 
 6. **Append trade entries to `memory/TRADE-LOG.md`**
    One section per trade:
@@ -83,5 +82,5 @@
 
 - **No trade ideas in RESEARCH-LOG:** Do nothing. Log "no trades — no research entry" and exit.
 - **All planned trades fail gate checks:** Log each failure, send no notification, do not commit.
-- **Fill confirmed but stop rejected:** Log the PDT-blocked situation and queue the stop for tomorrow's market-open routine.
+- **Fill confirmed but stop rejected:** Log the rejection and queue the stop for tomorrow's market-open routine.
 - **Quote shows zero spread or no data:** Skip that ticker, note it in TRADE-LOG as "skipped — illiquid/halted."

@@ -17,7 +17,7 @@ STEP 2 — Pull final state of the day:
 
 STEP 3 — Compute metrics:
 - Day P&L ($ and %) = today_equity - yesterday_equity
-- Phase P&L ($ and %) = today_equity - 10000.00
+- Phase P&L ($ and %) = today_equity - 100000.00
 - Trades today: list tickers or "none"
 - Trades this week: running count
 

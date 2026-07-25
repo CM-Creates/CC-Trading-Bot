@@ -96,7 +96,33 @@ def main():
         ap, bp = q.get("ap", 0), q.get("bp", 0)
         if ap and bp:
             q["spread_pct"] = round((ap - bp) / ap * 100, 3)
-            q["tradeable"] = q["spread_pct"] <= 1.0
+            tradeable = q["spread_pct"] <= 1.0
+            # Absolute-price sanity check: a tight spread alone does NOT mean the
+            # feed is real. The paper sandbox has quoted names (e.g. MU) ~10x their
+            # true price with an internally-consistent (tight) spread. Compare the
+            # ask against the most recent daily bar close and reject wild outliers.
+            try:
+                import datetime
+                start = (datetime.date.today() - datetime.timedelta(days=10)).isoformat()
+                bars = (_get(f"{DATA}/stocks/{sym}/bars",
+                             params={"timeframe": "1Day", "start": start, "limit": 1})
+                        .get("bars") or [])
+                ref = bars[-1].get("c") if bars else None
+                if ref:
+                    q["ref_close"] = ref
+                    ratio = ap / ref
+                    q["price_ratio"] = round(ratio, 3)
+                    if ratio > 3 or ratio < 0.33:
+                        tradeable = False
+                        q["feed_warning"] = (
+                            f"ask {ap} is {q['price_ratio']}x the recent close {ref} "
+                            f"— likely broken feed, DO NOT TRADE"
+                        )
+                else:
+                    q["feed_warning"] = "no reference bar available — verify price manually"
+            except Exception as e:
+                q["feed_warning"] = f"sanity check failed ({e}) — verify price manually"
+            q["tradeable"] = tradeable
         print(json.dumps(result, indent=2))
 
     elif cmd == "bars":

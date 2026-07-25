@@ -5,7 +5,7 @@
 **Tools:** `python tools/alpaca.py`, `python tools/slack.py`  
 **Writes:** `memory/TRADE-LOG.md`  
 **Commits:** Always (mandatory — tomorrow's P&L math depends on this)  
-**Generates:** `docs/index.html` (web dashboard — committed alongside TRADE-LOG.md)
+**Generates:** `docs/dashboard.html` (internal web dashboard — committed alongside TRADE-LOG.md)
 
 ---
 
@@ -16,7 +16,7 @@
      - Find the most recent "EOD Snapshot" section header — extract the Portfolio equity value as `yesterday_equity`
      - Count all trade entries (BUY/SELL) dated today → "Trades today"
      - Count all trade entries from Monday through today → weekly trade count
-   - Note: If no prior EOD snapshot exists (Day 1), use starting capital of $10,000.00
+   - Note: If no prior EOD snapshot exists (Day 1), use starting capital of $100,000.00
 
 2. **Pull final state of the day**
    ```
@@ -29,8 +29,8 @@
    - `today_equity` = `account.equity`
    - Day P&L ($) = `today_equity` - `yesterday_equity`
    - Day P&L (%) = Day P&L / `yesterday_equity` × 100
-   - Phase P&L ($) = `today_equity` - 10000.00 (starting capital)
-   - Phase P&L (%) = Phase P&L / 10000.00 × 100
+   - Phase P&L ($) = `today_equity` - 100000.00 (starting capital)
+   - Phase P&L (%) = Phase P&L / 100000.00 × 100
    - Trades today: list tickers or "none"
    - Weekly trade count: N of 3
 
@@ -61,11 +61,11 @@
    ```bash
    python tools/dashboard.py
    ```
-   This writes `docs/index.html` with the updated portfolio snapshot. Run before committing.
+   This writes `docs/dashboard.html` with the updated portfolio snapshot. Run before committing.
 
 7. **Commit and push** — always mandatory
    ```bash
-   git add memory/TRADE-LOG.md docs/index.html
+   git add memory/TRADE-LOG.md docs/dashboard.html
    git commit -m "EOD snapshot YYYY-MM-DD"
    git push origin main
    ```
@@ -77,5 +77,5 @@
 ## Edge Cases
 
 - **No positions:** EOD table shows "none." Slack message still sent. Commit still happens.
-- **Can't find yesterday's equity:** Use the most recent EOD snapshot before today. If none exists, use $10,000.00 and note "Day 1 baseline" in the Notes section.
+- **Can't find yesterday's equity:** Use the most recent EOD snapshot before today. If none exists, use $100,000.00 and note "Day 1 baseline" in the Notes section.
 - **Market was closed today (holiday):** Still run if triggered. Note "market closed" in Notes. Slack message still sends. Commit still happens.

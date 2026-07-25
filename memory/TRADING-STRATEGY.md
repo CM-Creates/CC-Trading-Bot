@@ -7,7 +7,7 @@ Beat the S&P 500 over the challenge window. Stocks only — no options, ever.
 - Starting capital: $100,000 (Alpaca paper default)
 - Platform: Alpaca (paper trading)
 - Instruments: Stocks ONLY — no options, no warrants, no leveraged ETFs
-- PDT limit: 3 day trades per 5 rolling business days (account < $25k)
+- No PDT restriction: account equity is $100k (above the $25k threshold), so day-trade count is unlimited. This is still a swing strategy, not a day-trading one — the limiter is "max 3 new trades/week," not PDT.
 
 ## Core Rules
 
@@ -30,7 +30,6 @@ Beat the S&P 500 over the challenge window. Stocks only — no options, ever.
 - [ ] Total trades placed this week (including this one) is no more than 3
 - [ ] Position cost (shares × ask) is no more than 20% of account equity
 - [ ] Position cost is no more than available cash
-- [ ] PDT day-trade count leaves room (under 3 on sub-$25k account)
 - [ ] A specific catalyst is documented in today's RESEARCH-LOG entry
 - [ ] The instrument is a stock (not an option or anything else)
 
@@ -60,4 +59,4 @@ Before placing any buy, document all four in the RESEARCH-LOG:
 - `quote.ap` = ask price, `quote.bp` = bid price
 - Wide spread or zero values = halted/illiquid → skip the ticker
 - Trailing stops only work during market hours; overnight gaps can blow through them
-- PDT fallback order: trailing_stop → fixed stop → queue for tomorrow AM
+- Stop-order fallback if a stop is ever rejected: trailing_stop → fixed stop → queue for tomorrow AM

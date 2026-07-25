@@ -17,7 +17,6 @@ Args: SYMBOL SHARES SIDE (buy or sell). If any are missing, ask before proceedin
    - Total trades placed this week + 1 <= 3 (check memory/TRADE-LOG.md for this week's count)
    - SHARES × P <= 20% of account equity
    - SHARES × P <= available cash
-   - daytrade_count < 3 (PDT protection)
    - A specific catalyst exists (ask the user for the thesis if today's RESEARCH-LOG has no entry)
    - Instrument is a stock (confirm SYMBOL is not an option ticker)
 
@@ -30,7 +29,7 @@ Args: SYMBOL SHARES SIDE (buy or sell). If any are missing, ask before proceedin
 
 6. For BUYs only: immediately place 10% trailing stop GTC after fill confirmed:
    python tools/alpaca.py order '{"symbol":"SYMBOL","qty":"SHARES","side":"sell","type":"trailing_stop","trail_percent":"10","time_in_force":"gtc"}'
-   If Alpaca rejects (PDT error), fall back to fixed stop 10% below fill price:
+   If Alpaca rejects the trailing stop, fall back to fixed stop 10% below fill price:
    python tools/alpaca.py order '{"symbol":"SYMBOL","qty":"SHARES","side":"sell","type":"stop","stop_price":"X.XX","time_in_force":"gtc"}'
 
 7. Append to memory/TRADE-LOG.md:

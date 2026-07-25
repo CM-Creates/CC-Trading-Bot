@@ -3,7 +3,7 @@
 ## Overview
 - **What:** Autonomous AI trading bot challenge
 - **Goal:** Beat the S&P 500 over the challenge window
-- **Starting capital:** ~$10,000
+- **Starting capital:** ~$100,000
 - **Platform:** Alpaca (paper trading to start, live when ready)
 - **Strategy:** Swing trading, stocks only, no options
 - **Architecture:** Claude Code WAT framework — Python tools in `tools/`, workflows in `workflows/`, cloud routines in `routines/`

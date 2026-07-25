@@ -22,7 +22,6 @@ STEP 3 — Hard-check rules BEFORE every order. Skip and log reason if any fail:
 - Trades this week <= 3
 - Position cost <= 20% of equity
 - Position cost <= available cash
-- daytrade_count < 3
 - Catalyst documented in today's RESEARCH-LOG
 - Instrument is a stock
 
@@ -32,7 +31,7 @@ Wait for fill before placing stop.
 
 STEP 5 — Place 10% trailing stop GTC for each fill:
   python tools/alpaca.py order '{"symbol":"SYM","qty":"N","side":"sell","type":"trailing_stop","trail_percent":"10","time_in_force":"gtc"}'
-Fall back to fixed stop if PDT error. Log "PDT-blocked" if both fail.
+Fall back to fixed stop if the trailing stop is rejected. Log "stop rejected" if both fail.
 
 STEP 6 — Append each trade to memory/TRADE-LOG.md.
 
