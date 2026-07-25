@@ -23,7 +23,7 @@ Configure five routines in the Claude Code web UI using the prompts in `routines
 | Routine        | Cron          | Time (CT)        |
 |----------------|---------------|------------------|
 | pre-market     | `0 6 * * 1-5` | 6:00 AM weekdays |
-| market-open    | `30 8 * * 1-5`| 8:30 AM weekdays |
+| market-open    | `0 10 * * 1-5`| 10:00 AM weekdays |
 | midday         | `0 12 * * 1-5`| Noon weekdays    |
 | daily-summary  | `0 15 * * 1-5`| 3:00 PM weekdays |
 | weekly-review  | `0 16 * * 5`  | 4:00 PM Fridays  |
@@ -37,11 +37,17 @@ Configure five routines in the Claude Code web UI using the prompts in `routines
 
 ```
 tools/          Python API wrappers (Alpaca, Perplexity, Slack)
-workflows/      WAT Layer 1 SOPs — human-readable workflow docs
-routines/       Cloud routine prompts — paste verbatim into Claude Code UI
+workflows/      WAT Layer 1 SOPs — THE single source of truth for each procedure
+routines/       Cloud routine prompts — thin wrappers that delegate to workflows/
 memory/         Persistent agent state — committed to main after every run
-.claude/commands/  Local slash commands for ad-hoc use
+.claude/commands/  Local slash commands — thin wrappers that delegate to workflows/
 ```
+
+**Single source of truth:** each procedure's steps live in exactly one file under
+`workflows/`. The matching `routines/*.md` (cloud) and `.claude/commands/*.md` (local)
+files are thin wrappers that reference the workflow and add only their mode-specific
+parts — cloud adds the env-var check and mandatory commit/push; local reads `.env`
+and never commits. Edit the procedure in `workflows/` only; the wrappers rarely change.
 
 ## Smoke Test
 

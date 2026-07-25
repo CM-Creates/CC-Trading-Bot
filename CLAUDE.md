@@ -107,4 +107,10 @@ python tools/slack.py "<message>"       # notifications via Gmail (falls back to
 ```
 
 ### Daily Workflows
-Defined in `.claude/commands/` (local) and `routines/` (cloud). Five scheduled runs per trading day plus two ad-hoc helpers (`/portfolio`, `/trade`).
+Each procedure is defined once in `workflows/` (the single source of truth). Both the
+local slash commands in `.claude/commands/` and the cloud prompts in `routines/` are
+thin wrappers that delegate to the matching `workflows/*.md` and add only mode-specific
+behavior (local: reads `.env`, never commits; cloud: env-var check + mandatory commit/push).
+To change what a workflow does, edit `workflows/` — never the wrappers. Five scheduled
+runs per trading day (pre-market, market-open, midday, daily-summary, weekly-review) plus
+two ad-hoc local helpers (`/portfolio`, `/trade`) that have no cloud/workflow counterpart.

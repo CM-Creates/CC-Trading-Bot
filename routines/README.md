@@ -1,6 +1,8 @@
 # Cloud Routine Prompts
 
-Paste each file's contents verbatim into its Claude Code cloud routine. Do not paraphrase — the env-var check block and the commit/push step are load-bearing.
+Paste each file's contents verbatim into its Claude Code cloud routine. Do not paraphrase — the env-var check block and the commit/push requirement are load-bearing.
+
+Each routine here is a **thin wrapper**: it holds the cloud-specific preamble (identity, env-var check, persistence, mandatory commit/push) and then delegates the actual steps to the matching `workflows/*.md`, which is the single source of truth. The cloud run has the repo checked out, so the agent reads the workflow file directly. To change a procedure's steps, edit `workflows/`, not these wrappers.
 
 | File | Cron (America/Chicago) | Time |
 |------|------------------------|------|
