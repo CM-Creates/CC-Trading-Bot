@@ -86,8 +86,10 @@
         labels: ['Deployed', 'Cash'],
         datasets: [{
           data: [Math.round(deployed * 100) / 100, Math.round(cash * 100) / 100],
-          backgroundColor: [theme.accent, theme.bgSunken],
-          borderColor: [theme.accent, theme.border],
+          // Cash uses a visible neutral (not near-black bgSunken) so the arc and
+          // its legend swatch read on the dark background.
+          backgroundColor: [theme.accent, theme.inkFaint],
+          borderColor: [theme.accent, theme.inkFaint],
           borderWidth: 1,
         }],
       },
