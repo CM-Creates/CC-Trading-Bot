@@ -102,8 +102,8 @@
           legend: {
             position: 'bottom',
             labels: {
-              color: theme.ink,
-              font: { size: 13, weight: '500' },
+              color: '#ffffff',
+              font: { size: 13, weight: '600' },
               padding: 16,
               generateLabels: function (chart) {
                 var ds = chart.data.datasets[0];
