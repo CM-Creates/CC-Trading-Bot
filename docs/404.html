@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="dark">
+<title>Page not found - Hermes</title>
+<link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/tokens.css?v=4">
+<link rel="stylesheet" href="assets/css/base.css?v=4">
+<link rel="stylesheet" href="assets/css/layout.css?v=4">
+<link rel="stylesheet" href="assets/css/components.css?v=4">
+<link rel="stylesheet" href="assets/css/site.css?v=4">
+<style>
+  .notfound { min-height: calc(100dvh - var(--nav-height)); display: flex; align-items: center; }
+  .notfound-code { font-family: var(--font-mono); color: var(--accent); font-size: 0.95rem; margin-bottom: 18px; }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a href="index.html" class="brand">
+      <svg width="26" height="26" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M6 25 L15 10"/><path d="M12 25 L21 7"/><path d="M18 25 L27 4"/></svg>
+      Hermes <span class="paper-tag">PAPER</span>
+    </a>
+    <nav class="site-nav" data-open="false">
+      <a href="index.html">Home</a>
+      <a href="news.html">Recent News</a>
+      <a href="insights.html">Insights</a>
+      <a href="portfolio.html">Portfolio</a>
+    </nav>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+  </div>
+</header>
+
+<main id="main" class="notfound">
+  <div class="container" style="max-width:560px;">
+    <div class="notfound-code">404</div>
+    <h1 style="font-size:clamp(1.8rem,4vw,2.6rem);margin-bottom:16px;">This page isn't in the log.</h1>
+    <p style="max-width:48ch;margin-bottom:28px;">Whatever you were looking for doesn't exist here, or moved. Try the portfolio, recent news, or head back home.</p>
+    <a href="index.html" class="btn btn-primary">Back to home</a>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="news.html">Recent News</a>
+      <a href="insights.html">Insights</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="https://github.com/CM-Creates/CC-Trading-Bot" target="_blank" rel="noopener">GitHub</a>
+    </nav>
+    <span class="footer-meta">Paper trading via Alpaca. Not investment advice.</span>
+  </div>
+</footer>
+
+<script src="assets/js/nav.js?v=4"></script>
+</body>
+</html>

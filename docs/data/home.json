@@ -1,0 +1,52 @@
+{
+  "generated_at": "2026-07-26 09:04 UTC",
+  "equity": 99642.54,
+  "phase_pnl_pct": -0.36,
+  "day_pnl_pct": 0.0,
+  "days_live": 34,
+  "open_position_count": 2,
+  "equity_series": [
+    100000.0,
+    100000.0,
+    100000.0,
+    100000.0,
+    99823.78,
+    99753.57,
+    99513.78,
+    99611.91,
+    100102.71,
+    100104.69,
+    99853.56,
+    100232.8,
+    99784.3,
+    99589.4,
+    99646.16,
+    99807.58,
+    99551.75,
+    99711.68,
+    100139.71,
+    99874.22,
+    99809.9,
+    99709.68,
+    99817.31,
+    99548.93,
+    99642.54
+  ],
+  "recent_activity": [
+    {
+      "date": "2026-07-24",
+      "type": "research",
+      "summary": "Pre-market Research: HOLD"
+    },
+    {
+      "date": "2026-07-23",
+      "type": "research",
+      "summary": "Pre-market Research: HOLD"
+    },
+    {
+      "date": "2026-07-22",
+      "type": "research",
+      "summary": "Pre-market Research: HOLD"
+    }
+  ]
+}

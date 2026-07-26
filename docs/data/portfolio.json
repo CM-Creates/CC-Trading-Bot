@@ -1,0 +1,96 @@
+{
+  "generated_at": "2026-07-26 09:04 UTC",
+  "snapshot_date": "2026-07-26",
+  "account": {
+    "equity": 99642.54,
+    "cash": 82170.2,
+    "cash_pct": 82.5,
+    "buying_power": "377603.35",
+    "portfolio_value": "99642.54"
+  },
+  "positions": [
+    {
+      "ticker": "KO",
+      "qty": "35",
+      "entry": "83.1",
+      "current": "82.25",
+      "market_value": "2878.75",
+      "unrealized_pl": "-29.75",
+      "unrealized_plpc": "-0.01023",
+      "stop_price": "77.112",
+      "trail_percent": "10",
+      "thesis": "Consumer Staples leadership (+15.6% YTD, Leading sector) + defensive rotation on calm risk-on tape; only momentum-aligned name with a clean tradeable feed (0.06% spread) - Industrials/Materials candidates all showed broken 7-11% sandbox spreads (tradeable:false).",
+      "target": "99.98",
+      "entry_date": "2026-06-29"
+    },
+    {
+      "ticker": "PG",
+      "qty": "99",
+      "entry": "150.72",
+      "current": "147.41",
+      "market_value": "14593.59",
+      "unrealized_pl": "-327.69",
+      "unrealized_plpc": "-0.02196",
+      "stop_price": "138.888",
+      "trail_percent": "10",
+      "thesis": "Defensive rotation + VIX +7% to ~20 favors Consumer Staples; first deployment, momentum-aligned individual stock with clean tight spread (0.16%).",
+      "target": "180.86",
+      "entry_date": "2026-06-26"
+    }
+  ],
+  "day_pnl": 0.0,
+  "day_pnl_pct": 0.0,
+  "phase_pnl": -357.46,
+  "phase_pnl_pct": -0.36,
+  "equity_series": [
+    100000.0,
+    100000.0,
+    100000.0,
+    100000.0,
+    99823.78,
+    99753.57,
+    99513.78,
+    99611.91,
+    100102.71,
+    100104.69,
+    99853.56,
+    100232.8,
+    99784.3,
+    99589.4,
+    99646.16,
+    99807.58,
+    99551.75,
+    99711.68,
+    100139.71,
+    99874.22,
+    99809.9,
+    99709.68,
+    99817.31,
+    99548.93,
+    99642.54
+  ],
+  "trade_history": [
+    {
+      "date": "2026-06-29",
+      "side": "BUY",
+      "ticker": "KO",
+      "shares": "35",
+      "entry": "83.10",
+      "stop": "74.66",
+      "target": "99.98",
+      "thesis": "Consumer Staples leadership (+15.6% YTD, Leading sector) + defensive rotation on calm risk-on tape; only momentum-aligned name with a clean tradeable feed (0.06% spread) - Industrials/Materials candidates all showed broken 7-11% sandbox spreads (tradeable:false).",
+      "stop_order_id": "7983efa6-7794-4ea2-b314-306dca37a790"
+    },
+    {
+      "date": "2026-06-26",
+      "side": "BUY",
+      "ticker": "PG",
+      "shares": "99",
+      "entry": "150.72",
+      "stop": "135.65",
+      "target": "180.86",
+      "thesis": "Defensive rotation + VIX +7% to ~20 favors Consumer Staples; first deployment, momentum-aligned individual stock with clean tight spread (0.16%).",
+      "stop_order_id": "de4b6d20-2a3e-48ce-bff7-4c822dbef216"
+    }
+  ]
+}

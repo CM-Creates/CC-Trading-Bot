@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="dark">
+<title>Portfolio - Hermes</title>
+<meta name="description" content="Live positions, stops, and trade history for Hermes, an autonomous stock-trading agent on a paper Alpaca account.">
+<link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/tokens.css?v=4">
+<link rel="stylesheet" href="assets/css/base.css?v=4">
+<link rel="stylesheet" href="assets/css/layout.css?v=4">
+<link rel="stylesheet" href="assets/css/components.css?v=4">
+<link rel="stylesheet" href="assets/css/site.css?v=4">
+</head>
+<body>
+
+<a href="#main" class="skip-link">Skip to content</a>
+
+<header class="site-header">
+  <div class="container">
+    <a href="index.html" class="brand">
+      <svg width="26" height="26" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M6 25 L15 10"/><path d="M12 25 L21 7"/><path d="M18 25 L27 4"/></svg>
+      Hermes <span class="paper-tag">PAPER</span>
+    </a>
+    <nav class="site-nav" data-open="false">
+      <a href="index.html">Home</a>
+      <a href="news.html">Recent News</a>
+      <a href="insights.html">Insights</a>
+      <a href="portfolio.html" aria-current="page">Portfolio</a>
+    </nav>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+
+<div class="page-head">
+  <div class="container">
+    <h1>Portfolio</h1>
+    <p>Current positions, live stops, and every trade Hermes has placed so far.</p>
+    <div class="snapshot-tag">
+      <div class="live-status" id="live-status">
+        <span class="live-dot"></span>
+        <span id="live-status-text">Connecting to live data&hellip;</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section class="stat-strip">
+  <div class="container equity-hero">
+    <div class="equity-main">
+      <div class="equity-label">Portfolio equity</div>
+      <div class="equity-figure">
+        <span class="equity-value num skel" id="s-equity">000,000.00</span>
+        <span class="equity-delta neutral" id="s-equity-delta" hidden></span>
+      </div>
+    </div>
+    <div class="equity-spark" id="equity-spark"></div>
+  </div>
+  <div class="container">
+    <div class="support-stats" id="stat-row">
+      <div class="support-stat"><div class="s-label">Cash</div><div class="s-value num skel" id="s-cash">00.0%</div></div>
+      <div class="support-stat"><div class="s-label">Day P&amp;L</div><div class="s-value num skel" id="s-day">000.00</div></div>
+      <div class="support-stat"><div class="s-label">Phase P&amp;L</div><div class="s-value num skel" id="s-phase">000.00</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h2>Open positions</h2>
+    <div class="position-grid" id="position-grid" style="margin-top:28px;">
+      <div class="position-card">
+        <p class="skel" style="height:22px;width:40%;margin-bottom:16px;"></p>
+        <p class="skel" style="height:14px;width:80%;"></p>
+      </div>
+      <div class="position-card">
+        <p class="skel" style="height:22px;width:40%;margin-bottom:16px;"></p>
+        <p class="skel" style="height:14px;width:80%;"></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-tight" style="border-top:1px solid var(--border);">
+  <div class="container grid-2">
+    <div>
+      <h2>Capital deployment</h2>
+      <p style="margin-top:12px;max-width:44ch;">Strategy targets 75 to 85% deployed. Idle cash is a cost, not safety.</p>
+    </div>
+    <div class="card">
+      <div class="chart-title">Deployed vs. cash</div>
+      <div class="chart-wrap" style="height:240px;"><canvas id="chart-deploy"></canvas></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="border-top:1px solid var(--border);">
+  <div class="container">
+    <h2>Trade history</h2>
+    <div class="filter-bar" id="ticker-filter-bar" style="margin-top:24px;" hidden>
+      <button class="filter-pill" data-ticker="all" aria-pressed="true">All tickers</button>
+    </div>
+    <div class="trade-history" id="trade-history">
+      <div class="trade-row"><p class="skel" style="height:14px;width:70%;"></p></div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="news.html">Recent News</a>
+      <a href="insights.html">Insights</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="https://github.com/CM-Creates/CC-Trading-Bot" target="_blank" rel="noopener">GitHub</a>
+    </nav>
+    <span class="footer-meta">Paper trading via Alpaca. Not investment advice.</span>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4/dist/chart.umd.min.js"></script>
+<script src="assets/js/data.js?v=4"></script>
+<script src="assets/js/motion.js?v=4"></script>
+<script src="assets/js/charts.js?v=4"></script>
+<script src="assets/js/nav.js?v=4"></script>
+<script src="assets/js/portfolio.js?v=4"></script>
+</body>
+</html>

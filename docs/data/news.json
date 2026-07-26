@@ -1,0 +1,705 @@
+{
+  "generated_at": "2026-07-26 09:04 UTC",
+  "items": [
+    {
+      "date": "2026-07-24",
+      "title": "Pre-market Research",
+      "type": "research",
+      "decision": "HOLD",
+      "decision_text": "**HOLD - NO TRADES.** Constructive open for the book: oil reversed hard ($17-20 lower than yesterday's spike), lifting the input-cost/inflation overhang that pressured PG/KO all week, while the AI-unwind keeps rotating money into the value/defensive block where both staples sit. Futures flat-to-firm; VIX up to ~21 on earnings-gauntlet nerves but that tilt favors defensives. PG drew three bullish a",
+      "market_lines": [
+        "WTI / Brent: WTI ~$71.10 (-2.88%) | Brent ~$74.76 (-3.01%) - SHARP REVERSAL. Oil collapsed ~$17-20 from yesterday's Red Sea spike (~$88-90/$95-98). Middle East supply premium unwinding fast. NET POSITIVE for held staples: removes the input-cost/inflation headwind that pressured PG/KO into yesterday's red close.",
+        "S&P 500 futures: ~7,503-7,523 (+0.04% to +0.35%). Flat-to-slightly-firm despite AI nerves; oil relief offsetting tech wobble.",
+        "VIX: ~20.95 (+12.4%) - jumped above the multi-week ~17 range. Elevated (not panic) on the \"AI unwind meets earnings gauntlet\" theme; supportive of a defensive tilt.",
+        "Today's catalysts: (1) AI-capex scrutiny - market shifting from rewarding AI spend to demanding earnings proof (Alphabet capex read-through, AI-unwind rotation); (2) packed earnings gauntlet; (3) oil sharply LOWER, easing inflation/rate pressure; (4) Red Sea/Iran geopolitics still a live oil swing factor.",
+        "Earnings before open: AXP, HCA, VZ, SLB, CNI, BAH, E, FCNCA. None held or direct-comp. Held-name earnings ahead: KO Jul 28, PG FQ4 Jul 29.",
+        "Economic calendar: LIGHT. No CPI/PPI/NFP/FOMC today. Next CPI Aug 12; FOMC Jul 28-29 (decision Jul 29). Latest prints: unemployment 4.2%, payrolls +57k.",
+        "Sector momentum YTD: Energy leads (+22-27%), Materials (+13-18%), Consumer Staples (+11-16%), Industrials (+10-14%) - the value/defensive leadership block. Tech/Financials/Discretionary among weaker names (AI-unwind). Staples backdrop remains supportive for PG/KO."
+      ],
+      "trade_ideas": [
+        "PG / KO - HOLD. Both theses intact and improving at the margin: oil's sharp reversal lifts the input-cost overhang that drove yesterday's red close, staples sit in the leading value/defensive block, and PG just drew three bullish analyst target hikes. Both trade tight to entry (PG -2.7%, KO -2.1%), far inside the -7% cut and clear of live 10% trailing stops. Let the stops work into next week's held-name prints (KO Jul 28, PG Jul 29).",
+        "Diversifying add - NO CANDIDATE CLEARS THE GATE. Today's before-open names (AXP, VZ, SLB, HCA) are earnings prints - don't front-run binaries. Energy leads momentum but oil just reversed hard - chasing a collapsing commodity with no stock-specific edge is negative-EV. No S&P 500 large-cap outside held staples pairs a documented, tradeable stock-specific catalyst with a tight-spread sandbox quote. Catalyst gate fails \u2192 SKIP."
+      ],
+      "risk_factors": [
+        "**Oil's sharp reversal (WTI ~$71, -2.9%; Brent ~$75, -3.0%)** - the live new variable, this time a TAILWIND for staples (eases input costs + inflation/rate pressure). But it's a volatile two-way swing on Red Sea/Iran headlines; a fresh escalation could snap it back up. Net supportive today; not a trade trigger.",
+        "**VIX jump to ~20.95 (+12.4%)** - nerves rising on the AI-unwind/earnings-gauntlet theme. A defensive-favoring backdrop for PG/KO, but a broad risk-off leg could still drag everything; stops sit far below.",
+        "**AI-capex scrutiny / rotation** - market punishing unproven AI spend; keeps money rotating toward value/defensives (supportive for held staples), but adds index-level volatility.",
+        "KO idiosyncratic: **EU antitrust raid on bottlers** (new) + Fairlife restoration (unresolved) - both contained; monitor into Q2 print (Jul 28). Premium P/E ~26.",
+        "PG: FQ4 print Jul 29 next binary; dividend record date TODAY."
+      ]
+    },
+    {
+      "date": "2026-07-23",
+      "title": "Pre-market Research",
+      "type": "research",
+      "decision": "HOLD",
+      "decision_text": "**HOLD - NO TRADES.** Oil-driven risk-off-lite open (futures -0.40%, WTI ~$88-90 rallying on Red Sea tanker attacks, VIX ~17.4 ticking up, big-tech AI-capex worries after Alphabet's record guidance). The new variable is the oil spike - a modest input-cost/yield headwind for held staples but not thesis-breaking for two Dividend Kings held for stability; both are far inside the -7% cut and clear of ",
+      "market_lines": [
+        "WTI / Brent: WTI ~$88-90 | Brent ~$95-98 - RALLYING HARD vs yesterday (~$84.9/$91.5). Driver: Red Sea tanker attacks / Middle East supply-risk. Reloads a modest input-cost headwind for staples and revives inflation worries (higher yields).",
+        "S&P 500 futures: ~7,510 (-0.40%). Risk-off-lite; \"big tech capex test revives AI spending worries\" after Alphabet's record capex guidance + INTC/AMZN on deck.",
+        "VIX: ~17.44 (+4.81%) - ticking up off the multi-week low (~16.6 close) as oil/tech worries return, but still calm.",
+        "Today's catalysts: (1) Alphabet's record AI-capex guidance reset the AI trade - semis/tech sensitive, spending-worry overhang; (2) oil rally on Red Sea supply risk lifting energy/materials + yields; (3) heavy earnings day; (4) US initial jobless claims 8:30am ET.",
+        "Earnings before open: BX, TMO, TMUS, CMCSA, UNP, HON, RTX, LMT, DOW, CLF (INTC after close). Defense (LMT/RTX) + industrials heavy. None held/direct-comp. Held-name earnings ahead: KO Jul 28, PG FQ4 Jul 29.",
+        "Economic calendar: Light. Initial Jobless Claims + Chicago Fed NAI 8:30am ET. No CPI/PPI/NFP today (next CPI Aug 12). FOMC Jul 28-29 (decision Jul 29 2pm ET) - Fed on hold 3.50-3.75%.",
+        "Sector momentum: Tech leads YTD (+34.86%), Energy #2 (+33.76%) and firming on oil, Capital Goods +29.73%. Consumer Non-Cyclical/Staples mid-pack (+13.36% YTD) - defensive, not a momentum leader but stable."
+      ],
+      "trade_ideas": [
+        "PG / KO - HOLD. Both theses intact, both trading tight to entry (PG -1.9%, KO -1.1%), both far inside the -7% cut and clear of live 10% trailing stops. Today's oil-driven risk-off-lite + returning inflation worry is a mild relative headwind (input costs) but not thesis-breaking for two Dividend Kings held for stability. Let the stops work.",
+        "Diversifying add - NO CANDIDATE CLEARS THE GATE. Before-open names (BX, TMO, TMUS, HON, RTX, LMT, DOW, CLF) are earnings prints - don't front-run binaries. Energy is momentum-strong on the oil rally but chasing an extended commodity spike with no stock-specific edge is negative-EV, and no S&P 500 large-cap outside held staples pairs a documented, tradeable stock-specific catalyst with a tight-spread sandbox quote. Catalyst gate fails \u2192 SKIP."
+      ],
+      "risk_factors": [
+        "**Oil rally on Red Sea tanker attacks (WTI ~$88-90, +~5% vs yesterday)** - the live new variable. Reloads input-cost pressure for both staples (PG guided ~$0.25 EPS tariff/commodity drag) and lifts yields, mildly pressuring rate-sensitive defensives. Watch for escalation; benign-to-modest for now, not a sell trigger (stops far below).",
+        "**Big-tech AI-capex worry (Alphabet record capex \u2192 INTC/AMZN after close)** - sets the risk tone; a further tech wobble could rotate money INTO defensives (supportive for PG/KO) OR broaden a risk-off leg. Not a sell trigger either way.",
+        "KO idiosyncratic: **Fairlife ransomware / US production pause** - contained but unresolved; monitor restoration duration + Q2 read-through (Jul 28). Premium P/E ~26.",
+        "PG: FQ4 print Jul 29 next binary; dividend record date TOMORROW (Jul 24).",
+        "Under-deployed (~17.6% vs 75-85% target) - 23rd consecutive under-deployed session, closing the fourth week with zero new trades. Structural blocker unchanged: pipeline sources sector-level ideas, not a named stock + documented catalyst + tight sandbox spread. Standing owner decision still needed: (a) permit non-leveraged sector ETFs, or (b) direct pre-market to name specific individual large-caps WITH stock-specific catalysts - to put idle 82% cash to work."
+      ]
+    },
+    {
+      "date": "2026-07-22",
+      "title": "Pre-market Research",
+      "type": "research",
+      "decision": "HOLD",
+      "decision_text": "**HOLD - NO TRADES.** Quiet, wait-and-see open (futures -0.34%, VIX ~17.05 and falling, oil re-firming modestly) with the market holding its breath ahead of tonight's mega-cap tech earnings (Alphabet, Tesla after close). Rotation map keeps Consumer Staples in the leading quadrant - a supportive backdrop for held PG/KO, both green intraday and tighter to entry than they've been in a week. No divers",
+      "market_lines": [
+        "WTI / Brent: WTI ~$84.9 | Brent ~$91.5 - RE-FIRMING vs yesterday (~$82.5/$88.9). Oil creeping back up; mild input-cost headwind returning for staples, but no fresh Iran spike driving it.",
+        "S&P 500 futures: RISK-OFF-lite, ~7,520 (-0.34%). Caution building ahead of mega-cap tech earnings after close. Reversal from yesterday's +0.56% risk-on.",
+        "VIX: ~17.05 (-8.58%) - calm, extending the de-escalation vol crush; lowest reading in weeks.",
+        "Today's catalysts: Mega-cap tech earnings AFTER close dominate - Alphabet (4:30pm ET call), Tesla, IBM, ServiceNow. AMD \"Advancing AI 2026\" event kicks off. Semi rebound (MU, WDC) keeping AI trade in focus. Tape is in wait-and-see mode ahead of GOOGL/TSLA prints.",
+        "Earnings before open: AT&T (T), CME Group, GE Vernova (GEV), Philip Morris (PM). PM is a staples/tobacco peer but not held/direct-comp. None held. Held-name earnings still ahead: KO Jul 28, PG Jul 29 (FQ4).",
+        "Economic calendar: Quiet. Only State Employment & Unemployment (June) 10:00 ET. No US CPI/PPI/FOMC/NFP today. June CPI 3.5% (out Jul 14), June PPI (out Jul 15). Next CPI Aug 12. Fed on hold 3.50-3.75%.",
+        "Sector momentum: Rotation map has Consumer Staples, Industrials, Materials, Energy in the LEADING quadrant; Tech, Comm Services, Consumer Discretionary, Financials LAGGING. Energy #1 YTD. Tech mixed - momentum leader by sentiment but valuations stretched. Staples showing defensive strength - supportive for held PG/KO."
+      ],
+      "trade_ideas": [
+        "PG / KO - HOLD. Both theses intact, both trading tight to entry (PG -1.3%, KO -0.8%), both green intraday, far inside the -7% cut and clear of live 10% trailing stops. Staples sit in the leading rotation quadrant while the tape waits on mega-cap tech earnings - a supportive backdrop for two Dividend Kings. Let the stops work.",
+        "Diversifying add - NO CANDIDATE CLEARS THE GATE. Today's before-open names (T, CME, GEV, PM) are earnings prints - don't front-run. The day's real action is after-close mega-cap tech (GOOGL, TSLA) - no edge front-running binary prints. No S&P 500 large-cap outside held staples pairs a documented, tradeable stock-specific catalyst with a tight-spread sandbox quote. Catalyst gate fails \u2192 SKIP."
+      ],
+      "risk_factors": [
+        "**Mega-cap tech earnings tonight (GOOGL, TSLA, IBM, NOW) set the tape for tomorrow** - a miss could trigger a risk-off leg that rotates further INTO defensives (supportive for PG/KO); a beat rotates money back to tech (mild relative headwind). Not a sell trigger either way; stops far below.",
+        "**Oil re-firming (WTI ~$84.9, Brent ~$91.5)** - creeping back up reloads a modest input-cost headwind for both staples (PG guided ~$0.25 EPS tariff/commodity drag). Watch for a fresh Iran catalyst; benign for now.",
+        "KO idiosyncratic: **Fairlife ransomware / US production halt** - contained but unresolved; monitor restoration duration + Q2 read-through (Jul 28). Premium P/E ~26.",
+        "PG: FQ4 print Jul 29 the next binary; dividend record date Jul 24.",
+        "Under-deployed (~17.65% vs 75-85% target) - 22nd consecutive under-deployed session, mid-fourth-week with zero new trades. Structural blocker unchanged: pipeline sources sector-level ideas, not a named stock + documented catalyst + tight sandbox spread. Standing owner decision still needed: (a) permit non-leveraged sector ETFs, or (b) direct pre-market to name specific individual large-caps WITH stock-specific catalysts."
+      ]
+    },
+    {
+      "date": "2026-07-21",
+      "title": "Pre-market Research",
+      "type": "research",
+      "decision": "HOLD",
+      "decision_text": "**HOLD - NO TRADES.** Risk-on open (futures +0.56%, Nasdaq +1.4%, VIX ~17.6, semis surging on AWS capex, oil cooling on Iran ceasefire hopes). The tape has flipped from yesterday's defensive tilt toward a tech/AI rotation - a mild relative headwind to held staples but not thesis-breaking. No diversifying candidate clears the buy-side gate: today's movers are already extended premarket, named names",
+      "market_lines": [
+        "WTI / Brent: WTI ~$82.5 (steady) | Brent ~$88.9 (-0.4%) - cooling off yesterday's Iran spike on US-Iran mediation/ceasefire hopes. Input-cost pressure on staples easing vs. yesterday.",
+        "S&P 500 futures: RISK-ON, ~7,526 (+0.56%). Nasdaq-100 +1.4%, Dow +0.4%. Driver: Iran ceasefire hopes + AI-capex earnings optimism.",
+        "VIX: ~17.6 (-5.7%, down from 18.65) - de-escalation calming vol.",
+        "Today's catalysts: (1) Semis/AI surge - NVDA +6.2%, AVGO +7.8% premarket on confirmed $8.2B AWS capex; TSLA +3.2% (Panasonic battery deal); SHOP +3.7% (AI restructuring). (2) Iran ceasefire mediation \u2192 oil down, risk-on. (3) Heavy Q2 earnings day. Net: rotation back TOWARD tech/AI, a mild headwind to the defensive-staples tailwind that has supported PG/KO.",
+        "Earnings before open: GM, MMM, NOC, GPC, WFC, EFX, OTIS, WAB - none held or direct staples peers. TXN after close. Held-name earnings: KO Jul 28, PG Jul 29.",
+        "Economic calendar: Quiet. No US CPI/PPI/FOMC/NFP today - only State Employment & Usual Weekly Earnings 10:00 ET. June CPI came in 3.5% (Jul 14), PPI -0.3% (Jul 15). Next CPI Aug 12. FOMC minutes Wed. Fed on hold 3.50-3.75%; ~63% odds of a Sept hike.",
+        "Sector momentum: Energy leads YTD (+23-30%, slowing on softer oil), Tech #2 (cooling, valuations stretched, semis -11% early July then bouncing today). Materials/Industrials gaining. Consumer Staples #5 (+11-16%, defensive leader at ATHs). 8/11 sectors green. Today's tape favors Tech over defensives."
+      ],
+      "trade_ideas": [
+        "PG / KO - HOLD. Both theses intact, both trading tight to entry (~-1.4%), both far inside the -7% cut and clear of live 10% trailing stops. Today's risk-on/tech-rotation tape is a mild relative headwind to the defensive-staples tailwind, but not thesis-breaking for two Dividend Kings held for stability. Let the stops work.",
+        "Diversifying add - NO CANDIDATE CLEARS THE GATE. Today's movers (NVDA +6.2%, AVGO +7.8%, TSLA, SHOP) are already up big premarket on AI-capex momentum - chasing an extended intraday gap with no stock-specific edge is negative-EV. Named earnings (GM, MMM, NOC, WFC) are prints - don't front-run. No S&P 500 large-cap outside held staples pairs a documented, tradeable stock-specific catalyst with a tight-spread sandbox quote. Catalyst gate fails \u2192 SKIP."
+      ],
+      "risk_factors": [
+        "**Rotation risk is now the live concern** - risk-on de-escalation (Iran ceasefire hopes, VIX -5.7% to ~17.6) is rotating money back to tech/semis and away from the defensives that have led. If the tech bid persists, held staples could drift flat-to-down on a green tape. Not a sell trigger (stops far below), but caps upside near-term.",
+        "KO idiosyncratic: **Fairlife ransomware / US production halt** - contained but unresolved; monitor restoration duration + Q2 read-through (Jul 28). Plus premium P/E ~26.",
+        "PG: Jul 29 FQ3 print the next binary; BofA flagged weaker sales outlook. Dividend record date Jul 24.",
+        "Under-deployed (~17.6% vs 75-85% target) - 21st consecutive under-deployed session, still zero new trades this week. Structural blocker unchanged: pipeline sources sector-level ideas, not a named stock + documented catalyst + tight sandbox spread. Standing owner decision still needed: (a) permit non-leveraged sector ETFs, or (b) direct pre-market to name specific individual large-caps WITH stock-specific catalysts.",
+        "Oil could re-spike if Iran mediation fails - reverses today's calm and re-loads staples input-cost pressure."
+      ]
+    },
+    {
+      "date": "2026-07-20",
+      "title": "Pre-market Research",
+      "type": "research",
+      "decision": "HOLD",
+      "decision_text": "**HOLD - NO TRADES.** Risk-off open (oil spiking on US-Iran escalation, futures mixed-to-lower, VIX ~18.5) but the defensive/anti-AI-capex rotation actively favors held staples. No diversifying candidate clears the buy-side gate - no stock-specific catalyst + tradeable sandbox quote, and front-running a geopolitics tape or an earnings print with no edge is negative-EV. Keep PG and KO with confirme",
+      "market_lines": [
+        "WTI / Brent: WTI ~$82.4-$83.8 (+2.4% to +4.4%) | Brent ~$88.1-$90.4 (+2.6% to +4.6%) - SPIKING on US-Iran escalation. Input-cost headwind for staples returns; Energy (XLE +2% premarket) bid.",
+        "S&P 500 futures: Mixed to slightly risk-off, ~7,457-7,499 (one feed -1.01%, others ~flat). Iran conflict pressuring, threatening Dow's 4-week win streak.",
+        "VIX: ~18.5 (roughly flat, -1% intraday) - elevated but not panicked.",
+        "Today's catalysts: (1) US-Iran hostilities re-escalated over the weekend - fresh US strikes on Iran after Strait of Hormuz vessel attacks \u2192 oil up, Energy leading, risk-off tilt; (2) Q2 earnings season ramping (PEP, DAL, TSLA this week); (3) June Conference Board LEI at 10:00 ET. None thesis-breaking for PG/KO; risk-off/defensive tilt net-supportive for staples.",
+        "Earnings before open: JNJ (mega-cap health), SCHW, SYF, STLD, WRB, ZION, VMI, AMC - none held or direct peers. TSLA after close. Held-name earnings: KO Jul 28, PG Jul 29.",
+        "Economic calendar: Quiet today - June LEI 10:00 ET only. June FOMC minutes Wed; July jobs report Fri Jul 24 (est +101k, u-rate 4.2%); PCE Jul 30. No CPI/PPI/FOMC today. Fed on hold at 3.50-3.75%.",
+        "Sector momentum: Tech still leads YTD (~+21-30%) but July rotation is selling last year's tech winners and bidding defensives/cyclicals (Energy, Consumer Staples) on AI-capex skepticism + Iran risk-off. Backdrop favors held staples."
+      ],
+      "trade_ideas": [
+        "PG / KO - HOLD. Both theses intact, both trading tight to entry, both far inside the -7% cut and clear of live 10% trailing stops. The risk-off/defensive rotation (Iran, AI-capex skepticism) actively favors staples. PG a clean rotation beneficiary with a fresh dividend declaration; KO's only overhang is contained (Fairlife). Let the stops work.",
+        "Diversifying add - NO CANDIDATE CLEARS THE GATE. Oil is spiking on Iran, but front-running a geopolitics-driven Energy move with no stock-specific edge is negative-EV. Today's named earnings (JNJ, SCHW, STLD, WRB, ZION) are prints - don't front-run. No S&P 500 large-cap outside held staples pairs a documented stock-specific catalyst with a tradeable tight-spread sandbox quote. Catalyst gate fails \u2192 SKIP."
+      ],
+      "risk_factors": [
+        "**US-Iran re-escalation is the overnight driver** - weekend US strikes, Strait of Hormuz, oil +2-4.6%. Inflationary + input-cost headwind for both staples (PG guided ~$0.25 EPS tariff/commodity drag). Asymmetric risk on further escalation; watch VIX (~18.5) and the 60-day ceasefire clock.",
+        "KO idiosyncratic: **Fairlife ransomware / US production halt** - contained (small unit, safety unaffected, Canada running) but monitor duration + Q2 read-through (Jul 28). Plus N.A. leadership transition end-July, premium P/E ~26.",
+        "Under-deployed (~17.7% vs 75-85% target) - 20th consecutive under-deployed session, opening the fifth week with zero new trades. Structural blocker unchanged: pipeline sources sector-level ideas, not a named stock + documented catalyst + tight sandbox spread. Standing owner decision still needed: (a) permit non-leveraged sector ETFs, or (b) direct pre-market to name specific individual large-caps WITH stock-specific catalysts.",
+        "Rotation risk cuts both ways: defensives leading is supportive now, but a fast Iran de-escalation could rotate money back to tech/semis and leave staples flat."
+      ]
+    },
+    {
+      "date": "2026-07-17",
+      "title": "Pre-market Research",
+      "type": "research",
+      "decision": "HOLD",
+      "decision_text": "**HOLD - NO TRADES.** Risk-off morning (futures -0.90%, VIX ~18, US-Iran re-escalation, oil up, semis selling off), but the defensive rotation actively favors held staples - Consumer Staples \"Leading\" and hitting new highs as flight-to-safety. No diversifying candidate clears the buy-side gate: no stock-specific catalyst + tradeable sandbox quote, and front-running a risk-off tape with no edge is ",
+      "market_lines": [
+        "WTI / Brent: WTI ~$79.51 (+0.71%) | Brent ~$84.84 (+0.72%) - firming again on US-Iran escalation. Input-cost headwind for staples returns.",
+        "S&P 500 futures: RISK-OFF - ~7,509 (-0.90%), reversing the week's gains.",
+        "VIX: ~18.0 (+7.3% from 16.73 prior close) - elevated, off recent lows.",
+        "Today's catalysts: (1) US-Iran conflict re-escalation (renewed US-strike threats, Iran retaliation vow) \u2192 flight from risk, oil up, Fed-hike-odds back up; (2) sharp AI/semiconductor pullback dragging Nasdaq; (3) defensive rotation - Staples/Health Care/Financials outperforming as semis roll over. None thesis-breaking for PG/KO; net-supportive for staples as flight-to-safety.",
+        "Earnings before open: DRI, SNX (big beat), AYI, CMC, WGO, NNOX - none held or peers. Held-name earnings: KO Jul 28, PG Jul 29.",
+        "Economic calendar: 8:30 ET - Initial Jobless Claims, Housing Starts (1.177M vs 1.31M prev), Building Permits (1.41M), Import/Export prices; 10:00 UMich sentiment (prelim). No CPI/PPI/FOMC today (CPI Jul 14 cool, PPI Jul 15 weak). Next FOMC Jul 29.",
+        "Sector momentum: Consumer Staples \"Leading\" - 3rd-best sector YTD (~+11-16%), hitting new highs as flight-to-safety while Tech (~+29% YTD) momentum \"Lagging.\" Energy top YTD (~+16-25%). Backdrop favors held staples."
+      ],
+      "trade_ideas": [
+        "PG / KO - HOLD. Both theses intact and both green; the risk-off/defensive-rotation backdrop actively favors staples (flight-to-safety, Staples \"Leading,\" new highs). PG the rotation beneficiary, KO near ATH with a new monitor item (Fairlife ransomware, contained). Both well clear of live 10% trailing stops. Let stops work.",
+        "Diversifying add - NO CANDIDATE CLEARS THE GATE. On a risk-off morning (futures -0.90%, VIX +7%, oil/geopolitics), no S&P 500 large-cap outside held staples has a documented stock-specific catalyst with a tradeable tight-spread sandbox quote; today's named catalysts are macro (Iran/oil) + non-held earnings. Front-running a risk-off tape with no edge is a negative-EV trade. Catalyst gate fails \u2192 SKIP."
+      ],
+      "risk_factors": [
+        "**US-Iran re-escalation is the overnight driver** - oil firming (WTI ~$79.5/Brent ~$85), inflationary + input-cost headwind for both staples (PG flagged ~$0.25 EPS tariff/commodity drag). Asymmetric risk if it escalates further; watch VIX (now ~18).",
+        "KO idiosyncratic: **Fairlife ransomware / US production halt** - new, contained (small business unit, stock recovered), but monitor for duration and any Q2-print read-through (earnings Jul 28). Plus N.A. leadership transition end-July, premium P/E ~26.",
+        "Under-deployed (~18.0% vs 75-85% target) - 19th consecutive under-deployed session, fourth week with zero new trades. Structural blocker unchanged: pipeline sources sector-level ideas, not a specific named stock + documented catalyst + tight sandbox spread. Standing owner decision still needed: (a) permit non-leveraged sector ETFs, or (b) direct pre-market to name specific individual large-caps WITH stock-specific catalysts.",
+        "Rotation risk cuts both ways: defensives leading is supportive now, but if Iran de-escalates fast, money could rotate back to semis/Tech and leave staples flat."
+      ]
+    },
+    {
+      "date": "2026-07-16",
+      "title": "Pre-market Research",
+      "type": "research",
+      "decision": "HOLD",
+      "decision_text": "**HOLD - NO TRADES.** No US macro release today; US-Iran de-escalation eased the oil overhang (net-supportive for staples). No diversifying candidate clears the buy-side gate - no stock-specific catalyst + tradeable sandbox quote today; today is large-cap/bank earnings, don't front-run a print. Keep PG and KO with their confirmed-live 10% GTC trailing stops - KO the stronger name (-0.30%, near ATH",
+      "market_lines": [
+        "WTI / Brent: WTI ~$79.47 (+0.29%) | Brent ~$71.86 (-1.49%), but heavy data-feed discrepancy (some sources show Brent $84.53). Directionally WTI flat-to-firm, Brent softer vs yesterday - easing of the acute US-Iran oil spike as reports emerged Iran is seeking a deal. Modestly less input-cost pressure on staples than yesterday.",
+        "S&P 500 futures: ~7,621 (+0.08%), modestly firm pre-open. Range 7,616-7,628.",
+        "VIX: ~16.5 (prev close), intraday ~16.16-16.50 - contained/low, off recent 17.16 high.",
+        "Today's catalysts: (1) Q2 earnings in full swing - TSM (key AI-trade guidance), NFLX + UNH after close, plus AM prints; (2) US-Iran diplomacy - stocks rallied Thu on reports Iran called to make a deal, easing the oil/geopolitics overhang; (3) AI supercycle remains the anchor bull theme. None thesis-relevant to PG/KO.",
+        "Earnings before open: ABT ($1.26), GE, TSM, UNH, JNJ, MS, BLK, TRV ($5.15), plus banks (FITB/RF/PNC/BNY). None held or peers. Held-name earnings: KO Jul 28, PG Jul 29.",
+        "Economic calendar: NO major US release today. Most recent June CPI (Jul 14) landed cool - headline -0.4% MoM, 3.5% YoY; core flat MoM / 2.6% YoY. Next CPI Aug 12. NOTE: sources conflict on Fed path (one cites ~63% Sept HIKE odds at 3.50-3.75% target; earlier feeds cited ~90% July CUT odds) - data-feed inconsistency; not actionable today, no FOMC this week.",
+        "Sector momentum: Energy YTD leader (~24.6%); Industrials, Materials, Consumer Staples classed \"Leading\"; Tech/Financials \"Lagging\" on recent momentum. Defensive-staples backdrop remains supportive for held names."
+      ],
+      "trade_ideas": [
+        "PG / KO - HOLD. Both theses intact; KO the stronger name (near ATH, PT $97, raised outlook, Marriott), PG the softer (-1.63%, tariff/consumer overhang) but far inside the -7% cut and clear of its stop. Both well clear of live 10% trailing stops. Let stops work.",
+        "Diversifying add - NO CANDIDATE CLEARS THE GATE. No S&P 500 large-cap outside the held staples has a documented stock-specific catalyst today with a tradeable (tight-spread) sandbox quote; today's named catalysts are large-cap/bank earnings (don't front-run a print) + the Iran-diplomacy macro move. Catalyst gate fails \u2192 SKIP."
+      ],
+      "risk_factors": [
+        "Under-deployed (~17.6% vs 75-85% target) - 18th consecutive under-deployed session, now opening the fourth week with zero new trades. Structural blocker unchanged: pipeline sources sector-level ideas, not a specific named stock + documented catalyst + tight sandbox spread. Standing owner decision still needed: (a) permit non-leveraged sector ETFs, or (b) direct pre-market to name specific individual large-caps WITH stock-specific catalysts.",
+        "Oil/geopolitics: US-Iran de-escalation (Iran seeking a deal) eased the acute spike - Brent softened, a mild positive for staples' input costs - but any re-escalation is an asymmetric inflation/cost risk. Monitor.",
+        "Rotation: recent momentum favors Energy/Industrials/Materials + defensives while Tech/Financials lag - mixed but net-supportive for staples. PG the softest defensive name.",
+        "KO idiosyncratic: N.A. leadership transition Aug 1, premium P/E ~26 (monitor, not thesis-breaking).",
+        "Data-feed inconsistencies (Brent price, Fed-path odds) across sources - treat macro odds as noisy in this sandbox; anchor on the sandbox quotes for risk decisions."
+      ]
+    },
+    {
+      "date": "2026-07-15",
+      "title": "Pre-market Research",
+      "type": "research",
+      "decision": "HOLD",
+      "decision_text": "**HOLD - NO TRADES.** June CPI resolved the macro binary dovishly (risk-supportive, ~90% July-cut odds), but no diversifying candidate clears the buy-side gate - no stock-specific catalyst + tradeable sandbox quote today; today is large-cap earnings, don't front-run a print. Keep PG and KO with their confirmed-live 10% GTC trailing stops - KO green (+0.17%, PT bumps to $97/$89, thesis reinforced),",
+      "market_lines": [
+        "WTI / Brent: WTI ~$79.70 | Brent ~$85.30-$86 - up sharply (+~$6 vs yesterday's ~$73.58/$78.75) on US-Iran escalation (US strikes on Iranian targets + reinstated naval blockade of Iranian ports). Meaningful input-cost headwind for staples; PG explicitly flagged a ~$150M Middle-East conflict profit hit.",
+        "S&P 500 futures: ~7,606 (+0.19%), modestly firm pre-open. Range 7,603-7,614; earlier premarket dipped to ~7,559.",
+        "VIX: ~16.86 (-1.7%), off the ~17.2 open; contained despite oil/geopolitics.",
+        "Today's catalysts: (1) **June CPI came in SOFT** (released Jul 14) - the binary resolved dovishly, risk-supportive; (2) Q2 bank/large-cap earnings continue (Citi beat, +11% rev; today JNJ/ASML/BLK/MS/ELV/CTAS pre-open); (3) US-Iran/Hormuz oil surge - the key overnight development; (4) Fed's Warsh congressional testimony later today. None thesis-relevant to PG/KO.",
+        "Earnings before open: JNJ (est EPS $2.86), ASML ($7.92), BLK ($12.68), MS ($2.93), ELV ($6.21), CTAS ($1.24) - none held or peers. Held-name earnings: KO Jul 28, PG Jul 29.",
+        "Economic calendar: **June CPI (Jul 14) landed cool** - headline -0.4% MoM (largest 1-mo drop since Apr-2020, energy -5.7%), 3.5% YoY (down from 4.2%); core +0.2% MoM / 2.6% YoY (below 2.9% prior & ~3.0% est). Market now prices ~90% odds of a 25bp cut at **FOMC Jul 29**. June PPI pending (~mid-July). Jobless claims Thu Jul 17.",
+        "Sector momentum: Sources conflict, but **Energy the unambiguous YTD leader (~+23-26%)**, boosted further by today's oil surge. Momentum maps class Consumer Staples / Materials / Industrials as \"Leading\" as July's \"violent\" momentum unwind hits Tech/semis (S&P Momentum Index -6.6% first two July sessions). Financials weak YTD but rotation favors them into bank earnings. Defensive staples still \"Leading\" - supportive backdrop for held names, though oil is an offsetting cost pressure."
+      ],
+      "trade_ideas": [
+        "PG / KO - HOLD. Both theses intact; KO the stronger name (green, PT bumps to $97/$89, raised outlook), PG the softer (-3.07%, oil/tariff overhang) but far inside the -7% cut and clear of its stop. Both well clear of live 10% trailing stops. Let stops work.",
+        "Diversifying add - NO CANDIDATE CLEARS THE GATE. No S&P 500 large-cap outside the held staples has a documented stock-specific catalyst today with a tradeable (tight-spread) sandbox quote; today's named catalysts are large-cap earnings (don't front-run a print) + the oil/geopolitics move. Catalyst gate fails \u2192 SKIP."
+      ],
+      "risk_factors": [
+        "Under-deployed (~17.5% vs 75-85% target) - 17th consecutive under-deployed session, third week with zero new trades. Structural blocker unchanged: pipeline sources sector-level ideas, not a specific named stock + documented catalyst + tight sandbox spread. Standing owner decision still needed: (a) permit non-leveraged sector ETFs, or (b) direct pre-market to name specific individual large-caps WITH stock-specific catalysts.",
+        "**Oil surge (+~$6 to WTI ~$79.70 / Brent ~$85-86) on US-Iran escalation** - the key overnight development: inflationary and a direct input-cost headwind for both staples (PG already flagged a $150M hit). Monitor for escalation/persistence; watch VIX.",
+        "Rotation: July's \"violent\" momentum unwind is hitting Tech/semis and favoring value/defensives + Financials - mixed for staples (defensives \"Leading,\" but Financials rotation competes). PG the softest defensive name.",
+        "Macro turned supportive: soft June CPI \u2192 ~90% odds of a Jul 29 rate cut. Removes the near-term binary hawkish risk but the oil-driven input-cost read-through partially offsets for staples.",
+        "KO idiosyncratic: N.A. leadership transition Aug 1, premium P/E ~26 (monitor, not thesis-breaking)."
+      ]
+    },
+    {
+      "date": "2026-07-14",
+      "title": "Pre-market Research",
+      "type": "research",
+      "decision": "HOLD",
+      "decision_text": "**HOLD - NO TRADES.** No diversifying candidate clears the buy-side gate (no stock-specific catalyst + tradeable quote; today is bank earnings + CPI - do not front-run/trade into binary macro). Keep PG and KO with their confirmed-live 10% GTC trailing stops - KO green (+0.99%, near ATH, thesis reinforced), PG softer (-1.81%) but far inside the -7% cut line; both theses intact. No sell triggers. Wa",
+      "market_lines": [
+        "WTI / Brent: WTI ~$73.58 | Brent ~$78.75 (feeds vary $69-74 WTI on intraday timing). Elevated on renewed US-Iran tension / Strait of Hormuz disruption fears - inflationary at the margin; input-cost watch for staples.",
+        "S&P 500 futures: Mixed/roughly flat pre-open - reads span ~7,576 (-0.57%) to ~7,626 (+0.49%) depending on feed/timestamp. Cautious tape into CPI.",
+        "VIX: ~16.3-16.4, up ~9% on the day - ticking up off sub-16 calm as Iran risk returns, but still contained.",
+        "Today's catalysts: (1) **June CPI at 8:30am ET - the dominant binary**; (2) Q2 bank earnings kickoff (JPM, GS, WFC before open; also C/BAC); (3) US-Iran/Hormuz oil geopolitics; (4) Fed's Warsh (hawkish, new chair) testimony at ECB Summit - market pricing ~77% year-end hike. None thesis-relevant to PG/KO.",
+        "Earnings before open: **JPM** (est EPS ~$5.59-5.67 vs $4.96 y/y; rev ~$49-50B), **GS**, **WFC** - Financials, not held, not peers. Held-name earnings: KO Jul 28, PG Jul 29.",
+        "Economic calendar: **June CPI TODAY (Jul 14, 8:30am ET)** - fcst ~3.8-3.9% headline vs 4.2% prior; core ~2.9%; mo/mo ~-0.1% (soft/negative headline possible on falling energy). Result pending at research time. June PPI Wed Jul 15. FOMC Jul 28-29. CPI is the day's pivot.",
+        "Sector momentum YTD: Energy leader (~+20-23%), Industrials (~+19%), Tech (~+16%, AI-driven, stretched), Materials, then Consumer Staples (~+10.5%), Utilities, Health Care; Financials weak YTD (~+3%) but rotation favoring them into bank earnings. Momentum maps still class Staples as \"Leading\" but the defensive tailwind keeps softening as risk-on/Financials rotation runs."
+      ],
+      "trade_ideas": [
+        "PG / KO - HOLD. Both theses intact; KO the stronger name (green, near ATH, Marriott + raised outlook), PG the softer (-1.81%, tariff/oil overhang) but far inside -7% cut. Both well clear of live 10% trailing stops. Let stops work.",
+        "Diversifying add - NO CANDIDATE CLEARS THE GATE. No S&P 500 large-cap outside the held staples has a documented stock-specific catalyst today with a tradeable (tight-spread) sandbox quote; today's named catalysts are bank earnings (don't front-run a print) + CPI. Catalyst gate fails \u2192 SKIP. Also prudent to hold new deployment across today's CPI (binary macro)."
+      ],
+      "risk_factors": [
+        "Under-deployed (~17.6% vs 75-85% target) - 16th consecutive under-deployed session, third week with zero new trades. Structural blocker unchanged: pipeline sources sector-level ideas, not a specific named stock + documented catalyst + tight spread. Standing owner decision still needed: (a) permit non-leveraged sector ETFs, or (b) direct pre-market to name specific individual large-caps WITH stock-specific catalysts.",
+        "**Binary macro TODAY: June CPI 8:30am ET.** Hot print (>3.9%) revives hike odds \u2192 pressures multiples incl. defensive staples; soft/negative print supports risk broadly. Avoid new entries into/around the print.",
+        "Rotation risk: July rotation favoring Financials (into bank earnings) over defensives - the exact camp both holdings sit in. Watch staples losing relative momentum; PG already softest.",
+        "Oil elevated (~$73-79) on Iran/Hormuz - inflationary and a direct input-cost headwind for consumer staples if it persists; VIX ticking up alongside.",
+        "KO idiosyncratic: N.A. leadership transition + $20B IRS appeal (monitor, not thesis-breaking)."
+      ]
+    },
+    {
+      "date": "2026-07-13",
+      "title": "Pre-market Research",
+      "type": "research",
+      "decision": "HOLD",
+      "decision_text": "**HOLD - NO TRADES.** No diversifying candidate clears the buy-side gate (no stock-specific catalyst + tradeable quote today; bank earnings start Tue). Additionally, do not open new positions into tomorrow's June CPI (binary macro). Keep PG and KO with their live 10% trailing stops - KO fresh green (+0.85%, PT bump), PG softer (-2.35%) but far inside the -7% cut line; both theses intact. No sell t",
+      "market_lines": [
+        "WTI / Brent: WTI ~$73.77 (+3.3%) | Brent ~$78.42 (+3.2%). Both spiking on renewed US-Iran tension / Strait of Hormuz shipping-disruption fears (ceasefire lapse). Inflationary at the margin - input-cost watch for staples.",
+        "S&P 500 futures: ~7,626 (+0.08%), essentially flat; Sep E-mini softening -0.11% pre-open. Calm tape into a data-heavy week.",
+        "VIX: ~15.0-16.1 (prev close 15.03). Sub-16, calm - no stress despite oil move.",
+        "Today's catalysts: Q2 earnings season kicks off (banks Tue: JPM/GS/C/WFC/BAC; ASML/TSM Wed - chip-trade exhaustion watch). June CPI TOMORROW (Jul 14, 8:30am) is the dominant pivot. Iran/oil geopolitics live. Warsh congressional testimony this week. None thesis-relevant to PG/KO.",
+        "Earnings before open: NONE noteworthy today (PGR/FAST minor). Major reports start Tue Jul 14 (banks). Held-name earnings: KO Jul 28, PG Jul 29.",
+        "Economic calendar: June CPI Tue Jul 14 (fcst 3.8% headline vs 4.2% prior; core mo +0.22%); June PPI Wed Jul 15 (fcst 6.3% vs 6.5%); jobless claims Thu Jul 17. FOMC Jul 29 (not this week). CPI is the week's key print.",
+        "Sector momentum: \"Violent rotation\" underway in July - H1 tech/AI-hype leaders selling off; flows into Financials (bank-earnings anticipation) and AI infrastructure (\"picks & shovels\"). Tech still leads full-YTD (index ~+9.6-10.7%); Industrials/Energy modest daily gains; Health Care weak. Staples no longer explicitly the momentum leader vs prior weeks - defensive tailwind softening as rotation favors Financials."
+      ],
+      "trade_ideas": [
+        "PG / KO - HOLD. Both theses intact; KO the stronger name (fresh green, PT bump, Marriott). Both well clear of live 10% trailing stops; PG the softer name (-2.35%, oil-cost + earnings overhang) but far inside -7% cut. Let stops work.",
+        "Diversifying add - NO CANDIDATE CLEARS THE GATE. No S&P 500 large-cap outside the held staples has a documented stock-specific catalyst today with a tradeable (tight-spread) sandbox quote; earnings season starts Tue Jul 14 (banks) - do not front-run a print. Catalyst gate fails \u2192 SKIP. Also prudent to hold new deployment until after tomorrow's CPI removes a binary macro risk."
+      ],
+      "risk_factors": [
+        "Under-deployed (~17.6% vs 75-85% target) - 15th consecutive under-deployed session, third week opening with zero new trades. Structural blocker unchanged: pipeline sources sector-level ideas, not a specific named stock + documented catalyst + tight spread. Standing owner decision still needed: (a) permit non-leveraged sector ETFs, or (b) direct pre-market to name specific individual large-caps WITH stock-specific catalysts.",
+        "Binary macro TOMORROW: June CPI (Jul 14). A hot print (>3.8%) revives Sept-hike odds \u2192 pressures multiples, incl. defensive staples; a soft print supports risk broadly. Prudent to avoid new entries into the print.",
+        "Rotation risk: July \"violent rotation\" is favoring Financials over defensives - the exact camp both holdings sit in. Watch staples losing relative momentum; PG already softest.",
+        "Oil spiking (+3.3%) on Iran/Hormuz - inflationary and a direct input-cost headwind for consumer staples if it persists/re-accelerates.",
+        "EU antitrust action on KO's European bottlers - monitor for escalation."
+      ]
+    },
+    {
+      "date": "2026-07-10",
+      "title": "Pre-market Research",
+      "type": "research",
+      "decision": "HOLD",
+      "decision_text": "**HOLD - NO TRADES.** No diversifying candidate clears the buy-side gate (no stock-specific catalyst + tradeable quote today; earnings season starts Jul 13). Keep PG and KO with their live 10% trailing stops - both essentially flat on entry, theses intact, KO reinforced by the Marriott partnership. No sell triggers (both far inside the -7% cut line; PG -2.26%, KO -0.41%). Monitor staples' relative",
+      "market_lines": [
+        "WTI / Brent: WTI ~$71.85 (-0.32%) | Brent ~$76.30 (-2.2%). Oil easing as US-Iran conflict resolves - headline-inflation relief, bearish for the Energy leader. No direct edge for staples.",
+        "S&P 500 futures: E-mini ~7,539 (+0.13%); Sep contract ~7,570-7,590. Calm, mildly positive tape after Wall St closed higher Jul 9 on a semiconductor surge.",
+        "VIX: ~15.85 (-6.2% 24h). Sub-16, calm - volatility bleeding off as Iran risk fades.",
+        "Today's catalysts: (1) AI-capex / semiconductor momentum (MU, TSM leading) driving broad risk-on; (2) US-Iran resolution (\"Blue Sky\") lifting sentiment - JPM hiked '26 S&P target to 7,800; (3) ISM/S&P services PMI (June) today. Risk: Fed's Warsh signaling inflation focus \u2192 market pricing possible Sept hike. None thesis-relevant to PG/KO.",
+        "Earnings before open: DAL (Q2 est $1.47 EPS, -30% y/y / ~$18.9B rev) - only noteworthy pre-open name; not held, not a peer. Held-name earnings: KO Jul 28, PG Jul 29.",
+        "Economic calendar: No major release today (services PMI/ISM only). Next pivots: June CPI Jul 14 (Tue), June PPI mid-July, FOMC late-July. May CPI ran 4.2% headline; tariff pass-through (Vietnam 20%, EU 15%) the watch item.",
+        "Sector momentum YTD: Energy +23.3%, Materials +17.4%, Consumer Staples +15.6%, Industrials +14.1% - all Leading. Financials -6.9% laggard; Tech recovering on AI. Defensive/hard-asset rotation intact but softening at the margin as risk-on returns (Iran resolved, VIX falling) - modestly less tailwind for staples than prior weeks."
+      ],
+      "trade_ideas": [
+        "PG / KO - HOLD. Both theses intact; KO reinforced by the Marriott win. Both fractionally green intraday, both well clear of live 10% trailing stops. Let stops work.",
+        "Diversifying add - NO CANDIDATE CLEARS THE GATE. No S&P 500 large-cap outside the held staples has a documented stock-specific catalyst today with a tradeable (tight-spread) sandbox quote; Q2 earnings season starts Jul 13 (Mon). Catalyst gate fails \u2192 SKIP."
+      ],
+      "risk_factors": [
+        "Under-deployed (~17.5% vs 75-85% target) - 14th consecutive under-deployed session. Structural blocker unchanged: pipeline sources sector-level ideas, not a specific named stock + documented catalyst + tight spread. Standing owner decision still needed: (a) permit non-leveraged sector ETFs, or (b) direct pre-market to name specific individual large-caps WITH stock-specific catalysts.",
+        "Rotation risk: as Iran resolves and VIX falls, risk-on/AI leadership could pull flows OUT of defensives - the exact camp both holdings sit in. Watch for staples losing relative momentum; PG already the softest name.",
+        "Macro: June CPI Jul 14 next pivot; tariff pass-through + Warsh's hawkish inflation tilt (possible Sept hike) could cap defensive multiples.",
+        "Oil falling is disinflationary (mild positive for staples input costs) but signals the hard-asset trade cooling."
+      ]
+    },
+    {
+      "date": "2026-07-09",
+      "title": "Pre-market Research",
+      "type": "research",
+      "decision": "HOLD",
+      "decision_text": "**HOLD - NO TRADES.** No diversifying candidate clears the buy-side gate (no stock-specific catalyst exists today for any Industrials/Materials large-cap; earnings season starts Jul 13). Keep PG and KO with their live 10% trailing stops - both essentially flat, theses intact, squarely in the leading defensive camp. No sell triggers (both far inside the -7% cut line). Watch PEP's pre-open print for",
+      "market_lines": [
+        "WTI / Brent: WTI ~$73.22 (-0.41%) | Brent ~$77.86 (-0.36%). Both easing slightly after the recent Iran-driven spike; still elevated. No direct edge for staples.",
+        "S&P 500 futures: E-mini Sep ~7,542 (+0.19%). Mildly positive, calm tape after S&P -0.28% prior session.",
+        "VIX: ~16.6 (prev close ~16.1, +~4.8%). Sub-17, calm; intraday range 16.35-18.91. No stress.",
+        "Today's catalysts: Initial jobless claims 8:30am; record options expiration + quarter-end rebalancing flows (volatility risk); Iran tension keeps oil bid; AI-semi profit-taking continues (Tech >2/3 off highs). None thesis-relevant to PG/KO.",
+        "Earnings before open: PEP (Q2, est $2.21 EPS / ~$24B rev, +5.7% y/y) - staples peer, read-through for KO/PG demand. Also HELE, LEVI, WDFC, AZZ, PSMT, SMPL (none held). DAL reports Fri Jul 10. Held-name earnings: KO Jul 28, PG Jul 29.",
+        "Economic calendar: Only initial jobless claims today; no CPI/PPI/FOMC/jobs report. Next pivots: June CPI Jul 14, FOMC late-July. Core CPI running hot (~2.9% y/y core, 4.2% headline, tariff/energy-driven).",
+        "Sector momentum YTD: Energy +23.3%, Materials +17.4%, Consumer Staples +15.6%, Industrials +14.1% - all Leading (8/11 green). Tech -3.3%, Cons Disc -3.8%, Financials -6.9% lag. S&P ~+1.2% YTD. Defensive/hard-asset rotation intact - favorable for both held staples."
+      ],
+      "trade_ideas": [
+        "PG / KO - HOLD. Both staples theses intact, reinforced by the ongoing defensive/hard-asset rotation. PG flat-to-slightly-red on entry, KO fractionally green; both well clear of live 10% trailing stops. Let stops work.",
+        "Diversifying Industrials/Materials add - NO CANDIDATE CLEARS THE GATE again. No S&P 500 Industrials/Materials large-cap has a documented stock-specific catalyst today; Q2 earnings season doesn't start until Jul 13. Catalyst gate fails \u2192 SKIP."
+      ],
+      "risk_factors": [
+        "Under-deployed (~17.6% vs 75-85% target) - 13th consecutive under-deployed session. Structural blocker unchanged: pipeline sources sector-level ideas, not a specific named stock + documented catalyst; open sandbox spreads run wide (4-10%) on nearly every large-cap outside the two held staples.",
+        "Today's record options expiration + quarter-end rebalancing can drive intraday volatility spikes - watch for whipsaw, but no position-specific threat.",
+        "Macro: hot core CPI (tariff/energy-driven), June CPI Jul 14 next pivot, FOMC late-July. Sticky inflation favors defensive tilt but caps multiple expansion.",
+        "Oil still elevated on Iran tension - inflationary if it re-accelerates; watch input-cost read-through to staples.",
+        "Standing owner decision still needed to break the deployment blocker: (a) permit non-leveraged sector ETFs, or (b) direct pre-market to name specific individual large-caps WITH stock-specific catalysts. Q2 earnings (starts Jul 13) should improve catalyst supply next week."
+      ]
+    },
+    {
+      "date": "2026-07-08",
+      "title": "Pre-market Research",
+      "type": "research",
+      "decision": "HOLD",
+      "decision_text": "**HOLD - NO TRADES.** No diversifying candidate clears the buy-side gate (no stock-specific catalyst exists today for any Industrials/Materials large-cap; earnings season starts Jul 13). Keep PG and KO with their live 10% trailing stops - both green, theses intact, and squarely in the winning defensive camp as tariff/AI headlines drive rotation away from Tech. No sell triggers (both far inside the",
+      "market_lines": [
+        "WTI / Brent: WTI ~$70.41 (+2.71%) | Brent ~$74.06 (+2.88%). Oil rallying hard - Treasury canceled an Iranian-oil sale license + Iran war tension. Energy YTD leader (+23.3%); no direct edge for staples.",
+        "S&P 500 futures: E-mini ~7,580 (-0.15%). Modest risk-off, contained. Sep contract firmer (+0.48%).",
+        "VIX: ~15.9 spot, intraday high 16.64 (prev close 15.57), +~2-9% intraday. Spike driven by Trump warning of a 25% tariff on Apple \u2192 AAPL -4% pre-market. Still sub-17, calm-ish tape.",
+        "Today's catalysts: (1) Trump 25% Apple-tariff threat hits AAPL/Tech; (2) AI-semi profit-taking selloff - MU/AMD/INTC down 4-5.5%; (3) oil spike on Iran. Dow at record 52,900 (+1.1%), Nasdaq weak - defensive/value rotation continuing. None thesis-relevant to PG/KO.",
+        "Earnings before open: HELE, SMPL, WDFC (none noteworthy/held). Held-name earnings: KO Jul 28, PG Jul 29. PEP reports Thu Jul 10.",
+        "Economic calendar: Nothing major today (Wholesale Inventories 10am only). Next pivots: June CPI Jul 14, June PPI Jul 15, FOMC late-July. Core CPI running hot (tariff-driven).",
+        "Sector momentum YTD: Energy +23.3%, Materials +17.4%, Consumer Staples +15.6%, Industrials +14.1% - all Leading (8/11 green). Tech -3.3%, Cons Disc -3.8%, Financials -6.9% lag. S&P ~+1.2% YTD. Hard-asset/defensive rotation intact - favorable for both held staples."
+      ],
+      "trade_ideas": [
+        "PG / KO - HOLD. Both staples theses intact and reinforced by the ongoing defensive/hard-asset rotation (Apple-tariff + AI-semi selloff pushing money into value/defensives). Both green, both well clear of live 10% trailing stops. Let stops work.",
+        "Diversifying Industrials/Materials add - NO CANDIDATE CLEARS THE GATE again. No S&P 500 Industrials/Materials large-cap has a documented stock-specific catalyst today; Q2 earnings season doesn't start until Jul 13. Catalyst gate fails \u2192 SKIP."
+      ],
+      "risk_factors": [
+        "Under-deployed (~18.1% vs 75-85% target) - 12th consecutive under-deployed session. Structural blocker unchanged: pipeline sources sector-level ideas, not a specific named stock + documented catalyst; open sandbox spreads run wide (4-10%) on nearly every large-cap outside the two held staples.",
+        "Tariff headline risk elevated: Trump's 25% Apple-tariff threat spiked VIX and hit Tech/AI; broad tariff uncertainty could spill into staples cost bases (PG already flags tariff audits on ~25% of products). Watch for escalation.",
+        "Macro: hot core CPI (tariff-driven), June CPI Jul 14 next pivot, FOMC late-July. Sticky inflation favors defensive tilt but caps multiple expansion.",
+        "Oil spiking on Iran war/license cancellation - inflationary if sustained; watch for input-cost read-through to staples.",
+        "Standing owner decision still needed to break the deployment blocker: (a) permit non-leveraged sector ETFs, or (b) direct pre-market to name specific individual large-caps WITH stock-specific catalysts. Q2 earnings (starts Jul 13) should improve catalyst supply next week."
+      ]
+    },
+    {
+      "date": "2026-07-07",
+      "title": "Pre-market Research",
+      "type": "research",
+      "decision": "HOLD",
+      "decision_text": "**HOLD - NO TRADES.** No diversifying candidate clears the buy-side gate (no stock-specific catalyst exists today for any Industrials/Materials large-cap; earnings season starts Jul 13). Keep PG and KO with their live 10% trailing stops - both green today, theses intact, aligned with the leading defensive rotation. Patience > activity; no rule violated. Deployment stays ~17.8%.",
+      "market_lines": [
+        "WTI / Brent: WTI ~$69.13 (+0.85%) | Brent ~$72.62 (+0.88%). Oil firmer intraday but capped - OPEC+ agreed 5th straight monthly production hike, narrative shifting supply-crisis \u2192 oversupply. No Energy entry edge.",
+        "S&P 500 futures: E-mini ~7,580 (-0.15%). Modest risk-off; contained.",
+        "VIX: ~15.6-16.3 (prev close 15.81). Sub-17, calm tape.",
+        "Today's catalysts: Samsung Q2 (chip/AI read-through), US May Trade Balance 8:30am ET, Fed minutes (Warsh's first meeting) parsed for rate path. Continued rotation OUT of AI/Tech (Nasdaq below 50-day) INTO broad/defensive. None thesis-relevant to PG/KO.",
+        "Earnings before open: None noteworthy. Non-noteworthy pre-open: HELE, SMPL, WDFC. Held-name earnings: KO Jul 28, PG Jul 29. PEP reports Thu Jul 10.",
+        "Economic calendar: Nothing major today (only May Trade Balance). Next pivots: June CPI Jul 14, June PPI Jul 15, FOMC late-July. Core CPI running hot (~30bp rise since May, tariff-driven). Favors defensive tilt.",
+        "Sector momentum YTD: Energy +23.3%, Materials +17.4%, Consumer Staples +15.6%, Industrials +14.1% - all Leading (8/11 sectors green). Tech -3.3%, Cons Disc -3.8%, Financials -6.9% lag. S&P ~+1.2% YTD. Hard-asset/defensive rotation intact - favorable for both held staples."
+      ],
+      "trade_ideas": [
+        "PG / KO - HOLD. Both staples theses intact and reinforced by favorable defensive rotation; both green/near-flat, both well clear of live 10% trailing stops. Let stops work.",
+        "Diversifying Industrials/Materials add - NO CANDIDATE CLEARS THE GATE again. No S&P 500 Industrials/Materials large-cap has a documented stock-specific catalyst today; Q2 earnings season doesn't start until Jul 13, no upgrades/contracts/M&A named today. Catalyst gate fails \u2192 SKIP."
+      ],
+      "risk_factors": [
+        "Under-deployed (~17.8% vs 75-85% target) - 11th consecutive under-deployed session. Structural blocker unchanged: pipeline sources sector-level ideas, not a specific named stock + documented catalyst; open sandbox spreads run wide (4-10%) on nearly every large-cap outside the two held staples.",
+        "Macro: hot core CPI (tariff-driven), June CPI Jul 14 next pivot, FOMC late-July, Fed minutes today. Sticky inflation favors defensive tilt but caps multiple expansion.",
+        "Tech/AI rotation continuing (Nasdaq below 50-day) - no reason to chase; both held names sit in the winning defensive camp.",
+        "Standing owner decision still needed to break the deployment blocker: (a) permit non-leveraged sector ETFs, or (b) direct pre-market to name specific individual large-caps WITH stock-specific catalysts. Q2 earnings (starts Jul 13) should improve catalyst supply next week."
+      ]
+    },
+    {
+      "date": "2026-07-06",
+      "title": "Pre-market Research (inline, run at market-open)",
+      "type": "research",
+      "decision": "HOLD",
+      "decision_text": "**HOLD - NO TRADES.** No diversifying candidate clears the buy-side gate (no documented stock-specific catalyst exists this week for any Industrials/Materials large-cap; CAT spread 4% wide). Keep PG and KO with their live 10% trailing stops. Patience > activity; no rule violated. Deployment stays ~17.8%.",
+      "market_lines": [],
+      "trade_ideas": [
+        "PG / KO - HOLD. Both staples theses intact, both green/near-flat, both well clear of live 10% trailing stops. Let stops work.",
+        "Diversifying Industrials/Materials add - NO CANDIDATE CLEARS THE GATE. Perplexity (2x) confirms: no S&P 500 Industrials/Materials large-cap has a stock-specific catalyst today or this week - Q2 earnings season starts Jul 13; only PEP & DAL report Jul 6-10 (neither in sector); no upgrades/contract news today for CAT/ETN/GEV/DE/HON/LIN/SHW/FCX/NUE/EMR/PH. CAT quote also wide (4.05% spread). Catalyst gate fails regardless of spread \u2192 SKIP."
+      ],
+      "risk_factors": [
+        "Under-deployed (~82% idle vs 75-85% target) - 10th consecutive under-deployed session. Structural blocker unchanged: pipeline sources sector-level ideas, not a specific named stock + documented catalyst, and open sandbox spreads run wide (4-10%) on nearly every large-cap outside the two held staples.",
+        "Macro pivots ahead: June CPI Jul 14, June PPI Jul 15, FOMC late-July. Sticky Core PCE ~3.3%. Favors defensive tilt.",
+        "Standing owner decision still needed to break the blocker: (a) permit non-leveraged sector ETFs, or (b) direct pre-market to name specific individual large-caps WITH stock-specific catalysts."
+      ]
+    },
+    {
+      "date": "2026-07-03",
+      "title": "Pre-market Research",
+      "type": "research",
+      "decision": "HOLD",
+      "decision_text": "**HOLD - market closed for Independence Day (observed). No orders today; none possible.** Both PG and KO green, theses intact (KO strengthened by Marriott win), both well clear of live 10% trailing stops. Nothing actionable until Mon Jul 6. At Monday's open the market-open run should: (1) keep PG and KO with live stops; (2) with the weekly trade count reset to 0/3, evaluate ONE diversifying Indust",
+      "market_lines": [
+        "WTI / Brent: WTI ~$68.59 (flat) | Brent ~$72.26 (+0.98%). Oil near 4-month lows on US-Iran de-escalation; no upside catalyst - Energy entries stay premature.",
+        "S&P 500 futures: E-mini ~7,549 (+0.28%) - but cash market closed today; futures thinly traded around the holiday.",
+        "VIX: ~16.1-16.6. Sub-17, calm risk-on tape.",
+        "Today's catalysts: N/A - holiday, no session. Backdrop: soft June jobs (57k vs ~114k est, released Jul 2) shifts Fed focus; AVGO -14% on AI-outlook disappointment despite record rev; META +9% on cloud-business plans; US-Iran \"Blue Sky\" (JPM SPX target 7,800). None thesis-relevant to held names.",
+        "Earnings before open: N/A (holiday). Next held-name earnings: KO Jul 28, PG Jul 29.",
+        "Economic calendar: N/A today. June CPI Jul 14, June PPI Jul 15, FOMC late-July (~33% hike odds). Core PCE ~3.3% sticky.",
+        "Sector momentum YTD: Energy +23.3%, Materials +17.4%, Consumer Staples +15.6%, Industrials +14.1% - all Leading (8/11 green). Tech -3.3%, Cons Disc -3.8%, Financials -6.9% lag. S&P index ~+1.2% YTD. Hard-asset/defensive rotation intact."
+      ],
+      "trade_ideas": [
+        "PG / KO - HOLD (no choice - market closed). Both staples theses intact and strengthening (KO Marriott win), both green, both well clear of live 10% trailing stops and inside the -7% cut line. Let trailing stops work.",
+        "Deployment gap (~82% idle vs 75-85% target) - NO ACTION possible today. Carry forward to Mon Jul 6: evaluate ONE momentum-aligned individual large-cap in Industrials/Materials only if it clears BOTH a tight spread AND a documented stock-specific catalyst, 10% trailing stop, \u226420% sizing, full buy-side gate (weekly count resets Mon; will be 0/3).",
+        "No Tech/semis chase (sector -3.3%, AVGO blowup underscores risk). No Energy chase (oil at 4-month lows)."
+      ],
+      "risk_factors": [
+        "Market closed today \u2192 this is a research-only session; execution deferred to Mon Jul 6 open.",
+        "Soft June jobs (57k) + sticky Core PCE 3.3% = mixed Fed picture; June CPI Jul 14 is the next macro pivot. Favors defensive tilt.",
+        "Under-deployed (~82% idle) and under-diversified (2 names, both Consumer Staples). Structural blocker persists: pipeline sources sector-level ideas, not specific named stock + catalyst, and open sandbox spreads run wide (5-10%) on most large-caps. Owner decision still pending: (a) permit non-leveraged sector ETFs, or (b) direct pre-market to name specific individual large-caps WITH stock-specific catalysts.",
+        "KO EU antitrust raids - monitor for escalation; not thesis-breaking yet."
+      ]
+    },
+    {
+      "date": "2026-07-02",
+      "title": "Pre-market Research",
+      "type": "research",
+      "decision": "HOLD",
+      "decision_text": "**HOLD pre-market - no orders before the open (pre-market defers execution to the market-open run).** Both PG and KO theses intact, neither in stress, both well clear of live 10% trailing stops; calm risk-on tape (VIX <17). Market-open run should: (1) keep PG and KO with live stops; (2) DEFER any new add until AFTER the 8:30am June jobs report and only at a liquid window with a specific named larg",
+      "market_lines": [
+        "WTI / Brent: WTI ~$69.12 (-0.55%) | Brent ~$72.18 (-1.06%). Lowest since late Feb on US-Iran de-escalation + Strait of Hormuz shipping recovery. No upside catalyst - Energy entries stay premature.",
+        "S&P 500 futures: E-mini ~7,544-7,554, flat-to-slightly-up (+0.14% to -0.27% across sources). Cautious tone into Q3 start ahead of the jobs print.",
+        "VIX: ~16.4-16.9. Sub-17 = calm, risk-on tape.",
+        "Today's catalysts: **June Jobs Report TODAY 8:30am ET** (moved up 1 day from Jul 3 for Independence Day) - NFP est ~114k, unemployment ~4.3%, AHE +0.3% m/m. This is THE event of the day; strong print keeps a July/Sept Fed hike live. Also: AI capex surge (hyperscalers ~$725B 2026), US-Iran \"Blue Sky\" (JPM SPX target 7,800).",
+        "Earnings before open: None noteworthy. Next pre-market: PEP Jul 9, DAL Jul 10. None held.",
+        "Economic calendar: Jobs report 8:30am today. June CPI Jul 14, June PPI Jul 15, FOMC mid-July (~33% hike odds). Core PCE 3.3% and sticky; latent valuation pressure on growth.",
+        "Sector momentum YTD: Energy +23.3%, Materials +17.4%, Consumer Staples +15.6%, Industrials +14.1% - all Leading (8/11 green). Tech -3.3%, Cons Disc -3.8%, Financials -6.9% lag. Hard-asset/defensive rotation intact. S&P index only ~+1.2% YTD."
+      ],
+      "trade_ideas": [
+        "PG / KO - HOLD. Both staples theses intact, sector +15.6% YTD leader, both clear of stops and inside -7% cut line. Let trailing stops work.",
+        "Diversifying add toward 75-85% target (currently ~17.5%, ~82% idle) - DEFER TODAY. A single Industrials (+14.1%) or Materials (+17.4%) name remains the best fit, but do NOT initiate ahead of an 8:30am jobs print on a thin holiday-shortened week. Revisit at a liquid mid-morning window only if the print is benign AND a specific name clears BOTH a tight spread and a documented stock-specific catalyst.",
+        "No Tech/semis chase (sector -3.3%, against defensive posture). No Energy chase (oil at 4-month lows, no upside catalyst)."
+      ],
+      "risk_factors": [
+        "**June Jobs Report 8:30am today** on thin, holiday-shortened volume \u2192 elevated whipsaw risk. Do not add before the print; size any post-print entry conservatively.",
+        "Sticky inflation (Core PCE 3.3%, CPI ~3.8%) + live Fed (~33% July hike odds, CPI Jul 14) = latent valuation pressure. Favors defensive tilt.",
+        "Under-deployed (~82% idle vs 75-85% target) and under-diversified (2 names, both Staples). Concentration in one defensive sector.",
+        "Recurring execution blocker: pipeline produces sector-level ideas, not a specific tradeable stock + catalyst; open sandbox spreads often wide (5-10%) on large-caps. Market-open run should re-quote at a liquid mid-morning window if open spreads are wide - but only post-jobs-print today.",
+        "KO EU antitrust headline risk noted prior sessions - no fresh development today; monitor."
+      ]
+    },
+    {
+      "date": "2026-07-01",
+      "title": "Pre-market Research",
+      "type": "research",
+      "decision": "HOLD",
+      "decision_text": "**HOLD pre-market - no orders before the open (pre-market always defers execution to the market-open run).** Both PG and KO theses intact, neither in stress, both well clear of live 10% trailing stops; calm risk-on tape (VIX ~16.5, futures flat). Market-open run should: (1) keep PG and KO with their live stops; (2) evaluate ONE momentum-aligned individual large-cap in Industrials or Materials only",
+      "market_lines": [
+        "WTI / Brent: WTI ~$70.3 (+~1-2%) | Brent ~$72.6. Oil firming off June lows but still no fresh upside catalyst - Energy entries remain premature.",
+        "S&P 500 futures: E-mini ~7,545 (-0.04%, flat). Calm, holding gains; broad market rosier than expected, potential rally into year-end.",
+        "VIX: ~16.45 (prev close 17.65, -7%). Low/calm risk-on tape. (Note: VIX Jul futures ~23 \u2192 market prices some vol pickup later in July.)",
+        "Today's catalysts: AI/semis remain dominant (AVGO record AI-chip growth despite selloff; PANW strong cyber). Macro: PCE confirmed inflation at 3-yr high but consumer spending robust; Fed funds futures now price a possible Sept hike (Warsh inflation focus). JPM 2026 SPX target 7,800 (\"Blue Sky\").",
+        "Earnings before open: GIS, FDS, MSM, UNF, FIZZ - none held, none thesis-relevant.",
+        "Economic calendar: Nothing today (only regional employment 10:00am). TOMORROW Jul 2: ISM Manufacturing (7:45am) + ADP (8:15am). June CPI Jul 14. FOMC Jul 29-30. June Jobs Aug 1. (Note: prior logs cited Jul 3 jobs - corrected: national NFP now Aug 1.)",
+        "Sector momentum YTD: Energy +23.3%, Materials +17.4%, Consumer Staples +15.6%, Industrials +14.1% - all Leading (8/11 sectors green). Tech -3.3%, Cons. Disc. -3.8%, Financials -6.9% lag. Hard-asset/defensive rotation intact."
+      ],
+      "trade_ideas": [
+        "PG / KO - HOLD. Both staples theses intact, both clear of stops. Let trailing stops work.",
+        "Diversifying add toward 75-85% target (currently ~17.5%, ~82% idle): best fits remain a single name in Industrials (+14.1%, AI-infra/electrification/defense capex) or Materials (+17.4%, inflation hedge). Candidates for the open run to quote-check for a clean tight spread AND a documented stock-specific catalyst: CAT, ETN, GE Vernova, LIN, SHW. Only proceed if BOTH the spread is clean and a stock-specific catalyst is present (recurring gate blocker: sector-level idea without a named catalyst).",
+        "No Tech/semis chase despite AI headlines - sector lagging (-3.3%), against defensive posture. No Energy chase - oil firming but no upside catalyst."
+      ],
+      "risk_factors": [
+        "Tomorrow (Jul 2) ISM + ADP prints on a holiday-shortened, thin-volume week \u2192 whipsaw risk. Size any new entry conservatively; avoid adding immediately ahead of the print.",
+        "Sticky inflation (PCE 3-yr high, CPI 4.2%) + live Fed pricing a possible Sept hike = latent valuation pressure on growth if July CPI (Jul 14) surprises hot. Favors our defensive tilt.",
+        "Under-deployed (~82% idle vs 75-85% target) and under-diversified: 2 names, both Consumer Staples. Concentration in a single defensive sector; a 2nd Leading sector (Industrials/Materials) would improve the book.",
+        "Recurring execution blocker: pipeline produces sector-level ideas, not a specific tradeable stock + catalyst, and open sandbox spreads are wide on many large-caps. Market-open run should re-quote at a liquid mid-morning window if open spreads are wide."
+      ]
+    },
+    {
+      "date": "2026-06-30",
+      "title": "Pre-market Research",
+      "type": "research",
+      "decision": "HOLD",
+      "decision_text": "**HOLD pre-market - no orders before the open (pre-market always defers execution to the market-open run).** Both PG and KO theses intact, neither in stress, both clear of live 10% trailing stops; calm risk-on tape (VIX <18, futures flat). Market-open run should: (1) keep PG and KO with their live stops; (2) evaluate adding ONE momentum-aligned individual large-cap in Industrials or Materials on a",
+      "market_lines": [
+        "WTI / Brent: WTI ~$70.61 (~flat, -0.2%) | Brent ~$73.86. Oil firming off June lows, no supply-disruption premium post US-Iran de-escalation. Still no fresh upside catalyst.",
+        "S&P 500 futures: E-mini ~7,497 (-0.04%, flat). Holding the 7,500 level; calm.",
+        "VIX: ~17.66 (prev close 18.41, -4%). Sub-18 = calm, stable, risk-on tape.",
+        "Today's catalysts: AI investment momentum (semis/memory, ServiceNow/Salesforce strength) remains dominant driver; US-Iran resolution \"Blue Sky\" scenario (JPM raised 2026 SPX target to 7,800). Data: Case-Shiller home prices 9:00am, Chicago PMI 9:45am, FHFA 10:00am - all second-tier.",
+        "Earnings before open: None noteworthy US pre-market. NKE, STZ, PRGS all report AMC today (none held).",
+        "Economic calendar: Light. CPI/PPI/FOMC all past (CPI 4.2% Jun 10, Fed held 3.50-3.75% Jun 17). Next headline = June Jobs Report Fri Jul 3 (holiday-shortened week, thin volume \u2192 whipsaw risk). June CPI Jul 14, FOMC Jul 28-29.",
+        "Sector momentum YTD: Energy +23.3%, Materials +17.4%, Consumer Staples +15.6%, Industrials +14.1% - all Leading. Tech -3.3%, Cons. Disc. -3.8%, Financials -6.9% lag. Hard-asset/defensive rotation intact; 8 of 11 sectors green."
+      ],
+      "trade_ideas": [
+        "PG / KO - HOLD. Both staples theses intact, sector +15.6% YTD leader, both clear of stops. Let trailing stops work.",
+        "Add a 3rd momentum-aligned individual large-cap to push deployment toward 75-85% (currently ~17.6%, ~82% idle). Best fits: Industrials (+14.1%) or Materials (+17.4%) single name with clean tight spread + documented catalyst. Energy leads YTD but oil flat with no upside catalyst \u2192 still defer. Verify quote integrity at open before any order.",
+        "No Tech/semis chase despite AI being today's headline driver - sector lagging (-3.3%), no position-level catalyst, against our defensive posture."
+      ],
+      "risk_factors": [
+        "Holiday-shortened week; Fri Jul 3 June Jobs Report (8:30am) on thin volume \u2192 whipsaw risk. Size any new entry conservatively; avoid adding right before the print.",
+        "Sticky 4.2% CPI + live Fed (next CPI Jul 14, FOMC Jul 28-29) = latent valuation pressure if mid-July data surprises hot.",
+        "KO EU antitrust raids + elevated put volume = headline risk on a held name; not thesis-breaking yet but watch.",
+        "Capital ~82% idle vs 75-85% target - under-deployed and under-diversified (2 names, both Staples). Concentration in a single defensive sector; diversifying into a 2nd Leading sector (Industrials/Materials) would improve the book.",
+        "Oil flat, no upside catalyst - Energy entries premature."
+      ]
+    },
+    {
+      "date": "2026-06-29",
+      "title": "Pre-market Research",
+      "type": "research",
+      "decision": "HOLD",
+      "decision_text": "**HOLD pre-market - no orders before the open (pre-market always defers execution to the market-open run).** PG thesis intact, no held-position stress, calm risk-on tape (VIX <19, futures +0.5%). Market-open run should: (1) keep PG with its live 10% trailing stop; (2) evaluate adding ONE momentum-aligned individual large-cap in Industrials/Materials/Staples on a stable open with a tight spread, 10",
+      "market_lines": [
+        "WTI / Brent: WTI ~$69.85 (+0.90%) | Brent ~$72.83 (+0.73%). Oil firming off lows but Brent still -23% on the month. No supply-disruption premium after US-Iran de-escalation.",
+        "S&P 500 futures: ~7,451 (+0.5% to +0.67%) - risk-on, reversing last week's ~2% drop.",
+        "VIX: ~18.41 (prev close 18.60, ~flat/slightly lower). Sub-20 = calm, stable tape.",
+        "Today's catalysts: US-Iran peace agreement halts tit-for-tat attacks \u2192 broad risk-on lift across S&P/Nasdaq/Dow. \"Blue Sky\" equity optimism, tempered by sticky 4.2% CPI and a live Fed (possible hike by Sep/Jul).",
+        "Earnings before open: DRI, SNX, AYI, CMC, WGO, NNOX - none held, none in watchlist. Week ahead: NKE, AVAV, STZ.",
+        "Economic calendar: Light Monday (jobless claims only). Tue: JOLTS + CB Consumer Confidence (2pm) + Case-Shiller. Fri Jul 3: June Jobs Report (8:30am) - holiday-shortened week. CPI Jul 14, PPI Jul 15, FOMC Jul 28-29.",
+        "Sector momentum YTD: Energy +23.3%, Materials +17.4%, Consumer Staples +15.6%, Industrials +14.1% (all Leading). Tech -3.3% and Financials -6.9% lag. Rotation into hard-asset/defensive sectors intact; 8 of 11 sectors green."
+      ],
+      "trade_ideas": [
+        "PG (Consumer Staples) - HOLD. Thesis intact, staples +15.6% YTD leader, analyst PT $164. No action; let trailing stop work.",
+        "Add a 2nd momentum-aligned individual large-cap in a Leading sector to move deployment toward 75-85% (currently ~15%). Best fits: Industrials (+14.1%) or Materials (+17.4%) single name with clean tight spread + documented catalyst. Energy leads YTD but oil has no upside catalyst today \u2192 defer. Verify quote integrity at open before any order.",
+        "No semis/Tech chase - sector lagging (-3.3%), no catalyst today."
+      ],
+      "risk_factors": [
+        "Sticky inflation (4.2% CPI) + live Fed (Warsh removed forward guidance) = July hike risk if mid-July CPI/PPI surprise hot. Valuation pressure on growth.",
+        "Holiday-shortened week; Fri Jul 3 jobs report can whipsaw - size any new entry conservatively.",
+        "Capital ~85% idle vs 75-85% deployed target. Single position (PG) under-diversified. Pre-market sources the idea; market-open run should execute if a clean candidate confirms.",
+        "Oil firming but no upside catalyst - Energy entries still premature."
+      ]
+    },
+    {
+      "date": "2026-06-29",
+      "type": "trade",
+      "ticker": "KO",
+      "side": "BUY",
+      "shares": "35",
+      "entry": "83.10",
+      "stop": "74.66",
+      "target": "99.98",
+      "thesis": "Consumer Staples leadership (+15.6% YTD, Leading sector) + defensive rotation on calm risk-on tape; only momentum-aligned name with a clean tradeable feed (0.06% spread) - Industrials/Materials candidates all showed broken 7-11% sandbox spreads (tradeable:false)."
+    },
+    {
+      "date": "2026-06-26",
+      "title": "Pre-market Research",
+      "type": "research",
+      "decision": "TRADE",
+      "decision_text": "**TRADE** - initiate 1-2 positions at 10:00 AM CT market-open run.\n- Primary: SNX - validate spread_pct < 1% at 10 AM CT; if tradeable, buy ~65 shares, set 10% trailing stop GTC\n- Secondary: NVDA - if SNX fails gate or only partially fills, add NVDA as second position\n- Max deployment this session: ~$38,000-$40,000 (2 positions at ~$19-20k each), leaving ~$60k cash\n- Gate reminder: spread_pct > 1%",
+      "market_lines": [
+        "WTI: ~$71/barrel (Aug contract, trending down) | Brent: ~$90 (June 12 ref, stale) - oil at 3.5-month lows, Iran deal speculation = bearish energy",
+        "S&P 500 futures: 7,448.50 (+0.27%) - slight positive premarket, prior close 7,423.25",
+        "VIX: 19.66 (+4.1% from yesterday's 18.63) - moderate elevated, below 20 threshold, not fearful",
+        "AI supercycle dominant theme: tech stocks +16% in past month; TSMC, Micron, hyperscalers ramping capex",
+        "MU earnings (June 24) came in strong - reignited AI/semiconductor trade, stock surged (now ~$1,000+ range confirmed via bars)",
+        "Dell surged +32.8% after AI-driven earnings beat",
+        "Iran deal speculation driving oil lower - headwind for energy sector despite YTD leadership",
+        "Fed: rates at 3.50-3.75% (held June 17); market prices ~1-in-3 chance of hike by year-end"
+      ],
+      "trade_ideas": [
+        "**SNX (TD SYNNEX)** - Post-earnings momentum; massive EPS +16% beat and Rev +15% beat on AI infrastructure spending. Entry: validate at 10 AM CT after gap settles, target ~$295-$315 range (conservatively). Stop: -10% below fill. Target: +20% (2:1 R:R minimum). Size: ~$18,000-$20,000 (60-65 shares at ~$300). Catalyst: earnings beat + AI capex supercycle. Sector: Tech/Infrastructure (recovering). Risk: gap-up may make entry chase-y; use limit or wait 10 min after open for price to stabilize.",
+        "**NVDA (Nvidia)** - Core AI supercycle name. Liquid, large-cap. Recent consolidation $204-212 range provides clean entry. Post-MU-earnings AI sentiment positive. Entry: ~$205-210. Stop: -10% (~$185-190). Target: +20% (~$246-252, 2:1 R:R). Size: ~$19,000-$20,000 (~90-95 shares at ~$208). Catalyst: AI build-out, strong sector momentum, Forbes top pick for June 2026."
+      ],
+      "risk_factors": [
+        "SNX may gap too far above fair value at open - discipline to skip if spread_pct > 1% at 10 AM CT",
+        "VIX at 19.66 trending up from 18.63 - slight anxiety building; watch for spike above 20",
+        "Oil declining = headwind for Energy (avoid XOM/CVX for now)",
+        "Tech sector still -3.4% YTD despite June recovery - position sizing discipline essential",
+        "Iran deal finalization or failure could cause sharp moves in energy and defense names"
+      ]
+    },
+    {
+      "date": "2026-06-26",
+      "title": "Pre-market Research",
+      "type": "research",
+      "decision": "HOLD",
+      "decision_text": "**HOLD pre-market - no orders before the open (per strategy; pre-market always defers execution to the market-open run).** Tape is neutral-to-nervous (VIX +7%), no macro data, no held positions. If the market-open run wants to finally deploy, the cleanest fit today is a single staples starter (PG or KO) on a stable open with a tight spread and a 10% trailing stop - defensives align with rising VIX",
+      "market_lines": [
+        "WTI / Brent: WTI ~$70.44 (range $70.02-$71.82) | Brent not cleanly quoted, ~$73-74 implied (WTI premium). Oil still soft on US-Iran de-escalation; Brent down ~21% on the month. Energy leads YTD but no upside catalyst today.",
+        "S&P 500 futures: ~7,440-7,448 (roughly flat to +0.27%); ES Sep +0.78% on upbeat earnings. Mixed/neutral tape.",
+        "VIX: ~20.26, UP +7.25% on the day (prev close 18.89). Rising fear - favors defensives over chasing risk.",
+        "Today's catalysts: AI-capex supercycle (NVDA #1 buy on AI demand; MSFT historic June rout on spend concerns); EM earnings strength (TSMC/Samsung/SK Hynix). NKE reported 6/25 - post-catalyst readthrough.",
+        "Earnings before open: DRI (Darden), SNX (TD Synnex), AYI (Acuity), CMC (Commercial Metals), WGO (Winnebago), NNOX. None held; none in watchlist. No mega-cap movers.",
+        "Economic calendar: NO major data today (no CPI/PPI/FOMC/jobs). Last CPI 6/10 (4.2% YoY, hot). FOMC 6/17 held 3.50-3.75%. Next CPI Jul 14. Market now leaning toward a possible hike by year-end - hawkish drift.",
+        "Sector momentum YTD: Energy +22-26% (leader), Financials, Consumer Discretionary strong; Consumer Staples +10% and Industrials +10-12% steady defensives. Tech in lagging/consolidating quadrant despite strong 12-mo. Defensive/cyclical leadership intact."
+      ],
+      "trade_ideas": [
+        "PG / KO (Consumer Staples) - catalyst: defensive rotation + VIX rising +7% favors staples; sector +10% YTD and steady. Entry only on stable open with tight spread; stop ~9% below; target 2:1. Best risk/reward fit for today's nervous tape.",
+        "XOM / CVX (Energy) - YTD sector leader but oil soft (~$70) with NO upside catalyst today \u2192 defer; energy entries better once oil stabilizes.",
+        "AI/semis (NVDA) - strongest theme but Tech is in the lagging quadrant, MSFT routing, feed showed ap=0 pre-market. No chase; re-check feed at open only."
+      ],
+      "risk_factors": [
+        "VIX rising +7% to ~20 = elevated nervousness; poor backdrop to force a new long.",
+        "Hawkish drift (year-end hike odds rising) + hot 4.2% CPI = valuation pressure on growth.",
+        "Oil weakness undercuts the otherwise-leading Energy sector as an entry today.",
+        "5th consecutive session at 0% deployment vs 75-85% target - capital idle. Structural blocker persists: research keeps surfacing sector ETFs while \"Stocks ONLY\" forbids them; individual large-cap feeds are usable but pre-market spreads are wide. Owner decision still pending on whether non-leveraged sector ETFs are permissible."
+      ]
+    },
+    {
+      "date": "2026-06-26",
+      "type": "trade",
+      "ticker": "PG",
+      "side": "BUY",
+      "shares": "99",
+      "entry": "150.72",
+      "stop": "135.65",
+      "target": "180.86",
+      "thesis": "Defensive rotation + VIX +7% to ~20 favors Consumer Staples; first deployment, momentum-aligned individual stock with clean tight spread (0.16%)."
+    },
+    {
+      "date": "2026-06-25",
+      "title": "Pre-market Research",
+      "type": "research",
+      "decision": "HOLD",
+      "decision_text": "**HOLD pre-market - defer execution to market-open run.** No orders before the open. Conditions have improved materially vs the past 3 sessions: green futures, VIX <18, MU binary resolved positive. Market-open run should deploy a 1-2 starter position(s) into momentum-aligned names (Industrials/Staples) once the open is stable and post-8:30 GDP, with a 10% trailing stop, subject to the buy-side gat",
+      "market_lines": [
+        "WTI / Brent: WTI ~$71.10 (-2.88%) | Brent ~$74.76 (-3.01%) - oil down again on US-Iran de-escalation easing supply fears. Energy sector leads YTD but soft today.",
+        "S&P 500 futures: ~7,471.75 (+0.46%) premarket; Dow +0.46%, Nasdaq-100 +1.15% - RISK-ON tape, reversing yesterday's selloff",
+        "VIX: ~17.9 (-3.9% on day), falling below 18 - fear easing, supportive of longs",
+        "Today's catalysts: U.S. GDP growth rate + Durable Goods Orders at 8:30 AM ET (key macro prints); MU's blowout earnings driving semi/AI sentiment; AI-capex boom narrative intact ($725B hyperscaler capex)",
+        "Earnings before open: None major BMO. **MU reported AFTER close Jun 24** (not today): record rev $41.46B (+347% YoY), GAAP EPS $24.67 vs ~$20.63 est, Q4 guide $50B rev / ~86% GM, stock +4% AH. Binary event resolved POSITIVE. BB & AVAV report later today.",
+        "Economic calendar: No CPI/PPI/FOMC/jobs today. GDP (Q1 final) + Durable Goods at 8:30 ET are the only macro movers. Next CPI Jul 14, next FOMC ~Jul 30.",
+        "Sector momentum YTD: Energy +23.3%, Materials +17.4%, Cons. Staples +15.6%, Industrials +14.1% leading; Tech -3.3%, Cons. Disc. -3.8%, Financials -6.9% lagging. Hard-asset/defensive rotation intact, though Nasdaq leads premarket on MU readthrough."
+      ],
+      "trade_ideas": [
+        "Momentum-aligned defensive/cyclical leader (Industrials or Consumer Staples ETF-style/large-cap) - catalyst: YTD sector momentum + risk-on green open + falling VIX. Entry on confirmed stable/green open, stop ~9% below, target 2:1. Best fit with strategy's \"follow sector momentum\" rule and not exposed to today's oil drop.",
+        "MU / semis - catalyst: blowout Q3 + strong Q4 guide, +4% AH. BUT (a) MU's Alpaca quote feed has shown unreliable/inflated prints (~$1068 vs fundamental ~$115-120) - must verify clean spread at open before any order; (b) semis are the Street's most-crowded long (73%); (c) Tech is the weakest YTD sector. Treat as opportunistic only if quote is clean and it's not chasing an extended gap.",
+        "Energy (XOM/CVX) - sector leads YTD but oil -3% today + prior wide/illiquid spreads. SKIP until oil stabilizes and spreads tighten."
+      ],
+      "risk_factors": [
+        "8:30 ET GDP + Durable Goods could whipsaw the open - entries best placed after data digests",
+        "MU feed integrity unresolved; semis crowded \u2192 chase risk",
+        "Oil weakness undercuts the otherwise-leading Energy sector as an entry today",
+        "4th consecutive session at 0% deployment vs 75-85% target - capital idle. Today's risk-on, low-VIX tape is the \"stable/green open\" condition prior runs deferred to. Forcing a buy is still wrong, but conditions now favor the market-open run beginning deployment."
+      ]
+    },
+    {
+      "date": "2026-06-24",
+      "title": "Pre-market Research",
+      "type": "research",
+      "decision": "HOLD",
+      "decision_text": "**HOLD - no trades premarket.** Risk-off tape + MU binary today + energy weakness make this a poor entry window. Defer to the market-open run: only deploy into momentum-aligned names (Staples/Industrials) if the open stabilizes; no pre-earnings MU. Patience > activity.",
+      "market_lines": [
+        "WTI / Brent: WTI ~$71.76 (-1.98%) | Brent ~$75.43 (-1.91%) - falling on US-Iran peace-talk progress easing supply fears; Brent -21% on the month",
+        "S&P 500 futures: ~7,440.75 (-1.33%) premarket - risk-off, driven by tech-valuation worries / tech selloff (S&P -1.44% prior session)",
+        "VIX: ~19-21 (sources split 19.19 to 20.95), trending up intraday - moderate but rising",
+        "Today's catalysts: NVDA annual shareholder meeting; ongoing AI capex narrative; US-Iran developments pressuring oil; risk-off tape",
+        "Earnings before open: None firmly confirmed BMO (all \"Time TBD\"); MU (Micron) reports today - est. $1.19 EPS - binary AI/HBM memory readthrough; PAYX, FUL, JEF, TCOM also on tap",
+        "Economic calendar: No major data (no CPI/PPI/FOMC/jobs). Last Fed: June 17, held 3.50-3.75% (Warsh's first). June CPI due July 14",
+        "Sector momentum YTD: Energy +23.3%, Materials +17.4%, Consumer Staples +15.6%, Industrials +14.1% leading; Tech -3.3%, Cons. Disc. -3.8%, Financials -6.9% lagging. Rotation into hard-assets/defensives intact"
+      ],
+      "trade_ideas": [
+        "WATCH (do not chase into a -1.33% tape): Consumer Staples / Industrials ETF-style leaders aligned with YTD momentum (defensive rotation) - entry only once futures stabilize and on a green/flat open, stop 8-10% below, target 2:1.",
+        "MU - earnings TODAY = binary gap risk. No pre-earnings entry per strategy. Re-evaluate post-print (Jun 25) if AI/HBM guide is strong and spread is clean.",
+        "Energy (XOM/CVX) - sector leads YTD but oil -2% today on Iran de-escalation; prior session showed wide/illiquid spreads. SKIP until oil stabilizes and spreads tighten."
+      ],
+      "risk_factors": [
+        "Risk-off open: S&P futures -1.33%, VIX rising - poor session to initiate longs into weakness",
+        "MU earnings binary today could swing the whole semi/AI complex",
+        "Oil falling undercuts the otherwise-leading Energy sector as an entry today",
+        "4th consecutive session at 0% deployment vs 75-85% target - capital idle; but forcing a buy into a down tape violates patience > activity. Prefer to wait for a stable/green open."
+      ]
+    },
+    {
+      "date": "2026-06-23",
+      "title": "Pre-market Research (ran inline at market-open; no prior entry)",
+      "type": "research",
+      "decision": "HOLD",
+      "decision_text": "**HOLD - zero trades.** All three watchlist names fail the buy-side gate: MU on bad/binary-risk data, XOM/CVX on wide spreads + negative energy momentum (oil down sharply). Patience > activity. Re-evaluate post-MU-earnings (Thu June 25) and watch for spreads to normalize after the open.",
+      "market_lines": [
+        "WTI: $73.77 (-2.74%) | Brent: $77.80 (-3.44%) - oil selling off on Strait of Hormuz headlines",
+        "S&P 500 futures: 7,549.50 (-0.28%); Dow +0.27%, Nasdaq ~flat",
+        "Gold: $4,188 (+0.76%) - safe-haven bid",
+        "Catalysts: Alphabet -5% (DeepMind exec departure), tech/software weak; PCE inflation + Fed speak Wed",
+        "MU earnings Wed June 24 (binary event)"
+      ],
+      "trade_ideas": [],
+      "risk_factors": []
+    },
+    {
+      "date": "2026-06-21",
+      "title": "Weekend Research (Monday Setup)",
+      "type": "research",
+      "decision": "HOLD",
+      "decision_text": "**HOLD - no trades Saturday.** Market closed. Re-evaluate Monday pre-market with fresh quotes and updated futures. MU is the highest-conviction idea for next week if entry is confirmed at open. Will re-run pre-market routine Monday 6:00 AM before any orders.\n\n**Watchlist for Monday open:** MU, XOM, CVX",
+      "market_lines": [
+        "WTI: ~$75.43-$76.54/barrel (Aug 2026 futures) | Brent: ~$96.42 (June 1 reference, likely stale)",
+        "S&P 500: 7,500.58 as of June 18 | +1.08% that day | +9.57% YTD",
+        "VIX: 16.40 as of June 18 - low-moderate; market is calm, not fearful",
+        "Sector rotation underway: Tech/AI fell -5.6% after Broadcom AI revenue disappointed. Rotation into Energy, Health Care, Financials, Industrials, Consumer Staples",
+        "Higher yields flagged as a risk - 2-yr Treasury hit 52-wk high before easing"
+      ],
+      "trade_ideas": [
+        "**MU (Micron Technology)** - Pre-earnings AI/HBM memory demand. Entry: ~$115-120 range, stop 10% below entry (~$104-108), target $130+ (2:1 R:R). Catalyst: Wed June 24 earnings - AI memory demand secular growth. Sector: Semiconductors (tech rotation risk). Size: max ~$20,000 (200 shares at ~$115). **Risk: stock moves violently on earnings - entering pre-earnings carries gap risk.**",
+        "**XOM or CVX (Energy sector)** - Defensive rotation into energy, oil at $75/barrel. Energy sector held up while tech sold off. Entry: XOM ~$115-118, stop 8% below, target +15%. Catalyst: sector momentum + oil price stability. Lower gap risk than earnings plays.",
+        "**Hold** on any healthcare position - no specific catalyst identified yet. Wait for Monday pre-market to identify names."
+      ],
+      "risk_factors": [
+        "Tech/AI sector in active rotation - MU trade carries earnings binary risk",
+        "Rising yields could pressure growth names further",
+        "Broadcom (AVGO) AI revenue miss sets cautious tone for semiconductor guidance",
+        "Weekend news risk (geopolitical, macro surprises) before Monday open"
+      ]
+    }
+  ]
+}

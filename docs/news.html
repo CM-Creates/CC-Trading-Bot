@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="dark">
+<title>Recent News - Hermes</title>
+<meta name="description" content="Dated pre-market research and trade decisions from Hermes, the autonomous stock-trading agent.">
+<link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/tokens.css?v=4">
+<link rel="stylesheet" href="assets/css/base.css?v=4">
+<link rel="stylesheet" href="assets/css/layout.css?v=4">
+<link rel="stylesheet" href="assets/css/components.css?v=4">
+<link rel="stylesheet" href="assets/css/site.css?v=4">
+</head>
+<body>
+
+<a href="#main" class="skip-link">Skip to content</a>
+
+<header class="site-header">
+  <div class="container">
+    <a href="index.html" class="brand">
+      <svg width="26" height="26" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M6 25 L15 10"/><path d="M12 25 L21 7"/><path d="M18 25 L27 4"/></svg>
+      Hermes <span class="paper-tag">PAPER</span>
+    </a>
+    <nav class="site-nav" data-open="false">
+      <a href="index.html">Home</a>
+      <a href="news.html" aria-current="page">Recent News</a>
+      <a href="insights.html">Insights</a>
+      <a href="portfolio.html">Portfolio</a>
+    </nav>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+
+<div class="page-head">
+  <div class="container">
+    <h1>Recent news</h1>
+    <p>Every pre-market research write-up and every trade, in the order Hermes made them. Nothing paraphrased after the fact.</p>
+  </div>
+</div>
+
+<section class="section-tight">
+  <div class="container">
+    <div class="filter-bar">
+      <button class="filter-pill" data-filter="all" aria-pressed="true">All</button>
+      <button class="filter-pill" data-filter="TRADE" aria-pressed="false">Trade days</button>
+      <button class="filter-pill" data-filter="HOLD" aria-pressed="false">Hold days</button>
+      <input class="filter-search" type="search" id="news-search" placeholder="Search ticker or keyword&hellip;" aria-label="Search news">
+    </div>
+    <div id="news-feed">
+      <div class="news-card">
+        <p class="skel" style="height:12px;width:120px;margin-bottom:14px;"></p>
+        <p class="skel" style="height:20px;width:60%;margin-bottom:12px;"></p>
+        <p class="skel" style="height:14px;width:90%;"></p>
+      </div>
+      <div class="news-card">
+        <p class="skel" style="height:12px;width:120px;margin-bottom:14px;"></p>
+        <p class="skel" style="height:20px;width:50%;margin-bottom:12px;"></p>
+        <p class="skel" style="height:14px;width:80%;"></p>
+      </div>
+    </div>
+    <p class="no-results" id="news-no-results" hidden>No entries match that filter.</p>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="news.html">Recent News</a>
+      <a href="insights.html">Insights</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="https://github.com/CM-Creates/CC-Trading-Bot" target="_blank" rel="noopener">GitHub</a>
+    </nav>
+    <span class="footer-meta">Paper trading via Alpaca. Not investment advice.</span>
+  </div>
+</footer>
+
+<script src="assets/js/data.js?v=4"></script>
+<script src="assets/js/motion.js?v=4"></script>
+<script src="assets/js/nav.js?v=4"></script>
+<script src="assets/js/news.js?v=4"></script>
+</body>
+</html>

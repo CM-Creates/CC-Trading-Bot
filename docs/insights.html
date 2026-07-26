@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="dark">
+<title>Insights &amp; Economic Trends - Hermes</title>
+<meta name="description" content="Weekly performance versus the S&P 500, sector momentum, and the economic backdrop Hermes trades against.">
+<link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/tokens.css?v=4">
+<link rel="stylesheet" href="assets/css/base.css?v=4">
+<link rel="stylesheet" href="assets/css/layout.css?v=4">
+<link rel="stylesheet" href="assets/css/components.css?v=4">
+<link rel="stylesheet" href="assets/css/site.css?v=4">
+</head>
+<body>
+
+<a href="#main" class="skip-link">Skip to content</a>
+
+<header class="site-header">
+  <div class="container">
+    <a href="index.html" class="brand">
+      <svg width="26" height="26" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M6 25 L15 10"/><path d="M12 25 L21 7"/><path d="M18 25 L27 4"/></svg>
+      Hermes <span class="paper-tag">PAPER</span>
+    </a>
+    <nav class="site-nav" data-open="false">
+      <a href="index.html">Home</a>
+      <a href="news.html">Recent News</a>
+      <a href="insights.html" aria-current="page">Insights</a>
+      <a href="portfolio.html">Portfolio</a>
+    </nav>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+
+<div class="page-head">
+  <div class="container">
+    <h1>Insights &amp; economic trends</h1>
+    <p>How Hermes is tracking against the S&amp;P 500, week by week, plus the macro backdrop behind each call.</p>
+  </div>
+</div>
+
+<section class="stat-strip">
+  <div class="container">
+    <div class="stat-row" id="stat-row">
+      <div class="stat"><div class="stat-label">Bot vs S&amp;P (latest week)</div><div class="stat-value num skel" id="s-vs-sp">00.00%</div></div>
+      <div class="stat"><div class="stat-label">Win rate</div><div class="stat-value num skel" id="s-winrate">00%</div></div>
+      <div class="stat"><div class="stat-label">Profit factor</div><div class="stat-value num skel" id="s-pf">0.00</div></div>
+      <div class="stat"><div class="stat-label">Trades logged</div><div class="stat-value num skel" id="s-trades">0</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h2>Equity vs. S&amp;P 500</h2>
+    <p style="max-width:56ch;margin-top:12px;">Every closed week adds one more point to this curve, measured against the same S&amp;P 500 baseline.</p>
+    <div class="card" style="margin-top:28px;">
+      <div class="chart-title">Portfolio equity vs. S&amp;P 500 baseline</div>
+      <div class="chart-wrap"><canvas id="chart-equity"></canvas></div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-tight" style="border-top:1px solid var(--border);">
+  <div class="container">
+    <h2>Economic backdrop</h2>
+    <div class="insights-visual" style="margin-top:24px;margin-bottom:28px;">
+      <img src="assets/img/insights.png" alt="" loading="lazy">
+    </div>
+    <div class="macro-grid" id="macro-grid">
+      <div class="macro-line skel" style="height:14px;"></div>
+      <div class="macro-line skel" style="height:14px;"></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="border-top:1px solid var(--border);" id="field-notes-section">
+  <div class="container">
+    <h2>Field notes</h2>
+    <p style="max-width:56ch;margin-top:12px;">Click a week to read the full breakdown. Latest week is open by default.</p>
+    <div id="field-notes" style="margin-top:24px;">
+      <div class="field-note"><div class="field-note-toggle"><span class="skel" style="height:22px;width:40%;"></span></div></div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="news.html">Recent News</a>
+      <a href="insights.html">Insights</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="https://github.com/CM-Creates/CC-Trading-Bot" target="_blank" rel="noopener">GitHub</a>
+    </nav>
+    <span class="footer-meta">Paper trading via Alpaca. Not investment advice.</span>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4/dist/chart.umd.min.js"></script>
+<script src="assets/js/data.js?v=4"></script>
+<script src="assets/js/motion.js?v=4"></script>
+<script src="assets/js/charts.js?v=4"></script>
+<script src="assets/js/nav.js?v=4"></script>
+<script src="assets/js/insights.js?v=4"></script>
+</body>
+</html>
