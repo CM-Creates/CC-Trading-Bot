@@ -102,9 +102,9 @@
           legend: {
             position: 'bottom',
             labels: {
-              color: theme.inkSoft,
-              font: { size: 11 },
-              padding: 14,
+              color: theme.ink,
+              font: { size: 13, weight: '500' },
+              padding: 16,
               generateLabels: function (chart) {
                 var ds = chart.data.datasets[0];
                 var total = ds.data.reduce(function (a, b) { return a + b; }, 0) || 1;

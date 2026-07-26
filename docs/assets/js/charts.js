@@ -27,7 +27,7 @@ window.Hermes = window.Hermes || {};
       maintainAspectRatio: false,
       animation: reduceMotion ? false : { duration: 700, easing: 'easeOutQuint' },
       plugins: {
-        legend: { labels: { color: theme.inkSoft, font: { size: 11 } } },
+        legend: { labels: { color: theme.ink, font: { size: 12.5, weight: '500' } } },
         tooltip: {
           backgroundColor: theme.bgRaised,
           titleColor: theme.ink,
