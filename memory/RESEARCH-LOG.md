@@ -929,3 +929,38 @@ TRADE or HOLD (default HOLD if no clear edge)
 
 ### Decision
 **HOLD — NO TRADES.** Constructive open for the book: oil reversed hard ($17-20 lower than yesterday's spike), lifting the input-cost/inflation overhang that pressured PG/KO all week, while the AI-unwind keeps rotating money into the value/defensive block where both staples sit. Futures flat-to-firm; VIX up to ~21 on earnings-gauntlet nerves but that tilt favors defensives. PG drew three bullish analyst target hikes (Bernstein/BMO/Jefferies); KO carries a minor new EU-bottler-raid headline, contained. Both far inside the -7% cut and clear of live 10% GTC trailing stops (PG -2.7%, KO -2.1%) — no sell triggers. No diversifying candidate clears the buy-side gate: before-open names are earnings prints, energy is a reversing-commodity chase, and no large-cap pairs a documented catalyst with a tradeable tight-spread quote — chasing is negative-EV. Watch: oil two-way swings on Red Sea/Iran, KO Q2 (Jul 28), PG FQ4 (Jul 29) + dividend record today, FOMC Jul 28-29. Weekly review due today (Friday). Patience > activity; no rule violated. Deployment stays ~17.4%.
+
+## 2026-07-27 — Pre-market Research
+
+### Account
+- Equity: $99,673.75 | Cash: $82,170.20 | Buying power: $377,690.74 | Daytrade count: 0
+- Positions: 2 (PG, KO) | Deployment ~17.6% ($17,503.55) | Weekly trades: 0/3 (Monday — count reset)
+- Stops confirmed LIVE (GTC, status new): PG trailing_stop $138.888 (HWM $154.32); KO trailing_stop $77.112 (HWM $85.68).
+- PG -1.97% on entry ($147.75 vs $150.72); KO -1.11% on entry ($82.18 vs $83.10). Both far inside -7% cut, clear of stops.
+
+### Market Context
+- WTI / Brent: WTI ~$70.05 | Brent ~$75.47 — oil SLID ~5% after a 48-hour US–Iran de-escalation ("pause hostilities"). Supply-premium unwind continues from last week's Red Sea spike. NET POSITIVE for held staples (eases input-cost/inflation headwind).
+- S&P 500 futures: E-mini ~7,500–7,580, up ~0.7–0.9% (Reuters +65pts/+0.87%). Risk-ON open on US–Iran calm + tech-earnings anticipation.
+- VIX: mixed feeds ~16.9–23.9; MarketWatch ~20.95, Cboe ~16.9. Call it ~17–21, easing from last week's earnings-nerves pop as geopolitics calms.
+- Today's catalysts: (1) US–Iran hostilities paused → oil -5%, risk-on; (2) Big-Tech earnings gauntlet this week (MSFT, META, AAPL, AMZN) — AI capex/cloud/ad focus; (3) FOMC Wed Jul 29 (~62% no-change); (4) heavy Q2 slate incl. KO (tomorrow), V, BA, QCOM, MA, XOM, CVX.
+- Earnings before open (today): AZN, GTLS, FDS, GIS, MSM, UNF. None held or direct-comp. HELD-NAME prints imminent: KO Q2 Jul 28 BMO; PG FQ4 Jul 29 BMO.
+- Economic calendar (week): Durable Goods + Leading Indicators today (Mon); FOMC decision Wed Jul 29; core PCE Thu Jul 30. No CPI/NFP this week.
+- Sector momentum YTD (Jul 17): Energy +20.7%, Industrials +19.3%, Tech +16.7%, Real Estate +13.8%, Materials +13.7%, **Consumer Staples +10.5%**, Utilities +8.6%, Health Care +7.7%, Financials +3.2%, Comms +2.7%, Discretionary -0.1%. Staples mid-pack; defensive block still constructive.
+
+### Held Positions News
+- KO: sandbox $82.18, unrealized -1.11% (-$32) from entry ($83.10) — far inside -7% cut (~$77.28), clear of live stop $77.112. **Q2 earnings TOMORROW Jul 28 BMO**, call 8:30am ET. Consensus EPS ~$0.92–0.93, rev ~$13.1–13.17B (implies YoY growth). Backdrop: margin expansion, FCF growth, 64th consecutive annual dividend hike; prior quarter beat ($0.86 vs est, rev $12.47B). Dividend King thesis intact — but binary print is the near-term swing.
+- PG: sandbox $147.75, unrealized -1.97% (-$294) from entry ($150.72) — far inside -7% cut (~$140.17), clear of live stop $138.888. **FQ4 earnings Wed Jul 29 BMO**, webcast 8:30am ET. Consensus EPS ~$1.41–1.43, rev ~$21.4B; FY26 rev ~$87.1B / EPS ~$6.88 (estimates trimmed slightly). Prior quarter beat (sales +2%, EPS $1.48). Thesis intact into the print.
+
+### Trade Ideas
+1. PG / KO — HOLD into their prints. Both theses intact and improving at the margin (oil down eases input-cost overhang; staples in the constructive defensive block). Both trade tight to entry (PG -2.0%, KO -1.1%), far inside -7% cut and clear of live 10% trailing stops. Two binary earnings this week (KO Jul 28, PG Jul 29) + FOMC Jul 29 — let stops work; do NOT trim ahead of prints without a thesis break.
+2. Diversifying add — NO CANDIDATE CLEARS THE GATE, and timing is adverse. Today's before-open names are earnings prints (don't front-run binaries). Big-Tech reports mid-week — front-running AI-capex reactions is negative-EV. No S&P 500 large-cap outside held staples pairs a documented, tradeable stock-specific catalyst with a tight-spread sandbox quote. With FOMC + held-name earnings clustered this week, adding fresh risk pre-events is poor timing. Catalyst gate fails → SKIP.
+
+### Risk Factors
+- **Held-name earnings binaries this week** — KO Jul 28 BMO, PG Jul 29 BMO. Overnight gap risk on both; trailing stops don't protect against gaps. Both far below current price, so a moderate miss won't trigger; a large miss could gap through. Primary watch items.
+- **FOMC Wed Jul 29** (~62% no change) + core PCE Thu — rate-path surprise could jolt rate-sensitive defensives.
+- **Oil two-way risk** — WTI ~$70 on US–Iran calm, but a fresh escalation could snap the supply premium back up (input-cost headwind for staples). Net tailwind today.
+- **Big-Tech earnings / AI-capex** — index-level volatility mid-week; rotation could pull money either into or out of defensives.
+- **Under-deployed (~17.6% vs 75-85% target)** — opens week five with zero new trades. Structural blocker unchanged: pipeline sources sector-level ideas, not a named stock + documented catalyst + tight sandbox spread. Standing owner decision still needed: (a) permit non-leveraged sector ETFs, or (b) direct pre-market to name specific individual large-caps WITH stock-specific catalysts — to put idle 82% cash to work.
+
+### Decision
+**HOLD — NO TRADES.** Risk-on open (futures +0.7–0.9%, oil -5% on 48h US–Iran calm, VIX easing to ~17–21), constructive for the book: lower oil lifts the input-cost overhang on PG/KO and geopolitics de-escalates. But this is a heavy event week — KO Q2 (Jul 28), PG FQ4 (Jul 29), and FOMC (Jul 29) all land in three days. Both staples sit tight to entry (PG -2.0%, KO -1.1%), far inside the -7% cut and clear of live 10% GTC trailing stops — no sell triggers; hold both into their prints and let stops work. No diversifying candidate clears the buy-side gate, and front-running a week stacked with binaries is negative-EV timing regardless. Weekly count reset to 0/3 (Monday). Watch: KO/PG earnings gaps, FOMC + PCE, oil on any US–Iran headline. Patience > activity; no rule violated. Deployment stays ~17.6%.
