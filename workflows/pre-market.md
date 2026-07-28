@@ -11,6 +11,15 @@
 
 ## Steps
 
+0. **Preflight (blocker protocol — run FIRST)**
+   ```
+   python tools/alpaca.py preflight
+   ```
+   - **exit 0** → account reachable + ACTIVE; proceed normally.
+   - **exit 4** (terminal auth) → creds rejected; the tool already printed a full diagnosis. Send ONE `slack.py` alert naming the fix (rotate `ALPACA_*` in the environment config, not `.env`). Then **degrade gracefully**: skip the account/position steps but still run market research (Step 3), write the log noting account state was unavailable, and commit. Do not fabricate keys or write a `.env`.
+   - **exit 5** (transient) → already auto-retried with backoff inside the tool; note it and continue where possible.
+   See CLAUDE.md → **Blocker Protocol** for the full rules.
+
 1. **Read memory for context**
    - `memory/TRADING-STRATEGY.md` — rules and constraints
    - Last 50 lines of `memory/TRADE-LOG.md` — open positions, recent entries

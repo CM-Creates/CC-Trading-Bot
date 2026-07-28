@@ -6,6 +6,7 @@ Usage: python tools/alpaca.py <subcommand> [args...]
 import json
 import os
 import sys
+import time
 from pathlib import Path
 
 # Load .env if present
@@ -43,38 +44,123 @@ HEADERS = {
 }
 
 
+# --- Blocker protocol: classify failures so callers/workflows can self-adjust ---
+# Exit codes (stable contract the workflows branch on):
+#   4 = TERMINAL AUTH failure  — credentials rejected (401/403). Not retryable.
+#   5 = TRANSIENT failure       — network error or 429/5xx after retries. Retry later.
+#   1 = other error
+RETRYABLE_STATUS = {429, 500, 502, 503, 504}
+MAX_TRIES = 4  # 1 attempt + 3 backoff retries (2s, 4s, 8s)
+
+
+def _key_fingerprint():
+    """Non-secret description of the loaded creds for diagnostics (never prints the key)."""
+    def desc(v):
+        return {
+            "present": bool(v),
+            "len": len(v),
+            "prefix": (v[:2] if v else ""),
+            "has_whitespace": any(c.isspace() for c in v),
+        }
+    return {"ALPACA_API_KEY": desc(API_KEY), "ALPACA_SECRET_KEY": desc(SECRET_KEY),
+            "endpoint": API}
+
+
+def _auth_diagnosis(resp):
+    """Print an actionable diagnosis for a rejected-credentials response, then the caller exits 4."""
+    fp = _key_fingerprint()
+    k = fp["ALPACA_API_KEY"]
+    looks_paper = k["prefix"] == "PK"
+    print("AUTH FAILURE — Alpaca rejected the credentials (HTTP "
+          f"{resp.status_code}).", file=sys.stderr)
+    print(f"  Reached Alpaca: yes (response: {resp.text[:120].strip()})", file=sys.stderr)
+    print(f"  ALPACA_API_KEY: present={k['present']} len={k['len']} "
+          f"prefix={k['prefix']!r} ({'paper' if looks_paper else 'NOT a PK/paper key'}) "
+          f"whitespace={k['has_whitespace']}", file=sys.stderr)
+    s = fp["ALPACA_SECRET_KEY"]
+    print(f"  ALPACA_SECRET_KEY: present={s['present']} len={s['len']} "
+          f"whitespace={s['has_whitespace']}", file=sys.stderr)
+    print(f"  Endpoint: {fp['endpoint']}", file=sys.stderr)
+    print("  => Keys reached Alpaca and were rejected: expired/revoked/regenerated, "
+          "or the environment's ALPACA_* vars are stale.", file=sys.stderr)
+    print("  FIX: update ALPACA_API_KEY / ALPACA_SECRET_KEY in the ENVIRONMENT CONFIG "
+          "(web env variables, NOT a .env file — this routine reads process env). "
+          "Then re-run. Do NOT fabricate keys or disable TLS.", file=sys.stderr)
+
+
+def _request(method, url, params=None, json_body=None):
+    """Single request path with retry/backoff on transient errors and clean
+    classification of terminal auth failures. Never raises to the caller — it
+    prints a diagnosis and exits with a stable code so workflows can branch."""
+    last_exc = None
+    for attempt in range(MAX_TRIES):
+        try:
+            r = requests.request(method, url, headers=HEADERS, params=params,
+                                 json=json_body, timeout=15)
+        except requests.exceptions.RequestException as e:
+            last_exc = e
+            if attempt < MAX_TRIES - 1:
+                time.sleep(2 ** attempt)
+                continue
+            print(f"ERROR: network failure after {MAX_TRIES} attempts: {e}", file=sys.stderr)
+            sys.exit(5)  # transient
+        if r.status_code in (401, 403):
+            _auth_diagnosis(r)
+            sys.exit(4)  # terminal auth — not retryable
+        if r.status_code in RETRYABLE_STATUS and attempt < MAX_TRIES - 1:
+            time.sleep(2 ** attempt)
+            continue
+        if r.status_code == 204:
+            return {}
+        try:
+            r.raise_for_status()
+        except requests.exceptions.HTTPError:
+            print(f"ERROR: HTTP {r.status_code}: {r.text[:300]}", file=sys.stderr)
+            sys.exit(1)
+        try:
+            return r.json()
+        except Exception:
+            return {}
+
+
 def _get(url, params=None):
-    r = requests.get(url, headers=HEADERS, params=params, timeout=15)
-    r.raise_for_status()
-    return r.json()
+    return _request("GET", url, params=params)
 
 
 def _post(url, body):
-    r = requests.post(url, headers=HEADERS, json=body, timeout=15)
-    r.raise_for_status()
-    return r.json()
+    return _request("POST", url, json_body=body)
 
 
 def _delete(url):
-    r = requests.delete(url, headers=HEADERS, timeout=15)
-    if r.status_code == 204:
-        return {}
-    r.raise_for_status()
-    try:
-        return r.json()
-    except Exception:
-        return {}
+    return _request("DELETE", url)
 
 
 def main():
     args = sys.argv[1:]
     if not args:
-        print("Usage: python tools/alpaca.py <account|positions|position|quote|bars|orders|order|cancel|cancel-all|close|close-all|week-trades> [args]", file=sys.stderr)
+        print("Usage: python tools/alpaca.py <preflight|account|positions|position|quote|bars|orders|order|cancel|cancel-all|close|close-all|week-trades> [args]", file=sys.stderr)
         sys.exit(1)
 
     cmd = args[0]
 
-    if cmd == "account":
+    if cmd == "preflight":
+        # Credential + connectivity health check the workflows run FIRST. Verifies
+        # the account is reachable and ACTIVE before spending research/API budget.
+        # On auth failure _get() prints a diagnosis and exits 4; on transient, exits 5.
+        acct = _get(f"{API}/account")
+        verdict = {
+            "ok": acct.get("status") == "ACTIVE" and not acct.get("account_blocked"),
+            "account_status": acct.get("status"),
+            "account_blocked": acct.get("account_blocked"),
+            "trading_blocked": acct.get("trading_blocked"),
+            "equity": acct.get("equity"),
+            "cash": acct.get("cash"),
+            "keys": _key_fingerprint(),
+        }
+        print(json.dumps(verdict, indent=2))
+        sys.exit(0 if verdict["ok"] else 1)
+
+    elif cmd == "account":
         print(json.dumps(_get(f"{API}/account"), indent=2))
 
     elif cmd == "positions":
@@ -207,7 +293,7 @@ def main():
 
     else:
         print(f"Unknown subcommand: {cmd}", file=sys.stderr)
-        print("Usage: python tools/alpaca.py <account|positions|position|quote|bars|orders|order|cancel|cancel-all|close|close-all|week-trades> [args]", file=sys.stderr)
+        print("Usage: python tools/alpaca.py <preflight|account|positions|position|quote|bars|orders|order|cancel|cancel-all|close|close-all|week-trades> [args]", file=sys.stderr)
         sys.exit(1)
 
 

@@ -101,10 +101,26 @@ You are also an autonomous trading bot managing a ~$100,000 Alpaca **paper** acc
 ### API Wrappers
 Use these Python tools — never call APIs with curl directly:
 ```
+python tools/alpaca.py preflight        # credential + connectivity health check — RUN FIRST every routine
 python tools/alpaca.py <subcommand>     # trading: account, positions, orders, etc.
 python tools/perplexity.py "<query>"    # market research (exits 3 if key unset → fall back to WebSearch)
 python tools/slack.py "<message>"       # notifications via Gmail (falls back to DAILY-SUMMARY.md if GMAIL_APP_PASSWORD unset)
 ```
+
+### Blocker Protocol (investigate & self-adjust — applies to EVERY routine)
+When a tool fails, do NOT halt on the first traceback. Investigate, classify, and self-adjust:
+
+1. **Preflight first.** Begin every routine with `python tools/alpaca.py preflight`. It verifies creds + connectivity before you spend research/API budget. Branch on its exit code — never guess.
+2. **Classify by exit code (stable contract from `alpaca.py`):**
+   - `4` = **terminal auth** (credentials rejected). NOT retryable. The tool already printed a full diagnosis (key fingerprint, that it reached Alpaca, the fix). Do NOT retry, fabricate keys, write a `.env`, or disable TLS.
+   - `5` = **transient** (network / 429 / 5xx, already auto-retried 3× with backoff inside the tool). Safe to wait and re-run later.
+   - `3` (perplexity only) = key unset → fall back to native WebSearch and note it.
+3. **Degrade gracefully — don't abandon the whole run.** A blocker in one input rarely kills every step. If account state is unavailable but Perplexity works, still do the market research, write the log, and commit — flag exactly what was missing and why. Deliver partial value + a precise record over a bare halt.
+4. **Alert once, precisely.** On a terminal blocker send ONE `python tools/slack.py` alert naming the exact variable/tool and the concrete fix (e.g. "rotate ALPACA_* in the env config") — not "something broke."
+5. **Fix the tool, then the workflow (self-improvement loop).** If the failure is a code/robustness gap, patch the tool, verify, and update the workflow so the same blocker degrades cleanly next time. Commit it — a fresh clone loses anything uncommitted.
+6. **Hard boundaries on "self-adjust" — NEVER cross these to get past a blocker:** don't fabricate/guess credentials, don't disable TLS verification or unset `HTTPS_PROXY`, don't write secrets to files (`.env` is gitignored and never ships to cloud runs anyway — creds belong in the environment config), and don't relax or skip a TRADING-STRATEGY hard rule to dodge an error. Resilience is operational (retries, fallbacks, diagnostics, graceful degradation), never a loosening of security or the rulebook.
+
+**Credential fixes live in the environment config, not the repo.** Cloud routines read `ALPACA_*` / `PERPLEXITY_*` / etc. from injected process env vars. A stale-key 401 is fixed by updating the web environment's variables (in the same step as any Alpaca key rotation) — editing `.env` can never fix a cloud run.
 
 ### Daily Workflows
 Each procedure is defined once in `workflows/` (the single source of truth). Both the
