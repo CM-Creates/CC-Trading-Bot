@@ -62,7 +62,8 @@
 
 ## Edge Cases
 
-- **Alpaca API unreachable:** Retry once after 10s. If still down, send one degraded alert, write the entry from the last-known `TRADE-LOG.md` snapshot marked `STALE`, and still commit. Never exit producing nothing.
+- **Alpaca auth failure (`alpaca.py` exits 2 / HTTP 401-403):** Keys are set but invalid/expired/revoked — retrying won't help. Send a "keys INVALID, regenerate" alert, then write the entry from the last-known `TRADE-LOG.md` snapshot marked `STALE` and still commit. (This is the failure mode where the env-var gate passes but the request is rejected — must be loud, never silent.)
+- **Alpaca API unreachable (5xx / timeout):** Retry once after 10s. If still down, send one degraded alert, write the entry from the last-known `TRADE-LOG.md` snapshot marked `STALE`, and still commit. Never exit producing nothing.
 - **No PERPLEXITY_API_KEY:** Fall back to WebSearch. Note fallback in the log entry.
 - **Alpaca shows a position already down -7%:** Skip the normal research flow, immediately note the emergency in Slack, then proceed with research.
 - **No positions held:** Skip the per-ticker news queries. Focus on new idea generation.

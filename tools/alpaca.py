@@ -43,15 +43,31 @@ HEADERS = {
 }
 
 
+def _raise_for_alpaca(r):
+    # Distinguish auth failure (keys set but rejected) from every other error so
+    # the caller gets a clear, actionable message instead of a raw traceback.
+    # Exit 2 = auth failure specifically (keys present but invalid/expired/revoked).
+    if r.status_code in (401, 403):
+        print(
+            f"ERROR: Alpaca auth failed (HTTP {r.status_code}). "
+            "ALPACA_API_KEY / ALPACA_SECRET_KEY are set but invalid, expired, or revoked. "
+            "Regenerate the paper keys in the Alpaca dashboard and update the routine environment. "
+            f"Response: {r.text.strip()[:200]}",
+            file=sys.stderr,
+        )
+        sys.exit(2)
+    r.raise_for_status()
+
+
 def _get(url, params=None):
     r = requests.get(url, headers=HEADERS, params=params, timeout=15)
-    r.raise_for_status()
+    _raise_for_alpaca(r)
     return r.json()
 
 
 def _post(url, body):
     r = requests.post(url, headers=HEADERS, json=body, timeout=15)
-    r.raise_for_status()
+    _raise_for_alpaca(r)
     return r.json()
 
 
@@ -59,7 +75,7 @@ def _delete(url):
     r = requests.delete(url, headers=HEADERS, timeout=15)
     if r.status_code == 204:
         return {}
-    r.raise_for_status()
+    _raise_for_alpaca(r)
     try:
         return r.json()
     except Exception:

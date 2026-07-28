@@ -30,12 +30,14 @@ STEP 2 — Pull live account state (resilient — a transient Alpaca error must 
   python tools/alpaca.py account
   python tools/alpaca.py positions
   python tools/alpaca.py orders
-If any of these fails (non-zero exit, HTTP 5xx, or timeout): wait 10s and retry ONCE.
-If it still fails, DO NOT exit — an Alpaca outage must not produce a silent no-op:
-  - Send one alert:
+If any call fails, branch on the exit code (an Alpaca error must NEVER produce a silent no-op):
+  - Exit code 2 = AUTH failure: keys are set but invalid/expired/revoked (Alpaca returned 401/403). Retrying will NOT help. Send:
+      python tools/slack.py "PRE-MARKET BLOCKED $DATE — Alpaca keys INVALID (HTTP 401/403). Regenerate ALPACA_API_KEY/ALPACA_SECRET_KEY in the routine environment. No live account data today."
+  - Any other failure (HTTP 5xx / timeout / exit 1): wait 10s and retry ONCE, then if still failing send:
       python tools/slack.py "PRE-MARKET DEGRADED $DATE — Alpaca unreachable (account pull failed after retry). Writing research from last-known state; LIVE ACCOUNT UNVERIFIED."
+In EITHER case, DO NOT exit:
   - Continue with the most recent account/positions snapshot from the tail of memory/TRADE-LOG.md.
-  - In STEP 4, mark the ### Account section: "STALE — Alpaca unreachable, carried from last EOD snapshot."
+  - In STEP 4, mark the ### Account section: "STALE — Alpaca unreachable/unauthed, carried from last EOD snapshot."
 Every scheduled pre-market run MUST end in either a committed RESEARCH-LOG entry (STEP 7) or a sent alert — never silent, never nothing.
 
 STEP 3 — Research market context via Perplexity. Run
