@@ -1000,3 +1000,9 @@ TRADE or HOLD (default HOLD if no clear edge)
 
 ### Decision
 **HOLD — NO TRADES.** Both staples green and theses intact-to-improving: KO printed a clean Q2 beat ($0.97 vs $0.93, rev +7%) AND raised full-year guidance, stock +4.7% on entry; PG reports tomorrow and holds green into it. Staples are now a top-3 YTD momentum sector (+15.6%) as the value/defensive rotation persists, with oil stable-low easing input costs. Both far inside the -7% cut and clear of live 10% GTC trailing stops (KO +4.7%, PG +0.4%) — no sell triggers; KO not yet at the +15% tighten threshold. No diversifying candidate clears the buy-side gate, and front-running FOMC (decision Wed) + PG's print + a semis/AI selloff is negative-EV timing regardless. Weekly count 0/3, gate open. Watch: FOMC Jul 29, PG FQ4 gap, AI/semi tape, oil. Patience > activity; no rule violated. Deployment ~18.0%.
+
+### Big Movers Scan (addendum — market-wide, Jul 28)
+- **Gainers:** memory/chips rallying — WDC +10.0%, SNDK +9.2%, LITE +8.7%, INTC +8.4%, MU +8.3%, STX/CIEN/TER; IBM +5% (JPM upgrade to OW); BABA +8%; LLY, NEM firm.
+- **Losers:** NKE **-15.2%** (earnings), APTV -10.9%, TPL -6.2%, PLTR -5%.
+- **Nuance:** morning catalyst read flagged an "AI-capex/semi selloff," but the tape shows a rotation WITHIN tech — memory names ripping while some AI-software (CRM, NOW, ADBE) lags; not a broad chip crash.
+- **Portfolio relevance:** zero overlap with held staples (KO/PG). NKE's collapse reinforces Discretionary as weakest sector and the value/defensive rotation into staples. No mover clears the buy gate (earnings-reaction chases, no tight-spread sandbox quote). Decision unchanged: HOLD.
