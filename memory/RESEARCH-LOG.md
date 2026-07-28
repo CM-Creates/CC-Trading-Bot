@@ -964,26 +964,39 @@ TRADE or HOLD (default HOLD if no clear edge)
 
 ### Decision
 **HOLD — NO TRADES.** Risk-on open (futures +0.7–0.9%, oil -5% on 48h US–Iran calm, VIX easing to ~17–21), constructive for the book: lower oil lifts the input-cost overhang on PG/KO and geopolitics de-escalates. But this is a heavy event week — KO Q2 (Jul 28), PG FQ4 (Jul 29), and FOMC (Jul 29) all land in three days. Both staples sit tight to entry (PG -2.0%, KO -1.1%), far inside the -7% cut and clear of live 10% GTC trailing stops — no sell triggers; hold both into their prints and let stops work. No diversifying candidate clears the buy-side gate, and front-running a week stacked with binaries is negative-EV timing regardless. Weekly count reset to 0/3 (Monday). Watch: KO/PG earnings gaps, FOMC + PCE, oil on any US–Iran headline. Patience > activity; no rule violated. Deployment stays ~17.6%.
-
 ## 2026-07-28 — Pre-market Research
 
+> **API outage resolved intra-session.** Early run halted on Alpaca 401 (regenerated keys had not propagated to the environment; owner updated the env-var config). Keys re-verified valid mid-session and full research completed below. Alert had been emailed/pushed before resolution.
+
 ### Account
-- **UNAVAILABLE** — Alpaca API returned HTTP 401 Unauthorized. `python tools/alpaca.py account` failed; direct curl to `$ALPACA_ENDPOINT/account` also returned `{"message": "unauthorized."}`.
-- Env vars ARE present (ALPACA_API_KEY len 26, ALPACA_SECRET_KEY len 44, endpoint correct) but the credentials are being rejected — invalid / expired / revoked keys, not a missing-var problem. No .env created (per instructions).
-- Could not pull account equity, positions (PG/KO), open orders, or verify live trailing stops.
+- Equity: $100,189.90 | Cash: $82,170.20 | Buying power: $379,135.95 | Daytrade count: 0
+- Positions: 2 (KO, PG) | Deployment ~18.0% ($18,019.70) | Weekly trades: 0/3 (gate_open: true, room 3)
+- Stops confirmed LIVE (GTC, status new): KO trailing_stop $77.112 (HWM $85.68); PG trailing_stop $138.888 (HWM $154.32). Both positions intact — this was a key regeneration, NOT an account reset.
+- KO +4.68% on entry ($86.99 vs $83.10) — now GREEN; PG +0.36% on entry ($151.26 vs $150.72) — GREEN. Both far inside -7% cut, well clear of stops.
 
 ### Market Context
-- Not researched. Run halted at STEP 2 — with no account/position/stop state, no trading decision can be validated against the buy/sell gates, so Perplexity credits were not spent.
+- WTI / Brent: WTI ~$71.10 | Brent ~$74.76 — stable-low, holding last week's US–Iran de-escalation lows. Supportive for staples (eases input-cost/inflation overhang).
+- S&P 500 futures: E-minis ~ -0.09% (slightly lower to flat) — cautious ahead of Big Tech earnings + FOMC.
+- VIX: ~20.95 (+12.4%) — elevated on AI/semiconductor selloff + FOMC-week nerves.
+- Today's catalysts: (1) FOMC two-day meeting BEGINS today, decision Wed Jul 29 2:00pm ET; (2) Big-Tech earnings gauntlet (MSFT/META this wk, AAPL/AMZN); (3) global semiconductor selloff on AI-capex/financing worries; (4) heavy Q2 slate: V, BA, KO, MDLZ, UPS, RTX, F.
+- Earnings before open: V, BA, KO (held), MDLZ, UPS, RTX, F, SPGI, PYPL, LMT, COF. Held-name print: KO today (reported — see below); PG FQ4 tomorrow Jul 29 BMO.
+- Economic calendar: FOMC Jul 28-29 (decision Wed); Consumer Confidence + home-price data today. No CPI/PPI/NFP today (CPI was Jul 10). Backdrop: PCE 4.1% / core 3.4%, unemployment 4.2%.
+- Sector momentum YTD: Energy +27.0%, Materials +17.4%, **Consumer Staples +15.6%**, Industrials +13.4% lead; Financials -6.9%, Discretionary -3.8%, Tech -3.3% lag. Value/defensive rotation firmly intact — Staples now a top-3 momentum sector, strongly supportive for KO/PG.
 
 ### Held Positions News
-- Unknown this session (positions could not be fetched). Last known (Jul 27 EOD): PG 99sh @ $150.72 (stop $138.89 / HWM $154.32); KO 35sh @ $83.10 (stop $77.11 / HWM $85.68). Both far inside -7% cut and clear of stops as of last snapshot. **NOTE:** KO Q2 earnings today (Jul 28 BMO) and PG FQ4 (Jul 29 BMO) — binary gap risk this window is UNMONITORED while API access is down.
+- **KO: Q2 BEAT + GUIDANCE RAISE (reported today BMO).** Adj EPS $0.97 vs ~$0.93 est; revenue $13.38B (+7% YoY) vs ~$13.14B est; net income $4.43B; **raised full-year profit outlook.** Stock +4.68% on entry at $86.99. Thesis CONFIRMED and strengthened — Dividend King executing. Position now green; no action (not near +15% tighten trigger).
+- **PG:** Up ~2.7% recently to ~$151.26; **FQ4 earnings TOMORROW Jul 29 BMO**, est EPS ~$1.43 / rev ~$21.43B. Recent $1.0885 quarterly dividend declared (streak continues). Defensive/dividend thesis intact into the print; some debate on flat organic sales. Position green; hold into print.
 
 ### Trade Ideas
-- None. Cannot trade without live account state and stop verification.
+1. KO / PG — HOLD. KO's Q2 beat + raised guidance validates the staples thesis; PG reports tomorrow. Both green, far inside -7% cut, clear of live 10% trailing stops. Let stops work; do NOT trim ahead of PG's print without a thesis break.
+2. Diversifying add — NO CANDIDATE CLEARS THE GATE, and timing is adverse. Today's before-open names are earnings prints (don't front-run binaries). FOMC decision lands tomorrow and Big-Tech/semis are selling off on AI-capex worries — adding fresh risk pre-FOMC into a jumpy tape is negative-EV. No S&P 500 large-cap outside held staples pairs a documented, tradeable stock-specific catalyst with a tight-spread sandbox quote. Catalyst gate fails → SKIP.
 
 ### Risk Factors
-- **API access outage (401)** — primary risk. While down, stops cannot be verified/adjusted and losers cannot be cut per rules. If KO/PG gap on today's/tomorrow's earnings, the -7% manual-cut rule cannot be enforced.
-- Standing owner action required: rotate/replace Alpaca paper API keys.
+- **FOMC decision tomorrow (Wed Jul 29 2:00pm ET)** — rate-path/hawkish surprise could jolt rate-sensitive defensives. Primary macro watch.
+- **PG FQ4 print tomorrow (BMO)** — overnight gap risk; trailing stop won't protect a gap. PG far above its stop, so a moderate miss won't trigger; a large miss could gap through.
+- **AI/semiconductor selloff + Big-Tech earnings** — index-level volatility; could rotate money into (supportive) or out of defensives.
+- **VIX elevated (~21, +12%)** — nerves rising into FOMC; favors defensive tilt but a broad risk-off leg drags everything (stops sit far below).
+- **Under-deployed (~18.0% vs 75-85% target)** — 26th consecutive under-deployed session, week five, zero new trades. Structural blocker unchanged: pipeline sources sector-level ideas, not a named stock + documented catalyst + tight sandbox spread. Standing owner decision still needed: (a) permit non-leveraged sector ETFs, or (b) direct pre-market to name specific individual large-caps WITH stock-specific catalysts — to put idle 82% cash to work.
 
 ### Decision
-**HALTED — NO TRADES, NO RESEARCH.** Alpaca API returns 401 Unauthorized despite env vars being set; credentials rejected (invalid/expired/revoked). Cannot pull account, positions, or stops. Email + push alert sent to owner naming the issue and the fix (rotate keys). No .env workaround attempted. Positions remain as last known; stops are GTC and should persist server-side, but are unverifiable this session. Re-run once keys are rotated.
+**HOLD — NO TRADES.** Both staples green and theses intact-to-improving: KO printed a clean Q2 beat ($0.97 vs $0.93, rev +7%) AND raised full-year guidance, stock +4.7% on entry; PG reports tomorrow and holds green into it. Staples are now a top-3 YTD momentum sector (+15.6%) as the value/defensive rotation persists, with oil stable-low easing input costs. Both far inside the -7% cut and clear of live 10% GTC trailing stops (KO +4.7%, PG +0.4%) — no sell triggers; KO not yet at the +15% tighten threshold. No diversifying candidate clears the buy-side gate, and front-running FOMC (decision Wed) + PG's print + a semis/AI selloff is negative-EV timing regardless. Weekly count 0/3, gate open. Watch: FOMC Jul 29, PG FQ4 gap, AI/semi tape, oil. Patience > activity; no rule violated. Deployment ~18.0%.
