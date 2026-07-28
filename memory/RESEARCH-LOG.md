@@ -964,3 +964,26 @@ TRADE or HOLD (default HOLD if no clear edge)
 
 ### Decision
 **HOLD — NO TRADES.** Risk-on open (futures +0.7–0.9%, oil -5% on 48h US–Iran calm, VIX easing to ~17–21), constructive for the book: lower oil lifts the input-cost overhang on PG/KO and geopolitics de-escalates. But this is a heavy event week — KO Q2 (Jul 28), PG FQ4 (Jul 29), and FOMC (Jul 29) all land in three days. Both staples sit tight to entry (PG -2.0%, KO -1.1%), far inside the -7% cut and clear of live 10% GTC trailing stops — no sell triggers; hold both into their prints and let stops work. No diversifying candidate clears the buy-side gate, and front-running a week stacked with binaries is negative-EV timing regardless. Weekly count reset to 0/3 (Monday). Watch: KO/PG earnings gaps, FOMC + PCE, oil on any US–Iran headline. Patience > activity; no rule violated. Deployment stays ~17.6%.
+
+## 2026-07-28 — Pre-market Research
+
+### Account
+- **UNAVAILABLE** — Alpaca API returned HTTP 401 Unauthorized. `python tools/alpaca.py account` failed; direct curl to `$ALPACA_ENDPOINT/account` also returned `{"message": "unauthorized."}`.
+- Env vars ARE present (ALPACA_API_KEY len 26, ALPACA_SECRET_KEY len 44, endpoint correct) but the credentials are being rejected — invalid / expired / revoked keys, not a missing-var problem. No .env created (per instructions).
+- Could not pull account equity, positions (PG/KO), open orders, or verify live trailing stops.
+
+### Market Context
+- Not researched. Run halted at STEP 2 — with no account/position/stop state, no trading decision can be validated against the buy/sell gates, so Perplexity credits were not spent.
+
+### Held Positions News
+- Unknown this session (positions could not be fetched). Last known (Jul 27 EOD): PG 99sh @ $150.72 (stop $138.89 / HWM $154.32); KO 35sh @ $83.10 (stop $77.11 / HWM $85.68). Both far inside -7% cut and clear of stops as of last snapshot. **NOTE:** KO Q2 earnings today (Jul 28 BMO) and PG FQ4 (Jul 29 BMO) — binary gap risk this window is UNMONITORED while API access is down.
+
+### Trade Ideas
+- None. Cannot trade without live account state and stop verification.
+
+### Risk Factors
+- **API access outage (401)** — primary risk. While down, stops cannot be verified/adjusted and losers cannot be cut per rules. If KO/PG gap on today's/tomorrow's earnings, the -7% manual-cut rule cannot be enforced.
+- Standing owner action required: rotate/replace Alpaca paper API keys.
+
+### Decision
+**HALTED — NO TRADES, NO RESEARCH.** Alpaca API returns 401 Unauthorized despite env vars being set; credentials rejected (invalid/expired/revoked). Cannot pull account, positions, or stops. Email + push alert sent to owner naming the issue and the fix (rotate keys). No .env workaround attempted. Positions remain as last known; stops are GTC and should persist server-side, but are unverifiable this session. Re-run once keys are rotated.
