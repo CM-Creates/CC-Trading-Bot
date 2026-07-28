@@ -15,7 +15,7 @@
    - Today's entry in `memory/RESEARCH-LOG.md` — the trade ideas and catalyst list
    - Last 50 lines of `memory/TRADE-LOG.md` — count trades placed this week (toward 3/week cap)
    
-   If today's RESEARCH-LOG entry is missing, run pre-market STEPS 1-3 inline first. Never trade without documented research.
+   If today's RESEARCH-LOG entry is missing, the 6am pre-market routine failed to fire — send one alert (`python tools/slack.py "ALERT — no pre-market entry; 6am routine did not run, backfilling inline"`), then run pre-market STEPS 1-3 inline first. Never trade without documented research.
 
 2. **Re-validate with fresh live data**
    ```

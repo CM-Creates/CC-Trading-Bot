@@ -426,3 +426,42 @@ TRADE or HOLD (default HOLD if no clear edge)
 
 ### Decision
 **HOLD — market closed for Independence Day (observed). No orders today; none possible.** Both PG and KO green, theses intact (KO strengthened by Marriott win), both well clear of live 10% trailing stops. Nothing actionable until Mon Jul 6. At Monday's open the market-open run should: (1) keep PG and KO with live stops; (2) with the weekly trade count reset to 0/3, evaluate ONE diversifying Industrials/Materials large-cap only if it clears both a tight spread and a documented stock-specific catalyst. Patience > activity.
+
+---
+
+## 2026-07-06 — Pre-market Research (MANUAL BACKFILL)
+
+> **NOTE:** The scheduled 6:00 AM CT pre-market routine did NOT run this morning (no `pre-market research 2026-07-06` commit on origin/main). This entry was produced manually after the fact. Research is from WebSearch (Perplexity key unavailable in this session). **Account figures are STALE — carried from the Jul 3 EOD snapshot; Alpaca was unreachable from this session, so live equity/positions are UNVERIFIED.** Re-validate live state at the market-open run.
+
+### Account (STALE — carried from Jul 3 EOD, NOT live-verified)
+- Equity: ~$100,104.69 | Cash: ~$82,170.20 (~82%) | Positions: 2 (PG, KO) | Daytrade count: 0 (last known)
+- Deployment ~17.9% vs 75–85% target — 11th+ consecutive under-deployed session
+- Weekly trades reset Monday → 0/3 this week
+- Live GTC trailing stops (last known): PG $136.50 (HWM $151.67) | KO $75.62 (HWM $84.02)
+
+### Market Context
+- WTI / Brent: ~flat, near 4-month lows (~WTI $68 / Brent $72 area, last documented). Watch: PG flagged a ~$1B input-cost warning tied to Middle-East oil prices — oil is now a margin input risk for staples, not just an Energy-sector story.
+- S&P 500 futures: E-mini +0.2–0.3% premarket; Nasdaq 100 +0.4–0.6%; Dow flat→slightly higher. Post-holiday reopen (markets were closed Fri Jul 3).
+- VIX: ~15.8–16.1 — sub-16, calm risk-on tape.
+- Prior close (Jul 2): Dow record 52,900 (+1.14%); S&P 500 ~7,483 (flat). Soft June jobs (+57k) eased Fed-hike fears → defensive/value rotation intact.
+- Today's catalysts: quiet macro day; post-holiday liquidity returning. No thesis-relevant catalyst for held names today.
+- Earnings before open: none for held names. Next held-name earnings: KO Jul 28, PG Jul 29.
+- Economic calendar: LIGHT this week (Jul 6–10). Next pivots: June CPI Jul 15, June PPI Jul 16, FOMC late July. This week is a macro lull.
+- Sector momentum YTD: Energy / Materials / Consumer Staples / Industrials leading; Tech, Cons Disc, Financials lagging. Hard-asset/defensive rotation intact.
+
+### Held Positions News
+- PG: Last close ~$151.41 (log); unrealized +0.46%. Earnings Jul 29 (fiscal Q4 25/26). Analysts lean bullish (15/26 buy, mean PT ~$163). Positives: Baby Care back to global share growth, SK-II China +18%, 7,000-role restructuring targeting $2.0–2.2B savings, 70th straight annual dividend increase. WATCH: ~$1B cost warning tied to Middle-East oil prices. Thesis (defensive staples leadership) intact. Well clear of $136.50 stop.
+- KO: Last close ~$84.14 (log); unrealized +1.25%. Marriott global beverage deal (announced Jul 1) — primary beverage partner across ~10,000 hotels / 146 countries, displacing Pepsi; phased rollout underway. KO up ~17.6% YTD. Thesis intact and strengthening. Well clear of $75.62 stop.
+
+### Trade Ideas
+1. PG / KO — HOLD. Both staples theses intact (KO strengthened by Marriott), both green, both well clear of live 10% trailing stops and inside the -7% cut line. Let stops work.
+2. Deployment gap (~82% idle vs 75–85% target) — carry-forward blocker. Weekly count resets to 0/3 today. Only add if a specific named Industrials/Materials/Staples large-cap clears BOTH a tight spread (<1%) AND a documented stock-specific catalyst, with 10% trailing stop and ≤20% sizing.
+3. No Tech/semis chase (sector lagging). No Energy chase (oil near 4-month lows) — and oil is now a cost headwind to watch for PG.
+
+### Risk Factors
+- **Operational: the 6 AM pre-market routine failed to fire today** — see hardening committed this session (resilient account pull + market-open backstop alert). Verify the cloud routine is enabled and its env vars are set in the web UI.
+- Under-deployed (~82% idle) and under-diversified (2 names, both Consumer Staples). Structural blocker persists: pipeline yields sector-level ideas, not specific named stock + catalyst; open sandbox spreads run wide (5–10%) on most large-caps. Owner decision still pending: (a) permit non-leveraged sector ETFs, or (b) direct pre-market to name specific individual large-caps WITH stock-specific catalysts.
+- Macro lull this week; June CPI (Jul 15) is the next pivot. PG oil-linked cost warning — monitor into Jul 29 earnings.
+
+### Decision
+**HOLD** — both PG and KO green, theses intact/strengthening, both well clear of live 10% trailing stops; no sell triggers. No new buy today: no specific named stock + documented catalyst clears the buy-side gate. Patience > activity. Re-validate live account/positions at the market-open run (account data here is stale/unverified).

@@ -26,10 +26,17 @@ STEP 1 — Read memory for context:
 - tail of memory/TRADE-LOG.md
 - tail of memory/RESEARCH-LOG.md
 
-STEP 2 — Pull live account state:
+STEP 2 — Pull live account state (resilient — a transient Alpaca error must NOT abort the run silently):
   python tools/alpaca.py account
   python tools/alpaca.py positions
   python tools/alpaca.py orders
+If any of these fails (non-zero exit, HTTP 5xx, or timeout): wait 10s and retry ONCE.
+If it still fails, DO NOT exit — an Alpaca outage must not produce a silent no-op:
+  - Send one alert:
+      python tools/slack.py "PRE-MARKET DEGRADED $DATE — Alpaca unreachable (account pull failed after retry). Writing research from last-known state; LIVE ACCOUNT UNVERIFIED."
+  - Continue with the most recent account/positions snapshot from the tail of memory/TRADE-LOG.md.
+  - In STEP 4, mark the ### Account section: "STALE — Alpaca unreachable, carried from last EOD snapshot."
+Every scheduled pre-market run MUST end in either a committed RESEARCH-LOG entry (STEP 7) or a sent alert — never silent, never nothing.
 
 STEP 3 — Research market context via Perplexity. Run
 python tools/perplexity.py "<query>" for each of the following:

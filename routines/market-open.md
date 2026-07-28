@@ -23,7 +23,9 @@ IMPORTANT — PERSISTENCE:
 STEP 1 — Read memory for today's plan:
 - memory/TRADING-STRATEGY.md
 - TODAY's entry in memory/RESEARCH-LOG.md
-  (if missing, run pre-market STEPS 1-3 inline before continuing — never trade without research)
+  (if missing → the 6am pre-market routine silently failed to fire. FIRST send one alert:
+     python tools/slack.py "ALERT $DATE — no pre-market RESEARCH-LOG entry found; 6am pre-market routine did not run. Backfilling research inline before market-open."
+   then run pre-market STEPS 1-3 inline before continuing — never trade without research)
 - tail of memory/TRADE-LOG.md (to count trades placed this week)
 
 STEP 2 — Re-validate each planned trade with fresh live data:

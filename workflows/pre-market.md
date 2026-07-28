@@ -22,6 +22,7 @@
    python tools/alpaca.py positions   # open positions with unrealized P&L
    python tools/alpaca.py orders      # pending GTC stops
    ```
+   Resilient: on failure (non-zero exit / 5xx / timeout), retry once after 10s. If still failing, do **not** abort — send one degraded alert, carry the last-known snapshot from `TRADE-LOG.md`, mark the Account section `STALE`, and still complete + commit the run. A run must never end silently.
 
 3. **Research market context via Perplexity**
    Run one query at a time:
@@ -61,6 +62,7 @@
 
 ## Edge Cases
 
+- **Alpaca API unreachable:** Retry once after 10s. If still down, send one degraded alert, write the entry from the last-known `TRADE-LOG.md` snapshot marked `STALE`, and still commit. Never exit producing nothing.
 - **No PERPLEXITY_API_KEY:** Fall back to WebSearch. Note fallback in the log entry.
 - **Alpaca shows a position already down -7%:** Skip the normal research flow, immediately note the emergency in Slack, then proceed with research.
 - **No positions held:** Skip the per-ticker news queries. Focus on new idea generation.
