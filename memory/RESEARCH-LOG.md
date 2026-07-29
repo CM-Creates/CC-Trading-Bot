@@ -1006,3 +1006,30 @@ TRADE or HOLD (default HOLD if no clear edge)
 - **Losers:** NKE **-15.2%** (earnings), APTV -10.9%, TPL -6.2%, PLTR -5%.
 - **Nuance:** morning catalyst read flagged an "AI-capex/semi selloff," but the tape shows a rotation WITHIN tech — memory names ripping while some AI-software (CRM, NOW, ADBE) lags; not a broad chip crash.
 - **Portfolio relevance:** zero overlap with held staples (KO/PG). NKE's collapse reinforces Discretionary as weakest sector and the value/defensive rotation into staples. No mover clears the buy gate (earnings-reaction chases, no tight-spread sandbox quote). Decision unchanged: HOLD.
+
+---
+
+## 2026-07-29 — Pre-market Research
+### Account
+- **UNAVAILABLE — Alpaca auth blocker.** `alpaca.py preflight` returned exit 4 (terminal auth, HTTP 401 "unauthorized"): keys reached Alpaca and were rejected (stale/revoked). Not retryable. Last known state (Jul 27 EOD): Equity ~$99,828 | Cash ~$82,170 (82.3%) | Deployment ~17.7% | Daytrade count 0. FIX: rotate ALPACA_API_KEY / ALPACA_SECRET_KEY in the environment config (web env vars, not a .env). One email alert sent.
+### Market Context
+- WTI / Brent: ~$71.03 / ~$74.21 — stable-low; supportive for staples input costs.
+- S&P 500 futures: mixed to slightly higher (~+0.5% one feed, ~-0.15% another) — cautious/rangebound ahead of the 2pm FOMC decision.
+- VIX: ~19.3 — eased from ~21 yesterday; nerves cooling into the Fed.
+- Today's catalysts: (1) **FOMC decision 2:00pm ET** (presser 2:30pm), market expects a HOLD at 3.50–3.75%; (2) MSFT + META earnings after the bell; (3) PG Q4 print BMO (see below).
+- Earnings before open: **PG (held) — reported, BEAT (see below).** Broader megacap prints (MSFT/META) are after-hours.
+- Economic calendar: FOMC decision Wed Jul 29 2:00pm ET is the sole confirmed macro event; no confirmed GDP/jobs release today.
+- Sector momentum YTD: Energy leads (~+22–26%); **Consumer Staples top-3 (~+16%)** — value/defensive rotation intact, supportive for KO/PG.
+### Held Positions News
+- **PG: Q4 FY26 BEAT (reported BMO today).** Adj EPS **$1.48 vs $1.42 est**; revenue **$20.89B vs $20.84B est**. Stock reaction **+1.85%**. Defensive/dividend thesis CONFIRMED and strengthened — the overnight print risk flagged yesterday resolved favorably. Position was green into the print; no action (nowhere near +15% tighten trigger).
+- **KO: post-Q2 analyst upgrades.** JPMorgan → $96 (OW), Morgan Stanley → $100 (OW), BofA → $95 (but Underperform). Reinforces last week's Q2 beat + raised guidance. fairlife ransomware incident (disclosed Jul 16) — no product-quality/safety impact per company; not thesis-relevant. Position green; hold.
+### Trade Ideas
+1. **PG / KO — HOLD.** Both theses now confirmed/strengthened (PG beat this morning; KO upgrades). Both green, far inside -7% cut, clear of live 10% GTC trailing stops (PG $138.89 / KO $77.11 last known). Let stops work; no trim.
+2. **Diversifying add — NO CANDIDATE CLEARS THE GATE, and timing is adverse.** FOMC decision lands at 2pm and megacap earnings after the bell — adding fresh risk pre-decision into a binary tape is negative-EV. No S&P 500 large-cap outside held staples pairs a documented stock-specific catalyst with a tight-spread sandbox quote. Also: account/buying-power state is unverifiable this run (auth blocker), so no order could be sized or gate-checked safely regardless. Catalyst + verifiability gates fail → SKIP.
+### Risk Factors
+- **FOMC decision today 2:00pm ET** — a hawkish surprise (vs the expected hold) could jolt rate-sensitive defensives. Primary macro watch. Stops sit far below current prices.
+- **MSFT/META after-hours** — index-level volatility could spill into tomorrow's tape; no direct staples overlap.
+- **Alpaca auth blocker** — cannot pull live account/positions/orders or place/adjust any order until ALPACA_* keys are rotated in the environment config. Stops are live GTC orders already resting at the broker, so protection remains in place even while the API is unauthenticated from this run.
+- **Under-deployed (~17.7% last known vs 75-85% target)** — structural blocker unchanged: pipeline sources sector-level ideas, not a named stock + documented catalyst + tight sandbox spread. Standing owner decision still needed: (a) permit non-leveraged sector ETFs, or (b) direct pre-market to name specific individual large-caps WITH stock-specific catalysts.
+### Decision
+**HOLD — NO TRADES.** Both staples' theses confirmed/strengthened this morning: PG beat Q4 (EPS $1.48 vs $1.42, +1.85%) and KO drew multiple post-Q2 target hikes. Staples remain a top-3 YTD momentum sector with oil stable-low. Both far inside the -7% cut and clear of live 10% GTC trailing stops — no sell triggers. No diversifying candidate clears the buy gate; front-running the 2pm FOMC decision + after-hours megacap prints is negative-EV, and live account state is unverifiable this run due to the Alpaca auth blocker (rotate ALPACA_* keys to restore). Watch: FOMC 2pm, MSFT/META after-hours, oil. Patience > activity; no rule violated.
