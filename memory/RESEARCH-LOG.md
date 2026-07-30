@@ -1006,3 +1006,39 @@ TRADE or HOLD (default HOLD if no clear edge)
 - **Losers:** NKE **-15.2%** (earnings), APTV -10.9%, TPL -6.2%, PLTR -5%.
 - **Nuance:** morning catalyst read flagged an "AI-capex/semi selloff," but the tape shows a rotation WITHIN tech — memory names ripping while some AI-software (CRM, NOW, ADBE) lags; not a broad chip crash.
 - **Portfolio relevance:** zero overlap with held staples (KO/PG). NKE's collapse reinforces Discretionary as weakest sector and the value/defensive rotation into staples. No mover clears the buy gate (earnings-reaction chases, no tight-spread sandbox quote). Decision unchanged: HOLD.
+
+## 2026-07-30 — Pre-market Research
+
+> **ALPACA AUTH BLOCKED (2nd consecutive session).** `python tools/alpaca.py preflight` returned exit 4 (terminal auth): Alpaca reached, credentials rejected (HTTP 401 "unauthorized"). Key fingerprint present (API prefix PK, len 26; secret len 44; no whitespace) — env vars populated but stale/revoked. Account, positions, and orders could NOT be pulled this run. Same failure as Jul 29. Per Blocker Protocol: not retryable, no keys fabricated, no .env written, TLS untouched. Degraded gracefully — full market + held-name research completed below from Perplexity. FIX (owner): rotate ALPACA_API_KEY + ALPACA_SECRET_KEY in the web ENVIRONMENT CONFIG (process env vars, not repo .env), then re-run.
+
+### Account
+- Equity: UNAVAILABLE | Cash: UNAVAILABLE | Buying power: UNAVAILABLE | Daytrade count: UNAVAILABLE (Alpaca 401)
+- Last verified (Jul 28 pre-market): Equity $100,189.90 | Cash $82,170.20 | Deployment ~18.0% | Weekly trades 0/3
+- Assumed still held (unconfirmed vs broker): PG 99 sh @ $150.72 (stop $138.89 / HWM $154.32); KO 35 sh @ $83.10 (stop $77.11 / HWM $85.68). Stops assumed live but NOT verifiable this run.
+
+### Market Context
+- WTI / Brent: WTI ~$84.90 | Brent ~$88.26 — **sharp jump from ~$71 last week** (~+19%). Reverses last week's US–Iran de-escalation lows; now an input-cost/inflation HEADWIND for staples (PG/KO). Watch for fresh geopolitical/supply driver.
+- S&P 500 futures: E-minis ~7,465–7,478, roughly flat-to-slightly-up (+12.5 on CNBC feed). Risk-on tone post-Fed hold.
+- VIX: ~16–19 (source mismatch; WSJ close 18.21 Jul 28) — easing from FOMC-week highs (~21). Calmer tape.
+- Today's catalysts: (1) **Advance Q2 GDP** 8:30am ET (consensus ~+2.3% annualized vs +2.1% prior); (2) **June PCE / Personal Income & Outlays** 8:30am ET (inflation print); (3) Initial jobless claims (prior 187k); (4) heavy Q2 earnings continues. NOTE: **FOMC was YESTERDAY (Jul 29)** — Fed HELD rates; Chair Warsh's first post-meeting presser. Decision digested; risk-on.
+- Earnings before open: MA, MO, ABBV, CVX, LIN, ETN, SONY, CL, CBOE, TROW, CHD, MRNA (calendars vary). No held names report today (KO Jul 28 done; PG Jul 29 done).
+- Economic calendar: Advance Q2 GDP + June PCE both 8:30am ET (high-impact); weekly jobless claims. No CPI/PPI/NFP today. FOMC was Jul 29 (held).
+- Sector momentum YTD: **Energy leads** (+22–27%), Tech/Industrials/Materials strong; **Consumer Staples still solid defensive** (+10.7–16%). Weakest: Financials (~-6%), Discretionary (~-4.6%), Health Care (~flat). Value/defensive tilt intact, but Energy's lead + oil spike signals possible input-cost pressure on staples.
+
+### Held Positions News
+- **KO — Q2 BEAT + GUIDANCE RAISE (reported Jul 28).** Adj EPS $0.97 vs $0.93 est; rev $13.38B (+7% YoY) vs $13.16B est. Raised FY26 to 9–10% comparable EPS growth (from 8–9%) and ~5% organic (from 4–5%). Stock +7% on reaction, hit RECORD HIGH ~$89 (closed $89.08 Jul 29, AH $89.33). Now solidly GREEN on entry (~+7% vs $83.10). Jefferies PT→$104, BofA PT→$95 (Underperform). Thesis CONFIRMED/strengthened. Minor headline: EU antitrust regulators raided KO bottlers — watch, not thesis-breaking. No action (not near +15% tighten trigger; if last ~$89, that's ~+7% on entry).
+- **PG — FQ4 MISS on revenue (reported Jul 29 BMO).** Net sales $21.2B (+2% YoY) BELOW ~$21.38–21.42B consensus; **core EPS $1.43 slight BEAT** (est ~$1.41–1.42); reported EPS $1.26; organic sales FLAT. Stock -3%+ premarket on the miss/softer demand. FY26: net sales +3%, organic +1%, core EPS +1%. Thesis SOFTENED (top-line soft, flat organic) but NOT broken — core EPS beat, dividend intact, defensive. Est last ~$144 (~-4.4% on entry) — still inside -7% cut and above $138.89 stop. Hold; re-verify vs stop once Alpaca restored.
+
+### Trade Ideas
+1. **KO / PG — HOLD.** KO thesis strengthened (beat + raise, record high); PG softened on revenue miss but core EPS beat and still inside cut/above stop. No sell trigger on either. Cannot verify stops or place adjustments this run (Alpaca 401) — re-check the moment creds are restored.
+2. **Diversifying add — NO CANDIDATE, and blocked anyway.** Cannot trade without account access (Alpaca 401 → no equity/cash/buying-power, cannot size or clear the buy gate). Even if live: today's pre-open names are earnings reactions (don't chase), and Q2 GDP + PCE land at 8:30am — negative-EV to add fresh risk ahead of two high-impact macro prints. No S&P 500 large-cap outside held staples pairs a documented stock-specific catalyst with a tight-spread sandbox quote. Catalyst gate fails → SKIP.
+
+### Risk Factors
+- **ALPACA AUTH (401) — operational, 2nd session.** Cannot verify positions/stops or execute. Stops assumed live but unconfirmed. Owner must rotate ALPACA_* in the env config.
+- **Oil spike (~+19% WoW to ~$85 WTI)** — input-cost/inflation headwind for PG/KO; watch for the driver and any staples-margin read-through.
+- **Q2 GDP + June PCE at 8:30am ET** — high-impact macro; a hot PCE could revive rate/inflation fears and jolt defensives.
+- **PG post-miss drift** — softer demand outlook; if it slides toward -7% on entry or the $138.89 stop, cut/verify — but can't monitor via broker until creds fixed.
+- **Under-deployed (~18% vs 75-85% target)** — 27th consecutive under-deployed session, structural blocker unchanged (pipeline sources sector ideas, not named stock + catalyst + tight spread). Standing owner decision still needed: (a) permit non-leveraged sector ETFs, or (b) direct pre-market to name specific large-caps WITH stock-specific catalysts. Now compounded by the recurring Alpaca auth outage.
+
+### Decision
+**HOLD — NO TRADES.** Forced HOLD on two counts: (1) Alpaca 401 blocks account access — cannot size, clear the buy gate, or adjust stops this run; (2) even unblocked, no candidate clears the gate and it's negative-EV to add risk ahead of 8:30am Q2 GDP + June PCE. Held book: KO thesis strengthened (Q2 beat + FY raise, record high ~$89, ~+7% green); PG softened on a revenue miss but core EPS beat, organic flat, and it sits ~-4.4% on entry — inside the -7% cut and above its $138.89 stop, so no sell trigger. Oil's ~+19% WoW spike to ~$85 is a new input-cost headwind for staples to watch. FOMC (Jul 29) held — digested. Weekly count 0/3. TOP PRIORITY: owner rotates ALPACA_* in env config to restore broker access and stop verification. Patience > activity; no rule violated.
