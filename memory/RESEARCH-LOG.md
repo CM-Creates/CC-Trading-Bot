@@ -1006,3 +1006,42 @@ TRADE or HOLD (default HOLD if no clear edge)
 - **Losers:** NKE **-15.2%** (earnings), APTV -10.9%, TPL -6.2%, PLTR -5%.
 - **Nuance:** morning catalyst read flagged an "AI-capex/semi selloff," but the tape shows a rotation WITHIN tech — memory names ripping while some AI-software (CRM, NOW, ADBE) lags; not a broad chip crash.
 - **Portfolio relevance:** zero overlap with held staples (KO/PG). NKE's collapse reinforces Discretionary as weakest sector and the value/defensive rotation into staples. No mover clears the buy gate (earnings-reaction chases, no tight-spread sandbox quote). Decision unchanged: HOLD.
+
+---
+
+## 2026-07-30 — Pre-market Research
+
+> **ACCOUNT STATE UNAVAILABLE — Alpaca auth 401 (preflight exit 4, terminal).** Same stale-key blocker as Jul 29 EOD; keys still not rotated in env config. Per Blocker Protocol: not retryable, no keys fabricated, no `.env` written, TLS untouched. Degraded gracefully — full Perplexity research completed below; one email alert re-sent naming the exact fix. Equity/positions/orders/stops could NOT be confirmed against broker this run.
+
+### Account
+- Equity: unavailable | Cash: unavailable | Buying power: unavailable | Daytrade count: unavailable
+- Last verified equity: $99,827.72 (Jul 27 EOD). Positions assumed still held: PG 99 @ $150.72, KO 35 @ $83.10.
+- Assumed live 10% GTC trailing stops (unconfirmed this run): PG $138.89 / HWM $154.32; KO $77.11 / HWM $85.68. Deployment last ~17.7%.
+
+### Market Context
+- WTI / Brent: WTI ~$83-85 | Brent ~$85-88 — **UP sharply from ~$71 last week.** Rising crude is a fresh input-cost/inflation headwind for staples (PG/KO), reversing last week's tailwind. Watch.
+- S&P 500 futures: E-minis ~7,477 (+12.5), modestly higher premarket — constructive open despite mixed mega-cap prints.
+- VIX: ~18.9 (close ~18.2 Jul 28) — easing from ~21 last week; calmer tape post-FOMC.
+- Today's catalysts: (1) Digesting FOMC (Jul 29 decision — Fed held rates steady; Chair press-conf tone the swing factor); (2) Q2 advance GDP + June PCE + jobless claims all 8:30am ET; (3) mega-cap earnings — MSFT beat & rallied, META missed & fell; AAPL + AMZN report after close today.
+- Earnings before open: Mastercard (MA, est EPS $4.77), Altria (MO, est EPS $1.50). AAPL/AMZN after close. No held name reports today.
+- Economic calendar: **Q2 advance GDP 8:30am ET; June Personal Income/Outlays + Core PCE (est +0.3% MoM) 8:30am ET; initial jobless claims (prior 187k) 8:30am ET.** FOMC decision was Jul 29 (2:00pm ET), now being digested. No CPI/PPI today.
+- Sector momentum YTD: Energy leads (+26-27%), then Tech/Industrials/Materials (~+10-13%); Consumer Staples ~+10.7% (still positive but no longer top-3 vs prior read); Financials / Comm Services / Health Care lag. Value/defensive rotation intact but broadening back toward Tech.
+
+### Held Positions News
+- **PG — FQ4 reported Jul 29 BMO: MIXED, thesis softening.** Adj EPS $1.43 vs $1.41 est (beat); **net sales $21.20B vs $21.38B est (MISS).** Guided **slower FY2027 revenue growth** citing "very challenging geopolitical and economic environment"; core operating margin fell 3rd straight quarter; organic volumes flat, declines in 3 of 5 segments. **Stock ~-3% premarket.** Est price ~$144 (from $148.63 Jul 27 close) ≈ -4.5% on entry — inside the -7% cut ($140.17) and above assumed $138.89 stop, but this is the weakest print in the book and the clearest thesis crack yet. PRIMARY MIDDAY WATCH — cannot confirm exact price/stop until Alpaca auth restored.
+- **KO — thesis CONFIRMED/strengthened.** Q2 beat (EPS $0.97 vs $0.93, rev $13.38B vs $13.16B) + **raised FY guidance** (comparable EPS +9-10%, organic rev ~+5%). Shares +6-7%, ~$89 near record high (~+7% on entry $83.10). UBS Buy $92, BofA raised target to $95. New Marriott beverage partnership; NA leadership transition (J. Mann stepping down Aug). No sell trigger; not near +15% tighten.
+
+### Trade Ideas
+1. **PG — HOLD but on watch.** Weak sales/guidance is a partial thesis crack, not a break: EPS still beat, dividend intact, defensive staple. Not at -7% cut. No pre-emptive trim on a ~-4.5% position; let the stop work — but midday must verify actual price vs the -7% line and stop once auth is restored.
+2. **KO — HOLD.** Beat + raised guidance validates the staples thesis; hold and let the stop trail. No trim.
+3. **Diversifying add — NO CANDIDATE clears the buy gate, and account state is unavailable** (cannot verify cash/equity/weekly-trade gate against broker). Today's before-open names (MA, MO) are earnings prints — no front-running. AAPL/AMZN after close add event risk. Buying blind to account state would violate the buy-side gate. SKIP.
+
+### Risk Factors
+- **Alpaca auth 401 (terminal)** — blocks account/positions/orders/stop verification across pre-market, market-open, and midday until ALPACA_* keys are rotated in the web env config. Stops assumed live but UNCONFIRMED. Highest-priority operational risk.
+- **PG guidance cut + 3rd straight margin decline** — thesis softening; overnight/today gap risk; -3% premarket. Watch vs -7% cut and stop.
+- **Oil reversal to ~$83-85** — fresh input-cost headwind for both staples; erodes last week's tailwind.
+- **Macro cluster today 8:30am** — Q2 GDP + Core PCE + jobless claims; a hot PCE could jolt rate-sensitive defensives.
+- **Under-deployed (~17.7%, unconfirmed)** — 27th consecutive under-deployed session, week five, zero new trades. Structural blocker unchanged; standing owner decision still pending (permit non-leveraged sector ETFs, or direct pre-market to name specific large-caps WITH stock-specific catalysts). Compounded now by the auth outage.
+
+### Decision
+**HOLD — NO TRADES.** Account state is unavailable (Alpaca 401), so the buy-side gate cannot be validated — trading blind is out. Both staples remain held on last-verified data: KO's thesis strengthened (beat + raised guidance, ~+7%, near record), PG's softened (sales miss + weak FY27 guide, ~-3% premarket, est ~-4.5% on entry) but has NOT broken — EPS beat, dividend intact, still inside the -7% cut and above its assumed stop. No pre-emptive action; let stops work. Rising oil (~$84) is a new headwind and today's GDP/PCE cluster adds macro risk, reinforcing patience. Top priority: OWNER must rotate ALPACA_API_KEY + ALPACA_SECRET_KEY in the env config so market-open/midday can verify PG's price vs the -7% line and confirm both stops are live. Patience > activity; no rule violated.
